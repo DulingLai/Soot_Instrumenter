@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" android:padding="10dp" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/switch_bg_off" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/toggle_back_off" android:layout_centerVertical="true" />
+    <ImageView android:id="@+id/switch_bg_on" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/toggle_back_on" android:layout_centerVertical="true" />
+    <ImageView android:id="@+id/switch_v" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:src="@drawable/toggle_v_icon" android:layout_centerVertical="true" />
+    <ImageView android:id="@+id/switch_handle" android:background="@drawable/toggle_white_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-3dp" android:layout_alignLeft="@+id/switch_bg_off" android:layout_centerVertical="true" />
+</merge>

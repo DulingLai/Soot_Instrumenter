@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/RLayout" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.waze.ifs.ui.CameraPreview android:id="@+id/cameraPreview" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true" />
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x1" android:layout_above="@+id/captureButtons" android:layout_alignParentTop="true">
+        <View android:id="@+id/cameraCaptureWindow" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0xc801" android:layout_centerInParent="true" />
+        <View android:id="@+id/bottomCurtains" android:background="@drawable/photo_crop_bottom" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x1" android:layout_below="@+id/cameraCaptureWindow" android:layout_alignParentBottom="true" />
+        <View android:id="@+id/curtains" android:background="@drawable/photo_crop_top" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x1" android:layout_above="@+id/cameraCaptureWindow" android:layout_alignParentTop="true" />
+    </RelativeLayout>
+    <com.waze.view.text.WazeTextView android:textSize="18sp" android:textColor="#fff" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/explainText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="20dp" android:text="!@# Start by taking a photo of the place. If you are not close enough to take a photo, why are you doing this?" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+    <LinearLayout android:orientation="horizontal" android:id="@+id/captureButtons" android:background="#cc253235" android:padding="10dp" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="1.0" android:layout_alignParentBottom="true">
+        <ImageButton android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/cameraRetake" android:background="0x0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/take_photo_retake" android:layout_weight="0.4" />
+        <View android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="UNKNOWN_DATA_0x1" android:layout_weight="0.1" />
+        <FrameLayout android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/camraButtonFrame" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageButton android:id="@+id/cameraDone" android:background="0x0" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/take_photo_v" />
+            <ImageButton android:id="@+id/cameraOk" android:background="0x0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/take_photo_camera" />
+        </FrameLayout>
+        <View android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="UNKNOWN_DATA_0x1" android:layout_weight="0.1" />
+        <ImageButton android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/cameraFlash" android:background="0x0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/take_photo_flash" android:layout_weight="0.4" />
+    </LinearLayout>
+    <View android:id="@+id/cameraFlashView" android:background="#ffffff" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+</RelativeLayout>

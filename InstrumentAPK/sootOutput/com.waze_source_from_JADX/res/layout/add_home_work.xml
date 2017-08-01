@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:background="@color/blue_bg" app:layout_width="match_parent" app:layout_height="match_parent">
+    <com.waze.view.title.TitleBar app:id="@+id/theTitleBar" app:layout_width="match_parent" app:layout_height="wrap_content" />
+    <ScrollView app:layout_width="match_parent" app:layout_height="match_parent" app:layout_marginTop="@dimen/titleBarHeight" app:fillViewport="true">
+        <LinearLayout style="@style/settingsSectionWithTitle">
+            <ImageView app:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/addHomeWorkTopImage" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginTop="18dp" app:layout_marginBottom="12dp" app:src="@drawable/carpool_home_work_illu" />
+            <com.waze.view.text.WazeTextView app:textSize="16dp" app:textStyle="UNKNOWN_DATA_0x0" app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/addHomeWorkExplanation" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginLeft="40dp" app:layout_marginRight="40dp" app:layout_marginBottom="12dp" app:text="* Add home and work for easy one-tap navigation, Unusual traffic events and more." style="@style/textOnBg" />
+            <Space app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0xc01" />
+            <com.waze.settings.WazeSettingsView app:id="@+id/addHomeWorkHomeDD" app:position="atThumb" app:settingsType="1" app:icon="@drawable/list_edit_icon" style="@style/settingsSelection" />
+            <com.waze.settings.WazeSettingsView app:id="@+id/addHomeWorkWorkDD" app:position="aboveThumb" app:settingsType="1" app:icon="@drawable/list_edit_icon" style="@style/settingsSelection" />
+            <Space app:layout_width="UNKNOWN_DATA_0x1" app:layout_height="UNKNOWN_DATA_0x1" app:layout_weight="2.0" />
+            <com.waze.view.text.WazeTextView app:textSize="18dp" app:textColor="@color/text_wt_button_enabled" app:ellipsize="end" app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:id="@+id/addHomeWorkConfirm" app:background="@drawable/signup_bt_white" app:padding="0dp" app:visibility="gone" app:clickable="true" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x3401" app:layout_marginLeft="16dp" app:layout_marginTop="12dp" app:layout_marginRight="16dp" app:layout_marginBottom="16dp" app:text="*Confirm" app:singleLine="true" />
+        </LinearLayout>
+    </ScrollView>
+    <ImageView app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginTop="@dimen/titleBarHeight" app:src="@drawable/topbar_shadow" app:scaleType="fitXY" />
+</FrameLayout>

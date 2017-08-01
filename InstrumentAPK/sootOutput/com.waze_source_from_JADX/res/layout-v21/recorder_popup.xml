@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:background="#a0000000" app:layout_width="match_parent" app:layout_height="match_parent">
+    <LinearLayout app:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:orientation="vertical" app:id="@+id/popupContainer" app:background="@drawable/white_roundedcorner_background" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginLeft="32dp" app:layout_marginRight="32dp" app:elevation="8dp">
+        <com.waze.view.text.WazeTextView app:textSize="22dp" app:textColor="@color/Dark" app:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/lblInstructionName" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginLeft="8dp" app:layout_marginTop="24dp" app:layout_marginRight="8dp" app:layout_marginBottom="8dp" app:text="*Turn Right" app:maxLines="2" app:font_type="3" />
+        <com.waze.view.text.WazeTextView app:textSize="16dp" app:textColor="@color/Light" app:id="@+id/lblDuration" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginBottom="16dp" app:text="*3 Seconds" app:font_type="4" />
+        <FrameLayout app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginBottom="24dp">
+            <ImageView app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/btnStop" app:layout_width="UNKNOWN_DATA_0x5001" app:layout_height="UNKNOWN_DATA_0x5001" app:src="@drawable/custom_prompts_stop_button" />
+            <LinearLayout app:orientation="horizontal" app:id="@+id/buttonContainer" app:background="@color/White" app:layout_width="wrap_content" app:layout_height="wrap_content">
+                <ImageView app:id="@+id/btnRecord" app:layout_width="UNKNOWN_DATA_0x5001" app:layout_height="UNKNOWN_DATA_0x5001" app:layout_marginRight="4dp" app:src="@drawable/custom_prompts_record_button" />
+                <ImageView app:id="@+id/btnPreview" app:layout_width="UNKNOWN_DATA_0x5001" app:layout_height="UNKNOWN_DATA_0x5001" app:layout_marginLeft="4dp" app:src="@drawable/custom_prompts_play_button" />
+            </LinearLayout>
+        </FrameLayout>
+        <FrameLayout app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x801" app:layout_marginLeft="16dp" app:layout_marginRight="16dp" app:layout_marginBottom="16dp">
+            <ProgressBar app:id="@+id/recordingProgress" app:background="@drawable/custom_prompts_progress_background" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x801" app:max="1000" app:progress="50" app:progressDrawable="@drawable/custom_prompts_progress_foreground" style="@*style/Widget.ProgressBar.Horizontal" />
+            <View app:id="@+id/progressBarMarker" app:background="@color/RedSweet" app:visibility="gone" app:layout_width="UNKNOWN_DATA_0x101" app:layout_height="UNKNOWN_DATA_0x801" />
+        </FrameLayout>
+        <View app:background="@color/PassiveGrey" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x101" />
+        <LinearLayout app:orientation="horizontal" app:padding="8dp" app:layout_width="match_parent" app:layout_height="wrap_content">
+            <FrameLayout app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/btnCancel" app:background="@drawable/white_button" app:layout_width="UNKNOWN_DATA_0x1" app:layout_height="UNKNOWN_DATA_0x3801" app:layout_marginRight="4dp" app:layout_weight="1.0">
+                <com.waze.view.text.WazeTextView app:textSize="20sp" app:textColor="@color/Dark" app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/lblCancel" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="*Cancel" app:font_type="3" />
+            </FrameLayout>
+            <FrameLayout app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/btnSave" app:background="@drawable/blue_button" app:layout_width="UNKNOWN_DATA_0x1" app:layout_height="UNKNOWN_DATA_0x3801" app:layout_marginLeft="4dp" app:layout_weight="1.0">
+                <com.waze.view.text.WazeTextView app:textSize="20sp" app:textColor="@color/White" app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/lblSave" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="*Save" app:font_type="3" />
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <View app:id="@+id/stopOverlay" app:background="?unknown_attr_ref: 101030e" app:visibility="gone" app:layout_width="match_parent" app:layout_height="match_parent" app:elevation="16dp" app:outlineProvider="none" />
+</FrameLayout>

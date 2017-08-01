@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:background="#a0000000" app:layout_width="match_parent" app:layout_height="match_parent">
+    <LinearLayout app:orientation="vertical" app:id="@+id/settingsContainer" app:background="@color/White" app:visibility="gone" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_alignParentBottom="true">
+        <RelativeLayout app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x4001">
+            <com.waze.view.text.WazeTextView app:textSize="18sp" app:textColor="@color/Light" app:id="@+id/lblSettingsTitle" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="*Settings" app:layout_centerInParent="true" app:font_type="1" />
+        </RelativeLayout>
+        <View app:background="@color/PassiveGrey" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x101" />
+        <RelativeLayout app:id="@+id/btnVehicleType" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x7f0a0053">
+            <ImageView app:id="@+id/imgVehicleType" app:layout_width="UNKNOWN_DATA_0x3001" app:layout_height="UNKNOWN_DATA_0x3001" app:layout_marginLeft="16dp" app:layout_marginRight="16dp" app:src="@drawable/list_icon_private_car" app:layout_centerVertical="true" />
+            <ImageView app:id="@+id/imgVehicleTypeChevron" app:layout_width="UNKNOWN_DATA_0x2801" app:layout_height="UNKNOWN_DATA_0x2801" app:layout_marginLeft="16dp" app:layout_marginRight="16dp" app:src="@drawable/accessory_arrow" app:layout_alignParentRight="true" app:layout_centerVertical="true" />
+            <LinearLayout app:orientation="vertical" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_toLeftOf="@+id/imgVehicleTypeChevron" app:layout_toRightOf="@+id/imgVehicleType" app:layout_centerVertical="true">
+                <com.waze.view.text.WazeTextView app:textSize="18sp" app:textColor="@color/Dark" app:id="@+id/lblVehicleTypeTitle" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="*Vehicle Type" app:maxLines="1" app:font_type="3" />
+                <com.waze.view.text.WazeTextView app:textSize="15sp" app:textColor="@color/Light" app:id="@+id/lblVehicleTypeSelected" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="*Private" app:maxLines="2" app:font_type="1" />
+            </LinearLayout>
+        </RelativeLayout>
+        <View app:background="@color/PassiveGrey" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x101" />
+        <RelativeLayout app:id="@+id/btnGasType" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x7f0a0053">
+            <ImageView app:id="@+id/imgGasType" app:layout_width="UNKNOWN_DATA_0x3001" app:layout_height="UNKNOWN_DATA_0x3001" app:layout_marginLeft="16dp" app:layout_marginRight="16dp" app:src="@drawable/gas_type_icon" app:layout_centerVertical="true" />
+            <ImageView app:id="@+id/imgGasTypeChevron" app:layout_width="UNKNOWN_DATA_0x2801" app:layout_height="UNKNOWN_DATA_0x2801" app:layout_marginLeft="16dp" app:layout_marginRight="16dp" app:src="@drawable/accessory_arrow" app:layout_alignParentRight="true" app:layout_centerVertical="true" />
+            <LinearLayout app:orientation="vertical" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_toLeftOf="@+id/imgGasTypeChevron" app:layout_toRightOf="@+id/imgGasType" app:layout_centerVertical="true">
+                <com.waze.view.text.WazeTextView app:textSize="18sp" app:textColor="@color/Dark" app:id="@+id/lblGasTypeTitle" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="*Prefered gas type" app:maxLines="1" app:font_type="3" />
+                <com.waze.view.text.WazeTextView app:textSize="15sp" app:textColor="@color/Light" app:id="@+id/lblGasTypeSelected" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="*Diesel" app:maxLines="2" app:font_type="1" />
+            </LinearLayout>
+        </RelativeLayout>
+        <View app:background="@color/PassiveGrey" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x101" />
+        <RelativeLayout app:id="@+id/btnAvoidTollRoad" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x7f0a0053">
+            <ImageView app:id="@+id/imgTollRoad" app:layout_width="UNKNOWN_DATA_0x3001" app:layout_height="UNKNOWN_DATA_0x3001" app:layout_marginLeft="16dp" app:layout_marginRight="16dp" app:src="@drawable/list_icon_toll_road" app:layout_centerVertical="true" />
+            <com.waze.view.text.WazeTextView app:textSize="18sp" app:textColor="@color/Dark" app:id="@+id/lblAvoidTollRoadTitle" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="*Avoid Toll Road" app:maxLines="1" app:layout_toRightOf="@+id/imgTollRoad" app:layout_centerVertical="true" app:font_type="3" />
+            <com.waze.ifs.ui.WazeSwitchView app:id="@+id/tollRoadSwitch" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginRight="16dp" app:layout_alignParentRight="true" app:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout app:orientation="vertical" app:id="@+id/vehicleTypeContainer" app:background="@color/White" app:visibility="gone" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_alignParentBottom="true">
+        <RelativeLayout app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x4001">
+            <com.waze.view.text.WazeTextView app:textSize="18sp" app:textColor="@color/Light" app:id="@+id/lblVehicleContainerTitle" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="*Vehicle type" app:layout_centerInParent="true" app:font_type="1" />
+        </RelativeLayout>
+        <View app:background="@color/PassiveGrey" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x101" />
+        <com.waze.view.popups.CarTypeOptionView app:id="@+id/carTypeOptionPrivate" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x7f0a0053" app:car_type_icon="@drawable/list_icon_private_car" app:car_type_title="*Private Car" app:car_type_index="0" />
+        <View app:background="@color/PassiveGrey" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x101" />
+        <com.waze.view.popups.CarTypeOptionView app:id="@+id/carTypeOptionTaxi" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x7f0a0053" app:car_type_icon="@drawable/list_icon_taxi" app:car_type_title="*Taxi" app:car_type_description="*Get routed on lanes designated for use of taxis" app:car_type_index="1" />
+        <View app:background="@color/PassiveGrey" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x101" />
+        <LinearLayout app:orientation="horizontal" app:paddingLeft="8dp" app:paddingTop="8dp" app:paddingRight="8dp" app:paddingBottom="4dp" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x7f0a0053">
+            <FrameLayout app:id="@+id/btnVehicleTypeCancel" app:background="@drawable/white_button" app:layout_width="UNKNOWN_DATA_0x1" app:layout_height="match_parent" app:layout_marginRight="2dp" app:layout_weight="1.0">
+                <com.waze.view.text.WazeTextView app:textSize="20sp" app:textColor="@color/Light" app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/lblVehicleTypeCancel" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="*Cancel" app:font_type="3" />
+            </FrameLayout>
+            <FrameLayout app:id="@+id/btnVehicleTypeSave" app:background="@drawable/blue_button" app:layout_width="UNKNOWN_DATA_0x1" app:layout_height="match_parent" app:layout_marginLeft="2dp" app:layout_weight="1.0">
+                <com.waze.view.text.WazeTextView app:textSize="20sp" app:textColor="@color/White" app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/lblVehicleTypeSave" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="*Save" app:font_type="3" />
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout app:orientation="vertical" app:id="@+id/gasTypeContainer" app:background="@color/White" app:visibility="visible" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_alignParentBottom="true">
+        <RelativeLayout app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x4001" app:elevation="4dp">
+            <com.waze.view.text.WazeTextView app:textSize="18sp" app:textColor="@color/Light" app:id="@+id/lblGasContainerTitle" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="*Prefered gas type" app:layout_centerInParent="true" app:font_type="1" />
+        </RelativeLayout>
+        <View app:background="@color/PassiveGrey" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x101" />
+        <ScrollView app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x1" app:layout_weight="1.0">
+            <LinearLayout app:orientation="vertical" app:id="@+id/gasTypeOptionsContainer" app:layout_width="match_parent" app:layout_height="wrap_content" />
+        </ScrollView>
+        <LinearLayout app:orientation="horizontal" app:paddingLeft="8dp" app:paddingTop="8dp" app:paddingRight="8dp" app:paddingBottom="4dp" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x7f0a0053" app:elevation="4dp">
+            <FrameLayout app:id="@+id/btnGasTypeCancel" app:background="@drawable/white_button" app:layout_width="UNKNOWN_DATA_0x1" app:layout_height="match_parent" app:layout_marginRight="2dp" app:layout_weight="1.0">
+                <com.waze.view.text.WazeTextView app:textSize="20sp" app:textColor="@color/Light" app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/lblGasTypeCancel" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="*Cancel" app:font_type="3" />
+            </FrameLayout>
+            <FrameLayout app:id="@+id/btnGasTypeSave" app:background="@drawable/blue_button" app:layout_width="UNKNOWN_DATA_0x1" app:layout_height="match_parent" app:layout_marginLeft="2dp" app:layout_weight="1.0">
+                <com.waze.view.text.WazeTextView app:textSize="20sp" app:textColor="@color/White" app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/lblGasTypeSave" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="*Save" app:font_type="3" />
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

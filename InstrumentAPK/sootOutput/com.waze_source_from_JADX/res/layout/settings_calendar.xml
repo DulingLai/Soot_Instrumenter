@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/com.waze" app:layout_width="match_parent" app:layout_height="match_parent">
+    <com.waze.view.title.TitleBar app:id="@+id/theTitleBar" app:layout_width="match_parent" app:layout_height="wrap_content" />
+    <ScrollView app:fadingEdge="UNKNOWN_DATA_0x0" app:layout_width="match_parent" app:layout_height="match_parent" app:fillViewport="true" app:layout_below="@+id/theTitleBar" app:layout_alignParentBottom="true" app:overScrollMode="ifContentScrolls">
+        <LinearLayout style="@style/settingsLayout">
+            <com.waze.settings.SettingsTitleText app:id="@+id/settingsCalendarTitleGeneral" app:text="*General settings" app:position="atThumb" style="@style/settingsTitle" />
+            <com.waze.settings.WazeSettingsView app:id="@+id/settingsCalendarSync" app:position="floating" app:settingsType="2" style="@style/settingsSelection" />
+            <com.waze.settings.WazeSettingsView app:id="@+id/settingsCalendarSelection" app:position="aboveThumb" app:settingsType="1" style="@style/settingsSelection" />
+            <FrameLayout app:background="@color/settings_bg_note" app:layout_width="match_parent" app:layout_height="wrap_content">
+                <ImageView app:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:background="@drawable/note_shadow" app:layout_width="match_parent" app:layout_height="wrap_content" />
+                <com.waze.view.text.WazeTextView app:id="@+id/settingsCalendarExplanation" app:text="*Explanation 1" app:maxLines="10" app:singleLine="false" style="@style/settings_note" />
+            </FrameLayout>
+            <com.waze.settings.SettingsTitleText app:id="@+id/settingsCalendarTitleReminders" app:text="*Reminders" app:position="floating" style="@style/settingsTitle" />
+            <com.waze.settings.WazeSettingsView app:id="@+id/settingsCalendarReminderType" app:position="aboveThumb" app:settingsType="1" style="@style/settingsSelection" />
+            <FrameLayout app:background="@color/settings_bg_note" app:layout_width="match_parent" app:layout_height="wrap_content">
+                <ImageView app:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:background="@drawable/note_shadow" app:layout_width="match_parent" app:layout_height="wrap_content" />
+                <com.waze.view.text.WazeTextView app:linksClickable="true" app:id="@+id/settingsCalendarRemindersExplanation" app:text="*Reminder Explanation 1" app:maxLines="10" app:singleLine="false" style="@style/settings_note" />
+            </FrameLayout>
+            <com.waze.settings.SettingsTitleText app:id="@+id/settingsCalendarTitleAdvanced" app:text="*Advanced" app:position="floating" style="@style/settingsText" />
+            <com.waze.settings.WazeSettingsView app:id="@+id/settingsCalendarRemoveLocations" app:position="aboveThumb" app:settingsType="0" style="@style/settingsSelection" />
+            <com.waze.settings.SettingsTitleText app:id="@+id/settingsCalendarFooterAdvanced" app:text="" app:position="aboveThumb" style="@style/settingsText" />
+            <View app:background="@color/BlueWhale" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x6401" app:layout_weight="1.0" />
+        </LinearLayout>
+    </ScrollView>
+    <ImageView app:layout_width="match_parent" app:layout_height="wrap_content" app:src="@drawable/topbar_shadow" app:scaleType="fitXY" app:layout_below="@+id/theTitleBar" />
+</RelativeLayout>

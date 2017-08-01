@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:background="@drawable/details_popup_middle" app:paddingBottom="48dp" app:layout_width="match_parent" app:layout_height="match_parent"
+    <RelativeLayout app:id="@+id/carTypeOptionsContainer" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x4801" app:layout_marginLeft="16dp" app:layout_marginTop="8dp" app:layout_marginRight="16dp"
+        <RelativeLayout app:id="@+id/btnHeaderCarType" app:layout_width="wrap_content" app:layout_height="match_parent" app:layout_marginRight="8dp">
+            <ImageView app:id="@+id/imgHeaderCarType" app:layout_width="UNKNOWN_DATA_0x2801" app:layout_height="UNKNOWN_DATA_0x2801" app:src="@drawable/gas_type_icon" app:layout_centerVertical="true" />
+            <com.waze.view.text.WazeTextView app:textSize="17sp" app:textColor="@color/Light" app:id="@+id/lblHeaderCarType" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="*Taxi" app:maxLines="1" app:layout_toRightOf="@+id/imgHeaderCarType" app:layout_centerVertical="true" app:font_type="1" />
+        </RelativeLayout>
+        <RelativeLayout app:id="@+id/btnHeaderGasType" app:layout_width="wrap_content" app:layout_height="match_parent" app:layout_toRightOf="@+id/btnHeaderCarType">
+            <ImageView app:id="@+id/imgHeaderGasType" app:layout_width="UNKNOWN_DATA_0x2801" app:layout_height="UNKNOWN_DATA_0x2801" app:src="@drawable/gas_type_icon" app:layout_centerVertical="true" />
+            <com.waze.view.text.WazeTextView app:textSize="17sp" app:textColor="@color/Light" app:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/lblHeaderGasType" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="*Diesel" app:maxLines="1" app:layout_toRightOf="@+id/imgHeaderGasType" app:layout_centerVertical="true" app:font_type="1" />
+        </RelativeLayout>
+        <ImageView app:id="@+id/btnHeaderMoreOptions" app:layout_width="wrap_content" app:layout_height="wrap_content" app:src="@drawable/accessory_arrow" app:layout_alignParentRight="true" app:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View app:id="@+id/carTypeOptionsSeparator" app:background="@color/PassiveGrey" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x101" app:layout_below="@+id/carTypeOptionsContainer" />
+    <RelativeLayout app:id="@+id/detailsContainer" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginLeft="16dp" app:layout_marginTop="16dp" app:layout_marginRight="16dp" app:layout_below="@+id/carTypeOptionsContainer">
+        <com.waze.view.text.WazeTextView app:textSize="14sp" app:textColor="@color/Light" app:id="@+id/lblYouAreHere" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="*You are here:" app:font_type="4" />
+        <com.waze.view.text.WazeTextView app:textSize="17sp" app:textColor="@color/Dark" app:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/lblUserLocation" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginRight="64dp" app:layout_marginBottom="8dp" app:text="*A3214 - Buckingham Palace Rd, Victoria" app:maxLines="2" app:layout_below="@+id/lblYouAreHere" app:font_type="1" />
+        <ImageView app:id="@+id/imgDetailsChevron" app:layout_width="wrap_content" app:layout_height="wrap_content" app:src="@drawable/accessory_arrow" app:layout_alignParentRight="true" app:layout_centerVertical="true" />
+        <ImageView app:id="@+id/imgDetailsCarType" app:layout_width="UNKNOWN_DATA_0x2801" app:layout_height="UNKNOWN_DATA_0x2801" app:src="@drawable/gas_type_icon" app:layout_toLeftOf="@+id/imgDetailsChevron" app:layout_centerVertical="true" />
+        <ImageView app:id="@+id/imgInfoButton" app:visibility="gone" app:layout_width="wrap_content" app:layout_height="wrap_content" app:src="@drawable/info_button" app:layout_alignParentRight="true" app:layout_centerVertical="true" />
+    </RelativeLayout>
+    <FrameLayout app:id="@+id/btnSendLocation" app:background="@drawable/blue_button" app:visibility="visible" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x4801" app:layout_marginLeft="8dp" app:layout_marginTop="24dp" app:layout_marginRight="8dp" app:layout_below="@+id/detailsContainer">
+        <com.waze.view.text.WazeTextView app:textSize="16sp" app:textColor="@color/White" app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/lblSendLocation" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="*Send Location" app:font_type="3" />
+    </FrameLayout>
+</RelativeLayout>

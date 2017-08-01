@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:orientation="vertical" app:background="@color/blue_bg" app:layout_width="match_parent" app:layout_height="match_parent">
+    <com.waze.view.title.TitleBar app:id="@+id/theTitleBar" app:layout_width="match_parent" app:layout_height="wrap_content" />
+    <ScrollView app:id="@+id/settingsCarpoolScroll" app:background="@color/blue_bg" app:fadingEdge="UNKNOWN_DATA_0x0" app:layout_width="match_parent" app:layout_height="match_parent" app:layout_below="@+id/theTitleBar" app:overScrollMode="ifContentScrolls">
+        <LinearLayout style="@style/settingsLayout">
+            <com.waze.settings.SettingsTitleText app:id="@+id/settingsCarpoolHeaderCommute" app:text="Quick Settings" app:position="atThumb" style="@style/settingsTitle" />
+            <com.waze.settings.WazeSettingsView app:id="@+id/settingsCarpoolGetRequests" app:position="atThumb" app:settingsType="2" app:icon="@drawable/list_icon_notification" style="@style/settingsSelection" />
+            <com.waze.settings.WazeSettingsView app:id="@+id/settingsCarpoolNotFreq" app:position="aboveThumb" app:settingsType="0" app:icon="@drawable/carpool_notification_frequency" style="@style/settingsSelection" />
+            <com.waze.settings.SettingsTitleText app:id="@+id/settingsCarpoolHeaderAvailability" app:position="floating" style="@style/settingsTitle" />
+            <com.waze.settings.WazeSettingsView app:id="@+id/settingsCarpoolCommute" app:position="atThumb" app:settingsType="0" app:icon="@drawable/list_icon_calendar" style="@style/settingsSelection" />
+            <com.waze.settings.WazeSettingsView app:id="@+id/settingsCarpoolSeats" app:position="aboveThumb" app:settingsType="0" app:icon="@drawable/list_icon_rider" style="@style/settingsSelection" />
+            <com.waze.settings.SettingsTitleText app:id="@+id/settingsCarpoolHeaderVerification" app:position="floating" style="@style/settingsTitle" />
+            <com.waze.settings.WazeSettingsView app:id="@+id/settingsCarpoolProfile" app:position="atThumb" app:settingsType="1" app:icon="@drawable/list_icon_about" style="@style/settingsSelection" />
+            <com.waze.settings.WazeSettingsView app:id="@+id/settingsCarpoolCar" app:position="floating" app:settingsType="0" app:icon="@drawable/list_icon_car" style="@style/settingsSelection" />
+            <com.waze.settings.WazeSettingsView app:id="@+id/settingsCarpoolWork" app:position="floating" app:settingsType="1" app:icon="@drawable/list_icon_work" style="@style/settingsSelection" />
+            <com.waze.settings.WazeSettingsView app:id="@+id/settingsCarpoolFacebook" app:position="floating" app:settingsType="0" app:icon="@drawable/list_icon_facebook_settings" style="@style/settingsSelection" />
+            <com.waze.settings.WazeSettingsView app:id="@+id/settingsCarpoolLinkedin" app:position="aboveThumb" app:settingsType="0" app:icon="@drawable/list_icon_linkedin" style="@style/settingsSelection" />
+            <com.waze.settings.SettingsTitleText app:id="@+id/settingsCarpoolHeaderPayments" app:text="Quick Settings" style="@style/settingsTitle" />
+            <com.waze.settings.WazeSettingsView app:id="@+id/settingsCarpoolPayments" app:position="atThumb" app:settingsType="0" app:icon="@drawable/list_icon_payments" style="@style/settingsSelection" />
+            <com.waze.settings.WazeSettingsView app:id="@+id/settingsCarpoolHistory" app:position="aboveThumb" app:settingsType="0" app:icon="@drawable/list_icon_history" style="@style/settingsSelection" />
+            <com.waze.settings.SettingsTitleText app:id="@+id/settingsCarpoolHeaderMore" app:text="Quick Settings" style="@style/settingsTitle" />
+            <com.waze.settings.WazeSettingsView app:id="@+id/settingsCarpoolFAQ" app:position="atThumb" app:settingsType="0" app:icon="@drawable/list_icon_faq" style="@style/settingsSelection" />
+            <com.waze.settings.WazeSettingsView app:id="@+id/settingsCarpoolHelp" app:position="floating" app:settingsType="0" app:icon="@drawable/list_icon_help_menu" style="@style/settingsSelection" />
+            <com.waze.settings.WazeSettingsView app:id="@+id/settingsCarpoolRider" app:position="floating" app:settingsType="0" app:icon="@drawable/list_icon_rider" style="@style/settingsSelection" />
+            <com.waze.settings.WazeSettingsView app:id="@+id/settingsCarpoolProblem" app:position="floating" app:settingsType="0" app:icon="@drawable/list_icon_mail" style="@style/settingsSelection" />
+            <com.waze.settings.WazeSettingsView app:id="@+id/settingsCarpoolQuit" app:position="aboveThumb" app:settingsType="0" app:icon="@drawable/list_icon_quit" style="@style/settingsSelection" />
+            <FrameLayout app:background="@color/blue_bg" app:layout_width="match_parent" app:layout_height="wrap_content" app:foreground="@drawable/cell_shadow_dark">
+                <com.waze.view.text.WazeTextView app:textSize="15dp" app:textStyle="UNKNOWN_DATA_0x0" app:textColor="@color/BlueDeep" app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/settingsCarpoolBottomText" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginLeft="10dp" app:layout_marginTop="10dp" app:layout_marginRight="10dp" app:layout_marginBottom="10dp" app:text="* Connected Google account: XXX@gmail.com" app:font_type="1" style="@style/textOnBg" />
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+    <Space app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x1401" app:layout_below="@+id/settingsCarpoolScroll" app:layout_alignParentBottom="true" />
+    <ImageView app:layout_width="match_parent" app:layout_height="wrap_content" app:src="@drawable/topbar_shadow" app:scaleType="fitXY" app:layout_below="@+id/theTitleBar" />
+</RelativeLayout>

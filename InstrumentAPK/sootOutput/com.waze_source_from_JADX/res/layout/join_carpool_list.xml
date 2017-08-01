@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:orientation="vertical" app:id="@+id/joinCarpoolLayout" app:background="@color/blue_bg" app:clipChildren="false" app:clipToPadding="false" app:layout_width="match_parent" app:layout_height="match_parent">
+    <ScrollView app:layout_width="match_parent" app:layout_height="match_parent" app:fillViewport="true">
+        <LinearLayout app:orientation="vertical" app:background="@color/blue_bg" app:layout_width="match_parent" app:layout_height="match_parent">
+            <com.waze.view.text.WazeTextView app:textSize="22sp" app:textStyle="bold" app:textColor="@color/BlueDeep" app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/joinCarpoolSubtitle" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginLeft="28dp" app:layout_marginTop="32dp" app:layout_marginRight="28dp" app:text="*Join Waze Carpool!" app:font_type="b" />
+            <com.waze.view.text.WazeTextView app:textSize="18sp" app:textColor="@color/BlueDeep" app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/joinCarpoolText" app:paddingBottom="10dp" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginLeft="28dp" app:layout_marginTop="4dp" app:layout_marginRight="28dp" app:text="*Pickup riders along your route and save money!" app:lines="2" app:font_type="d" />
+            <LinearLayout app:orientation="vertical" app:paddingLeft="28dp" app:paddingRight="28dp" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginTop="16dp"
+                <LinearLayout app:orientation="horizontal" app:id="@+id/JoinCarpoolLine1" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginTop="16dp" app:layout_marginBottom="4dp">
+                    <ImageView app:layout_width="UNKNOWN_DATA_0x3801" app:layout_height="wrap_content" app:src="@drawable/carpool_bullet_rider" />
+                    <com.waze.view.text.WazeTextView app:textSize="18sp" app:textColor="@color/BlueDeep" app:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:id="@+id/JoinCarpoolLine1Text" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginLeft="10dp" app:text="*Pick a rider on your way" app:font_type="d" />
+                </LinearLayout>
+                <View app:background="@color/BlueDeepLight" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x40000031" app:layout_marginLeft="66dp" app:layout_marginRight="50dp" />
+                <LinearLayout app:orientation="horizontal" app:id="@+id/JoinCarpoolLine2" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginTop="4dp" app:layout_marginBottom="4dp">
+                    <ImageView app:layout_width="UNKNOWN_DATA_0x3801" app:layout_height="wrap_content" app:src="@drawable/carpool_bullet_gas" />
+                    <com.waze.view.text.WazeTextView app:textSize="18sp" app:textColor="@color/BlueDeep" app:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:id="@+id/JoinCarpoolLine2Text" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginLeft="10dp" app:text="*Get paid for gas" app:font_type="d" />
+                </LinearLayout>
+                <View app:background="@color/BlueDeepLight" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x40000031" app:layout_marginLeft="66dp" app:layout_marginRight="50dp" />
+                <LinearLayout app:orientation="horizontal" app:id="@+id/JoinCarpoolLine3" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginTop="4dp" app:layout_marginBottom="16dp">
+                    <ImageView app:layout_width="wrap_content" app:layout_height="wrap_content" app:src="@drawable/carpool_bullet_community" />
+                    <com.waze.view.text.WazeTextView app:textSize="18sp" app:textColor="@color/BlueDeep" app:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:id="@+id/JoinCarpoolLine3Text" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginLeft="10dp" app:text="*Support your community" app:font_type="d" />
+                </LinearLayout>
+            </LinearLayout>
+            <Space app:layout_width="wrap_content" app:layout_height="UNKNOWN_DATA_0x1" app:layout_weight="1.0" />
+            <include app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x4001" app:layout_marginLeft="28dp" app:layout_marginRight="28dp" app:layout_marginBottom="30dp" app:layout_alignParentBottom="true" layout="@layout/join_carpool_button" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

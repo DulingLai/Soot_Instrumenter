@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/settingsCheckboxMainLayout" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <CheckBox android:id="@+id/settingsCheckboxCheckbox" android:background="@drawable/checkbox_box" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:button="@drawable/checkbox" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <com.waze.view.text.WazeTextView android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/settingsCheckboxText" android:layout_marginLeft="10dp" android:text="Text long Text long Text long Text long Text long Text long " android:layout_toLeftOf="@+id/settingsCheckboxCheckbox" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/settingsText" />
+</RelativeLayout>

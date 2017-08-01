@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:layout_width="wrap_content" app:layout_height="wrap_content">
+    <com.waze.view.text.WazeTextView app:textSize="17dp" app:textColor="@color/Dark" app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/speedLimit" app:background="@drawable/icon_report_speedlimit_world" app:visibility="visible" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="199" app:lines="1" app:includeFontPadding="false" app:font_type="7" />
+</FrameLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/timerBg" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="1dp" android:layout_marginTop="1dp" android:layout_marginRight="1dp" android:layout_marginBottom="1dp" android:src="@drawable/timer_bg" />
+    <com.waze.view.text.WazeTextView android:textSize="16dp" android:textStyle="bold" android:textColor="#000000" android:id="@+id/timerText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-2dp" android:layout_centerInParent="true" />
+    <com.waze.view.timer.TimerCircle android:id="@+id/timerCircle" android:layout_width="match_parent" android:layout_height="match_parent" />
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res-auto">
+    <com.waze.view.text.WazeTextView app:id="@+id/cpTripTitle" app:layout_marginTop="48dp" app:text="*Title" style="@style/CarpoolDialogTitle" />
+    <com.waze.view.text.WazeTextView app:id="@+id/cpTripSubTitle" app:layout_marginTop="8dp" app:text="*Sub title" style="@style/CarpoolDialogSubtitle" />
+    <FrameLayout app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/cpTripPicturesLayout" app:clipChildren="false" app:clipToPadding="false" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginTop="24dp">
+        <ImageView app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/cpTripImageDriver" app:layout_width="UNKNOWN_DATA_0x7f0a0055" app:layout_height="UNKNOWN_DATA_0x7f0a0055" />
+    </FrameLayout>
+    <com.waze.view.text.WazeTextView app:textSize="17sp" app:textColor="@color/White" app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/cpTripPickup" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginLeft="32dp" app:layout_marginTop="24dp" app:layout_marginRight="32dp" app:text="*Pick up address" app:maxLines="3" app:font_type="e" />
+</merge>

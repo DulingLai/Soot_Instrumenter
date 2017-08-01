@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:orientation="vertical" app:padding="8dp" app:clipChildren="false" app:clipToPadding="false" app:layout_width="UNKNOWN_DATA_0x6401" app:layout_height="wrap_content">
+    <ImageView app:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/endImage" app:layout_width="wrap_content" app:layout_height="wrap_content" app:src="@drawable/carpool_punctual_idle" />
+    <ImageView app:id="@+id/endRider" app:layout_width="UNKNOWN_DATA_0x2801" app:layout_height="UNKNOWN_DATA_0x2801" app:layout_marginLeft="-10dp" app:layout_marginTop="-55dp" app:layout_marginBottom="8dp" app:src="@drawable/ridecard_profilepic_placeholder" />
+    <com.waze.view.text.WazeTextView app:textSize="15sp" app:textColor="@color/WinterBlue" app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/endName" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="*endorsement endorsement endorsement" app:font_type="c" />
+</LinearLayout>

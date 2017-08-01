@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/favorites" android:background="@color/blue_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.waze.view.title.TitleBar android:id="@+id/theTitleBar" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <ImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/topbar_shadow" android:scaleType="fitXY" android:layout_below="@+id/theTitleBar" />
+    <ListView android:id="@+id/favList" android:scrollbars="UNKNOWN_DATA_0x0" android:fadingEdge="UNKNOWN_DATA_0x0" android:layout_width="match_parent" android:layout_height="match_parent" android:cacheColorHint="#00000000" android:divider="0x0" android:layout_below="@+id/theTitleBar" />
+</RelativeLayout>

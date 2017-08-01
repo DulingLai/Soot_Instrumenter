@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:id="@+id/ping_right_popup" app:layout_width="match_parent" app:layout_height="match_parent">
+    <FrameLayout app:id="@+id/pingRightLayout" app:background="@drawable/ticker_background" app:clipToPadding="false" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginTop="130dp" app:layout_alignParentRight="true">
+        <com.waze.view.text.WazeTextView app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/MoodLayout" app:visibility="visible" app:font_type="3" style="@style/friendInitialsStyle" />
+        <ImageView app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/MoodImage" app:layout_width="UNKNOWN_DATA_0x1e01" app:layout_height="UNKNOWN_DATA_0x1e01" app:src="@drawable/wazer_8bit" app:layout_centerVertical="true" />
+        <ImageView app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/SmallImage" app:layout_centerVertical="true" style="@style/friendProfilePicStyle" />
+        <ImageView app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/SmallalertIcon" app:layout_width="UNKNOWN_DATA_0x1901" app:layout_height="UNKNOWN_DATA_0x1901" app:layout_marginRight="-6dp" app:layout_marginBottom="-6dp" app:src="@drawable/circle_chat" />
+    </FrameLayout>
+</RelativeLayout>

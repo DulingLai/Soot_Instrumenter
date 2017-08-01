@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/com.waze" app:orientation="vertical" app:background="@color/blue_bg" app:layout_width="match_parent" app:layout_height="match_parent">
+    <com.waze.view.title.TitleBar app:id="@+id/rtalterts_list_title_bar" app:layout_width="match_parent" app:layout_height="wrap_content" />
+    <com.waze.view.tabs.TabBar app:id="@+id/ReportTabBar" app:padding="0dp" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_below="@+id/rtalterts_list_title_bar" app:type="radial" />
+    <ListView app:id="@+id/rtalterts_list_listview" app:scrollbars="UNKNOWN_DATA_0x0" app:fadingEdge="UNKNOWN_DATA_0x0" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginTop="-3.5dp" app:listSelector="0x106000d" app:cacheColorHint="#00000000" app:divider="@color/transparent_full" app:dividerHeight="10dp" app:layout_below="@+id/ReportTabBar" />
+    <ImageView app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x601" app:src="@drawable/topbar_shadow" app:scaleType="fitXY" app:layout_below="@+id/rtalterts_list_title_bar" />
+</RelativeLayout>

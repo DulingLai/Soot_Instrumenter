@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:orientation="vertical" app:background="@color/BlueWhale" app:layout_width="match_parent" app:layout_height="match_parent">
+    <com.waze.view.title.TitleBar app:id="@+id/locationPermissionTitleBar" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x101" />
+    <ImageView app:background="@drawable/bottom_shadow_gradient" app:layout_width="match_parent" app:layout_height="wrap_content" />
+    <LinearLayout app:orientation="horizontal" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_weight="1.0">
+        <ImageView app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/imageView2" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginLeft="30dp" app:layout_marginTop="10dp" app:layout_marginRight="30dp" app:layout_marginBottom="10dp" app:src="@drawable/location_access_illustration" />
+        <LinearLayout app:orientation="vertical" app:layout_width="UNKNOWN_DATA_0x1" app:layout_height="match_parent" app:layout_weight="1.0">
+            <Space app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x1" app:layout_weight="2.0" />
+            <com.waze.view.text.WazeTextView app:textSize="20sp" app:textStyle="bold" app:textColor="@color/White" app:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/locationPermissionTitle" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginRight="10dp" app:text="*Waze can't work without your location" app:font_type="3" />
+            <Space app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x1" app:layout_weight="1.0" />
+            <com.waze.view.text.WazeTextView app:textSize="15sp" app:textColor="@color/BlueDeep" app:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/locationPermissionExplanation" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginRight="10dp" app:text="*To tap into the power of Waze, go to your devices settings and allow waze access to your location" app:font_type="1" />
+            <Space app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x1" app:layout_weight="2.0" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout app:orientation="horizontal" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_margin="5dp"
+        <LinearLayout app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:orientation="horizontal" app:id="@+id/locationConfigButton" app:background="@drawable/rw_request_btn_white_sel" app:layout_width="UNKNOWN_DATA_0x101" app:layout_height="UNKNOWN_DATA_0x3c01" app:layout_weight="1.0">
+            <ImageView app:id="@+id/locationConfigButtonIcon" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginRight="10dp" app:src="@drawable/green_check_disable" />
+            <com.waze.view.text.WazeTextView app:textSize="17sp" app:textColor="@color/Dark" app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/locationConfigButtonText" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="*enable location" app:font_type="4" />
+        </LinearLayout>
+        <LinearLayout app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:orientation="horizontal" app:id="@+id/locationPermissionButton" app:background="@drawable/rw_request_btn_white_sel" app:layout_width="UNKNOWN_DATA_0x1" app:layout_height="UNKNOWN_DATA_0x3c01" app:layout_weight="1.0">
+            <ImageView app:id="@+id/locationPermissionButtonIcon" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginRight="10dp" app:src="@drawable/green_check_disable" />
+            <com.waze.view.text.WazeTextView app:textSize="17sp" app:textColor="@color/Dark" app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/locationPermissionButtonText" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="*grant permissions" app:font_type="4" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

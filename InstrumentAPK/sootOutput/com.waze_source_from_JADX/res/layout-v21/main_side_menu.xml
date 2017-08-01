@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:id="@+id/rootContainer" app:background="@color/blue_bg" app:paddingRight="@dimen/sideMenuRightPadding" app:layout_width="match_parent" app:layout_height="match_parent">
+    <com.waze.menus.SideMenuAutoCompleteRecycler app:id="@+id/searchItemsList" app:background="#cadade" app:visibility="gone" app:layout_width="match_parent" app:layout_height="match_parent" app:layout_marginTop="@dimen/sideMenuSearchBarHeight" />
+    <com.waze.menus.SideMenuAddressItemRecycler app:theme="@style/SideMenuOverlayTheme" app:id="@+id/recyclerView" app:layout_width="match_parent" app:layout_height="match_parent" />
+    <ImageView app:id="@+id/searchBarDropShadow" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x801" app:layout_marginTop="@dimen/sideMenuSearchBarHeight" app:src="@drawable/blue_shadow_map_top" app:scaleType="fitXY" app:alpha="0.0" />
+    <FrameLayout app:paddingRight="40dp" app:clipChildren="true" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginTop="@dimen/sideMenuSearchBarHeight" app:layout_centerHorizontal="true">
+        <LinearLayout app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:orientation="horizontal" app:id="@+id/backToTop" app:background="@drawable/back_to_top_pill_bg" app:paddingLeft="12dp" app:paddingRight="12dp" app:visibility="gone" app:layout_width="wrap_content" app:layout_height="UNKNOWN_DATA_0x2001" app:layout_margin="8dp" app:elevation="@dimen/sideMenuBackToTopElevation">
+            <ImageView app:layout_width="UNKNOWN_DATA_0x1001" app:layout_height="UNKNOWN_DATA_0x1001" app:layout_marginRight="4dp" app:src="@drawable/back_to_top_arrow" />
+            <com.waze.view.text.WazeTextView app:textSize="15sp" app:textColor="@color/solid_white" app:id="@+id/backToTopText" app:layout_width="wrap_content" app:layout_height="wrap_content" app:font_type="1" style="@style/textOnBg" />
+        </LinearLayout>
+    </FrameLayout>
+</RelativeLayout>

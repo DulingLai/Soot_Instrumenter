@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:background="@color/White" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x7f0a008d">
+    <ImageView app:id="@+id/imgStoreIcon" app:layout_width="UNKNOWN_DATA_0x2801" app:layout_height="UNKNOWN_DATA_0x2801" app:layout_marginLeft="8dp" app:layout_marginRight="8dp" app:layout_centerVertical="true" />
+    <com.waze.view.text.WazeTextView app:textSize="20dp" app:textStyle="bold" app:textColor="@color/Dark" app:id="@+id/lblStoreName" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginLeft="8dp" app:text="*Name" app:layout_toRightOf="@+id/imgStoreIcon" app:layout_centerVertical="true" app:font_type="3" />
+    <ImageView app:id="@+id/btnStoreMore" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginRight="16dp" app:src="@drawable/more_options_navlist_android" app:layout_alignParentRight="true" app:layout_centerVertical="true" />
+    <View app:id="@+id/bottomSeparator" app:background="@color/PassiveGrey" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x101" app:layout_alignParentBottom="true" />
+</RelativeLayout>

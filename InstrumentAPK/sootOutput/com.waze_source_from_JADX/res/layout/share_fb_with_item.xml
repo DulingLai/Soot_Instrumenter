@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.waze.ifs.ui.CheckedRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/shareFbWithItemRoot" android:background="@color/solid_white" android:padding="0dp" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x4601">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="8dp" android:layout_marginRight="8dp">
+        <ImageView android:id="@+id/shareFbWithItemImage" android:layout_width="UNKNOWN_DATA_0x2301" android:layout_height="UNKNOWN_DATA_0x2301" android:scaleType="fitStart" android:layout_centerVertical="true" />
+        <CheckedTextView android:id="@+id/checked_text" android:checkMark="@drawable/list_check" android:layout_toRightOf="@+id/shareFbWithItemImage" android:layout_centerVertical="true" style="@style/ShareFbListText" />
+    </RelativeLayout>
+</com.waze.ifs.ui.CheckedRelativeLayout>

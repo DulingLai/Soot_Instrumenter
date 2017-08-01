@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/com.waze" app:layout_width="match_parent" app:layout_height="match_parent">
+    <ScrollView app:id="@+id/whyResgisterScroll" app:background="@drawable/signup_popup" app:layout_width="match_parent" app:layout_height="match_parent" app:layout_margin="25dp" app:fillViewport="true" app:layout_centerInParent="true">
+        <LinearLayout app:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:orientation="vertical" app:layout_width="match_parent" app:layout_height="wrap_content">
+            <com.waze.view.text.WazeTextView app:textSize="22sp" app:textColor="0x106000c" app:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/whyResgisterHeaderText" app:layout_marginTop="15dp" app:text="WHY REGISTER?" app:textAllCaps="true" app:font_type="b" style="@style/textOnBg" />
+            <com.waze.view.text.WazeTextView app:textStyle="italic" app:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/whyResgisterBodyText" app:layout_marginLeft="10dp" app:layout_marginTop="15dp" app:layout_marginRight="10dp" app:text="first line first line first line first line first line first line first line first line
+second line" app:lineSpacingMultiplier="1.2" style="@style/textSignUp" />
+            <ImageView app:layout_width="wrap_content" app:layout_height="UNKNOWN_DATA_0x1" app:src="@drawable/sign_up_illu_contacts" app:layout_weight="1.0" />
+            <LinearLayout app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:orientation="horizontal" app:id="@+id/gotItButton" app:background="@drawable/signup_button_bg" app:padding="0dp" app:clickable="true" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x3001" app:layout_marginLeft="10dp" app:layout_marginRight="10dp" app:layout_marginBottom="10dp">
+                <com.waze.view.text.WazeTextView app:textSize="18dp" app:textColor="0x106000b" app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/gotItText" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="Got it" />
+            </LinearLayout>
+            <com.waze.view.text.WazeTextView app:textStyle="italic" app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/whyResgisterLearnMore" app:visibility="gone" app:clickable="true" app:layout_marginTop="0dp" app:layout_marginBottom="10dp" app:text="!@# Learn more" style="@style/textOnBg" />
+        </LinearLayout>
+    </ScrollView>
+    <ImageButton app:id="@+id/whyResgisterClose" app:background="0x0" app:padding="10dp" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginTop="-25dp" app:layout_marginRight="-25dp" app:src="@drawable/close_btn_popup" app:layout_alignTop="@+id/whyResgisterScroll" app:layout_alignRight="@+id/whyResgisterScroll" />
+</RelativeLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/com.waze" app:orientation="vertical" app:background="@color/blue_bg" app:layout_width="match_parent" app:layout_height="match_parent">
+    <com.waze.view.title.TitleBar app:id="@+id/twitterTitle" app:layout_width="match_parent" app:layout_height="wrap_content" />
+    <ScrollView app:fadingEdge="UNKNOWN_DATA_0x0" app:layout_width="match_parent" app:layout_height="match_parent" app:layout_below="@+id/twitterTitle" app:overScrollMode="always">
+        <LinearLayout app:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:orientation="vertical" app:layout_width="match_parent" app:layout_height="wrap_content"
+            <LinearLayout app:gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:orientation="horizontal" app:id="@+id/connect" app:clickable="true" style="@style/settingsSelection">
+                <com.waze.view.text.WazeTextView app:textSize="16dp" app:textColor="@color/solid_black" app:ellipsize="end" app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:id="@+id/connectButton" app:background="@drawable/bt_twitter_login" app:paddingLeft="46dp" app:paddingRight="16dp" app:paddingBottom="4dp" app:layout_width="UNKNOWN_DATA_0x48aa3d21" app:layout_height="wrap_content" app:text="Connect" app:singleLine="true" />
+                <com.waze.view.text.WazeTextView app:id="@+id/connectStatus" app:text="Status: not logged in" style="@style/settingsText" />
+            </LinearLayout>
+            <com.waze.settings.SettingsTitleText app:id="@id/textTitle" app:text="Automatically tweet to my followers:" app:position="floating" style="@style/settingsTitleText" />
+            <com.waze.settings.WazeSettingsView app:id="@+id/optionReports" app:position="UNKNOWN_DATA_0x3" app:settingsType="2" style="@style/settingsSelection" />
+            <FrameLayout app:background="@color/settings_bg_note" app:layout_width="match_parent" app:layout_height="wrap_content">
+                <View app:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:background="@drawable/note_shadow" app:layout_width="match_parent" app:layout_height="wrap_content" />
+                <com.waze.view.text.WazeTextView app:id="@+id/textReports" app:text="Ex:  Just reported a traffic jam on Geary St. SF, CA using @Waze Social GPS." style="@style/settings_note" />
+            </FrameLayout>
+            <com.waze.settings.WazeSettingsView app:id="@+id/optionDriving" app:position="UNKNOWN_DATA_0x3" app:settingsType="2" style="@style/settingsSelection" />
+            <LinearLayout app:orientation="vertical" app:id="@+id/drivingStyles" app:background="@color/setting_bg" app:layout_width="match_parent" app:layout_height="wrap_content">
+                <ImageView app:layout_width="match_parent" app:layout_height="wrap_content" app:src="@drawable/h_separator" />
+                <CheckedTextView app:id="@+id/selectionDriving1" style="@style/socialItem" />
+                <ImageView app:layout_width="match_parent" app:layout_height="wrap_content" app:src="@drawable/h_separator" />
+                <CheckedTextView app:id="@+id/selectionDriving2" style="@style/socialItem" />
+            </LinearLayout>
+            <FrameLayout app:background="@color/settings_bg_note" app:layout_width="match_parent" app:layout_height="wrap_content">
+                <View app:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:background="@drawable/note_shadow" app:layout_width="match_parent" app:layout_height="wrap_content" />
+                <com.waze.view.text.WazeTextView app:id="@+id/textDriving" app:text="Ex:  Driving to Greary St. SF, using @Waze social GPS. ETA 2:32pm." style="@style/settings_note" />
+            </FrameLayout>
+            <LinearLayout app:orientation="vertical" app:id="@+id/sectionMunching" app:layout_width="match_parent" app:layout_height="wrap_content">
+                <com.waze.settings.WazeSettingsView app:id="@+id/optionMunching" app:position="UNKNOWN_DATA_0x3" app:settingsType="2" style="@style/settingsSelection" />
+                <FrameLayout app:background="@color/settings_bg_note" app:layout_width="match_parent" app:layout_height="wrap_content">
+                    <View app:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:background="@drawable/note_shadow" app:layout_width="match_parent" app:layout_height="wrap_content" />
+                    <com.waze.view.text.WazeTextView app:id="@+id/textMunching" app:text="Ex:  Just munched a 'Waze road goodie' worth 200 points on Geary St. SF driving with @Waze social GPS" style="@style/settings_note" />
+                </FrameLayout>
+                <FrameLayout app:background="@color/settings_bg_titles" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x7f0a0089" app:foreground="@drawable/cell_shadow_dark" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <ImageView app:layout_width="match_parent" app:layout_height="wrap_content" app:src="@drawable/topbar_shadow" app:scaleType="fitXY" app:layout_below="@+id/twitterTitle" />
+</RelativeLayout>

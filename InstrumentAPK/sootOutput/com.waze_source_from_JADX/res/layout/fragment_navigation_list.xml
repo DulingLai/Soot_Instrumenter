@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:id="@+id/fragNavListBackground" android:background="@color/DarkBlue" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+        <LinearLayout android:id="@+id/fragNavListTabs" android:background="@color/DarkShade" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x3001">
+            <FrameLayout android:id="@+id/fragNavListTabs1" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="match_parent" android:layout_weight="1.0">
+                <com.waze.view.text.WazeTextView android:textAppearance="@style/PagerTabStripText" android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/fragNavListTabs1Text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="tab1" />
+                <View android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/fragNavListTabs1Ind" android:background="#70d2ff" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x401" />
+            </FrameLayout>
+            <FrameLayout android:id="@+id/fragNavListTabs2" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="match_parent" android:layout_weight="1.0">
+                <com.waze.view.text.WazeTextView android:textAppearance="@style/PagerTabStripText" android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/fragNavListTabs2Text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="tab2" />
+                <View android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/fragNavListTabs2Ind" android:background="#70d2ff" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x401" />
+            </FrameLayout>
+        </LinearLayout>
+        <android.support.v4.view.ViewPager android:id="@+id/fragNavListPager" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </LinearLayout>
+</FrameLayout>

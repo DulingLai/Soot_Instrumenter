@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:layout_width="UNKNOWN_DATA_0x1" app:layout_height="wrap_content" app:layout_weight="1.0">
+    <ImageView app:id="@+id/endorsementBg" app:background="@color/BlueGrey" app:layout_width="match_parent" app:layout_height="match_parent" app:alpha="0.0" />
+    <LinearLayout android:orientation="vertical" android:padding="4dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/endorsementImage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" />
+        <com.waze.view.text.WazeTextView android:textSize="15dp" android:textColor="@color/Light" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/endorsementText" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginTop="4dp" android:layout_marginRight="8dp" android:layout_marginBottom="2dp" android:text="*Name" android:lines="2" android:font_type="c" />
+    </LinearLayout>
+</FrameLayout>

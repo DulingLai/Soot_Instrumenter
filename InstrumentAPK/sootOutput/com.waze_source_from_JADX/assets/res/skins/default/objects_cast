@@ -1,0 +1,36 @@
+N zoomin_button
+I controler_zoomIn_day
+I controler_zoomIn_night
+P 0 50
+A zoomin
+B -1 -2 66 63
+
+N zoomout_button
+I controler_zoomOut_day
+I controler_zoomOut_night
+P 0 120
+A zoomout
+B -1 -2 66 63
+
+N me_on_map
+I controler_meOnMap_day
+I controler_meOnMap_night
+P 4 189
+A show_me
+B -1 -2 66 63
+
+N gas_button
+I controler_GasStationsOFF
+I controler_GasStations
+P -77 50
+A toggle_gas_display
+B -1 -2 66 63
+S gas_display_state
+
+N gas_refresh
+I controler_Refresh
+P -77 120
+A refresh_gas_display
+B -1 -2 66 63
+C gas_display_state 1
+

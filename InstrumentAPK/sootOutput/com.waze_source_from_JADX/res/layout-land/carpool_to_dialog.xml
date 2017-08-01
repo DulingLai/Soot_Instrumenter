@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.GridLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:id="@+id/rideRequestRewardLayout" app:background="@color/ReportBackground" app:layout_width="match_parent" app:layout_height="match_parent" app:orientation="horizontal" app:columnCount="2">
+    <include app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_columnSpan="2" layout="@layout/upcoming_carpool_bar" />
+    <LinearLayout app:orientation="vertical" app:layout_width="UNKNOWN_DATA_0x1" app:layout_height="wrap_content" app:layout_rowSpan="2" app:layout_columnSpan="1" app:layout_columnWeight="1.0" app:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end">
+        <include layout="@layout/carpool_trip_dialog_texts_to" />
+    </LinearLayout>
+    <LinearLayout app:orientation="vertical" app:clipChildren="false" app:clipToPadding="false" app:layout_width="UNKNOWN_DATA_0x1" app:layout_height="wrap_content" app:layout_rowWeight="1.0" app:layout_columnSpan="1" app:layout_columnWeight="1.0" app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end">
+        <include layout="@layout/carpool_trip_dialog_controls" />
+    </LinearLayout>
+    <FrameLayout app:clipChildren="false" app:clipToPadding="false" app:layout_width="UNKNOWN_DATA_0x1" app:layout_height="wrap_content" app:layout_columnSpan="1" app:layout_columnWeight="1.0" app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end">
+        <include app:id="@+id/cpTripBottomButtons" app:clipChildren="false" app:clipToPadding="false" layout="@layout/carpool_trip_dialog_buttons" />
+    </FrameLayout>
+</android.support.v7.widget.GridLayout>

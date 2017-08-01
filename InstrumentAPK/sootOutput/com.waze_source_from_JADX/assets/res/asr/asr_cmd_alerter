@@ -1,0 +1,26 @@
+# N - new command name
+# A - action (optional)
+# I - text to say when command identified
+# S - acceptable speech commands (multiple)
+# H - help text
+
+H For example: Thank the user, or dismiss
+
+N thank
+A asr_alerter_thank
+I Sending thanks
+S thanks
+
+N not_there
+A asr_alerter_not_there
+I Reporting not there
+S not there
+S gone
+S false
+
+N hide
+A asr_alerter_hide
+I Closing
+S hide
+S close
+S dismiss

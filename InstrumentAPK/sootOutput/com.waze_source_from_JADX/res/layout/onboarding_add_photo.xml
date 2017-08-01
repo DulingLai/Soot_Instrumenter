@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:orientation="vertical" app:layout_width="match_parent" app:layout_height="match_parent">
+    <com.waze.view.title.TitleBar app:id="@+id/addPhotoTitle" app:layout_width="match_parent" app:layout_height="wrap_content" />
+    <LinearLayout app:orientation="vertical" app:background="#97c6d4" app:layout_width="match_parent" app:layout_height="match_parent" app:layout_marginTop="@dimen/titleBarHeight">
+        <FrameLayout app:id="@+id/dummy" app:focusable="true" app:focusableInTouchMode="true" app:layout_width="UNKNOWN_DATA_0x0" app:layout_height="UNKNOWN_DATA_0x0" />
+        <Space app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x1401" app:layout_weight="1.0" />
+        <RelativeLayout app:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/addPhotoPicLayout" app:layout_width="match_parent" app:layout_height="wrap_content">
+            <ImageView app:id="@+id/addPhotoPic" app:layout_width="UNKNOWN_DATA_0x1" app:layout_height="UNKNOWN_DATA_0x1" app:layout_marginLeft="14dp" app:layout_marginRight="13dp" app:src="@drawable/signup_empty_profile_picture" app:scaleType="fitCenter" app:layout_alignLeft="@+id/addPhotoPicFrame" app:layout_alignTop="@+id/addPhotoPicFrame" app:layout_alignRight="@+id/addPhotoPicFrame" app:layout_alignBottom="@+id/addPhotoPicFrame" app:layout_centerInParent="true" />
+            <ImageView app:id="@+id/addPhotoPicFrame" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginLeft="10dp" app:layout_marginRight="10dp" app:src="@drawable/signup_profile_picture_frame" app:layout_centerInParent="true" />
+            <ImageView app:id="@+id/addPhotoPicMustAdd" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginTop="20dp" app:layout_marginRight="-14dp" app:src="@drawable/carpool_add_photo" app:layout_alignTop="@+id/addPhotoPicFrame" app:layout_alignRight="@+id/addPhotoPicFrame" />
+            <ProgressBar app:id="@+id/addPhotoPicProgress" app:visibility="gone" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_centerInParent="true" />
+        </RelativeLayout>
+        <com.waze.view.text.WazeTextView app:textSize="17dp" app:textStyle="UNKNOWN_DATA_0x0" app:textColor="@color/BlueDeep" app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/addPhotoText" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginLeft="48dp" app:layout_marginTop="35dp" app:layout_marginRight="48dp" app:layout_marginBottom="30dp" app:text="* Help riders find you by snapping a selfie." app:font_type="b" />
+        <Space app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x1" app:layout_weight="1.0" />
+        <com.waze.view.text.WazeTextView app:textSize="17dp" app:textColor="@color/text_wt_button_enabled" app:ellipsize="end" app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/addPhotoButton" app:background="@drawable/signup_bt_white" app:clickable="true" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x3401" app:layout_marginLeft="15dp" app:layout_marginTop="10dp" app:layout_marginRight="15dp" app:layout_marginBottom="15dp" app:text="*Add profile photo" app:singleLine="true" />
+    </LinearLayout>
+    <ImageView app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginTop="@dimen/titleBarHeight" app:src="@drawable/topbar_shadow" app:scaleType="fitXY" />
+</FrameLayout>

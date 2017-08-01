@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:layout_width="match_parent" app:layout_height="match_parent"
+    <RelativeLayout app:id="@+id/backContainer" app:background="#e5f2f5" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x7f0a0053" app:layout_alignParentBottom="true">
+        <com.waze.view.text.WazeTextView app:id="@+id/lblKeepForThisDriveOnly" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginLeft="16dp" app:layout_marginRight="104dp" app:maxLines="2" app:layout_centerVertical="true" />
+        <com.waze.ifs.ui.WazeSwitchView app:id="@+id/keepForThisDriveSwitch" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginRight="16dp" app:layout_alignParentRight="true" app:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout app:id="@+id/frontContainer" app:background="@color/White" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x7f0a0053" app:layout_alignParentTop="true" app:elevation="2dp">
+        <ImageView app:id="@+id/imgCarTypeIcon" app:layout_width="UNKNOWN_DATA_0x3001" app:layout_height="UNKNOWN_DATA_0x3001" app:layout_marginLeft="16dp" app:layout_centerVertical="true" />
+        <ImageView app:id="@+id/imgCarTypeSelected" app:visibility="gone" app:layout_width="UNKNOWN_DATA_0x2801" app:layout_height="UNKNOWN_DATA_0x2801" app:layout_margin="16dp" app:src="@drawable/inbox_selectall_icon" app:layout_alignParentRight="true" app:layout_centerVertical="true" />
+        <LinearLayout app:orientation="vertical" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginLeft="16dp" app:layout_marginRight="8dp" app:layout_toLeftOf="@+id/imgCarTypeSelected" app:layout_toRightOf="@+id/imgCarTypeIcon" app:layout_centerVertical="true">
+            <com.waze.view.text.WazeTextView app:textSize="18sp" app:textColor="@color/Dark" app:id="@+id/lblCarTypeTitle" app:layout_width="wrap_content" app:layout_height="wrap_content" app:maxLines="1" app:font_type="3" />
+            <com.waze.view.text.WazeTextView app:textSize="15sp" app:textColor="@color/Light" app:id="@+id/lblCarTypeDescription" app:visibility="gone" app:layout_width="wrap_content" app:layout_height="wrap_content" app:maxLines="2" app:font_type="1" />
+        </LinearLayout>
+    </RelativeLayout>
+    <ImageView app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginLeft="24dp" app:src="@drawable/arrow_expanded_cell" app:layout_below="@+id/frontContainer" app:elevation="2dp" />
+</RelativeLayout>

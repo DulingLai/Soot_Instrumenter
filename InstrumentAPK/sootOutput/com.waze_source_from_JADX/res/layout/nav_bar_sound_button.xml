@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/imgLargeSoundIcon" android:visibility="gone" android:layout_width="UNKNOWN_DATA_0x1801" android:layout_height="UNKNOWN_DATA_0x1801" android:scaleType="fitXY" android:layout_alignParentRight="true" />
+    <ImageView android:id="@+id/imgSmallSoundIcon" android:layout_width="UNKNOWN_DATA_0x1801" android:layout_height="UNKNOWN_DATA_0x1801" android:scaleType="fitXY" android:layout_alignParentRight="true" />
+</RelativeLayout>

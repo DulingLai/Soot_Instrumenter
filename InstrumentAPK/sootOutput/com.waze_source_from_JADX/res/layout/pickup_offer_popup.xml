@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:orientation="vertical" app:layout_width="match_parent" app:layout_height="wrap_content"
+    <LinearLayout app:gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:orientation="horizontal" app:id="@+id/puOfferTopLayout" app:background="#fff" app:paddingLeft="10dp" app:paddingTop="10dp" app:paddingRight="10dp" app:paddingBottom="22dp" app:clipChildren="false" app:clipToPadding="false" app:layout_width="match_parent" app:layout_height="wrap_content">
+        <ImageView app:id="@+id/puOfferPopupRiderImage" app:layout_width="UNKNOWN_DATA_0x3701" app:layout_height="UNKNOWN_DATA_0x3701" app:src="@drawable/ridecard_profilepic_placeholder" />
+        <LinearLayout app:orientation="vertical" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginLeft="10dp">
+            <com.waze.view.text.WazeTextView app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/puOfferPopupTitle" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="*Pick up Eeeeee on your way?" style="@style/notificationText" />
+            <com.waze.view.text.WazeTextView app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/puOfferPopupRewardAndDetour" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="*Get $15 Detour 3min" app:font_type="3" style="@style/notificationText" />
+        </LinearLayout>
+    </LinearLayout>
+    <View app:background="@drawable/bottom_shadow_gradient" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x601" />
+    <LinearLayout app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:orientation="horizontal" app:id="@+id/puOfferBottomLayout" app:paddingRight="4dp" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginTop="-44dp" app:layout_marginBottom="5dp">
+        <com.waze.view.button.PillButton app:id="@+id/puOfferPopupCloseButton" app:pbTimer="true" app:pbTrackColor="@color/BlueGrey" app:pbTimeColor="@color/CarpoolGreen" app:pbTimerSize="2dp" style="@style/takeoverButton">
+            <ImageView app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:layout_width="wrap_content" app:layout_height="wrap_content" app:src="@drawable/close_icon_grey" />
+        </com.waze.view.button.PillButton>
+        <com.waze.view.button.PillButton app:id="@+id/puOfferPopupDetailsButton" app:pbColor="@color/BrightGreen" style="@style/takeoverButton">
+            <ImageView app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:layout_width="wrap_content" app:layout_height="wrap_content" app:src="@drawable/accessory_icon_white" />
+        </com.waze.view.button.PillButton>
+    </LinearLayout>
+</LinearLayout>

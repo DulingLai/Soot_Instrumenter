@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:name="Waze" android:versionCode="1021322" android:versionName="4.24.0.2" android:installLocation="auto" package="com.waze" platformBuildVersionCode="23" platformBuildVersionName="6.0-2704002">
+    <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="23" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_SYNC_STATS" />
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <permission android:name="com.waze.permission.C2D_MESSAGE" android:protectionLevel="signature|signatureOrSystem" />
+    <uses-permission android:name="com.waze.permission.C2D_MESSAGE" />
+    <uses-permission android:name="pioneer.permission.appradio.AAM2" />
+    <uses-permission android:name="pioneer.permission.appradio.ADVANCED_APPMODE" />
+    <uses-permission android:name="com.google.android.gms.permission.ACTIVITY_RECOGNITION" />
+    <uses-permission android:name="com.abaltatech.WEBLINK" />
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
+    <uses-feature android:name="android.hardware.bluetooth" android:required="false" />
+    <uses-feature android:name="android.hardware.microphone" android:required="false" />
+    <uses-feature android:name="android.hardware.telephony" android:required="false" />
+    <uses-feature android:name="android.hardware.location.gps" android:required="true" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <application android:theme="@style/Theme_Main" android:label="@string/app_name" android:icon="@drawable/launch_icon" android:name="com.waze.WazeApplication" android:backupAgent="com.waze.WazeBackupAgent" android:allowBackup="true" android:restoreAnyVersion="true" android:hardwareAccelerated="true">
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+        <meta-data android:name="aam2_sound_category" android:value="@string/aam2_sound_category_item" />
+        <meta-data android:name="com.google.android.backup.api_key" android:value="AEdPqrEAAAAIlBrvmcvO7DYMLmV__1I_0PqxOEvwyzWW9cU14w" />
+        <meta-data android:name="pioneer_supported_aam" android:value="true" />
+        <meta-data android:name="pioneer_supported_aam2" android:value="true" />
+        <activity android:label="@string/app_name" android:name="com.waze.MainActivity" android:launchMode="singleTask" android:configChanges="keyboardHidden|orientation|screenSize" android:alwaysRetainTaskState="true" android:windowSoftInputMode="adjustResize|adjustPan|adjustNothing" />
+        <activity android:theme="@style/Theme_Main" android:name="com.waze.FreeMapAppActivity" android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="and" />
+                <data android:scheme="waze" />
+                <data android:scheme="geo" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                /&gt;
+                <data android:scheme="geo" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.item/postal-address_v2" />
+                <data android:mimeType="vnd.android.cursor.item/postal-address" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="http" android:host="maps.google.com" android:pathPrefix="/maps" />
+                <data android:scheme="https" android:host="maps.google.com" android:pathPrefix="/maps" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="http" android:host="waze.com" android:path="/ul" />
+                <data android:scheme="https" android:host="waze.com/ul" android:path="/ul" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.item/com.waze.authenticator" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:label="@string/app_name" android:name="com.facebook.FacebookActivity" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" />
+        <activity android:theme="@style/Theme_Main" android:name="com.waze.install.SignUpWelcomeActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme_Transparent" android:label="" android:name="com.waze.widget.WazeAppWidgetNoDataActivity" android:excludeFromRecents="true" />
+        <activity android:theme="@style/Theme_Transparent" android:label="" android:name="com.waze.widget.WazeAppWidgetGraphActivity" android:excludeFromRecents="true" />
+        <activity android:theme="@style/Theme_SettingsActivity" android:name="com.waze.routes.RoutesActivity" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+        <activity android:name="com.waze.navigate.NavigateActivity" android:configChanges="keyboard|keyboardHidden|orientation" android:windowSoftInputMode="adjustPan|adjustNothing" />
+        <activity android:theme="@style/Theme_SettingsActivity" android:name="com.waze.navigate.social.ShareDriveActivity" android:configChanges="keyboard|keyboardHidden|orientation" android:windowSoftInputMode="adjustPan|adjustNothing" />
+        <activity android:name="com.waze.navigate.social.MyShareDriveActivity" android:configChanges="keyboard|keyboardHidden|orientation" android:windowSoftInputMode="adjustPan|adjustNothing" />
+        <activity android:name="com.waze.navigate.social.ShareDrivingFriendsActivity" android:configChanges="keyboard|keyboardHidden|orientation" />
+        <activity android:name="com.waze.navigate.HistoryActivity" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/Theme_Main" android:name="com.waze.menus.CategorySelectionActivity" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/Theme_Main" android:name="com.waze.navigate.SearchResultsActivity" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/Theme_SettingsActivity" android:name="com.waze.navigate.ParkingSearchResultsActivity" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/Theme_SettingsActivity" android:name="com.waze.reports.NearbyGasStationsActivity" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/Theme_Main" android:name="com.waze.reports.GasPriceReport" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="adjustResize|adjustNothing" />
+        <activity android:theme="@style/Theme_Main" android:name="com.waze.reports.EditPlaceFlowActivity" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/Theme_Main" android:name="com.waze.reports.AddPlaceFlowActivity" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/Theme_Main" android:name="com.waze.ifs.ui.OmniSelectionActivity" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/Theme_Main" android:name="com.waze.ifs.ui.SimpleChoiceActivity" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/Theme_Main" android:name="com.waze.reports.TakePhotoActivity" />
+        <activity android:theme="@style/Theme_Main" android:name="com.waze.reports.ClosureMap" />
+        <activity android:theme="@style/Theme_SettingsActivity" android:name="com.waze.navigate.AddressPreviewActivity" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="adjustResize|adjustPan|adjustNothing" />
+        <activity android:name="com.waze.navigate.AddFavoriteNameActivity" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name="com.waze.navigate.AddFavoriteActivity" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/Theme_SettingsActivity" android:name="com.waze.navigate.AddHomeWorkActivity" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/Theme_SettingsActivity" android:name="com.waze.navigate.AutocompleteSearchActivity" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name="com.waze.navigate.FavoritesActivity" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/Theme_Main" android:name="com.waze.PhoneList" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/Theme_Main" android:name="com.waze.navigate.CategoriesActivity" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/Theme_Main" android:name="com.waze.reports.UpdatePriceActivity" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name="com.waze.install.LocationFailedActivity" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name="com.waze.install.InstallPickAccountActivity" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name="com.waze.install.InstallNickNameActivity" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name="com.waze.install.InstallFacebookPrivacyActivity" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name="com.waze.install.SelectCountryActivity" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name="com.waze.install.SelectLangActivity" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name="com.waze.install.TermsOfUseActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.waze.install.GuidedTourActivity" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/Theme_Main" android:name="com.waze.rtalerts.RTAlertsMenu" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/Theme_Main" android:name="com.waze.rtalerts.RTAlertsComments" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/Theme_Main" android:name="com.waze.rtalerts.RTAlertsCommentsEditor" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="stateVisible|stateAlwaysVisible" />
+        <activity android:theme="@style/Theme_Main" android:name="com.waze.rtalerts.RTAlertsList" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/Theme_Main" android:name="com.waze.messages.UserMessageEditorActivity" android:windowSoftInputMode="stateHidden|stateAlwaysHidden|adjustResize|adjustPan|adjustNothing" />
+        <activity android:theme="@style/Theme_Main" android:name="com.waze.share.EncouragementActivity" />
+        <activity android:theme="@style/Theme_Main" android:name="com.waze.share.ShareActivity" />
+        <activity android:theme="@style/Theme_Main" android:name="com.waze.share.SpreadTheWordActivity" />
+        <activity android:theme="@style/Theme_Main" android:name="com.waze.share.ShareRecentSearch" />
+        <activity android:theme="@style/Theme_Main" android:name="com.waze.share.MySavedLocationActivity" />
+        <activity android:theme="@style/Theme_Main" android:name="com.waze.inbox.InboxPreviewActivity" android:configChanges="orientation|screenSize" />
+        <activity android:theme="@style/Theme_Main" android:name="com.waze.inbox.InboxActivity" android:configChanges="orientation|screenSize" />
+        <activity android:theme="@style/Theme_Main" android:name="com.waze.share.FacebookEventPostActivity" android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+        <activity android:theme="@style/Theme_Main" android:name="com.waze.phone.LoginOptionsActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateUnchanged|stateAlwaysHidden|stateAlwaysVisible|adjustResize|adjustNothing" />
+        <activity android:theme="@style/Theme_Main" android:name="com.waze.phone.PhoneRegisterActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateVisible|stateAlwaysVisible|adjustPan|adjustNothing" />
+        <activity android:theme="@style/Theme_Main" android:name="com.waze.phone.PhoneValidationCodeActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|adjustNothing" />
+        <activity android:theme="@style/Theme_Main" android:name="com.waze.phone.PhoneNumberSignInActivity" android:configChanges="keyboard|keyboardHidden|orientation" android:windowSoftInputMode="adjustPan|adjustNothing" />
+        <activity android:theme="@style/Theme_Main" android:name="com.waze.phone.PhoneKeepInMindActivity" android:configChanges="keyboard|keyboardHidden|orientation" android:windowSoftInputMode="adjustPan|adjustNothing" />
+        <activity android:theme="@style/Theme_Main" android:name="com.waze.phone.PhoneVerifyYourNumbersActivity" android:windowSoftInputMode="stateHidden|stateAlwaysHidden|adjustResize|adjustNothing" />
+        <activity android:theme="@style/Theme_Main" android:name="com.waze.phone.PhoneWhyRegisterActivity" />
+        <activity android:theme="@style/Theme_Main" android:name="com.waze.phone.PhoneVerifyNumberFailure" />
+        <activity android:theme="@style/Theme_Main" android:name="com.waze.phone.PhoneLoginActivity" android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+        <activity android:theme="@style/Theme_Main" android:name="com.waze.phone.PhoneVerifyYourAccountActivity" android:windowSoftInputMode="stateHidden|stateAlwaysHidden|adjustResize|adjustNothing" />
+        <activity android:theme="@style/Theme_Main" android:name="com.waze.phone.PhoneVerifyYourAccountSuccessActivity" android:windowSoftInputMode="stateHidden|stateAlwaysHidden|adjustResize|adjustNothing" />
+        <activity android:theme="@style/Theme_Main" android:name="com.waze.phone.PhoneVerifyYourAccountFailureActivity" android:windowSoftInputMode="stateHidden|stateAlwaysHidden|adjustResize|adjustNothing" />
+        <activity android:theme="@style/Theme_Main" android:name="com.waze.phone.PhoneAlreadyAWazerActivity" android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+        <activity android:theme="@style/Theme_Main" android:name="com.waze.phone.ChooseCountryPhoneActivity" />
+        <activity android:theme="@style/Theme_Main" android:name="com.waze.share.ShareFbWithActivity" />
+        <activity android:theme="@style/Theme_Main" android:name="com.waze.share.ShareFbLocationActivity" />
+        <activity android:theme="@style/Theme_Main" android:name="com.waze.share.UserOptionsActivity" />
+        <activity android:theme="@style/Theme_SettingsActivity" android:name="com.waze.share.UserDetailsActivity" android:windowSoftInputMode="adjustPan|adjustNothing" />
+        <activity android:theme="@style/Theme_Main" android:name="com.waze.main.navigate.NavigationListActivity" />
+        <activity android:theme="@style/Theme_SettingsActivity" android:name="com.waze.mywaze.MyWazeActivity" />
+        <activity android:theme="@style/Theme_SettingsActivity" android:name="com.waze.FriendsActivity" android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+        <activity android:theme="@style/Theme_SettingsActivity" android:name="com.waze.InboxActivity" />
+        <activity android:theme="@style/Theme_SettingsActivity" android:name="com.waze.mywaze.NicknameActivity" />
+        <activity android:theme="@style/Theme_SettingsActivity" android:name="com.waze.mywaze.moods.MoodsActivity" />
+        <activity android:theme="@style/Theme_SettingsActivity" android:name="com.waze.mywaze.GroupsActivity" android:configChanges="orientation" />
+        <activity android:theme="@style/Theme_SettingsActivity" android:name="com.waze.mywaze.ScoreboardActivity" android:configChanges="orientation" />
+        <activity android:theme="@style/Theme_SettingsActivity" android:name="com.waze.mywaze.CouponsActivity" android:configChanges="orientation" />
+        <activity android:theme="@style/Theme_SettingsActivity" android:name="com.waze.mywaze.social.SocialActivity" />
+        <activity android:theme="@style/Theme_SettingsActivity" android:name="com.waze.mywaze.social.FacebookActivity" />
+        <activity android:theme="@style/Theme_SettingsActivity" android:name="com.waze.mywaze.social.LinkedInActivity" />
+        <activity android:theme="@style/Theme_Main" android:name="com.waze.profile.LinkedinConnectActivity" />
+        <activity android:theme="@style/Theme_Main" android:name="com.waze.share.LinkedinProfileActivity" android:configChanges="orientation" />
+        <activity android:theme="@style/Theme_Main" android:name="com.waze.mywaze.social.FacebookEventActivity" android:configChanges="keyboard|keyboardHidden|orientation" android:windowSoftInputMode="stateHidden|stateAlwaysHidden|adjustResize|adjustNothing" />
+        <activity android:theme="@style/Theme_SettingsActivity" android:name="com.waze.mywaze.social.TwitterActivity" />
+        <activity android:theme="@style/Theme_SettingsActivity" android:name="com.waze.mywaze.social.FoursquareActivity" />
+        <activity android:theme="@style/Theme_SettingsActivity" android:name="com.waze.mywaze.social.FoursquareListActivity" />
+        <activity android:theme="@style/Theme_SettingsActivity" android:name="com.waze.mywaze.social.FoursquareCheckedinActivity" />
+        <activity android:theme="@style/Theme_Main" android:name="com.waze.share.FacebookShareActivity" android:configChanges="orientation" />
+        <activity android:theme="@style/Theme_Main" android:name="com.waze.share.FacebookLikeActivity" android:configChanges="orientation" />
+        <activity android:theme="@style/Theme_Main" android:name="com.waze.share.TwitterFollowActivity" android:configChanges="orientation" />
+        <activity android:theme="@style/Theme_SettingsActivity" android:name="com.waze.InternalWebBrowser" android:configChanges="orientation" />
+        <activity android:theme="@style/Theme_Main" android:name="com.waze.rtalerts.RTAlertsGroupActivity" android:configChanges="orientation" />
+        <activity android:theme="@style/Theme_SettingsActivity" android:name="com.waze.profile.ProfileActivity" />
+        <activity android:theme="@style/Theme_SettingsActivity" android:name="com.waze.profile.MyProfileActivity" />
+        <activity android:theme="@style/Theme_SettingsActivity" android:name="com.waze.profile.TempUserProfileActivity" />
+        <activity android:theme="@style/Theme_Main" android:name="com.waze.profile.WelcomeSocialActivity" />
+        <activity android:theme="@style/Theme_Main" android:name="com.waze.profile.PrivacyActivity" />
+        <activity android:theme="@style/Theme_SettingsActivity" android:name="com.waze.profile.CarsActivity" />
+        <activity android:theme="@style/Theme_Main" android:name="com.waze.profile.PersonalizeActivity" />
+        <activity android:theme="@style/Theme_Main" android:name="com.waze.profile.LoginActivity" />
+        <activity android:theme="@style/Theme_Main" android:name="com.waze.profile.LaterActivity" />
+        <activity android:theme="@style/Theme_Main" android:name="com.waze.profile.RegisterActivity" />
+        <activity android:theme="@style/Theme_Main" android:name="com.waze.profile.WelcomeActivity" />
+        <activity android:theme="@style/Theme_Main" android:name="com.waze.profile.WelcomeDoneActivity" />
+        <activity android:theme="@style/Theme_Main" android:name="com.waze.profile.FacebookConnectActivity" android:configChanges="orientation" />
+        <activity android:theme="@style/Theme_Main" android:name="com.waze.profile.SignInActivity" />
+        <activity android:theme="@style/Theme_Main" android:name="com.waze.profile.MinimalSignInActivity" />
+        <activity android:theme="@style/Theme_Main" android:name="com.waze.profile.ForgotPasswordActivity" android:configChanges="orientation" />
+        <activity android:theme="@style/Theme_Main" android:name="com.waze.profile.FoursquareConnectActivity" android:configChanges="orientation" />
+        <activity android:theme="@style/Theme_Main" android:name="com.waze.profile.TwitterConnectActivity" android:configChanges="orientation" />
+        <activity android:theme="@style/Theme_Main" android:name="com.waze.selectionlist.SelectionListActivity" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:label="@string/app_name" android:name="com.facebook.LoginActivity" />
+        <activity android:theme="@style/Theme_Main" android:name="com.waze.test.TestMapViewActivity" />
+        <activity android:theme="@style/Theme_Main" android:name="com.waze.reports.ReportGroupsActivity" />
+        <activity android:theme="@style/Theme_Main" android:name="com.waze.navigate.social.MyFriendsActivity" />
+        <activity android:theme="@style/Theme_Main" android:name="com.waze.navigate.social.ShareHelpActivity" />
+        <activity android:theme="@style/Theme_SettingsActivity" android:name="com.waze.navigate.social.AddFriendsActivity" android:windowSoftInputMode="adjustPan|adjustNothing" />
+        <activity android:theme="@style/Theme_SettingsActivity" android:name="com.waze.navigate.social.AddFromActivity" />
+        <activity android:theme="@style/Theme_Main" android:name="com.waze.navigate.social.EditFriendsActivity" />
+        <activity android:theme="@style/Theme_SettingsActivity" android:name="com.waze.settings.SettingsDataTransferActivity" />
+        <activity android:theme="@style/Theme_SettingsActivity" android:name="com.waze.settings.AccountAndLoginActivity" />
+        <activity android:theme="@style/Theme_SettingsActivity" android:name="com.waze.settings.SettingsNotificationActivity" />
+        <activity android:theme="@style/Theme_SettingsActivity" android:name="com.waze.settings.SettingsShowOnMapActivity" />
+        <activity android:theme="@style/Theme_SettingsActivity" android:name="com.waze.settings.SettingsSmartLockActivity" />
+        <activity android:theme="@style/Theme_SettingsActivity" android:name="com.waze.settings.SettingsPowerSaving" />
+        <activity android:theme="@style/Theme_SettingsActivity" android:name="com.waze.settings.SettingsAdvancedActivity" />
+        <activity android:theme="@style/Theme_SettingsActivity" android:name="com.waze.settings.SettingsNavigationActivity" />
+        <activity android:theme="@style/Theme_SettingsActivity" android:name="com.waze.settings.SettingsMapColorsActivity" />
+        <activity android:theme="@style/Theme_SettingsActivity" android:name="com.waze.settings.SettingsLanguageActivity" />
+        <activity android:theme="@style/Theme_SettingsActivity" android:name="com.waze.settings.SettingsNavigationGuidanceActivity" />
+        <activity android:theme="@style/Theme_SettingsActivity" android:name="com.waze.settings.SettingsCustomPrompts" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme_SettingsActivity" android:name="com.waze.settings.SettingsVoiceSearchActivity" />
+        <activity android:theme="@style/Theme_SettingsActivity" android:name="com.waze.settings.SettingsMainActivity" />
+        <activity android:theme="@style/Theme_SettingsActivity" android:name="com.waze.settings.SettingsFriendsControlActivity" />
+        <activity android:theme="@style/Theme_SettingsActivity" android:name="com.waze.settings.SettingsAlertsOnRoute" />
+        <activity android:theme="@style/Theme_SettingsActivity" android:name="com.waze.settings.SettingsSpeedometerActivity" />
+        <activity android:theme="@style/Theme_SettingsActivity" android:name="com.waze.settings.SettingsSpeedometerOffsetActivity" />
+        <activity android:theme="@style/Theme_SettingsActivity" android:name="com.waze.settings.SettingsMapActivity" />
+        <activity android:theme="@style/Theme_SettingsActivity" android:name="com.waze.settings.SettingsSoundActivity" />
+        <activity android:theme="@style/Theme_SettingsActivity" android:name="com.waze.settings.SettingsGasActivity" />
+        <activity android:theme="@style/Theme_SettingsActivity" android:name="com.waze.settings.SettingsEndOfDrive" android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+        <activity android:theme="@style/Theme_SettingsActivity" android:name="com.waze.settings.SettingsVoiceCommandsActivity" />
+        <activity android:theme="@style/Theme_SettingsActivity" android:name="com.waze.settings.SettingsGeneralActivity" />
+        <activity android:theme="@style/Theme_SettingsActivity" android:name="com.waze.settings.SettingsCarpoolActivity" />
+        <activity android:theme="@style/Theme_SettingsActivity" android:name="com.waze.settings.SettingsCarpoolSeatsActivity" />
+        <activity android:theme="@style/Theme_SettingsActivity" android:name="com.waze.settings.SettingsPaymentActivity" android:configChanges="orientation|screenSize" />
+        <activity android:theme="@style/Theme_SettingsActivity" android:name="com.waze.settings.SettingsCarpoolPaymentsActivity" />
+        <activity android:theme="@style/Theme_SettingsActivity" android:name="com.waze.settings.SettingsCarpoolPaymentsBankActivity" />
+        <activity android:theme="@style/Theme_SettingsActivity" android:name="com.waze.settings.SettingsCarpoolWorkActivity" />
+        <activity android:theme="@style/Theme_SettingsActivity" android:name="com.waze.settings.SettingsCalendarActivity" />
+        <activity android:theme="@style/Theme_SettingsActivity" android:name="com.waze.settings.SettingsCalendarSelectionActivity" />
+        <activity android:theme="@style/Theme_SettingsActivity" android:name="com.waze.settings.SettingsSpotifyActivity" />
+        <activity android:theme="@style/Theme_Main" android:name="com.waze.carpool.CarpoolMessagingActivity" android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+        <activity android:name="com.waze.mywaze.MyStoresActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme_SettingsActivity" android:name="com.waze.carpool.CarpoolPickLocationActivity" android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+        <activity android:theme="@style/Theme_SettingsActivity" android:name="com.waze.SettingsLicensePlateActivity" />
+        <activity android:theme="@style/Theme_Main" android:name="com.waze.ifs.ui.EditTextDialogActivity" android:windowSoftInputMode="stateUnchanged|stateAlwaysHidden|stateVisible|stateAlwaysVisible" />
+        <activity android:theme="@style/Theme_Main" android:name="com.waze.ifs.ui.VideoActivity" />
+        <activity android:theme="@style/Theme_SettingsActivity" android:name="com.waze.carpool.CarpoolGoogleSignInActivity" />
+        <activity android:theme="@style/Theme_AppCompatTransparent" android:name="com.waze.carpool.GoogleSignInActivity" />
+        <activity android:theme="@style/Theme_Transparent" android:name="com.waze.RequestPermissionActivity" />
+        <activity android:theme="@style/Theme_Transparent" android:name="com.waze.CalendarApprovedActivity" />
+        <activity android:theme="@style/Theme_Main" android:name="com.waze.carpool.TooYoungActivity" />
+        <activity android:theme="@style/Theme_Main" android:name="com.waze.carpool.RideUnavailableActivity" />
+        <activity android:theme="@style/Theme_SettingsActivity" android:name="com.waze.carpool.CarpoolTermsActivity" />
+        <activity android:theme="@style/Theme_SettingsActivity" android:name="com.waze.carpool.CarpoolAddPhotoActivity" />
+        <activity android:theme="@style/Theme_Main" android:name="com.waze.carpool.CarpoolRideDetailsActivity" />
+        <activity android:theme="@style/Theme_Main" android:name="com.waze.carpool.CarpoolOfferDriveActivity" />
+        <activity android:theme="@style/Theme_Main_NoAnimation" android:name="com.waze.carpool.CarpoolRideDetailsMapActivity" />
+        <activity android:theme="@style/Theme_Main" android:name="com.waze.carpool.ReasonSelectionActivity" />
+        <activity android:theme="@style/Theme_Main" android:name="com.waze.carpool.CarpoolRiderProfileActivity" />
+        <activity android:theme="@style/Theme_Main" android:name="com.waze.carpool.CarpoolDriverProfileActivity" />
+        <activity android:theme="@style/Theme_SettingsActivity" android:name="com.waze.carpool.CarpoolRidesActivity" />
+        <activity android:theme="@style/Theme_SettingsActivity" android:name="com.waze.carpool.EditCarActivity" />
+        <activity android:theme="@style/Theme_Main" android:name="com.waze.carpool.CarpoolFeedbackActivity" />
+        <activity android:theme="@style/Theme_Main" android:name="com.waze.carpool.MissingPermissionsActivity" />
+        <activity android:theme="@style/Theme_SettingsActivity" android:name="com.waze.carpool.CommuteModelWeekActivity" />
+        <activity android:theme="@style/Theme_SettingsActivity" android:name="com.waze.carpool.CommuteModelDayActivity" />
+        <activity android:theme="@style/Theme_Main" android:name="com.waze.view.web.SimpleWebActivity" />
+        <activity android:theme="@style/Theme_SettingsActivity" android:name="com.waze.carpool.CarpoolFAQActivity" />
+        <activity android:theme="@style/Theme_SettingsActivity" android:name="com.waze.carpool.CarpoolFAQAnswerActivity" />
+        <activity android:name="com.waze.view.list.MyListMenu" />
+        <activity android:theme="@style/Theme_Main" android:name="com.waze.samples.JniSampleActivity" />
+        <activity android:theme="@style/Theme_Main" android:name="com.waze.planned_drive.PlannedDriveActivity" />
+        <activity android:theme="@style/Theme_Main" android:name="com.waze.planned_drive.PlannedDriveAlternateFromActivity" />
+        <activity android:theme="@style/Theme_Main" android:name="com.waze.planned_drive.PlannedDriveListActivity" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="com.waze.utils.DismissNotificationActivity" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="com.spotify.sdk.android.authentication.LoginActivity" android:launchMode="singleInstance" />
+        <activity android:theme="@style/Theme_SettingsActivity" android:name="com.waze.location.LocationPermissionActivity" />
+        <service android:name="com.waze.AppService" android:stopWithTask="false" />
+        <service android:name="com.waze.GeoFencingService" android:exported="true" />
+        <service android:name="com.waze.BoundService" android:exported="true" />
+        <service android:name="com.waze.AIDLService" android:exported="true" />
+        <service android:name="com.waze.ActivityRecognitionService" android:exported="true" />
+        <activity android:name="org.achartengine.GraphicalActivity" />
+        <receiver android:name="com.google.android.gms.gcm.GcmReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+                <category android:name="com.waze" />
+            </intent-filter>
+        </receiver>
+        <service android:name="com.waze.push.WazeGcmListenerService" android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
+        <service android:name="com.waze.push.WazeInstanceIDListenerService" android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.gms.iid.InstanceID" />
+            </intent-filter>
+        </service>
+        <service android:name="com.waze.push.RegistrationIntentService" android:exported="false" />
+        <service android:name="com.waze.widget.WazeAppWidgetService" />
+        <receiver android:name="com.waze.widget.WazeAppWidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/app_widget_provider" />
+        </receiver>
+        <receiver android:name="com.waze.referrer.ReferrerTracker" android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.waze.phone.SmsReceiver" android:exported="true" />
+        <receiver android:name="com.waze.CloseIntent" android:exported="false">
+            <intent-filter>
+                <action android:name="Eliran_Close_Intent" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.waze.ActionIntent" android:exported="false">
+            <intent-filter>
+                <action android:name="Action_Intent" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.waze.ActivityRecognitionReceiver" android:exported="false">
+            <intent-filter>
+                <action android:name="com.android.ACTIVITY_RECOGNITION" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.waze.main.navigate.GeoFencingReceiver" android:exported="false">
+            <intent-filter>
+                <action android:name="com.android.GEO_FENCING" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.waze.PushCommands$AlarmHandler">
+            <intent-filter>
+                <action android:name="com.waze.broadcast.ALARM" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.waze.CalendarChangeReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PROVIDER_CHANGED" />
+                <data android:scheme="content" />
+                <data android:host="com.android.calendar" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.waze.push.DeleteNotificationReceiver" />
+        <meta-data android:name="com.crashlytics.ApiKey" android:value="784e1004824674eed27dbe88e7a6ed1f03d94b5f" />
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/fb_app_id" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:exported="false" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" android:exported="false" android:excludeFromRecents="true" />
+        <service android:name="com.google.android.gms.auth.api.signin.RevocationBoundService" android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" android:exported="true" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="com.spotify.sdk.android.authentication.AuthCallbackActivity" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="@string/com_spotify_sdk_redirect_scheme" android:host="@string/com_spotify_sdk_redirect_host" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

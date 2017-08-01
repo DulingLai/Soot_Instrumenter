@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/com.waze" app:orientation="vertical" app:id="@+id/settingsSpeedometerLayout" app:layout_width="match_parent" app:layout_height="match_parent">
+    <com.waze.view.title.TitleBar app:id="@+id/theTitleBar" app:layout_width="match_parent" app:layout_height="wrap_content" />
+    <ScrollView app:fadingEdge="UNKNOWN_DATA_0x0" app:layout_width="match_parent" app:layout_height="match_parent" app:fillViewport="true" app:layout_below="@+id/theTitleBar" app:overScrollMode="ifContentScrolls">
+        <LinearLayout style="@style/settingsSection">
+            <View app:background="@color/settings_bg_titles" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x7f0a008a" />
+            <com.waze.settings.WazeSettingsView app:id="@+id/settingsSpotify" app:position="atThumb" app:settingsType="2" style="@style/settingsSelection" />
+            <FrameLayout app:background="@color/settings_bg_titles" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x7f0a0089" app:foreground="@drawable/cell_shadow_dark" />
+            <View app:background="@color/blue_bg" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x1" app:layout_weight="1.0" />
+        </LinearLayout>
+    </ScrollView>
+    <ImageView app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x601" app:src="@drawable/topbar_shadow" app:scaleType="fitXY" app:layout_below="@+id/theTitleBar" />
+</RelativeLayout>

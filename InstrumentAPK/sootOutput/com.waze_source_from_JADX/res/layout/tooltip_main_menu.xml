@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:orientation="horizontal" android:id="@+id/tooltip_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/tipImage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:src="@drawable/tip_tool_icon_map" />
+    <com.waze.view.text.WazeTextView android:textSize="16sp" android:textStyle="italic" android:textColor="@color/text_dk_on_wt" android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/tipText" android:paddingTop="5dp" android:paddingBottom="5dp" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="wrap_content" android:text="Tap here for navigation, settings, and more." android:layout_weight="1.0" android:lineSpacingMultiplier="1.0" style="@style/textSignUp" />
+    <ImageView android:id="@+id/tipImageRight" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:src="@drawable/white_chevron" />
+</LinearLayout>

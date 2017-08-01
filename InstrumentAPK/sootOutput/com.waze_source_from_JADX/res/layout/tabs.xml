@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:id="@+id/tabs_container" android:padding="0dp" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x3201">
+    <include android:id="@+id/tabs_left_container" layout="@layout/single_tab" />
+    <include android:id="@+id/tabs_center_container" layout="@layout/single_tab" />
+    <include android:id="@+id/tabs_right_container" layout="@layout/single_tab" />
+</LinearLayout>

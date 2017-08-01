@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:layout_width="match_parent" app:layout_height="match_parent"
+    <RelativeLayout app:id="@+id/topContainer" app:background="@color/White" app:layout_width="match_parent" app:layout_height="wrap_content" app:elevation="4dp">
+        <com.waze.view.text.WazeTextView app:textSize="18sp" app:textColor="@color/DarkShade" app:id="@+id/lblTitle" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginTop="8dp" app:text="Drive Later" app:layout_centerHorizontal="true" />
+        <com.waze.view.text.WazeTextView app:textSize="18sp" app:textColor="@color/Light" app:id="@+id/lblDestination" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginBottom="8dp" app:maxLines="1" app:singleLine="true" app:layout_below="@+id/lblTitle" app:layout_centerHorizontal="true" />
+        <ImageView app:id="@+id/btnBack" app:layout_width="UNKNOWN_DATA_0x2801" app:layout_height="UNKNOWN_DATA_0x2801" app:layout_marginLeft="8dp" app:src="@drawable/white_screen_back_button" app:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout app:orientation="horizontal" app:layout_width="match_parent" app:layout_height="match_parent" app:layout_below="@+id/topContainer">
+        <RelativeLayout app:layout_width="UNKNOWN_DATA_0x1" app:layout_height="match_parent" app:layout_weight="0.5"
+            <RelativeLayout app:background="@color/PassiveGrey" app:layout_width="match_parent" app:layout_height="match_parent">
+                <View app:background="#ffc1c1c1" app:layout_width="UNKNOWN_DATA_0x6001" app:layout_height="match_parent" />
+                <RelativeLayout app:id="@+id/recyclerHeader" app:background="#fff9f9f9" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x3001" app:elevation="2dp">
+                    <View app:background="#ffd8d8d8" app:layout_width="UNKNOWN_DATA_0x6001" app:layout_height="UNKNOWN_DATA_0x3001" />
+                    <com.waze.view.text.WazeTextView app:textSize="16sp" app:textColor="@color/Dark" app:id="@+id/lblArriveAt" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginLeft="16dp" app:text="Arrive At" app:layout_centerVertical="true" app:font_type="3" />
+                    <com.waze.view.text.WazeTextView app:textSize="16sp" app:textColor="@color/RedSweet" app:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/lblTraffic" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginRight="12dp" app:text="*Traffic" app:layout_alignParentRight="true" app:layout_centerVertical="true" app:font_type="3" />
+                    <View app:background="#ffa1a1a1" app:visibility="gone" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x101" app:layout_alignParentBottom="true" />
+                </RelativeLayout>
+                <com.waze.planned_drive.PlannedDriveRecycler app:id="@+id/plannedDriveRecycler" app:clipChildren="false" app:clipToPadding="false" app:layout_width="match_parent" app:layout_height="match_parent" app:layout_below="@+id/recyclerHeader" />
+                <RelativeLayout app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x7f0a0083" app:layout_centerVertical="true" app:translationY="24dp">
+                    <View app:id="@+id/highlightedCellView" app:background="#19717171" app:visibility="gone" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x7f0a0083" />
+                    <View app:id="@+id/loadingIndicatorBg" app:background="@drawable/planned_drive_loading_bg" app:visibility="gone" app:layout_width="UNKNOWN_DATA_0x7f0a0083" app:layout_height="UNKNOWN_DATA_0x7f0a0083" app:layout_centerHorizontal="true" />
+                    <com.waze.view.map.ProgressAnimation app:id="@+id/loadingIndicator" app:visibility="gone" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_margin="8dp" app:layout_centerInParent="true" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout app:background="@color/White" app:layout_width="UNKNOWN_DATA_0x1" app:layout_height="match_parent" app:layout_weight="0.5" app:elevation="8dp"
+            <RelativeLayout app:id="@+id/fromContainer" app:paddingLeft="16dp" app:paddingRight="16dp" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x3801" app:layout_marginTop="8dp">
+                <com.waze.view.text.WazeTextView app:textSize="18sp" app:textColor="@color/Light" app:id="@+id/lblFrom" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_centerVertical="true" />
+                <LinearLayout app:gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:orientation="horizontal" app:id="@+id/btnChangeFrom" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_alignParentRight="true" app:layout_centerVertical="true">
+                    <com.waze.view.text.WazeTextView app:textSize="18sp" app:textColor="@color/BlueSky" app:id="@+id/lblChangeFrom" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginRight="8dp" app:text="Change" />
+                    <ImageView app:layout_width="wrap_content" app:layout_height="wrap_content" app:src="@drawable/arrow_tab_selected" />
+                </LinearLayout>
+            </RelativeLayout>
+            <View app:id="@+id/fromWhenSeparator" app:background="@color/PassiveGrey" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x101" app:layout_marginLeft="16dp" app:layout_marginRight="16dp" app:layout_below="@+id/fromContainer" />
+            <RelativeLayout app:id="@+id/whenContainer" app:paddingLeft="16dp" app:paddingRight="16dp" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x3801" app:layout_below="@+id/fromWhenSeparator">
+                <com.waze.view.text.WazeTextView app:textSize="18sp" app:textColor="@color/Light" app:id="@+id/lblWhen" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_centerVertical="true" />
+                <LinearLayout app:gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:orientation="horizontal" app:id="@+id/btnChangeWhen" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_alignParentRight="true" app:layout_centerVertical="true">
+                    <com.waze.view.text.WazeTextView app:textSize="18sp" app:textColor="@color/BlueSky" app:id="@+id/lblChangeWhen" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginRight="8dp" app:text="Today" />
+                    <ImageView app:layout_width="wrap_content" app:layout_height="wrap_content" app:src="@drawable/arrow_tab_selected" />
+                </LinearLayout>
+            </RelativeLayout>
+            <LinearLayout app:orientation="horizontal" app:id="@+id/bottomContainer" app:background="@color/White" app:padding="8dp" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x5001" app:layout_alignParentBottom="true" app:elevation="16dp">
+                <RelativeLayout app:id="@+id/btnCancel" app:background="@drawable/white_button" app:layout_width="UNKNOWN_DATA_0x1" app:layout_height="match_parent" app:layout_marginRight="8dp" app:layout_weight="0.5">
+                    <com.waze.view.text.WazeTextView app:textSize="20sp" app:textColor="@color/Light" app:id="@+id/lblCancel" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="Cancel" app:layout_centerInParent="true" />
+                </RelativeLayout>
+                <RelativeLayout app:id="@+id/btnSave" app:background="@drawable/button_blue_bg" app:layout_width="UNKNOWN_DATA_0x1" app:layout_height="match_parent" app:layout_marginRight="8dp" app:layout_weight="0.5">
+                    <com.waze.view.text.WazeTextView app:textSize="20sp" app:textColor="@color/White" app:id="@+id/lblSave" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="Save" app:layout_centerInParent="true" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <com.waze.planned_drive.PlannedDriveDayPicker app:id="@+id/plannedDriveDayPicker" app:visibility="gone" app:layout_width="match_parent" app:layout_height="match_parent" app:elevation="32dp" />
+</RelativeLayout>

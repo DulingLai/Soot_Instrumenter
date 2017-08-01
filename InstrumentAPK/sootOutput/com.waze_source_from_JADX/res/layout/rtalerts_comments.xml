@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/blue_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.waze.view.title.TitleBar android:id="@+id/rtalterts_comments_title_bar" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <ScrollView android:fadingEdge="UNKNOWN_DATA_0x0" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/rtalterts_comments_title_bar" android:overScrollMode="always">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+            <LinearLayout android:paddingLeft="10dp" android:paddingRight="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                <include layout="@layout/rtalerts_list_item" />
+            </LinearLayout>
+            <LinearLayout android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="horizontal" android:id="@+id/rtalterts_comments_add_button" android:background="@drawable/button" android:padding="0dp" android:clickable="true" android:layout_width="wrap_content" android:layout_height="UNKNOWN_DATA_0x3401" android:layout_marginTop="10dp">
+                <com.waze.view.text.WazeTextView android:id="@+id/rtalterts_comments_add_button_text" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Add Comment" style="@style/buttonText" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <ImageView android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x601" android:src="@drawable/topbar_shadow" android:scaleType="fitXY" android:layout_below="@+id/rtalterts_comments_title_bar" />
+</RelativeLayout>

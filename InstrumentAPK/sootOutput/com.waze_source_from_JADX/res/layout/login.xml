@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/blue_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:background="@color/title_bar" android:padding="0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.waze.view.text.WazeTextView android:id="@+id/titleBar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="Log In" style="@style/TitleBarTextStyle" />
+        <com.waze.view.button.AutoResizeTextButton android:id="@+id/doneButton" style="@style/TitleCloseButton" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="UNKNOWN_DATA_0x2701" android:src="@drawable/header_divider" android:scaleType="fitXY" android:layout_toLeftOf="@+id/doneButton" />
+    </RelativeLayout>
+    <LinearLayout android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="12dp"
+        <LinearLayout android:focusable="true" android:focusableInTouchMode="true" android:layout_width="UNKNOWN_DATA_0x0" android:layout_height="UNKNOWN_DATA_0x0" />
+        <LinearLayout android:orientation="horizontal" android:background="@drawable/item_selector_top" android:padding="0dp" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x4001">
+            <com.waze.view.text.WazeTextView android:id="@+id/userNameTitle" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="match_parent" android:layout_margin="8dp" android:text="User name" android:layout_weight="1.0" style="@style/ListItem" />
+            <com.waze.view.text.WazeEditText android:id="@+id/userName" android:background="@drawable/text_area_bg_black" android:paddingLeft="15dp" android:paddingTop="5dp" android:paddingRight="15dp" android:paddingBottom="5dp" android:nextFocusLeft="@+id/userName" android:nextFocusUp="@+id/userName" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="match_parent" android:layout_margin="8dp" android:singleLine="true" android:layout_weight="1.0" android:imeOptions="actionNone|actionSearch|actionSend|actionNext|actionDone|actionPrevious" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:background="@drawable/item_selector_middle" android:padding="0dp" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x4001">
+            <com.waze.view.text.WazeTextView android:id="@+id/passwordTitle" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="match_parent" android:layout_margin="8dp" android:text="Password" android:layout_weight="1.0" style="@style/ListItem" />
+            <com.waze.view.text.WazeEditText android:id="@+id/password" android:background="@drawable/text_area_bg_black" android:paddingLeft="15dp" android:paddingTop="5dp" android:paddingRight="15dp" android:paddingBottom="5dp" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="match_parent" android:layout_margin="8dp" android:password="true" android:singleLine="true" android:layout_weight="1.0" android:imeOptions="actionNone|actionSearch|actionSend|actionNext|actionDone|actionPrevious" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:background="@drawable/item_selector_bottom" android:padding="0dp" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x4001">
+            <com.waze.view.text.WazeTextView android:id="@+id/nicknameTitle" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="match_parent" android:layout_margin="8dp" android:text="Nickname" android:layout_weight="1.0" style="@style/ListItem" />
+            <com.waze.view.text.WazeEditText android:id="@+id/nickname" android:background="@drawable/text_area_bg_black" android:paddingLeft="15dp" android:paddingTop="5dp" android:paddingRight="15dp" android:paddingBottom="5dp" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="match_parent" android:layout_margin="8dp" android:singleLine="true" android:layout_weight="1.0" android:imeOptions="actionGo|actionSearch|actionSend|actionNext|actionDone|actionPrevious" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/com.waze" app:id="@+id/root_layout" app:padding="30dp" app:clipChildren="false" app:clipToPadding="false" app:layout_width="wrap_content" app:layout_height="wrap_content">
+    <LinearLayout app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:orientation="horizontal" app:id="@+id/balloonTooltipLayout" app:background="@drawable/slider_tooltip" app:paddingBottom="17dp" app:layout_width="wrap_content" app:layout_height="wrap_content">
+        <com.waze.view.text.WazeTextView app:textSize="24sp" app:textColor="0x106000b" app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/balloonTooltipText" app:layout_width="wrap_content" app:layout_height="wrap_content" app:maxWidth="50dp" app:text="99" app:font_type="4" />
+    </LinearLayout>
+</FrameLayout>

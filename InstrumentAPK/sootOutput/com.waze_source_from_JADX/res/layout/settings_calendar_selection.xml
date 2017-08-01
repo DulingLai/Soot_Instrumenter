@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/com.waze" app:background="@color/BlueWhale" app:layout_width="match_parent" app:layout_height="match_parent">
+    <com.waze.view.title.TitleBar app:id="@+id/theTitleBar" app:layout_width="match_parent" app:layout_height="wrap_content" />
+    <ListView app:id="@+id/calendarsListView" app:layout_width="match_parent" app:layout_height="wrap_content" app:divider="@color/White" app:dividerHeight="0dp" app:layout_below="@+id/theTitleBar" />
+    <View app:layout_width="match_parent" app:layout_height="match_parent" app:dividerHeight="0dp" app:layout_below="@+id/calendarsListView" app:layout_alignParentBottom="true" />
+    <ImageView app:layout_width="match_parent" app:layout_height="wrap_content" app:src="@drawable/topbar_shadow" app:scaleType="fitXY" app:layout_below="@+id/theTitleBar" />
+</RelativeLayout>

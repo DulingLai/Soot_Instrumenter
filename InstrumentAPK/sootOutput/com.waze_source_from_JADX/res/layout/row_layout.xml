@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:orientation="vertical" app:background="#b4c2c6" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x4801"
+    <LinearLayout app:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:orientation="horizontal" app:id="@+id/mainLayout" app:padding="10dp" app:layout_width="match_parent" app:layout_height="match_parent"
+        <LinearLayout app:orientation="horizontal" app:id="@+id/dataLayout" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_weight="0.1"
+            <LinearLayout app:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:orientation="vertical" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginRight="10dp">
+                <com.waze.view.text.WazeTextView app:textSize="14dp" app:textColor="#8ea1a7" app:id="@+id/autocompleteadsText" app:visibility="gone" app:layout_width="wrap_content" app:layout_height="wrap_content" app:hint="wa" />
+                <ImageView app:id="@+id/ac_image" app:layout_width="wrap_content" app:layout_height="wrap_content" app:src="@drawable/list_icon_gas_settings" />
+            </LinearLayout>
+            <LinearLayout app:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:orientation="vertical" app:layout_width="match_parent" app:layout_height="wrap_content">
+                <com.waze.view.text.WazeTextView app:textColor="#ff53747c" app:ellipsize="end" app:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/autocompletetext" app:layout_width="match_parent" app:layout_height="wrap_content" app:hint="text" app:maxLines="1" app:layout_weight="0.5" style="@style/settingsText" />
+                <com.waze.view.text.WazeTextView app:ellipsize="end" app:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/autocompletetext2" app:layout_width="match_parent" app:layout_height="wrap_content" app:hint="text" app:maxLines="1" style="@style/settingsSubText" />
+            </LinearLayout>
+        </LinearLayout>
+        <RelativeLayout app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:id="@+id/completeTextImage" app:layout_width="match_parent" app:layout_height="match_parent" app:layout_marginTop="-12dp" app:layout_marginBottom="-12dp" app:layout_weight="0.8">
+            <ImageView app:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:layout_width="UNKNOWN_DATA_0x2801" app:layout_height="UNKNOWN_DATA_0x2801" app:src="@drawable/edit_autocom" />
+        </RelativeLayout>
+    </LinearLayout>
+    <View app:background="#b4c2c6" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x101" app:layout_marginLeft="72dp" app:layout_marginTop="-1dp" />
+</LinearLayout>

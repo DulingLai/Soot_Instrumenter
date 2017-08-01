@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/com.waze" app:background="@color/blue_bg" app:layout_width="match_parent" app:layout_height="match_parent">
+    <com.waze.view.title.TitleBar app:id="@+id/facebookTitle" app:layout_width="match_parent" app:layout_height="wrap_content" />
+    <ScrollView app:fadingEdge="UNKNOWN_DATA_0x0" app:layout_width="match_parent" app:layout_height="match_parent" app:layout_below="@+id/facebookTitle" app:overScrollMode="always">
+        <LinearLayout app:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:orientation="vertical" app:layout_width="match_parent" app:layout_height="wrap_content"
+            <LinearLayout app:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:orientation="vertical" app:background="@color/settings_bg_note" app:layout_width="match_parent" app:layout_height="wrap_content">
+                <ImageView app:id="@+id/facebookConnectTitle" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginTop="10dp" app:src="@drawable/illustration_fb" app:scaleType="center" />
+                <com.waze.view.text.WazeTextView app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/facebookConnectText" app:text="Connect to Facebook to allow one-click sign in to Waze" style="@style/settings_note" />
+                <Button app:textSize="18sp" app:textStyle="bold" app:textColor="#ffffff" app:id="@+id/connect" app:background="@drawable/fb_btn_selector" app:padding="0dp" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_margin="10dp" app:text="Connect" />
+                <com.waze.view.text.WazeTextView app:id="@+id/facebookDontWorryTitle" app:text="Preferences and Privacy" style="@style/settings_note" />
+                <com.waze.view.text.WazeTextView app:id="@+id/facebookDontWorryText" app:text="Edit the number of friends" style="@style/settings_note" />
+            </LinearLayout>
+            <com.waze.settings.SettingsTitleText app:id="@+id/facebookBlockedTitle" app:text="Preferences and Privacy" app:position="floating" style="@style/settingsTitleText" />
+            <com.waze.settings.WazeSettingsView app:id="@+id/facebookBlockedFriends" app:position="UNKNOWN_DATA_0x3" app:settingsType="0" style="@style/settingsSelection" />
+        </LinearLayout>
+    </ScrollView>
+    <ImageView app:layout_width="match_parent" app:layout_height="wrap_content" app:src="@drawable/topbar_shadow" app:scaleType="fitXY" app:layout_below="@+id/facebookTitle" />
+</RelativeLayout>

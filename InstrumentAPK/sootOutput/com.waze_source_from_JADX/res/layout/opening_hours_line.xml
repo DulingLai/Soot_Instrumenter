@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:background="@drawable/item_selector_top" android:padding="0dp" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x4001">
+    <com.waze.view.text.WazeTextView android:id="@+id/editOpeningHoursLineDays" android:layout_width="UNKNOWN_DATA_0x0" android:layout_height="match_parent" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:text="*Days" android:layout_weight="1.0" style="@style/settingsText" />
+    <com.waze.view.text.WazeTextView android:id="@+id/editOpeningHoursLineHours" android:layout_width="UNKNOWN_DATA_0x0" android:layout_height="match_parent" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:text="*Hours" android:layout_weight="1.0" style="@style/settingsText" />
+    <ImageButton android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/editOpeningHoursLineClear" android:background="0x0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:src="@drawable/places_delete_item" android:contentDescription="@string/removeFavoriteButton" />
+</LinearLayout>

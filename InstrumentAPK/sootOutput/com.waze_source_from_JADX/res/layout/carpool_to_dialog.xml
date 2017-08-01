@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:orientation="vertical" app:background="@color/ReportBackground" app:clipChildren="false" app:clipToPadding="false" app:layout_width="match_parent" app:layout_height="match_parent">
+    <include layout="@layout/upcoming_carpool_bar" />
+    <include layout="@layout/carpool_trip_dialog_texts_to" />
+    <include layout="@layout/carpool_trip_dialog_controls" />
+    <FrameLayout app:id="@+id/cpTripBottomButtons" app:background="@color/DarkShade" app:clipChildren="false" app:clipToPadding="false" app:layout_width="match_parent" app:layout_height="wrap_content">
+        <include layout="@layout/carpool_trip_dialog_buttons" />
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:layout_width="match_parent" app:layout_height="match_parent">
+    <RelativeLayout app:id="@+id/promptContainer" app:background="@color/White" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x4801">
+        <LinearLayout app:orientation="vertical" app:id="@+id/itemLabelContainer" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginLeft="24dp" app:layout_centerVertical="true">
+            <com.waze.view.text.WazeTextView app:textSize="18sp" app:textColor="@color/DarkBlue" app:id="@+id/lblItemName" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginBottom="4dp" app:text="*Turn Right" app:font_type="3" />
+            <com.waze.view.text.WazeTextView app:textSize="16sp" app:textColor="@color/Light" app:id="@+id/lblMaxDuration" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="*9 seconds max" app:font_type="4" />
+        </LinearLayout>
+        <ImageView app:id="@+id/imgDeleteItem" app:layout_width="UNKNOWN_DATA_0x3001" app:layout_height="UNKNOWN_DATA_0x3001" app:layout_marginRight="8dp" app:src="@drawable/delete_pic" app:layout_alignParentRight="true" app:layout_centerVertical="true" />
+        <ImageView app:id="@+id/imgPreviewItem" app:layout_width="UNKNOWN_DATA_0x3001" app:layout_height="UNKNOWN_DATA_0x3001" app:src="@drawable/custom_prompts_play_icon" app:layout_toLeftOf="@+id/imgDeleteItem" app:layout_centerVertical="true" app:translationY="3dp" app:scaleX="1.25" app:scaleY="1.25" />
+        <View app:id="@+id/separator" app:background="@color/PassiveGrey" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x101" app:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</FrameLayout>

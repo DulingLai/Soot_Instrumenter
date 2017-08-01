@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/com.waze" app:orientation="horizontal" app:id="@+id/MessageTicker" app:background="@drawable/ticker_box" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x2a01">
+    <com.waze.view.timer.TimerView app:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:id="@+id/Timer" app:layout_width="UNKNOWN_DATA_0x2201" app:layout_height="UNKNOWN_DATA_0x2201" app:layout_marginLeft="5dp" app:time="10" />
+    <ImageView app:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:id="@+id/Seperator" app:layout_width="wrap_content" app:layout_height="match_parent" app:layout_marginLeft="5dp" app:layout_marginRight="5dp" app:src="@drawable/ticker_seperator" />
+    <com.waze.view.text.WazeTextView app:textSize="14dp" app:textStyle="bold" app:textColor="#000000" app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/Text" app:layout_width="match_parent" app:layout_height="match_parent" app:text="" app:maxLines="2" app:layout_weight="1.0" />
+    <ImageView app:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:id="@+id/Icon" app:layout_width="wrap_content" app:layout_height="match_parent" app:src="@drawable/wazer_baby" app:layout_weight="0.0" />
+</LinearLayout>

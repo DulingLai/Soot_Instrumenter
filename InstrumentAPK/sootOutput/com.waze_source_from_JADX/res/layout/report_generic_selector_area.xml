@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/com.waze" app:id="@+id/reportGenericSelectorArea" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x6401">
+    <LinearLayout app:orientation="horizontal" app:id="@+id/reportButtons" app:layout_width="match_parent" app:layout_height="match_parent" app:divider="@drawable/report_vertical_line_divider" app:showDividers="middle" app:dividerPadding="0dp">
+        <include layout="@layout/report_generic_button" />
+        <include layout="@layout/report_generic_button" />
+        <include layout="@layout/report_generic_button" />
+    </LinearLayout>
+    <View app:background="@color/report_lines" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x101" app:layout_alignParentBottom="true" />
+</RelativeLayout>

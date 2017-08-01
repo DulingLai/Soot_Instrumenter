@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:orientation="horizontal" app:layout_width="match_parent" app:layout_height="match_parent">
+    <RelativeLayout app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:layout_width="UNKNOWN_DATA_0x4601" app:layout_height="UNKNOWN_DATA_0x4601">
+        <LinearLayout app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/playerBgView" app:background="@drawable/playlist_bg_selector" app:padding="2dp" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginTop="5dp">
+            <ImageView app:id="@+id/imageView1" app:layout_width="UNKNOWN_DATA_0x3601" app:layout_height="UNKNOWN_DATA_0x3601" app:src="@drawable/music_player_artwork_placeholder" />
+        </LinearLayout>
+        <ImageView app:id="@+id/NowPlayingBadge" app:layout_width="UNKNOWN_DATA_0x1e01" app:layout_height="UNKNOWN_DATA_0x1e01" app:src="@drawable/music_player_now_playing_badge" app:adjustViewBounds="false" app:cropToPadding="false" app:layout_weight="1.0" app:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <com.waze.view.text.WazeTextView app:textSize="14dp" app:textColor="@color/White" app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/textView1" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginLeft="0dp" app:layout_marginTop="5dp" app:layout_marginRight="5dp" app:layout_marginBottom="10dp" app:text="Playlist Name" app:lines="2" app:font_type="3" />
+</LinearLayout>

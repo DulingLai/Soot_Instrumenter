@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.waze.view.layout.SquareFrameLayout xmlns:android="http://schemas.android.com/apk/res/com.waze" app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:background="@color/BlueGrey" app:layout_width="match_parent" app:layout_height="wrap_content">
+    <LinearLayout app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:orientation="vertical" app:id="@+id/bottomSheetItem" app:background="@drawable/ripple_drawable" app:layout_width="match_parent" app:layout_height="match_parent">
+        <ImageView app:id="@+id/bottomSheetItemImage" app:layout_width="UNKNOWN_DATA_0x3201" app:layout_height="UNKNOWN_DATA_0x3201" app:src="@drawable/alertsonly_prs" />
+        <com.waze.view.text.WazeTextView app:textSize="15dp" app:textColor="@color/Dark" app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/bottomSheetItemLabel" app:paddingLeft="10dp" app:paddingRight="10dp" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x2801" app:text="*Special action" app:font_type="1" />
+    </LinearLayout>
+</com.waze.view.layout.SquareFrameLayout>

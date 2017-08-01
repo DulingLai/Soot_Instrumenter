@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:orientation="vertical" app:layout_width="match_parent" app:layout_height="match_parent" app:layout_centerInParent="true">
+    <com.waze.view.title.TitleBar app:id="@+id/theTitleBar" app:layout_width="match_parent" app:layout_height="wrap_content" />
+    <LinearLayout app:orientation="horizontal" app:layout_width="match_parent" app:layout_height="wrap_content">
+        <FrameLayout app:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:orientation="horizontal" app:layout_width="UNKNOWN_DATA_0x1" app:layout_height="match_parent" app:layout_weight="1.0">
+            <com.waze.map.MapView app:id="@+id/searchMapView" app:layout_width="match_parent" app:layout_height="match_parent" app:handleKeys="false" app:nativeTag="@string/nativeTagClosureCanvas" />
+            <com.waze.view.text.WazeTextView app:textSize="16dp" app:textColor="@color/solid_white" app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/TipText" app:background="@drawable/darken_pill" app:paddingLeft="8dp" app:paddingTop="4dp" app:paddingRight="8dp" app:paddingBottom="4dp" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginLeft="16dp" app:layout_marginTop="10dp" app:layout_marginRight="16dp" app:text="blabla blba bla" />
+        </FrameLayout>
+        <include app:layout_width="UNKNOWN_DATA_0xa001" app:layout_height="match_parent" layout="@layout/report_generic_bottom_buttons" />
+    </LinearLayout>
+</LinearLayout>

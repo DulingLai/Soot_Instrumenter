@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/blue_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.waze.view.title.TitleBar android:id="@id/title" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <ScrollView android:fadingEdge="UNKNOWN_DATA_0x0" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/title">
+        <RelativeLayout android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="vertical" android:background="@drawable/oneunit_idle" android:padding="0px" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp" android:src="@drawable/foursquare_logo" />
+                <com.waze.view.text.WazeTextView android:textSize="18dp" android:textColor="@color/solid_black" android:id="@+id/label" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp" />
+                <com.waze.view.text.WazeTextView android:textSize="18dp" android:textColor="@color/solid_black" android:id="@+id/address" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp" />
+                <com.waze.view.text.WazeTextView android:textSize="18dp" android:textColor="@color/solid_black" android:id="@+id/points" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp" />
+                <com.waze.view.text.WazeTextView android:textSize="18dp" android:textColor="@color/solid_black" android:id="@+id/details" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+    <ImageView android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x601" android:src="@drawable/topbar_shadow" android:scaleType="fitXY" android:layout_below="@id/title" />
+</RelativeLayout>

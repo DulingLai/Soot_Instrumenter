@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/com.waze" app:orientation="vertical" app:background="@color/settings_bg_titles" app:layout_width="match_parent" app:layout_height="match_parent">
+    <LinearLayout app:focusable="true" app:focusableInTouchMode="true" app:layout_width="UNKNOWN_DATA_0x0" app:layout_height="UNKNOWN_DATA_0x0" />
+    <com.waze.view.title.TitleBar app:id="@+id/theTitleBar" app:layout_width="match_parent" app:layout_height="wrap_content" />
+    <ScrollView app:fadingEdge="UNKNOWN_DATA_0x0" app:layout_width="match_parent" app:layout_height="match_parent" app:layout_below="@+id/theTitleBar" app:overScrollMode="always">
+        <LinearLayout app:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:orientation="vertical" app:layout_width="match_parent" app:layout_height="wrap_content">
+            <com.waze.settings.SettingsTitleText app:id="@+id/editOpeningHoursTitle" app:position="atThumb" style="@style/settingsTitle" />
+            <LinearLayout app:orientation="vertical" app:id="@+id/editOpeningHoursLinesContainer" app:layout_width="match_parent" app:layout_height="wrap_content" />
+            <com.waze.settings.SettingsTitleText app:id="@+id/editOpeningHoursAddTitle" style="@style/settingsTitle" />
+            <LinearLayout app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" style="@style/settingsSelection">
+                <Button app:textColor="@color/settings_text_color" app:id="@+id/editOpeningHoursAdd1" app:layout_width="UNKNOWN_DATA_0x2801" app:layout_height="UNKNOWN_DATA_0x2801" app:layout_margin="2dp" app:text="S" style="@style/selectableSmallButton" />
+                <Button app:textColor="@color/settings_text_color" app:id="@+id/editOpeningHoursAdd2" app:layout_width="UNKNOWN_DATA_0x2801" app:layout_height="UNKNOWN_DATA_0x2801" app:layout_margin="2dp" app:text="M" style="@style/selectableSmallButton" />
+                <Button app:textColor="@color/settings_text_color" app:id="@+id/editOpeningHoursAdd3" app:layout_width="UNKNOWN_DATA_0x2801" app:layout_height="UNKNOWN_DATA_0x2801" app:layout_margin="2dp" app:text="T" style="@style/selectableSmallButton" />
+                <Button app:textColor="@color/settings_text_color" app:id="@+id/editOpeningHoursAdd4" app:layout_width="UNKNOWN_DATA_0x2801" app:layout_height="UNKNOWN_DATA_0x2801" app:layout_margin="2dp" app:text="W" style="@style/selectableSmallButton" />
+                <Button app:textColor="@color/settings_text_color" app:id="@+id/editOpeningHoursAdd5" app:layout_width="UNKNOWN_DATA_0x2801" app:layout_height="UNKNOWN_DATA_0x2801" app:layout_margin="2dp" app:text="T" style="@style/selectableSmallButton" />
+                <Button app:textColor="@color/settings_text_color" app:id="@+id/editOpeningHoursAdd6" app:layout_width="UNKNOWN_DATA_0x2801" app:layout_height="UNKNOWN_DATA_0x2801" app:layout_margin="2dp" app:text="F" style="@style/selectableSmallButton" />
+                <Button app:textColor="@color/settings_text_color" app:id="@+id/editOpeningHoursAdd7" app:layout_width="UNKNOWN_DATA_0x2801" app:layout_height="UNKNOWN_DATA_0x2801" app:layout_margin="2dp" app:text="S" style="@style/selectableSmallButton" />
+            </LinearLayout>
+            <LinearLayout app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:orientation="horizontal" app:padding="0dp" style="@style/settingsSelection">
+                <com.waze.view.text.WazeEditText app:id="@+id/editOpeningHoursAddFrom" app:focusable="false" app:layout_width="wrap_content" app:layout_height="match_parent" app:text="12:00" app:inputType="textEmailAddress|textEmailSubject|textPersonName|textPostalAddress|textWebEditText|textFilter|textWebPassword|datetime|date|time" app:imeOptions="actionGo|actionSearch|actionSend|actionNext|actionDone|actionPrevious" style="@style/settingsEditTextStyle" />
+                <com.waze.view.text.WazeTextView app:id="@+id/editOpeningHoursTextTo" app:padding="0dp" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_margin="0dp" app:text="* to " app:layout_weight="0.0" style="@style/settingsText" />
+                <com.waze.view.text.WazeEditText app:id="@+id/editOpeningHoursAddTo" app:focusable="false" app:layout_width="wrap_content" app:layout_height="match_parent" app:layout_margin="8dp" app:text="12:00" app:inputType="textEmailAddress|textEmailSubject|textPersonName|textPostalAddress|textWebEditText|textFilter|textWebPassword|datetime|date|time" app:imeOptions="actionGo|actionSearch|actionSend|actionNext|actionDone|actionPrevious" style="@style/settingsEditTextStyle" />
+            </LinearLayout>
+            <com.waze.settings.WazeSettingsView app:id="@+id/editOpeningHoursAllDayCheck" app:position="UNKNOWN_DATA_0x3" app:settingsType="2" style="@style/settingsSelection" />
+            <LinearLayout app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:background="@drawable/item_selector_bottom" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x4001">
+                <Button app:textSize="18sp" app:textColor="@color/signup_button_text_color" app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/editOpeningHoursAddButton" app:background="@drawable/signup_button_bg" app:padding="0dp" app:layout_width="match_parent" app:layout_height="match_parent" app:layout_margin="5dp" app:text="*Add" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <ImageView app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x601" app:src="@drawable/topbar_shadow" app:scaleType="fitXY" app:layout_below="@+id/theTitleBar" />
+</RelativeLayout>

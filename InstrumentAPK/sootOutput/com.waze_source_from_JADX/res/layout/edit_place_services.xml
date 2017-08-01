@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/com.waze" app:orientation="vertical" app:layout_width="match_parent" app:layout_height="match_parent">
+    <com.waze.view.title.TitleBar app:id="@+id/theTitleBar" app:layout_width="match_parent" app:layout_height="wrap_content" />
+    <ScrollView app:fadingEdge="UNKNOWN_DATA_0x0" app:layout_width="match_parent" app:layout_height="match_parent" app:layout_below="@+id/theTitleBar" app:overScrollMode="always">
+        <LinearLayout app:orientation="vertical" app:id="@+id/editServicesLinesContainer" app:layout_width="match_parent" app:layout_height="wrap_content" />
+    </ScrollView>
+    <ImageView app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x601" app:src="@drawable/topbar_shadow" app:scaleType="fitXY" app:layout_below="@+id/theTitleBar" />
+</RelativeLayout>

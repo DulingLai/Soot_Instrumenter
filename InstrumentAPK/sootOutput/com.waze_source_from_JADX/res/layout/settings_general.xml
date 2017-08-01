@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:layout_width="match_parent" app:layout_height="match_parent">
+    <com.waze.view.title.TitleBar app:id="@+id/theTitleBar" app:layout_width="match_parent" app:layout_height="wrap_content" />
+    <View app:background="@color/blue_bg" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x1401" app:layout_below="@+id/theTitleBar" />
+    <ScrollView app:id="@+id/settingsGeneralScrollView" app:fadingEdge="UNKNOWN_DATA_0x0" app:layout_width="match_parent" app:layout_height="match_parent" app:fillViewport="true" app:layout_below="@+id/theTitleBar" app:layout_alignParentBottom="true" app:overScrollMode="ifContentScrolls">
+        <LinearLayout style="@style/settingsLayout">
+            <ImageView app:background="@color/settings_bg_titles" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x7f0a008a" />
+            <com.waze.settings.WazeSettingsView app:id="@+id/settingsGeneralLanguage" app:position="atThumb" app:settingsType="1" style="@style/settingsSelection" />
+            <com.waze.settings.WazeSettingsView app:id="@+id/settingsGeneralUnit" app:position="aboveThumb" app:settingsType="1" style="@style/settingsSelection" />
+            <FrameLayout app:background="@color/settings_bg_titles" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x7f0a0089" app:foreground="@drawable/cell_shadow_dark" />
+            <com.waze.settings.WazeSettingsView app:id="@+id/settingsGeneralRadius" app:position="UNKNOWN_DATA_0x3" app:settingsType="1" style="@style/settingsSelection" />
+            <FrameLayout app:background="@color/settings_bg_titles" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x7f0a0089" app:foreground="@drawable/cell_shadow_dark" />
+            <com.waze.settings.WazeSettingsView app:id="@+id/settingsGeneralKeepBackLight" app:position="atThumb" app:settingsType="2" style="@style/settingsSelection" />
+            <com.waze.settings.WazeSettingsView app:id="@+id/settingsGeneralReturnToCall" app:position="aboveThumb" app:settingsType="2" style="@style/settingsSelection" />
+            <FrameLayout app:background="@color/settings_bg_note" app:layout_width="match_parent" app:layout_height="wrap_content">
+                <ImageView app:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:background="@drawable/note_shadow" app:layout_width="match_parent" app:layout_height="wrap_content" />
+                <com.waze.view.text.WazeTextView app:id="@+id/ReturnToWazeExplainationText" app:text="bla" style="@style/settings_note" />
+            </FrameLayout>
+            <FrameLayout app:background="@color/settings_bg_titles" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x7f0a0089" app:foreground="@drawable/cell_shadow_dark" />
+            <com.waze.settings.WazeSettingsView app:id="@+id/settingsGeneralDriveReminder" app:position="aboveThumb" app:settingsType="0" style="@style/settingsSelection" />
+            <FrameLayout app:id="@+id/driveReminderShadow" app:background="@color/settings_bg_titles" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x7f0a0089" app:foreground="@drawable/cell_shadow_dark" />
+            <View app:background="@color/blue_bg" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x1" app:layout_weight="1.0" />
+        </LinearLayout>
+    </ScrollView>
+    <ImageView app:layout_width="match_parent" app:layout_height="wrap_content" app:src="@drawable/topbar_shadow" app:scaleType="fitXY" app:layout_below="@+id/theTitleBar" />
+</RelativeLayout>

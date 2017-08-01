@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:layout_width="match_parent" app:layout_height="match_parent">
+    <View app:id="@+id/routesMapCenter" app:layout_width="UNKNOWN_DATA_0x1" app:layout_height="UNKNOWN_DATA_0x1" app:layout_centerHorizontal="true" />
+    <com.waze.map.MapView app:id="@+id/routesMapView" app:layout_width="match_parent" app:layout_height="match_parent" app:layout_toLeftOf="@+id/routesMapCenter" app:handleKeys="false" app:nativeTag="@string/nativeTagRoutesCanvas" />
+    <LinearLayout app:orientation="vertical" app:id="@+id/routesMapBg" app:background="@color/title_bar" app:padding="0dp" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_toRightOf="@+id/routesMapCenter" app:layout_alignParentBottom="true"
+        <LinearLayout app:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:orientation="horizontal" app:layout_width="wrap_content" app:layout_height="UNKNOWN_DATA_0x1901" app:layout_marginTop="10dp">
+            <com.waze.view.text.WazeTextView app:textSize="15sp" app:textColor="@color/BlueDeep" app:ellipsize="end" app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/routeVia" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginLeft="9dp" app:layout_marginRight="9dp" app:text="Via: somewhere" app:maxLines="1" app:font_type="1" />
+            <ImageView app:id="@+id/routesMapFerry" app:visibility="visible" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginRight="9dp" app:src="@drawable/ferry_icon" />
+            <ImageView app:id="@+id/routesMapToll" app:visibility="visible" app:layout_width="wrap_content" app:layout_height="wrap_content" app:src="@drawable/toll_road_icon" />
+        </LinearLayout>
+        <com.waze.view.text.WazeTextView app:textSize="17sp" app:textColor="@color/Dark" app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/routesMapGoText" app:background="@drawable/button_white_bg" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x3201" app:layout_margin="10dp" app:text="Go" app:font_type="3" />
+    </LinearLayout>
+    <ImageView app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x601" app:src="@drawable/topbar_shadow" app:scaleType="fitXY" />
+    <com.waze.view.tabs.RoutesTabBar app:orientation="vertical" app:id="@+id/RoutesTabBar" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginLeft="@dimen/routes_tab_bar_bottom_margin" app:layout_toRightOf="@+id/routesMapCenter" app:layout_above="@+id/routesMapBg" app:layout_alignParentTop="true" app:layout_alignParentRight="true">
+        <include layout="@layout/routes_map_tab" />
+        <include layout="@layout/routes_map_tab" />
+        <include layout="@layout/routes_map_tab" />
+    </com.waze.view.tabs.RoutesTabBar>
+    <ImageView app:layout_width="match_parent" app:layout_height="wrap_content" app:src="@drawable/bottom_shadow_gradient" app:scaleType="fitXY" app:layout_toRightOf="@+id/routesMapCenter" app:layout_alignParentTop="true" />
+    <ImageView app:layout_width="match_parent" app:layout_height="wrap_content" app:src="@drawable/top_shadow_gradient" app:scaleType="fitXY" app:layout_toRightOf="@+id/routesMapCenter" app:layout_above="@+id/routesMapBg" />
+</RelativeLayout>

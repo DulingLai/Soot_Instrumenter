@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:orientation="vertical" app:background="@color/blue_bg" app:layout_width="match_parent" app:layout_height="match_parent" app:animateLayoutChanges="true">
+    <com.waze.view.title.TitleBar app:id="@+id/theTitleBar" app:layout_width="match_parent" app:layout_height="wrap_content" />
+    <LinearLayout app:orientation="vertical" app:id="@+id/setCarWorkEditLayout" app:background="@color/solid_white" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginTop="30dp" app:layout_below="@+id/theTitleBar" app:animateLayoutChanges="true">
+        <com.waze.ifs.ui.EditBoxFadeBg app:textColor="@color/settings_text_color" app:id="@+id/setLicensePlate" app:background="@drawable/input_box_idle" app:paddingLeft="10dp" app:paddingTop="5dp" app:paddingRight="10dp" app:paddingBottom="5dp" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x3001" app:layout_margin="8dp" app:hint="*Add work/school email" app:singleLine="true" app:inputType="number|numberSigned|numberDecimal|numberPassword|phone" app:imeOptions="actionGo|actionSearch|actionSend|actionNext|actionDone|actionPrevious" />
+    </LinearLayout>
+    <com.waze.view.text.WazeTextView app:textSize="12sp" app:textStyle="UNKNOWN_DATA_0x0" app:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/setLicensePlateExplain" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginLeft="10dp" app:layout_marginTop="10dp" app:layout_marginRight="10dp" app:text="*This will be displayed on your RideWith profile" app:layout_below="@+id/setCarWorkEditLayout" style="@style/textOnBg" />
+    <ImageView app:layout_width="match_parent" app:layout_height="wrap_content" app:src="@drawable/topbar_shadow" app:scaleType="fitXY" app:layout_below="@+id/theTitleBar" />
+</RelativeLayout>

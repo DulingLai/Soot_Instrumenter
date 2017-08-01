@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:orientation="horizontal" app:id="@+id/addressPreviewGasPricesEditTexts" app:visibility="visible" app:layout_width="match_parent" app:layout_height="wrap_content" app:baselineAligned="false"
+    <LinearLayout app:id="@+id/addressPreviewGasPrice1" style="@style/gasPriceLayout">
+        <com.waze.view.text.WazeTextView app:id="@+id/addressPreviewGasPriceEdit1" app:background="@drawable/preview_gas_price_bg" app:text="*22.22" style="@style/gasPriceStyle" />
+        <com.waze.view.text.WazeTextView app:id="@+id/addressPreviewGasPriceLabel1" app:text="*Regular" style="@style/gasPriceLableStyle" />
+    </LinearLayout>
+    <LinearLayout app:id="@+id/addressPreviewGasPrice2" style="@style/gasPriceLayout">
+        <com.waze.view.text.WazeTextView app:id="@+id/addressPreviewGasPriceEdit2" app:text="*22.22" style="@style/gasPriceStyle" />
+        <com.waze.view.text.WazeTextView app:id="@+id/addressPreviewGasPriceLabel2" app:text="*Midgrade" style="@style/gasPriceLableStyle" />
+    </LinearLayout>
+    <LinearLayout app:id="@+id/addressPreviewGasPrice3" style="@style/gasPriceLayout">
+        <com.waze.view.text.WazeTextView app:id="@+id/addressPreviewGasPriceEdit3" app:text="*22.22" style="@style/gasPriceStyle" />
+        <com.waze.view.text.WazeTextView app:id="@+id/addressPreviewGasPriceLabel3" app:text="*Premium" style="@style/gasPriceLableStyle" />
+    </LinearLayout>
+    <LinearLayout app:id="@+id/addressPreviewGasPrice4" style="@style/gasPriceLayout">
+        <com.waze.view.text.WazeTextView app:id="@+id/addressPreviewGasPriceEdit4" app:text="*1.1" style="@style/gasPriceStyle" />
+        <com.waze.view.text.WazeTextView app:id="@+id/addressPreviewGasPriceLabel4" app:text="*Diesel" style="@style/gasPriceLableStyle" />
+    </LinearLayout>
+</LinearLayout>

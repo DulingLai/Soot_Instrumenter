@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res-auto" app1:orientation="vertical" app1:id="@+id/rootRightSideContainer" app1:background="@color/blue_bg" app1:paddingLeft="40dp" app1:layout_width="match_parent" app1:layout_height="match_parent" app1:animateLayoutChanges="true"
+    <LinearLayout app1:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app1:orientation="horizontal" app1:id="@+id/rightSideMenuHeader" app1:visibility="gone" app1:layout_width="match_parent" app1:layout_height="wrap_content" app1:layout_marginTop="16dp" app1:layout_marginBottom="8dp" app1:animateLayoutChanges="true"
+        <LinearLayout app1:orientation="vertical" app1:id="@+id/rightSideMenuTexts" app1:layout_width="wrap_content" app1:layout_height="wrap_content" app1:layout_marginLeft="16dp" app1:layout_weight="1.0">
+            <com.waze.view.text.WazeTextView app1:textSize="24dp" app1:textColor="@color/BlueDeep" app1:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app1:id="@+id/rightSideMenuTitle" app1:layout_width="wrap_content" app1:layout_height="wrap_content" app1:text="*Carpool" app1:font_type="b" />
+            <com.waze.view.text.WazeTextView app1:textSize="14dp" app1:id="@+id/rightSideMenuSubTitle" app1:layout_width="wrap_content" app1:layout_height="wrap_content" app1:text="*Your driver balance: 10$" app1:font_type="1" />
+        </LinearLayout>
+        <ImageView app1:id="@+id/rightSideMenuSettings" app1:layout_width="wrap_content" app1:layout_height="wrap_content" app1:layout_marginRight="16dp" app1:src="@drawable/settings_circle_sel" />
+    </LinearLayout>
+    <View app1:id="@+id/rightSideMenuSep" app1:background="@color/BlueDeepLight" app1:layout_width="match_parent" app1:layout_height="UNKNOWN_DATA_0x101" app1:layout_marginLeft="16dp" app1:layout_marginRight="16dp" app1:layout_marginBottom="8dp" app1:alpha="0.5" />
+    <FrameLayout app1:id="@+id/rideWithPage" app1:layout_width="match_parent" app1:layout_height="match_parent">
+        <RelativeLayout app1:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app1:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app1:id="@+id/loadingPopup" app1:background="@drawable/loading_popup_bg" app1:visibility="gone" app1:layout_width="UNKNOWN_DATA_0x7f0a0085" app1:layout_height="UNKNOWN_DATA_0x7f0a0085" app1:layout_centerInParent="true">
+            <com.waze.view.map.ProgressAnimation app1:gravity="top|bottom|center_vertical|fill_vertical|center|fill" app1:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" app1:id="@+id/loadingProgressBar" app1:layout_width="wrap_content" app1:layout_height="wrap_content" app1:layout_margin="10dp" app1:layout_centerInParent="true" />
+        </RelativeLayout>
+    </FrameLayout>
+</LinearLayout>

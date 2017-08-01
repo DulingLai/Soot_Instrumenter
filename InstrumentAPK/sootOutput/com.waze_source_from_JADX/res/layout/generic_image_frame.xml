@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_centerHorizontal="true">
+    <ImageView app:id="@+id/genTakeOverIcon" app:visibility="visible" app:layout_width="wrap_content" app:layout_height="UNKNOWN_DATA_0x3201" app:src="@drawable/popuphazardicon" />
+    <RelativeLayout app:id="@+id/genTakeOverUserImageContainer" app:paddingTop="5dp" app:visibility="gone" app:layout_width="wrap_content" app:layout_height="wrap_content">
+        <ImageView app:id="@+id/genTakeOverUserImage" app:visibility="visible" app:layout_width="UNKNOWN_DATA_0x1" app:layout_height="UNKNOWN_DATA_0x1" app:layout_marginLeft="1dp" app:layout_marginTop="1dp" app:layout_marginRight="1dp" app:layout_marginBottom="1dp" app:src="@drawable/user_image_placeholder" app:layout_alignLeft="@+id/genTakeOverUserImageFrame" app:layout_alignTop="@+id/genTakeOverUserImageFrame" app:layout_alignRight="@+id/genTakeOverUserImageFrame" app:layout_alignBottom="@+id/genTakeOverUserImageFrame" />
+        <com.waze.view.text.WazeTextView app:textSize="12dp" app:textColor="@color/White" app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/genTakeOverUserImageInitials" app:visibility="visible" app:layout_width="UNKNOWN_DATA_0x1" app:layout_height="UNKNOWN_DATA_0x1" app:layout_marginLeft="2dp" app:layout_marginTop="2dp" app:layout_marginRight="2dp" app:layout_marginBottom="2dp" app:text="WWW" app:layout_alignLeft="@+id/genTakeOverUserImageFrame" app:layout_alignTop="@+id/genTakeOverUserImageFrame" app:layout_alignRight="@+id/genTakeOverUserImageFrame" app:layout_alignBottom="@+id/genTakeOverUserImageFrame" app:font_type="2" />
+        <ImageView app:id="@+id/genTakeOverUserImageFrame" app:visibility="visible" app:layout_width="UNKNOWN_DATA_0x3c01" app:layout_height="UNKNOWN_DATA_0x3c01" app:src="@drawable/takeover_user_frame" app:scaleType="fitCenter" />
+    </RelativeLayout>
+    <FrameLayout app:id="@+id/genTakeOverPictureContainer" app:visibility="gone" app:layout_width="UNKNOWN_DATA_0x4301" app:layout_height="UNKNOWN_DATA_0x3201" app:foreground="@drawable/takeover_picture_frame">
+        <ImageView app:id="@+id/genTakeOverPicture" app:layout_width="match_parent" app:layout_height="match_parent" app:scaleType="centerCrop" />
+    </FrameLayout>
+</FrameLayout>

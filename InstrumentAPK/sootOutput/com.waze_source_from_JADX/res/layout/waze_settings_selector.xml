@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <Space android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="UNKNOWN_DATA_0x1" android:layout_weight="1.0" />
+    <ImageView android:id="@+id/settingsViewSelectorDecoration" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <com.waze.ifs.ui.PointsView android:id="@+id/settingsViewEditValidation" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-2dp" android:layout_marginRight="13dp" android:src="@drawable/mandatory_triangle_icon" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignWithParentIfMissing="true" />
+</LinearLayout>

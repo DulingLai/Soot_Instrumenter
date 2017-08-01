@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:padding="10dp" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textAppearance="?unknown_attr_ref: 1010041" android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Google needs to periodically store your location data to         match you with riders partners as well as provide other location based services in other         Google products." />
+        <TextView android:textAppearance="?unknown_attr_ref: 1010041" android:textColor="0x1060013" android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/learnMoreLink" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Learn more" />
+        <WebView android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/learnMoreText" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Opting in turns on Location History for your Google Account and Location Reporting for this device." />
+        <Button android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/locationHistoryOptIn" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Yes, I'm in!" />
+        <Button android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/locationHistoryOptOut" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/no" />
+        <LinearLayout android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textAppearance="?unknown_attr_ref: 1010041" android:id="@+id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Signed in as " />
+            <TextView android:textAppearance="?unknown_attr_ref: 1010041" android:id="@+id/accountName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="account@google.com" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/rtalerts_menu_row_container" android:padding="2dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/rtalerts_menu_row_image" android:layout_width="UNKNOWN_DATA_0x2d01" android:layout_height="UNKNOWN_DATA_0x3c01" android:layout_marginLeft="10dp" android:scaleType="fitCenter" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <com.waze.view.text.WazeTextView android:textSize="18dp" android:textStyle="italic" android:textColor="@color/gray_dark" android:id="@+id/rtalerts_menu_row_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_toRightOf="@+id/rtalerts_menu_row_image" android:layout_centerVertical="true" />
+    <com.waze.view.text.WazeTextView android:textSize="18dp" android:textStyle="italic" android:textColor="@color/gray_dark" android:id="@+id/rtalerts_menu_row_counter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:scaleType="center" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

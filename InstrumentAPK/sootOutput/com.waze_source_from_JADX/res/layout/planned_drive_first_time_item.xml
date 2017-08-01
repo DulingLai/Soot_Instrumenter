@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/restheme-auto" app:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:orientation="vertical" app:id="@+id/firstTimeContainer" app:layout_width="match_parent" app:layout_height="match_parent">
+    <ImageView app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginTop="24dp" app:layout_marginBottom="18dp" app:src="@drawable/plan_drive_illustration" />
+    <com.waze.view.text.WazeTextView app:textSize="20sp" app:textStyle="bold" app:textColor="@color/BlueDeep" app:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/lblFirstTimeTitle" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginLeft="48dp" app:layout_marginRight="48dp" app:layout_marginBottom="8dp" app:font_type="proximaBold" />
+    <com.waze.view.text.WazeTextView app:textSize="16sp" app:textColor="@color/BlueDeepLight" app:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/lblFirstTimeDetails" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginLeft="24dp" app:layout_marginRight="24dp" app:layout_marginBottom="46dp" app:font_type="robotoReg" />
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/blue_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.waze.view.title.TitleBar android:id="@+id/profileTitle" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <ScrollView android:fadingEdge="UNKNOWN_DATA_0x0" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/profileTitle" android:overScrollMode="always">
+        <LinearLayout android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp"
+            <LinearLayout android:focusable="true" android:focusableInTouchMode="true" android:layout_width="UNKNOWN_DATA_0x0" android:layout_height="UNKNOWN_DATA_0x0" />
+            <LinearLayout android:orientation="horizontal" android:id="@+id/nicknameFrame" android:background="@drawable/item_selector_single" android:padding="6dp" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x4001">
+                <com.waze.view.text.WazeTextView android:id="@+id/nicknameTitle" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_margin="4dp" style="@style/ListItem" />
+                <com.waze.view.text.WazeEditText android:textColor="@color/solid_black" android:id="@+id/nickname" android:background="@drawable/text_area_bg_black" android:paddingLeft="15dp" android:paddingTop="5dp" android:paddingRight="15dp" android:paddingBottom="5dp" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="match_parent" android:layout_marginLeft="2dp" android:layout_marginTop="4dp" android:layout_marginRight="2dp" android:layout_marginBottom="2dp" android:singleLine="true" android:layout_weight="1.0" android:imeOptions="actionGo|actionSearch|actionSend|actionNext|actionDone|actionPrevious" />
+            </LinearLayout>
+            <com.waze.view.text.WazeTextView android:id="@+id/nicknameExplainTitleText" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp" style="@style/textOnBg" />
+            <com.waze.view.text.WazeTextView android:id="@+id/nicknameExplainBodyText" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" style="@style/textOnBg" />
+            <com.waze.view.text.WazeTextView android:textStyle="UNKNOWN_DATA_0x0" android:id="@+id/nicknameExplainFooter" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp" style="@style/textOnBg" />
+        </LinearLayout>
+    </ScrollView>
+    <ImageView android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x601" android:src="@drawable/topbar_shadow" android:scaleType="fitXY" android:layout_below="@+id/profileTitle" />
+</RelativeLayout>

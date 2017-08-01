@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.waze.view.layout.BoundedLinearLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:orientation="vertical" app:layout_width="match_parent" app:layout_height="wrap_content" app:bounded_width="720dp">
+    <RelativeLayout app:id="@+id/PoiLayout" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0xf301"
+        <RelativeLayout app:background="@drawable/takeover_bg" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0xc301" />
+        <com.waze.ifs.ui.CustomWebView app:id="@+id/popupPoiWeb" app:scrollbars="UNKNOWN_DATA_0x0" app:layout_width="match_parent" app:layout_height="match_parent" />
+        <com.waze.view.map.ProgressAnimation app:id="@+id/progressAnimation1" app:visibility="gone" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginBottom="30dp" app:layout_centerHorizontal="true" app:layout_centerVertical="true" />
+    </RelativeLayout>
+</com.waze.view.layout.BoundedLinearLayout>

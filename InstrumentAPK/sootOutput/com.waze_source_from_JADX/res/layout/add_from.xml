@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:background="@color/blue_bg" app:layout_width="match_parent" app:layout_height="match_parent">
+    <com.waze.view.title.TitleBar app:id="@+id/theTitleBar" app:layout_width="match_parent" app:layout_height="wrap_content" />
+    <FrameLayout app:id="@+id/searchViewContainer" app:background="#fff" app:padding="6dp" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_below="@+id/theTitleBar">
+        <com.waze.autocomplete.ContactsCompletionView app:textSize="18sp" app:textColor="0x1060000" app:id="@+id/searchView" app:background="@drawable/search_box_contacts" app:paddingLeft="4dp" app:paddingTop="2dp" app:paddingRight="2dp" app:paddingBottom="2dp" app:layout_width="match_parent" app:layout_height="wrap_content" app:maxHeight="180dp" app:minHeight="48dp" app:hint="Tap to find contacts" app:maxLines="1" app:lineSpacingExtra="1dp" app:lineSpacingMultiplier="1.1" app:imeOptions="flagNoExtractUi" app:dropDownVerticalOffset="0.5dp" />
+    </FrameLayout>
+    <FrameLayout app:layout_width="match_parent" app:layout_height="match_parent" app:layout_below="@+id/searchViewContainer">
+        <ListView app:id="@+id/friendsListMainListView" app:visibility="visible" app:layout_width="match_parent" app:layout_height="match_parent" app:divider="0x0" app:dividerHeight="0dp" />
+        <LinearLayout app:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:orientation="vertical" app:id="@+id/friendsListEmptyLayout" app:visibility="gone" app:layout_width="match_parent" app:layout_height="wrap_content">
+            <ImageView app:id="@+id/friendsListEmptyImage" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginTop="10dp" />
+            <com.waze.view.text.WazeTextView app:textSize="20dp" app:textStyle="bold" app:textColor="#000000" app:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/friendsListEmptyMessage" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginLeft="15dp" app:layout_marginTop="5dp" app:layout_marginRight="15dp" app:layout_marginBottom="5dp" />
+        </LinearLayout>
+    </FrameLayout>
+    <ImageView app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x601" app:src="@drawable/topbar_shadow" app:scaleType="fitXY" app:layout_below="@+id/theTitleBar" />
+</RelativeLayout>

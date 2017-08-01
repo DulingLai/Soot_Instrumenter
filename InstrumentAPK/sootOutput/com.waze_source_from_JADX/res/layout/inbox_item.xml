@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/inboxItemRoot" android:background="@color/solid_white" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x4d01"
+    <RelativeLayout android:id="@+id/inboxItemContainer" android:padding="0dp" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:id="@+id/inboxItemArrow" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="10dp" android:layout_alignParentRight="true">
+            <ImageView android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <com.waze.view.text.WazeTextView android:textSize="12dp" android:textStyle="UNKNOWN_DATA_0x0" android:textColor="@color/inbox_item_time" android:id="@+id/inboxItemTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_marginRight="10dp" android:text="November" android:layout_toLeftOf="@+id/inboxItemArrow" android:layout_alignParentTop="true" />
+        <RelativeLayout android:id="@+id/inboxItemCheckboxContainer" android:focusable="false" android:clickable="true" android:layout_width="UNKNOWN_DATA_0x3701" android:layout_height="match_parent" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+            <CheckBox android:id="@+id/inboxItemCheckbox" android:background="@drawable/checkbox_box" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:button="@drawable/checkbox" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="22dp" android:layout_marginRight="10dp" android:layout_toLeftOf="@+id/inboxItemArrow" android:layout_toRightOf="@+id/inboxItemCheckboxContainer">
+            <com.waze.view.text.WazeTextView android:textSize="17dp" android:textStyle="bold" android:textColor="@color/inbox_item_title" android:ellipsize="end" android:id="@+id/inboxItemTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Waze Staff" android:singleLine="true" />
+            <com.waze.view.text.WazeTextView android:textSize="14dp" android:textColor="@color/inbox_item_text" android:ellipsize="end" android:id="@+id/inboxItemPreview" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Things we've learned in our life so far are" android:singleLine="true" />
+        </LinearLayout>
+    </RelativeLayout>
+    <ProgressBar android:id="@+id/inboxItemProgress" android:visibility="invisible" android:layout_width="UNKNOWN_DATA_0x2301" android:layout_height="match_parent" android:layout_margin="10dp" android:layout_centerInParent="true" />
+</RelativeLayout>

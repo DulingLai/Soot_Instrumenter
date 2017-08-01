@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <xml name="app_widget_provider">res/xml/app_widget_provider.xml</xml>
+</resources>

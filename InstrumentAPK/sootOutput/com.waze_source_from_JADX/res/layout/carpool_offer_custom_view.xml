@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:orientation="vertical" app:layout_width="wrap_content" app:layout_height="wrap_content">
+    <View app:id="@+id/confirmButtonsSeparator" app:background="@color/BlueGrey" app:layout_marginLeft="14dp" app:layout_marginTop="16dp" app:layout_marginRight="14dp" app:layout_marginBottom="8dp" style="@style/settingsSeparator" />
+    <LinearLayout app:orientation="horizontal" app:layout_width="wrap_content" app:layout_height="wrap_content"
+        <LinearLayout app:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:orientation="vertical" app:layout_width="UNKNOWN_DATA_0x1" app:layout_height="wrap_content" app:layout_weight="1.0">
+            <com.waze.view.text.WazeTextView app:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/carpoolOfferTitle" app:paddingTop="0dp" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginLeft="4dp" app:text="@string/lorem_shorteest" app:font_type="3" style="@style/settingsDialogContentText" />
+            <com.waze.view.text.WazeTextView app:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/carpoolOfferText" app:paddingTop="0dp" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginLeft="4dp" app:text="@string/lorem_shorter" style="@style/settingsDialogContentText" />
+        </LinearLayout>
+        <ImageView app:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:id="@+id/carpoolOfferImage" app:layout_width="UNKNOWN_DATA_0x4001" app:layout_height="UNKNOWN_DATA_0x4001" app:layout_marginRight="14dp" app:src="@drawable/rs_profilepic_placeholder" app:text="@string/lorem_shorteest" />
+    </LinearLayout>
+</LinearLayout>

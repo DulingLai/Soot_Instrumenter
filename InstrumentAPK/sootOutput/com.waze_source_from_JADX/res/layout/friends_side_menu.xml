@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/com.waze" app:id="@+id/rootFriendsContainer" app:background="@color/blue_bg" app:paddingLeft="40dp" app:layout_width="match_parent" app:layout_height="match_parent">
+    <com.waze.social.FriendsSideMenuHeader app:id="@+id/friendsHeader" app:background="@color/blue_bg" app:padding="0dp" app:clipChildren="true" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x4801" app:layout_margin="0dp" />
+    <com.waze.view.pages.NonSwipeableViewPager app:id="@+id/friendsSideMenuViewPager" app:clipChildren="false" app:layout_width="match_parent" app:layout_height="match_parent" app:layout_below="@+id/friendsHeader">
+        <RelativeLayout app:id="@+id/friendsPage" app:layout_width="match_parent" app:layout_height="match_parent">
+            <com.waze.social.FriendsSideMenuRecycler app:id="@+id/friendsRecycler" app:layout_width="match_parent" app:layout_height="match_parent" />
+            <LinearLayout app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:orientation="horizontal" app:id="@+id/backToTop" app:background="@drawable/back_to_top_pill_bg" app:paddingLeft="12dp" app:paddingRight="12dp" app:visibility="gone" app:layout_width="wrap_content" app:layout_height="UNKNOWN_DATA_0x2001" app:layout_margin="8dp" app:layout_centerHorizontal="true">
+                <ImageView app:layout_width="UNKNOWN_DATA_0x1001" app:layout_height="UNKNOWN_DATA_0x1001" app:layout_marginRight="4dp" app:src="@drawable/back_to_top_arrow" />
+                <com.waze.view.text.WazeTextView app:textSize="15sp" app:textColor="@color/solid_white" app:id="@+id/backToTopText" app:layout_width="wrap_content" app:layout_height="wrap_content" app:font_type="1" style="@style/textOnBg" />
+            </LinearLayout>
+            <ScrollView app:id="@+id/noFriendsScrollView" app:visibility="gone" app:scrollbars="UNKNOWN_DATA_0x0" app:layout_width="match_parent" app:layout_height="match_parent">
+                <LinearLayout app:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:orientation="vertical" app:id="@+id/noFriendsContainer" app:background="@color/blue_bg" app:layout_width="match_parent" app:layout_height="wrap_content">
+                    <ImageView app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginTop="64dp" app:src="@drawable/no_firends_empty_state" />
+                    <com.waze.view.text.WazeTextView app:textSize="18sp" app:textStyle="bold" app:textColor="@color/BlueDeep" app:id="@+id/noFriendsText" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginTop="32dp" />
+                    <com.waze.view.text.WazeTextView app:textSize="18sp" app:textColor="@color/solid_white" app:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/noFriendsConnectText" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginLeft="64dp" app:layout_marginTop="8dp" app:layout_marginRight="64dp" />
+                    <RelativeLayout app:id="@+id/btnConnectWithFacebook" app:background="@drawable/btn_facebook_selector" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x3801" app:layout_marginLeft="8dp" app:layout_marginTop="56dp" app:layout_marginRight="8dp">
+                        <com.waze.view.text.WazeTextView app:textSize="18sp" app:textStyle="bold" app:textColor="@color/solid_white" app:id="@+id/btnConnectWithFacebookText" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_centerInParent="true" />
+                    </RelativeLayout>
+                    <RelativeLayout app:id="@+id/btnConnectWithContacts" app:background="@drawable/little_button" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x3801" app:layout_marginLeft="8dp" app:layout_marginTop="8dp" app:layout_marginRight="8dp">
+                        <com.waze.view.text.WazeTextView app:textSize="18sp" app:textStyle="bold" app:textColor="@color/solid_black" app:id="@+id/btnConnectWithContactsText" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_centerInParent="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </ScrollView>
+            <RelativeLayout app:id="@+id/loadingPopup" app:background="@drawable/loading_popup_bg" app:visibility="gone" app:layout_width="UNKNOWN_DATA_0x7f0a0085" app:layout_height="UNKNOWN_DATA_0x7f0a0085" app:layout_centerInParent="true">
+                <com.waze.view.map.ProgressAnimation app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/loadingProgressBar" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_margin="10dp" app:layout_centerInParent="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout app:id="@+id/inboxPage" app:layout_width="match_parent" app:layout_height="match_parent">
+            <com.waze.inbox.InboxRecycler app:id="@+id/inboxRecycler" app:layout_width="match_parent" app:layout_height="match_parent" />
+            <RelativeLayout app:id="@+id/inboxBottomBarContainer" app:background="@color/blue_bg" app:visibility="gone" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x4801" app:layout_alignParentBottom="true">
+                <ImageView app:id="@+id/btnSelectAll" app:background="@drawable/inbox_bottom_button_bg" app:layout_width="UNKNOWN_DATA_0x3001" app:layout_height="UNKNOWN_DATA_0x3001" app:layout_marginLeft="8dp" app:src="@drawable/inbox_selectall_icon" app:layout_centerVertical="true" />
+                <com.waze.view.text.WazeTextView app:textSize="18sp" app:textColor="@color/DarkBlue" app:id="@+id/lblSelectAll" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginLeft="8dp" app:layout_toRightOf="@+id/btnSelectAll" app:layout_centerVertical="true" />
+                <ImageView app:id="@+id/btnDeleteSelected" app:background="@drawable/inbox_bottom_button_bg" app:layout_width="UNKNOWN_DATA_0x3001" app:layout_height="UNKNOWN_DATA_0x3001" app:layout_marginRight="8dp" app:src="@drawable/inbox_delete_icon" app:layout_alignParentRight="true" app:layout_centerVertical="true" />
+                <ImageView app:id="@+id/btnMarkAsRead" app:background="@drawable/inbox_bottom_button_bg" app:layout_width="UNKNOWN_DATA_0x3001" app:layout_height="UNKNOWN_DATA_0x3001" app:layout_marginRight="8dp" app:src="@drawable/inbox_read_icon" app:layout_toLeftOf="@+id/btnDeleteSelected" app:layout_centerVertical="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <FrameLayout app:id="@+id/rideWithPage" app:background="@color/blue_bg" app:layout_width="match_parent" app:layout_height="match_parent" />
+    </com.waze.view.pages.NonSwipeableViewPager>
+</RelativeLayout>

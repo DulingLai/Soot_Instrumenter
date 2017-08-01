@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="addon_list">
+        <item>crown</item>
+        <item>sword</item>
+        <item>shield</item>
+        <item>edit</item>
+        <item>beta</item>
+        <item>halo</item>
+        <item>wings</item>
+    </array>
+    <array name="mood_list">
+        <item>Sunflower</item>
+        <item>Zombie</item>
+        <item>Cat</item>
+        <item>Dog</item>
+        <item>LOL-female</item>
+        <item>LOL</item>
+        <item>cool-female</item>
+        <item>cool</item>
+        <item>frustrated-female</item>
+        <item>frustrated</item>
+        <item>happy-female</item>
+        <item>happy</item>
+        <item>inlove-female</item>
+        <item>inlove</item>
+        <item>peaceful-female</item>
+        <item>peaceful</item>
+        <item>sad-female</item>
+        <item>sad</item>
+        <item>sleepy-female</item>
+        <item>sleepy</item>
+        <item>speedy-female</item>
+        <item>speedy</item>
+        <item>duck</item>
+        <item>duck-female</item>
+        <item>geek</item>
+        <item>geek-female</item>
+        <item>sarcastic</item>
+        <item>sarcastic-female</item>
+        <item>shy</item>
+        <item>shy-female</item>
+        <item>sick</item>
+        <item>sick-female</item>
+        <item>ninja</item>
+        <item>ninja-female</item>
+        <item>proud</item>
+        <item>proud_female</item>
+    </array>
+    <array name="mood_list_exclusive">
+        <item>wazer_dino</item>
+        <item>wazer_8bit</item>
+        <item>wazer_robot</item>
+    </array>
+    <array name="social_button_title">
+        <item>Connect</item>
+        <item>Disconnect</item>
+    </array>
+    <array name="social_driving_styles">
+        <item>City &amp; state only</item>
+        <item>House #, Street, City, State</item>
+    </array>
+    <array name="social_status">
+        <item>Status: not logged in</item>
+        <item>Status: logged in</item>
+    </array>
+    <array name="social_status_short">
+        <item>not logged in</item>
+        <item>logged in</item>
+    </array>
+    <array name="mood_list_beta">
+        <item>Albert</item>
+        <item>BugBuster</item>
+    </array>
+</resources>

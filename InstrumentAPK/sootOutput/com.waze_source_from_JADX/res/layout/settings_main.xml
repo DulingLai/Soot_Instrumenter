@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:layout_width="match_parent" app:layout_height="match_parent">
+    <com.waze.view.title.TitleBar app:id="@+id/theTitleBar" app:layout_width="match_parent" app:layout_height="wrap_content" />
+    <View app:background="@color/blue_bg" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x1401" app:layout_below="@+id/theTitleBar" />
+    <ScrollView app:fadingEdge="UNKNOWN_DATA_0x0" app:layout_width="match_parent" app:layout_height="match_parent" app:layout_below="@+id/theTitleBar" app:overScrollMode="ifContentScrolls">
+        <LinearLayout style="@style/settingsLayout">
+            <com.waze.settings.SettingsTitleText app:id="@+id/settingsMainMapText" app:text="Quick Settings" app:position="atThumb" style="@style/settingsTitle" />
+            <com.waze.settings.WazeSettingsView app:id="@+id/settingsMainMapDisplay" app:position="atThumb" app:settingsType="1" app:swipable="false" style="@style/settingsSelection" />
+            <com.waze.settings.WazeSettingsView app:id="@+id/settingsMainSoundMode" app:position="floating" app:settingsType="1" app:swipable="false" style="@style/settingsSelection" />
+            <com.waze.settings.WazeSettingsView app:id="@+id/settingsGeneralNavigationGuidance" app:position="floating" app:settingsType="1" style="@style/settingsSelection" />
+            <com.waze.settings.WazeSettingsView app:id="@+id/settingsGeneralSearchByVoice" app:position="floating" app:settingsType="1" style="@style/settingsSelection" />
+            <com.waze.settings.WazeSettingsView app:id="@+id/settingsNavigationAvoidTollRoads" app:layout_height="wrap_content" app:position="floating" app:settingsType="2" style="@style/settingsSelection" />
+            <com.waze.settings.WazeSettingsView app:id="@+id/settingsSaveBattery" app:position="aboveThumb" app:settingsType="0" style="@style/settingsSelection">
+                <com.waze.view.text.WazeTextView app:textSize="14sp" app:textColor="#fff" app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/settingsSaveBatteryNew" app:background="@drawable/ridecard_status_schedualed" app:paddingLeft="10dp" app:paddingTop="4dp" app:paddingRight="10dp" app:paddingBottom="4dp" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="*New" app:layout_alignParentRight="true" app:font_type="1" />
+            </com.waze.settings.WazeSettingsView>
+            <com.waze.settings.SettingsTitleText app:id="@+id/settingsMainSettingsText" app:text="Settings" style="@style/settingsTitle" />
+            <com.waze.settings.WazeSettingsView app:id="@+id/settingsMainSettingsGeneral" app:position="atThumb" app:icon="@drawable/list_icon_settings_general" style="@style/settingsSelection" />
+            <com.waze.settings.WazeSettingsView app:id="@+id/settingsMainSettingsMap" app:position="floating" app:icon="@drawable/list_icon_settings_map" style="@style/settingsSelection" />
+            <com.waze.settings.WazeSettingsView app:id="@+id/settingsMainSettingsSound" app:visibility="visible" app:position="floating" app:icon="@drawable/list_icon_sound_settings" style="@style/settingsSelection" />
+            <com.waze.settings.WazeSettingsView app:id="@+id/settingsMainSettingsNavigation" app:position="floating" app:icon="@drawable/list_icon_navigation_settings" style="@style/settingsSelection" />
+            <FrameLayout app:id="@+id/settingsMainSettingsCarpoolFrame" app:layout_width="match_parent" app:layout_height="wrap_content">
+                <com.waze.settings.WazeSettingsView app:id="@+id/settingsMainSettingsCarpoolProfile" app:position="floating" app:icon="@drawable/list_icon_carpool_settings" style="@style/settingsSelection" />
+                <com.waze.view.text.WazeTextView app:textSize="14sp" app:textColor="#fff" app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/settingsMainSettingsCarpoolProfileNew" app:background="@drawable/ridecard_status_schedualed" app:paddingLeft="10dp" app:paddingTop="4dp" app:paddingRight="10dp" app:paddingBottom="4dp" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="*New" app:font_type="1" />
+            </FrameLayout>
+            <com.waze.settings.WazeSettingsView app:id="@+id/settingsMainSettingsSpeedometer" app:position="floating" app:icon="@drawable/list_icon_speedometer" style="@style/settingsSelection" />
+            <com.waze.settings.WazeSettingsView app:id="@+id/settingsMainSettingsAccountAndLogin" app:position="floating" app:icon="@drawable/list_icon_profile" style="@style/settingsSelection" />
+            <com.waze.settings.WazeSettingsView app:id="@+id/settingsMainSettingsCalendar" app:position="floating" app:icon="@drawable/list_icon_later_item" style="@style/settingsSelection" />
+            <com.waze.settings.WazeSettingsView app:id="@+id/settingsMainSettingsNotifications" app:position="floating" app:icon="@drawable/list_icon_notification" style="@style/settingsSelection" />
+            <com.waze.settings.WazeSettingsView app:id="@+id/settingsMainSettingsGas" app:visibility="gone" app:position="floating" app:icon="@drawable/list_icon_gas_settings" style="@style/settingsSelection" />
+            <com.waze.settings.WazeSettingsView app:id="@+id/settingsMainSettingsSocial" app:position="floating" app:icon="@drawable/list_icon_get_social" style="@style/settingsSelection" />
+            <com.waze.settings.WazeSettingsView app:id="@+id/settingsMainSettingsSpread" app:position="floating" app:icon="@drawable/list_icon_spread_the_love" style="@style/settingsSelection" />
+            <com.waze.settings.WazeSettingsView app:id="@+id/settingsMainSettingsSpotify" app:position="floating" app:icon="@drawable/list_icon_spotify" style="@style/settingsSelection" />
+            <com.waze.settings.WazeSettingsView app:id="@+id/settingsMainSettingsAbout" app:position="aboveThumb" app:icon="@drawable/list_icon_about" style="@style/settingsSelection" />
+            <com.waze.settings.SettingsTitleText app:id="@+id/settingsHelpSettingsText" app:text="Help" style="@style/settingsTitle" />
+            <com.waze.settings.WazeSettingsView app:id="@+id/settingsHelpAsk" app:position="atThumb" app:icon="@drawable/list_icon_help_menu" style="@style/settingsSelection" />
+            <com.waze.settings.WazeSettingsView app:id="@+id/settingsHelpWatch1" app:position="floating" app:icon="@drawable/list_icon_tour" style="@style/settingsSelection" />
+            <com.waze.settings.WazeSettingsView app:id="@+id/settingsHelpWatch2" app:position="floating" app:icon="@drawable/list_icon_tour" style="@style/settingsSelection" />
+            <com.waze.settings.WazeSettingsView app:id="@+id/settingsHelpSendLogs" app:position="aboveThumb" app:icon="@drawable/list_icon_submit_logs" style="@style/settingsSelection" />
+            <FrameLayout app:background="@color/blue_bg" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x7f0a0089" app:foreground="@drawable/cell_shadow_dark" />
+        </LinearLayout>
+    </ScrollView>
+    <ImageView app:layout_width="match_parent" app:layout_height="wrap_content" app:src="@drawable/topbar_shadow" app:scaleType="fitXY" app:layout_below="@+id/theTitleBar" />
+</RelativeLayout>

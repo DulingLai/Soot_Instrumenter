@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res-auto" app:id="@+id/profileWorkScroll" app:background="#97c6d4" app:layout_width="match_parent" app:layout_height="match_parent" app:fillViewport="true">
+    <LinearLayout app:orientation="vertical" app:layout_width="match_parent" app:layout_height="wrap_content">
+        <FrameLayout app:id="@+id/dummy" app:focusable="true" app:focusableInTouchMode="true" app:layout_width="UNKNOWN_DATA_0x0" app:layout_height="UNKNOWN_DATA_0x0" />
+        <Space app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x1401" />
+        ImageView
+            android:id=&quot;@+id/profileWorkPic&quot;
+            android:layout_width=&quot;wrap_content&quot;
+            android:layout_height=&quot;wrap_content&quot;
+            android:layout_centerInParent=&quot;true&quot;
+            android:layout_gravity=&quot;center&quot;
+            android:layout_marginLeft=&quot;10dp&quot;
+            android:layout_marginRight=&quot;10dp&quot;
+            android:src=&quot;@drawable/rw_work_illu&quot; /&gt;
+        <com.waze.view.text.WazeTextView app:textSize="20sp" app:textColor="@color/BlueDeep" app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/profileWorkTitle" app:paddingLeft="10dp" app:paddingRight="10dp" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginLeft="10dp" app:layout_marginTop="20dp" app:layout_marginRight="10dp" app:layout_marginBottom="10dp" app:text="*Verify your work email" />
+        <com.waze.view.text.WazeTextView app:textSize="15dp" app:textStyle="UNKNOWN_DATA_0x0" app:textColor="@color/BlueDeep" app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/profileWorkSub" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginLeft="25dp" app:layout_marginRight="25dp" app:layout_marginBottom="30dp" app:text="* This is the way the riders will recognize you" app:font_type="4" />
+        <RelativeLayout app:orientation="horizontal" app:id="@+id/profileWorkEmailLayout" app:background="@drawable/item_selector_bottom" app:padding="0dp" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x4001">
+            <com.waze.settings.WazeSettingsView app:id="@+id/profileWorkEmail" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x4601" app:position="floating" app:settingsType="6" />
+        </RelativeLayout>
+        <com.waze.view.text.WazeTextView app:textSize="15sp" app:textStyle="italic" app:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/profileWorkBottom" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_margin="13dp" app:text="!@#You'll get a one-time verification message
+Your email address stays hidden" style="@style/textOnBg" />
+        <Space app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x1" app:layout_weight="1.0" />
+        <com.waze.view.text.WazeTextView app:textSize="18dp" app:textColor="@color/text_wt_button_enabled" app:ellipsize="end" app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/profileWorkButton" app:background="@drawable/signup_bt_white" app:clickable="true" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x3401" app:layout_marginLeft="15dp" app:layout_marginTop="10dp" app:layout_marginRight="15dp" app:layout_marginBottom="15dp" app:text="*Done" app:singleLine="true" app:layout_alignParentBottom="true" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/blue_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.waze.view.title.TitleBar android:id="@+id/theTitleBar" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <ScrollView android:fadingEdge="UNKNOWN_DATA_0x0" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/theTitleBar" android:overScrollMode="always">
+        <LinearLayout android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.waze.view.text.WazeTextView android:textSize="20dp" android:textStyle="bold" android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/linkedinLabelHeaderText" android:layout_marginLeft="15dp" android:layout_marginTop="40dp" android:layout_marginRight="10dp" android:layout_marginBottom="5dp" android:text="*Carpool with workers" style="@style/textOnBg" />
+            <com.waze.view.text.WazeTextView android:textSize="17dp" android:textStyle="UNKNOWN_DATA_0x0" android:id="@+id/linkedJustificationText" android:layout_marginLeft="15dp" android:layout_marginTop="5dp" android:layout_marginRight="10dp" android:layout_marginBottom="20dp" android:text="*Adding your profile makes it easy to carpool with coworkers, and helps riders get to you know you." style="@style/textOnBg" />
+            <Button android:textSize="17dp" android:textStyle="UNKNOWN_DATA_0x0" android:textColor="#aaaaaa" android:id="@+id/linkedinConnectBtn" android:background="@drawable/btn" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:layout_marginRight="10dp" android:layout_marginBottom="10dp" android:text="*Connect with LinkedIn" android:drawableLeft="@drawable/linkedin_icon" android:drawablePadding="-15dp" android:textAllCaps="false" />
+        </LinearLayout>
+    </ScrollView>
+    <ImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/topbar_shadow" android:scaleType="fitXY" android:layout_below="@+id/theTitleBar" />
+</RelativeLayout>

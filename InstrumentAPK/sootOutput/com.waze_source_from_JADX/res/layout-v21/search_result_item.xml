@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:id="@+id/mainWrapper" app:background="@color/BlueWhale" app:layout_width="match_parent" app:layout_height="match_parent">
+    <LinearLayout app:orientation="vertical" app:id="@+id/mainContainer" app:background="@drawable/inbox_item_bg" app:paddingBottom="8dp" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginLeft="8dp" app:layout_marginTop="4dp" app:layout_marginRight="8dp" app:layout_marginBottom="4dp" app:elevation="2dp">
+        <RelativeLayout app:layout_width="match_parent" app:layout_height="wrap_content"
+            <RelativeLayout app:layout_width="match_parent" app:layout_height="match_parent" app:layout_marginRight="80dp">
+                <ImageView app:id="@+id/imgIcon" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginLeft="16dp" app:layout_marginTop="8dp" app:layout_marginBottom="16dp" />
+                <com.waze.view.text.WazeTextView app:textSize="17sp" app:textColor="@color/DarkBlue" app:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/lblTitle" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginLeft="16dp" app:layout_marginTop="8dp" app:layout_toRightOf="@+id/imgIcon" app:font_type="3" />
+                <com.waze.view.text.WazeTextView app:textSize="15sp" app:textColor="@color/Light" app:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/lblDetails" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginLeft="16dp" app:layout_marginTop="4dp" app:layout_marginBottom="8dp" app:layout_toRightOf="@+id/imgIcon" app:layout_below="@+id/lblTitle" app:font_type="1" />
+                <com.waze.view.text.WazeTextView app:textSize="17sp" app:textColor="@color/RedSweet" app:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/lblTimeOffRoute" app:visibility="gone" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginLeft="16dp" app:layout_marginBottom="8dp" app:layout_toRightOf="@+id/imgIcon" app:layout_below="@+id/lblDetails" app:font_type="3" />
+            </RelativeLayout>
+            <RelativeLayout app:id="@+id/rightPanel" app:layout_width="UNKNOWN_DATA_0x5001" app:layout_height="wrap_content" app:layout_alignParentRight="true" app:layout_centerVertical="true">
+                <LinearLayout app:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:orientation="vertical" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_centerVertical="true">
+                    <com.waze.view.text.WazeTextView app:textSize="22sp" app:textColor="@color/BlueLagoon" app:id="@+id/lblDistance" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginBottom="-4dp" app:font_type="3" />
+                    <com.waze.view.text.WazeTextView app:textSize="12sp" app:textColor="@color/BlueLagoon" app:id="@+id/lblKmAway" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="km away" app:font_type="6" />
+                    <LinearLayout app:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:orientation="vertical" app:id="@+id/extendedRightPanelContainer" app:visibility="gone" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginTop="8dp">
+                        <View app:id="@+id/extendedPanelSeperator" app:background="@color/PassiveGrey" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x101" app:layout_marginLeft="8dp" app:layout_marginRight="8dp" app:layout_marginBottom="8dp" />
+                        <com.waze.view.text.WazeTextView app:textSize="12sp" app:textColor="#ff929495" app:id="@+id/lblTimeStamp" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginBottom="4dp" app:font_type="3" />
+                        <FrameLayout app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/priceContainer" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginLeft="8dp" app:layout_marginRight="8dp">
+                            <com.waze.view.text.WazeTextView app:textSize="17sp" app:textColor="@color/White" app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/lblAveragePrice" app:layout_width="wrap_content" app:layout_height="wrap_content" app:font_type="3" />
+                        </FrameLayout>
+                        <RelativeLayout app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginLeft="8dp" app:layout_marginRight="8dp">
+                            <ImageView app:layout_width="UNKNOWN_DATA_0xc01" app:layout_height="UNKNOWN_DATA_0xc01" app:src="@drawable/search_result_gas_icon_small" app:layout_centerVertical="true" />
+                            <TextView app:textSize="12sp" app:textColor="#ff929495" app:id="@+id/lblCurrency" app:layout_width="UNKNOWN_DATA_0x1001" app:layout_height="UNKNOWN_DATA_0x1001" app:layout_marginRight="-4dp" app:layout_alignParentRight="true" app:layout_centerVertical="true" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+            <com.waze.view.text.WazeTextView app:textSize="14sp" app:textColor="@color/RedSweet" app:id="@+id/lblAd" app:visibility="gone" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginLeft="22dp" app:layout_marginBottom="16dp" app:text="Ad" app:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <RelativeLayout app:id="@+id/dealContainer" app:background="#fee4e5" app:visibility="gone" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x2001">
+            <ImageView app:id="@+id/imgDealImage" app:paddingTop="2dp" app:layout_width="wrap_content" app:layout_height="wrap_content" app:src="@drawable/search_result_deal_selector" app:layout_centerVertical="true" />
+            <com.waze.view.text.WazeTextView app:textSize="15sp" app:textColor="#ff7272" app:id="@+id/lblDealText" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginLeft="4dp" app:layout_toRightOf="@+id/imgDealImage" app:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

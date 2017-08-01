@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:background="#00000000" android:layout_width="match_parent" android:layout_height="match_parent"
+    <RelativeLayout android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:background="@drawable/popup_bg_no_title" android:padding="10dp" android:layout_width="UNKNOWN_DATA_0x13601" android:layout_height="wrap_content">
+        <com.waze.ifs.ui.CustomWebView android:id="@+id/systemMessageWeb" android:background="0x0" android:scrollbars="UNKNOWN_DATA_0x0" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x14401" android:layout_centerHorizontal="true" />
+        <LinearLayout android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="horizontal" android:id="@+id/ButtonsLinearLayout" android:paddingTop="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/systemMessageWeb" android:layout_centerHorizontal="true" />
+        <com.waze.view.map.ProgressAnimation android:id="@+id/progressAnimation1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="120dp" android:layout_alignBottom="@+id/systemMessageWeb" android:layout_centerHorizontal="true" />
+        <LinearLayout android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="horizontal" android:id="@+id/CloseButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@+id/systemMessageWeb" android:layout_alignRight="@+id/systemMessageWeb">
+            <ImageView android:id="@+id/CloseButtonImage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_marginRight="5dp" android:src="@drawable/close_down" android:layout_alignTop="@+id/popupPoiWeb" android:layout_alignRight="@+id/ButtonsLinearLayout" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

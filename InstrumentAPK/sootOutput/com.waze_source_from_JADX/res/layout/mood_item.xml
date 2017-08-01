@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/moodItemView" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:background="@drawable/blue_selector" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x4001">
+        <LinearLayout android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="horizontal" android:id="@+id/moodItemContainer" android:background="@drawable/item_selector_single" android:padding="0dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerHorizontal="true">
+            <ImageView android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/moodIcon" android:layout_width="UNKNOWN_DATA_0x2601" android:layout_height="UNKNOWN_DATA_0x2601" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:layout_marginBottom="2dp" />
+            <CheckedTextView android:id="@+id/moodName" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginRight="10dp" android:checkMark="@drawable/list_check" android:layout_weight="1.0" style="@style/ListItem" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

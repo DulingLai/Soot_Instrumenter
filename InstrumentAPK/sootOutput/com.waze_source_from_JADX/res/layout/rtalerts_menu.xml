@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/settings_bg_titles" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.waze.view.title.TitleBar android:id="@+id/rtalterts_menu_title_bar" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:padding="0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/rtalterts_menu_title_bar" android:layout_centerHorizontal="true">
+        <ListView android:id="@+id/rtalterts_menu_listmenu" android:scrollbars="UNKNOWN_DATA_0x0" android:fadingEdge="UNKNOWN_DATA_0x0" android:layout_width="match_parent" android:layout_height="wrap_content" android:cacheColorHint="#00000000" android:divider="0x106000d" android:dividerHeight="1dp" />
+    </LinearLayout>
+    <ImageView android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x601" android:src="@drawable/topbar_shadow" android:scaleType="fitXY" android:layout_below="@+id/rtalterts_menu_title_bar" />
+</RelativeLayout>

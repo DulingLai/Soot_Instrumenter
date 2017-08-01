@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ListView android:id="@+id/routesList" android:scrollbars="UNKNOWN_DATA_0x0" android:fadingEdge="UNKNOWN_DATA_0x0" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="4dp" android:layout_marginTop="4dp" android:layout_marginRight="4dp" android:listSelector="0x106000d" android:cacheColorHint="#00000000" android:divider="0x106000d" android:dividerHeight="3dp" android:minHeight="130dp" android:headerDividersEnabled="true" android:footerDividersEnabled="true" />
+</FrameLayout>

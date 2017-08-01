@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:id="@+id/mainWrapper" app:layout_width="match_parent" app:layout_height="wrap_content">
+    <LinearLayout app:orientation="vertical" app:layout_width="match_parent" app:layout_height="wrap_content">
+        <com.waze.view.text.WazeTextView app:textSize="15sp" app:textColor="@color/BlueDeep" app:ellipsize="end" app:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/lblGroupTitle" app:background="@color/BlueWhale" app:paddingLeft="8dp" app:paddingTop="5dp" app:visibility="gone" app:layout_width="match_parent" app:layout_height="wrap_content" app:text="*Most popular*" app:font_type="3" />
+        <LinearLayout app:orientation="horizontal" app:id="@+id/mainContainer" app:background="@drawable/inbox_item_bg" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginLeft="8dp" app:layout_marginTop="4dp" app:layout_marginRight="8dp" app:layout_marginBottom="4dp" app:elevation="2dp"
+            <LinearLayout app:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:orientation="vertical" app:clipChildren="false" app:clipToPadding="false" app:layout_width="wrap_content" app:layout_height="match_parent">
+                <FrameLayout app:clipChildren="false" app:clipToPadding="false" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_margin="16dp">
+                    <ImageView app:id="@+id/imgIcon" app:layout_width="wrap_content" app:layout_height="wrap_content" app:src="@drawable/parking_icon_small" />
+                    <ImageView app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/imgIconPopular" app:visibility="gone" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginTop="-5dp" app:layout_marginRight="-5dp" app:src="@drawable/popular_parking_icon" />
+                </FrameLayout>
+                <Space app:layout_width="UNKNOWN_DATA_0x1" app:layout_height="UNKNOWN_DATA_0x1" app:layout_weight="1.0" />
+                <com.waze.view.text.WazeTextView app:textSize="13sp" app:textColor="@color/RedSweet" app:id="@+id/lblAd" app:visibility="gone" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginBottom="5dp" app:text="*ad" app:font_type="5" />
+            </LinearLayout>
+            <LinearLayout app:orientation="vertical" app:layout_width="UNKNOWN_DATA_0x1" app:layout_height="wrap_content" app:layout_marginTop="12dp" app:layout_marginRight="7dp" app:layout_marginBottom="13dp" app:layout_weight="1.0">
+                <com.waze.view.text.WazeTextView app:textSize="17sp" app:textColor="@color/Dark" app:ellipsize="end" app:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/lblTitle" app:layout_width="match_parent" app:layout_height="wrap_content" app:text="*parking name" app:maxLines="2" app:font_type="3" />
+                <com.waze.view.text.WazeTextView app:textSize="15sp" app:textColor="@color/Light" app:ellipsize="end" app:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/lblDetails" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginTop="3dp" app:layout_marginBottom="9dp" app:text="*parking address" app:maxLines="2" app:layout_below="@+id/lblTitle" app:font_type="1" />
+                <LinearLayout app:gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:orientation="horizontal" app:layout_width="match_parent" app:layout_height="wrap_content">
+                    <com.waze.view.text.WazeTextView app:textSize="13sp" app:textColor="@color/BlueLagoon" app:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/lblETA" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="*Arrival time 8:32" app:font_type="5" />
+                    <com.waze.view.map.ProgressAnimation app:id="@+id/suggestedParkingLoader" app:visibility="visible" app:layout_width="UNKNOWN_DATA_0x1701" app:layout_height="UNKNOWN_DATA_0x1701" app:layout_marginLeft="11dp" app:src="@drawable/parking_blue_chevron" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout app:orientation="horizontal" app:id="@+id/walkingTimeLayout" app:layout_width="wrap_content" app:layout_height="match_parent">
+                <View app:background="@color/PassiveGrey" app:layout_width="UNKNOWN_DATA_0x40000031" app:layout_height="match_parent" app:layout_marginTop="10dp" app:layout_marginBottom="10dp" />
+                <LinearLayout app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:orientation="vertical" app:padding="16dp" app:layout_width="wrap_content" app:layout_height="wrap_content">
+                    <ImageView app:layout_width="wrap_content" app:layout_height="wrap_content" app:src="@drawable/walking_guy_blue_icon" />
+                    <com.waze.view.text.WazeTextView app:textSize="14sp" app:textColor="@color/BlueLagoon" app:id="@+id/lblTime" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="*3 min." app:font_type="3" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

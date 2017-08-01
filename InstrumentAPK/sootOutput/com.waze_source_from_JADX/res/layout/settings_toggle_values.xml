@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/com.waze" app:orientation="vertical" app:background="@color/blue_bg" app:layout_width="match_parent" app:layout_height="match_parent">
+    <com.waze.view.title.TitleBar app:id="@+id/theTitleBar" app:layout_width="match_parent" app:layout_height="wrap_content" />
+    <ScrollView app:fadingEdge="UNKNOWN_DATA_0x0" app:layout_width="match_parent" app:layout_height="match_parent" app:fillViewport="true" app:layout_below="@+id/theTitleBar" app:overScrollMode="ifContentScrolls">
+        <LinearLayout style="@style/settingsSection">
+            <View app:background="@color/settings_bg_titles" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x7f0a008a" />
+            <com.waze.settings.WazeSettingsView app:id="@+id/settingsVoiceSearchType" app:position="atThumb" app:settingsType="2" style="@style/settingsSelection" />
+            <FrameLayout app:background="@color/settings_bg_note" app:layout_width="match_parent" app:layout_height="wrap_content">
+                <ImageView app:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:background="@drawable/note_shadow" app:layout_width="match_parent" app:layout_height="wrap_content" />
+                <com.waze.view.text.WazeTextView app:id="@+id/VoiceSearchExplainationText" app:text="bla" style="@style/settings_note" />
+            </FrameLayout>
+            <FrameLayout app:layout_width="match_parent" app:layout_height="match_parent">
+                <ListView app:id="@+id/settingsValueList" app:background="#fff" app:fadingEdge="UNKNOWN_DATA_0x0" app:layout_width="match_parent" app:layout_height="wrap_content" app:listSelector="0x106000d" app:cacheColorHint="#00000000" app:divider="0x0" app:layout_below="@+id/theTitleBar" app:fastScrollEnabled="true" />
+                <ImageView app:background="@drawable/topbar_shadow" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x2801" app:scaleType="fitXY" app:layout_below="@+id/settingsValueList" />
+                <View app:id="@+id/disableView" app:background="#ffff" app:visibility="visible" app:layout_width="match_parent" app:layout_height="match_parent" />
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+    <ImageView app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x601" app:src="@drawable/topbar_shadow" app:scaleType="fitXY" app:layout_below="@+id/theTitleBar" />
+</RelativeLayout>

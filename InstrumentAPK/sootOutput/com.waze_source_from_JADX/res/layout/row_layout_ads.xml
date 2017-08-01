@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/com.waze" app:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:orientation="horizontal" app:id="@+id/mainLayout" app:background="#dde7ea" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x5001">
+    <com.waze.ifs.ui.CustomWebView app:id="@+id/adsRow" app:scrollbars="UNKNOWN_DATA_0x0" app:clickable="false" app:longClickable="false" app:layout_width="match_parent" app:layout_height="match_parent" />
+</LinearLayout>

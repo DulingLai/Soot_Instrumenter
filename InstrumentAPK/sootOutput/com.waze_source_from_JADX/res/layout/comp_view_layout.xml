@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:id="@+id/ShareDriveTextBoxLayout" app:background="@color/White" app:padding="11dp" app:clipToPadding="false" app:layout_width="match_parent" app:layout_height="wrap_content">
+    <LinearLayout app:orientation="horizontal" app:background="@drawable/search_box_contacts" app:padding="0dp" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x3201" app:layout_centerInParent="true">
+        <com.waze.view.text.WazeTextView app:textSize="18sp" app:textStyle="bold" app:textColor="#484848" app:gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:id="@+id/ShareDriveSearchLable" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginLeft="8dp" app:text="*TO:" app:maxLines="1" app:singleLine="true" app:textAllCaps="true" app:font_type="2" />
+        <HorizontalScrollView app:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:id="@+id/ShareDriveSearchScrollView" app:scrollbars="UNKNOWN_DATA_0x0" app:layout_width="UNKNOWN_DATA_0x1" app:layout_height="wrap_content" app:layout_marginLeft="5dp" app:layout_marginTop="1dp" app:fillViewport="true" app:layout_weight="1.0">
+            <com.waze.autocomplete.ContactsCompletionView app:textSize="20sp" app:textStyle="bold" app:textColor="#484848" app:textColorHint="#bcc2c4" app:gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:id="@+id/ShareDriveSearchView" app:background="0x0" app:layout_width="wrap_content" app:layout_height="UNKNOWN_DATA_0x3001" app:hint="*Search people" app:singleLine="true" app:lineSpacingExtra="1dp" app:lineSpacingMultiplier="1.1" app:dropDownWidth="match_parent" app:textCursorDrawable="0x0" />
+        </HorizontalScrollView>
+        <ViewFlipper app:id="@+id/ShareDriveSearchButtonFlipper" app:layout_width="wrap_content" app:layout_height="wrap_content" app:inAnimation="0x10a0000" app:outAnimation="0x10a0001">
+            <ImageView app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:background="0x0" app:layout_width="wrap_content" app:layout_height="wrap_content" app:src="@drawable/ac_search_icon" />
+            <ImageButton app:id="@+id/ShareDriveSearchAddButton" app:background="0x0" app:layout_width="wrap_content" app:layout_height="wrap_content" app:src="@drawable/share_addfriend_button_searchbox" />
+        </ViewFlipper>
+    </LinearLayout>
+    <View app:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:background="@color/BlueGrey" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x101" app:layout_marginLeft="-11dp" app:layout_marginRight="-11dp" app:layout_marginBottom="-11dp" />
+</FrameLayout>

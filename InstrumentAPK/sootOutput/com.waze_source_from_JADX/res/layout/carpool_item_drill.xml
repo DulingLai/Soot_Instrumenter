@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:orientation="vertical" app:layout_width="match_parent" app:layout_height="wrap_content">
+    <Space app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x1" app:layout_weight="1.0" />
+    <com.waze.view.button.PillButton app:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/carpoolItemDrill" app:paddingLeft="20dp" app:paddingRight="20dp" app:layout_width="wrap_content" app:layout_height="UNKNOWN_DATA_0x1e01" app:pbColor="@color/BlueDeepLight" app:pbShadowSize="2dp" app:pbShadowColor="@color/BlueDeep" app:pbPadding="-5dp">
+        <com.waze.view.text.WazeTextView app:textSize="15dp" app:textStyle="bold" app:textColor="@color/BlueWhale" app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/carpoolItemDrillText" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="*history" app:font_type="3" style="@style/PopUpbuttonText" />
+    </com.waze.view.button.PillButton>
+</LinearLayout>

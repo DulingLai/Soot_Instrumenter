@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:orientation="vertical" app:background="@color/BlueWhale" app:layout_width="match_parent" app:layout_height="match_parent">
+    <FrameLayout app:id="@+id/titleBar" app:background="@color/BlueWhale" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x3801">
+        <ImageView app:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:id="@+id/btnClose" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginLeft="16dp" app:src="@drawable/header_back_btn" />
+    </FrameLayout>
+    <FrameLayout app:layout_width="wrap_content" app:layout_height="UNKNOWN_DATA_0x8801">
+        <ImageView app:id="@+id/imgHeader" app:layout_width="match_parent" app:layout_height="match_parent" app:layout_marginBottom="16dp" app:src="@drawable/sign_up_illu_phone" />
+        <RelativeLayout app:id="@+id/loadingContainer" app:visibility="gone" app:layout_width="match_parent" app:layout_height="match_parent">
+            <ImageView app:id="@+id/imgLoader" app:layout_width="match_parent" app:layout_height="match_parent" app:src="@drawable/verify_loader" />
+            <com.waze.view.text.WazeTextView app:textColor="@color/BlueDeepLight" app:id="@+id/lblVerifying" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="*Verifying" app:layout_centerInParent="true" app:font_type="4" />
+        </RelativeLayout>
+    </FrameLayout>
+    <com.waze.view.text.WazeTextView app:textSize="24sp" app:textColor="@color/White" app:id="@+id/lblRegisterTitle" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginBottom="16dp" app:text="*Welcome to Waze" app:font_type="3" />
+    <com.waze.phone.PhoneInputView app:id="@+id/phoneInputView" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x3801" app:layout_marginLeft="16dp" app:layout_marginRight="16dp" app:layout_marginBottom="16dp" />
+    <com.waze.view.text.WazeTextView app:textSize="13sp" app:textColor="@color/BlueDeep" app:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/lblRegisterDetails" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginLeft="32dp" app:layout_marginRight="32dp" app:layout_marginBottom="16dp" app:text="*Enter your phone number to a create a secure account & find Waze users you may know" app:font_type="1" />
+</LinearLayout>

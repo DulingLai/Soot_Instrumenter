@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/forMarginesOnly" android:layout_width="match_parent" android:layout_height="match_parent"
+    <FrameLayout android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/dialogPhotoFrme" android:background="0x106000b" android:padding="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content"
+        <FrameLayout android:background="#92c2d1" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.waze.view.map.ProgressAnimation android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/dialogPhotoProgress" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </FrameLayout>
+        <ImageView android:id="@+id/dialogPhoto" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+    </FrameLayout>
+</FrameLayout>

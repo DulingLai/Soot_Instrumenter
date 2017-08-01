@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="welcomeImageBottomMargin">16.0dip</dimen>
+    <dimen name="welcomeImageSize">80.0dip</dimen>
+    <dimen name="welcomeImageTopMargin">16.0dip</dimen>
+    <dimen name="welcomeItemFontSize">13.0sp</dimen>
+    <dimen name="welcomeTitleBottomMargin">24.0dip</dimen>
+    <dimen name="welcomeTitleFontSize">17.0sp</dimen>
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:background="@drawable/phone_input_background" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x3801">
+    <LinearLayout app:orientation="horizontal" app:layout_width="match_parent" app:layout_height="match_parent" app:layout_margin="3dp"
+        <LinearLayout app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:orientation="horizontal" app:id="@+id/btnCountryCode" app:background="@drawable/phone_country_bg" app:paddingLeft="8dp" app:paddingRight="8dp" app:layout_width="wrap_content" app:layout_height="match_parent">
+            <com.waze.view.text.WazeTextView app:textSize="18sp" app:textColor="@color/White" app:gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:id="@+id/lblCountryCode" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginRight="4dp" app:text="*US (+1)" app:font_type="1" />
+            <ImageView app:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:layout_width="wrap_content" app:layout_height="wrap_content" app:src="@drawable/ridecard_driveto_button_arrow" />
+        </LinearLayout>
+        <FrameLayout app:background="@drawable/phone_number_bg" app:layout_width="UNKNOWN_DATA_0x1" app:layout_height="match_parent" app:layout_weight="1.0">
+            <com.waze.view.text.WazeEditText app:textSize="18sp" app:textColorHint="@color/CoolGrey" app:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:id="@+id/phoneEditText" app:background="0x0" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginLeft="8dp" app:layout_marginRight="48dp" app:hint="*Phone number" app:inputType="text|textCapCharacters|textCapWords|textCapSentences|textAutoCorrect|textAutoComplete|textMultiLine|textImeMultiLine|textNoSuggestions|textUri|textEmailAddress|textEmailSubject|textShortMessage|textLongMessage|textPersonName|textPostalAddress|textPassword|textVisiblePassword|textWebEditText|textFilter|textPhonetic|textWebEmailAddress|textWebPassword|number|numberSigned|numberDecimal|numberPassword|phone" />
+        </FrameLayout>
+    </LinearLayout>
+    <ImageView app:id="@+id/imgPhoneValid" app:visibility="gone" app:layout_width="UNKNOWN_DATA_0x2001" app:layout_height="UNKNOWN_DATA_0x2001" app:layout_marginRight="8dp" app:src="@drawable/list_icon_form_check" app:layout_alignParentRight="true" app:layout_centerVertical="true" />
+    <ImageView app:id="@+id/imgPhoneError" app:visibility="gone" app:layout_width="UNKNOWN_DATA_0x2001" app:layout_height="UNKNOWN_DATA_0x2001" app:layout_marginRight="8dp" app:src="@drawable/list_icon_form_error" app:layout_alignParentRight="true" app:layout_centerVertical="true" />
+</RelativeLayout>

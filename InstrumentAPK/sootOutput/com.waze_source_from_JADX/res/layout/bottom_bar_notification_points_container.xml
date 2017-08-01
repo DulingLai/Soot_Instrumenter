@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:layout_width="wrap_content" app:layout_height="wrap_content">
+    <LinearLayout app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:orientation="vertical" app:visibility="visible" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginTop="-3dp"
+        <LinearLayout app:gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:orientation="horizontal" app:layout_width="wrap_content" app:layout_height="wrap_content">
+            <ImageView app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginRight="-3dp" app:layout_marginBottom="2dp" app:src="@drawable/points_banner_small_star" />
+            <com.waze.view.text.WazeTextView app:textSize="20dp" app:textColor="@color/White" app:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/mainBottomBarNotificationPoints" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginBottom="-2dp" app:text="6" app:ems="1" app:shadowColor="#26000000" app:shadowDy="1.0" app:shadowRadius="2.0" app:font_type="2" />
+            <ImageView app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginLeft="-3dp" app:layout_marginBottom="2dp" app:src="@drawable/points_banner_small_star" />
+        </LinearLayout>
+        <com.waze.view.text.WazeTextView app:textSize="9dp" app:textColor="@color/White" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginTop="-3dp" app:text="PTS" app:shadowColor="#26000000" app:shadowDy="1.0" app:shadowRadius="2.0" app:font_type="2" />
+    </LinearLayout>
+</FrameLayout>

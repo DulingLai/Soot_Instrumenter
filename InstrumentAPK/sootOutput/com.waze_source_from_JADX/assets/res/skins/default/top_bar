@@ -1,0 +1,125 @@
+N logo
+I TS_top_logo_exit
+P 0 4
+A about_exit
+
+N Seperator
+I Topbar_Sep
+P 72 6
+
+N alerts 
+I TS_top_bar_alerts
+I TS_top_bar_alerts
+I TS_top_bar_alerts
+I TS_top_bar_alerts
+I TS_top_bar_alerts
+P 83 0
+A real_time_alerts_list
+
+
+N num_alerts
+T num_alerts
+P 97 4
+F 16
+S alerts_state
+A real_time_alerts_list
+
+N Seperator
+I Topbar_Sep
+P 127 6
+
+N alerts_group 
+I TS_top_bar_groups
+I TS_top_bar_groups
+I TS_top_bar_groups_new
+P 130 2
+S groups_state
+A real_time_alerts_list_group
+
+N num_alerts_group
+T group_num_alerts
+P 162 4
+F 16
+S alerts_state
+A real_time_alerts_list_group
+
+N Seperator
+I Topbar_Sep
+P 182 6
+
+N moods
+I TS_top_mood_disabled
+I TS_top_mood_happy
+I TS_top_mood_sad
+I TS_top_mood_mad
+I TS_top_mood_bored
+I TS_top_mood_speedy
+I TS_top_mood_starving
+I TS_top_mood_sleepy
+I TS_top_mood_cool
+I TS_top_mood_inlove
+I TS_top_mood_LOL
+I TS_top_mood_peaceful2
+I TS_top_mood_singing
+I TS_top_mood_wondering
+I TS_top_mood_happy
+I TS_top_mood_sad
+I TS_top_mood_mad
+I TS_top_mood_bored
+I TS_top_mood_speedy
+I TS_top_mood_starving
+I TS_top_mood_sleepy
+I TS_top_mood_cool
+I TS_top_mood_inlove
+I TS_top_mood_LOL
+I TS_top_mood_peaceful
+I TS_top_mood_singing
+I TS_top_mood_wondering
+I TS_top_mood_bronze
+I TS_top_mood_silver
+I TS_top_mood_gold
+I TS_top_mood_busy
+I TS_top_mood_busy
+I TS_top_mood_in_a_hurry
+I TS_top_mood_in_a_hurry
+I TS_top_mood_baby
+A mood_dialog
+S mood_state
+P 193 2
+
+N group_wazer
+G group_wazer
+C real_time_state 1
+P 193 3
+
+N addons
+S user_addon_state
+I TS_top_mood_crown
+I TS_top_mood_sword
+I TS_top_mood_shield
+I TS_top_mood_edit
+I TS_top_mood_beta
+I TS_top_mood_halo
+P 193 2
+
+N Seperator
+I Topbar_Sep
+P -83 6
+
+N on_line
+I TS_top_not_connected
+I TS_top_connected
+S real_time_state
+A gps_net_stat
+P -78 2
+
+N gps_reception
+I TS_top_satellite_off
+I TS_top_satellite_off
+I TS_top_satellite_poor
+I TS_top_satellite_on
+S GPS_reception
+A gps_net_stat
+P -43 0
+
+Y 1

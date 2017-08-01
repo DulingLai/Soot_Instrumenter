@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/com.waze" app:id="@+id/rootLayout" app:background="@color/blue_bg" app:layout_width="match_parent" app:layout_height="match_parent">
+    <ScrollView app:id="@+id/rootScroll" app:layout_width="match_parent" app:layout_height="match_parent" app:fillViewport="true">
+        <LinearLayout app:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:orientation="vertical" app:layout_width="match_parent" app:layout_height="match_parent">
+            <View app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x1" app:layout_weight="0.3" />
+            <com.waze.view.text.WazeTextView app:textSize="22dp" app:textColor="#ffffff" app:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/headerText" app:layout_marginTop="5dp" app:layout_marginBottom="5dp" app:text="ENTER VERIFICATION CODE" app:textAllCaps="true" app:font_type="b" style="@style/textOnBg" />
+            <View app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x1" app:layout_weight="0.0" />
+            <com.waze.view.text.WazeTextView app:textStyle="italic" app:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/bodyText" app:layout_marginLeft="20dp" app:layout_marginRight="20dp" app:text="Type the code" style="@style/textSignUp" />
+            <View app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x1" app:layout_weight="0.1" />
+            <ImageView app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginTop="20dp" app:src="@drawable/register_illu" />
+            <View app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x1" app:layout_weight="0.2" />
+            <com.waze.view.text.WazeTextView app:textStyle="italic" app:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/footerText" app:visibility="gone" app:layout_marginLeft="20dp" app:layout_marginTop="5dp" app:layout_marginRight="20dp" app:layout_marginBottom="5dp" app:text="Type the code" style="@style/textSignUp" />
+            <View app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x1" app:layout_weight="0.4" />
+            <LinearLayout app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:orientation="horizontal" app:id="@+id/nextButton" app:background="@drawable/signup_bt_white" app:clickable="true" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x3001" app:layout_marginLeft="15dp" app:layout_marginRight="15dp" app:layout_marginBottom="10dp">
+                <com.waze.view.text.WazeTextView app:textSize="18dp" app:textColor="@color/text_wt_button_enabled" app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/nextText" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="Got it" />
+            </LinearLayout>
+            <RelativeLayout app:id="@+id/BottomLayout" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x2801" app:layout_alignParentLeft="true" app:layout_alignParentBottom="true">
+                <LinearLayout app:orientation="vertical" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x2801">
+                    <View app:background="#71a5b3" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x101" />
+                    <LinearLayout app:orientation="horizontal" app:paddingLeft="5dp" app:paddingRight="5dp" app:layout_width="match_parent" app:layout_height="match_parent">
+                        <com.waze.view.text.WazeTextView app:textStyle="italic" app:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/skip_text" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginLeft="5dp" app:layout_marginTop="5dp" app:layout_marginRight="5dp" app:layout_marginBottom="6dp" app:text="la" app:layout_weight="0.7" style="@style/textSignUp" />
+                        <ImageView app:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:layout_width="wrap_content" app:layout_height="wrap_content" app:src="@drawable/signup_skip_icon" />
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

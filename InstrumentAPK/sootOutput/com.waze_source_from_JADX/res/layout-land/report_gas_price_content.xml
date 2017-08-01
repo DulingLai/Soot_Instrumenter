@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/com.waze" app:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:orientation="vertical" app:id="@+id/reportGasRoot" app:background="@color/ReportBackground" app:layout_width="match_parent" app:layout_height="match_parent">
+    <View app:id="@+id/reportGasFocusDummy" app:focusable="true" app:focusableInTouchMode="true" app:layout_width="UNKNOWN_DATA_0x0" app:layout_height="UNKNOWN_DATA_0x0" />
+    <ImageView app:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/reportCloseAll" app:padding="10dp" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginBottom="-54dp" app:src="@drawable/button_report_close" />
+    <LinearLayout app:orientation="vertical" app:id="@+id/reportLogoFramesLayout" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x1" app:layout_weight="0.4"
+        <LinearLayout app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:orientation="horizontal" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x1" app:layout_marginLeft="10dp" app:layout_weight="1.0">
+            <com.waze.view.button.ReportMenuButton app:id="@+id/reportCloseButton" app:layout_width="UNKNOWN_DATA_0x6401" app:layout_height="UNKNOWN_DATA_0x6401" app:layout_margin="10dp" />
+            <FrameLayout app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/reportLogoFrameRectangle" app:background="@drawable/profile_pic_frame9" app:visibility="gone" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_margin="10dp" app:foreground="@drawable/profile_pic_frame9">
+                <ImageView app:id="@+id/reportLogoRectangle" app:background="#fff" app:layout_width="UNKNOWN_DATA_0x5001" app:layout_height="UNKNOWN_DATA_0x3c01" app:src="#fff" />
+            </FrameLayout>
+            <LinearLayout app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:orientation="vertical" app:layout_width="wrap_content" app:layout_height="wrap_content">
+                <com.waze.view.text.WazeTextView app:textSize="22sp" app:textColor="@color/White" app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/reportTitle" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="Title" app:maxLines="1" app:layout_above="@+id/reportSubTitle" app:layout_centerHorizontal="true" app:layout_alignWithParentIfMissing="true" app:font_type="b" style="@style/menuPopupTitle" />
+                <com.waze.view.text.WazeTextView app:textSize="15sp" app:textColor="@color/BlueWhaleLight" app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/reportSubTitle" app:visibility="visible" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="Sub Title" app:maxLines="1" app:singleLine="true" app:layout_alignParentBottom="true" app:layout_centerHorizontal="true" app:layout_alignWithParentIfMissing="true" app:textAllCaps="false" app:font_type="1" />
+            </LinearLayout>
+        </LinearLayout>
+        <View app:background="#a1a3a6" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x101" />
+    </LinearLayout>
+    <LinearLayout app:orientation="horizontal" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x1" app:layout_weight="0.6"
+        <LinearLayout app:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:orientation="vertical" app:layout_width="UNKNOWN_DATA_0x1" app:layout_height="match_parent" app:layout_weight="1.0"
+            <LinearLayout app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:orientation="horizontal" app:id="@+id/reportGasPrices" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginTop="29dp" app:layout_centerHorizontal="true">
+                <include app:id="@+id/reportGasItem1" layout="@layout/gas_price_item" />
+                <include app:id="@+id/reportGasItem2" layout="@layout/gas_price_item" />
+                <include app:id="@+id/reportGasItem3" layout="@layout/gas_price_item" />
+                <include app:id="@+id/reportGasItem4" layout="@layout/gas_price_item" />
+            </LinearLayout>
+            <LinearLayout app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:orientation="vertical" app:id="@+id/reportGasFullscreenFooter" app:layout_width="wrap_content" app:layout_height="wrap_content">
+                <View app:background="@color/DarkBlue" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x101" app:layout_marginBottom="10dp" />
+                <LinearLayout app:orientation="horizontal" app:layout_width="wrap_content" app:layout_height="wrap_content">
+                    <com.waze.view.button.ReportMenuButton app:id="@+id/reportGasPriceUserRmb" app:layout_width="UNKNOWN_DATA_0x2a01" app:layout_height="UNKNOWN_DATA_0x2a01" app:layout_margin="10dp" app:innerImage="@drawable/happy" app:rmbCircleSize="42dp" app:rmbCircleStroke="1dp" app:rmbDrawShadow="false" app:rmbImageSize="40dp" />
+                    <com.waze.view.text.WazeTextView app:textColor="@color/BlueWhaleLight" app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/reportGasPriceUserUpdated" app:layout_width="UNKNOWN_DATA_0xc801" app:layout_height="match_parent" app:text="*Updated sometime
+By Monster" app:lines="2" style="@style/reportMenuDetailsText" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:orientation="vertical" app:id="@+id/reportGasPriceButtonsArea" app:background="@color/DarkShade" app:padding="16dp" app:visibility="visible" app:layout_width="UNKNOWN_DATA_0xc801" app:layout_height="match_parent">
+            <com.waze.view.text.WazeTextView app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/reportGasEdit" app:background="@drawable/button_white_bg" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x1" app:layout_marginBottom="8dp" app:text="*Edit" app:layout_weight="1.0" style="@style/dialogButtonWhite" />
+            <com.waze.view.text.WazeTextView app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/reportGasSend" app:background="@drawable/button_blue_bg" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x1" app:layout_marginTop="8dp" app:text="*Send" app:layout_weight="1.0" style="@style/dialogButtonBlue" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout app:orientation="vertical" app:id="@+id/reportGasKeyboardIndicator" app:visibility="visible" app:layout_width="match_parent" app:layout_height="wrap_content" />
+    <LinearLayout app:gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:orientation="horizontal" app:id="@+id/reportGasKeyboardFooter" app:background="@color/White" app:visibility="gone" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x3601">
+        <com.waze.ifs.ui.WazeSwitchView app:id="@+id/reportGasAvailableSwitch" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginLeft="8dp" app:layout_marginTop="-10dp" app:layout_marginRight="8dp" app:layout_marginBottom="-10dp" />
+        <com.waze.view.text.WazeTextView app:textSize="17dp" app:textColor="@color/Dark" app:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/reportGasAvailableLabel" app:layout_width="UNKNOWN_DATA_0x1" app:layout_height="wrap_content" app:text="*Available" app:layout_weight="1.0" app:font_type="3" />
+        <ImageButton app:id="@+id/reportGasEditLeft" app:background="@drawable/button_white_bg" app:layout_width="UNKNOWN_DATA_0x3201" app:layout_height="UNKNOWN_DATA_0x3201" app:src="@drawable/arrow_prev" />
+        <ImageButton app:id="@+id/reportGasEditRight" app:background="@drawable/button_white_bg" app:layout_width="UNKNOWN_DATA_0x3201" app:layout_height="UNKNOWN_DATA_0x3201" app:src="@drawable/arrow_next" />
+        <TextView app:id="@+id/reportGasEditSubmit" app:background="@drawable/button_blue_bg" app:layout_width="UNKNOWN_DATA_0x1" app:layout_height="UNKNOWN_DATA_0x3201" app:text="*Submit prices" app:layout_weight="2.0" style="@style/dialogButtonBlue" />
+    </LinearLayout>
+</LinearLayout>

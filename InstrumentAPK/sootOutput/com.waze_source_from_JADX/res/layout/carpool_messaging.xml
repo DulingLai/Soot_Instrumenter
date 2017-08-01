@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:id="@+id/messagingRootView" app:layout_width="match_parent" app:layout_height="match_parent" app:animateLayoutChanges="true">
+    <com.waze.view.title.TitleBar app:id="@+id/theTitleBar" app:layout_width="match_parent" app:layout_height="wrap_content" app:titleBarSkin="1" />
+    <LinearLayout app:orientation="vertical" app:id="@+id/messagingInputLayout" app:visibility="visible" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x4601" app:layout_alignParentBottom="true">
+        <View app:id="@+id/messagingInputSeparator" app:background="@color/PassiveGrey" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x101" />
+        <LinearLayout app:orientation="horizontal" app:background="@color/White" app:layout_width="match_parent" app:layout_height="match_parent">
+            <com.waze.view.text.WazeEditText app:textColor="@color/Dark" app:textColorHint="@color/Light" app:id="@+id/messagingInput" app:background="@drawable/iam_input_box" app:paddingLeft="15dp" app:layout_width="UNKNOWN_DATA_0x1" app:layout_height="match_parent" app:layout_margin="8dp" app:hint="*Enter your message" app:layout_weight="1.0" app:keyBackground="@color/RedSweet" app:font_type="e" />
+            <ImageView app:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:id="@+id/messagingSend" app:padding="8dp" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginRight="4dp" app:src="@drawable/iam_send_button" />
+            <ImageView app:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:id="@+id/messagingSendLocation" app:padding="8dp" app:visibility="gone" app:layout_width="wrap_content" app:layout_height="wrap_content" app:src="@drawable/ac_location_icon" />
+        </LinearLayout>
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView app:id="@+id/messagingListView" app:background="@color/BlueGrey" app:layout_width="match_parent" app:layout_height="match_parent" app:listSelector="@color/BlueGrey" app:divider="0x0" app:dividerHeight="0dp" app:layout_above="@+id/messagingInputLayout" app:layout_below="@+id/theTitleBar" />
+    <ImageView app:id="@+id/messagingShadow" app:layout_width="match_parent" app:layout_height="wrap_content" app:src="@drawable/chat_scroll_shadow" app:scaleType="fitXY" app:layout_below="@+id/theTitleBar" />
+</RelativeLayout>

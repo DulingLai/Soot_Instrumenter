@@ -1,0 +1,254 @@
+# N - new command name
+# A - action (optional)
+# I - text to say when command identified
+# S - acceptable speech commands (multiple)
+# H - help text
+
+H For example: report heavy traffic, or drive home
+
+N report
+I sending report
+S report
+S send
+S saw
+S noticed
+S spotted
+S found
+S there is
+S police
+S jam
+S traffic
+S accident
+S hazard
+S danger
+S weather
+S on road
+S on shoulder
+S camera
+S speed trap
+
+N report.traffic
+A asr_report_traffic
+I reporting traffic jam
+S traffic
+S jam
+
+N report.traffic.moderate
+A asr_report_traffic_moderate
+I reporting moderate traffic
+S moderate
+
+N report.traffic.heavy
+A asr_report_traffic_heavy
+I reporting heavy traffic
+S heavy
+
+N report.traffic.standstill
+A asr_report_traffic_standstill
+I reporting standstill traffic
+S standstill
+
+N report.police
+A asr_report_police
+I reporting police trap
+S police
+S policeman
+
+N report.accident
+A asr_report_accident
+I reporting accident
+S accident
+
+N report.accident.minor
+A asr_report_accident_minor
+I reporting minor accident
+S minor
+
+N report.accident.major
+A asr_report_accident_major
+I reporting major accident
+S major
+
+N report.hazard
+A asr_report_hazard
+I reporting hazard
+S hazard
+S danger
+S weather
+S on road
+S on shoulder
+
+N report.hazard.onroad
+A asr_report_hazard_onroad
+I reporting hazard on road
+S on road
+
+N report.hazard.onroad.object
+A asr_report_hazard_onroad_object
+I reporting object on road
+S object
+
+N report.hazard.onroad.pothole
+A asr_report_hazard_onroad_pothole
+I reporting pot hole on road
+S pot hole
+
+N report.hazard.onroad.roadkill
+A asr_report_hazard_onroad_roadkill
+I reporting road kill on road
+S road kill
+
+N report.hazard.onroad.laneclosed
+A asr_report_hazard_onroad_laneclosed
+I reporting closed lane
+S lane closed
+S closed lane
+
+N report.hazard.onroad.oil
+A asr_report_hazard_onroad_oil
+I reporting oil on road
+S oil
+
+N report.hazard.onroad.ice
+A asr_report_hazard_onroad_ice
+I reporting ice on road
+S ice
+
+N report.hazard.onroad.construction
+A asr_report_hazard_onroad_construction
+I reporting construction on road
+S construction
+
+N report.hazard.onroad.carstopped
+A asr_report_hazard_onroad_carstopped
+I reporting vehicle stopped on road
+S car
+S vehicle
+
+N report.hazard.onshoulder
+A asr_report_hazard_onshoulder
+I reporting hazard on shoulder
+S on shoulder
+
+N report.hazard.onshoulder.carstopped
+A asr_report_hazard_onshoulder_carstopped
+I reporting vehicle stopped on shoulder
+S car
+S vehicle
+
+N report.hazard.onshoulder.animals
+A asr_report_hazard_onshoulder_animals
+I reporting animals on shoulder
+S animals
+
+N report.hazard.onshoulder.missingsign
+A asr_report_hazard_onshoulder_missingsign
+I reporting missing sign on shoulder
+S missing sign
+
+N report.hazard.weather
+A asr_report_hazard_weather
+I reporting weather hazard
+S weather
+
+N report.hazard.weather.fog
+A asr_report_hazard_weather_fog
+I reporting foggy weather
+S fog
+S foggy
+
+N report.hazard.weather.hail
+A asr_report_hazard_weather_hail
+I reporting hail hazard
+S hail
+
+N report.hazard.weather.snow
+A asr_report_hazard_weather_snow
+I reporting heavy snow
+S snow
+
+N report.hazard.weather.flood
+A asr_report_hazard_weather_flood
+I reporting flood hazard
+S flood
+
+N report.hazard.weather.monsoon
+A asr_report_hazard_weather_monsoon
+I reporting monsoon hazard
+S monsoon
+
+N report.hazard.weather.tornado
+A asr_report_hazard_weather_tornado
+I reporting tornado hazard
+S tornado
+
+N report.hazard.weather.heatwave
+A asr_report_hazard_weather_heatwave
+I reporting heat wave hazard
+S heat wave
+
+N report.hazard.weather.hurricane
+A asr_report_hazard_weather_hurricane
+I reporting hurricane hazard
+S hurricane
+
+N report.hazard.weather.freezingrain
+A asr_report_hazard_weather_freezingrain
+I reporting freezing rain hazard
+S freezing rain
+
+N report.camera
+I reporting camera
+S camera
+S speed trap
+
+N report.camera.speed
+A asr_report_camera_speed
+I reporting speed cam
+S speed
+
+N report.camera.fake
+A asr_report_camera_fake
+I reporting fake camera
+S fake
+S dummy
+
+N report.camera.redlight
+A asr_report_camera_redlight
+I reporting red light camera
+S red light
+S light
+
+N navigate
+I Where would you like to go?
+S drive
+S navigate
+S take
+S home
+S work
+S office
+S go
+
+N navigate.home
+A asr_navigate_home
+I Driving home
+S home
+
+N navigate.work
+A asr_navigate_work
+I Driving to work
+S work
+S office
+
+N stopnav
+A asr_stop_nav
+I Stopping navigation
+S stop navigation
+S stop navigating
+
+N monster
+A asr_monster
+I Changing mood
+S morph me
+S metamorphosis
+

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.waze.view.title.TitleBar android:id="@+id/webTitle" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <com.waze.view.map.ProgressAnimation android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/webTitleProgress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_margin="10dp" android:layout_alignBottom="@+id/webTitle" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+    <com.waze.WzWebView android:id="@+id/webView" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/webTitle" />
+    <ImageView android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x601" android:src="@drawable/topbar_shadow" android:scaleType="fitXY" android:layout_below="@+id/webTitle" />
+</RelativeLayout>

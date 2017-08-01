@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/pointsBg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/points_active" android:layout_centerInParent="true" />
+    <TextView android:textSize="12dp" android:textColor="#ffffff" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/pointsBadge" android:paddingRight="1dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_centerInParent="true" />
+    <ImageView android:id="@+id/pointsCheck" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/places_points_v" android:layout_centerInParent="true" />
+    <ImageView android:id="@+id/pointsMustFill" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/places_invalid_entry" android:layout_centerInParent="true" />
+</merge>

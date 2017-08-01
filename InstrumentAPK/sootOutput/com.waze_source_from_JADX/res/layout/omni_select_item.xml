@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:orientation="horizontal" android:id="@+id/omniSelectItemContainer" android:background="@drawable/item_selector_single" android:padding="0dp" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x7f0a008b">
+        <ImageView android:id="@+id/omniSelectItemIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" />
+        <LinearLayout android:orientation="vertical" android:id="@+id/omniSelectItemTexts" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_weight="1.0">
+            <com.waze.view.text.WazeTextView android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/omniSelectItemText" android:layout_width="match_parent" android:text="test" android:singleLine="true" style="@style/settingsText" />
+            <com.waze.view.text.WazeTextView android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/omniSelectItemSubText" android:layout_width="match_parent" android:text="test" android:singleLine="true" style="@style/settingsSubText" />
+        </LinearLayout>
+        <ImageView android:id="@+id/omniSelectItemCheck" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/v" />
+    </LinearLayout>
+</RelativeLayout>

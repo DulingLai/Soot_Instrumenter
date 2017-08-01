@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/com.waze" app:orientation="vertical" app:background="@color/blue_bg" app:layout_width="match_parent" app:layout_height="match_parent">
+    <com.waze.view.title.TitleBar app:id="@+id/userMsgEditorTitleBar" app:layout_width="match_parent" app:layout_height="wrap_content" />
+    <ScrollView app:padding="10dp" app:fadingEdge="UNKNOWN_DATA_0x0" app:layout_width="match_parent" app:layout_height="match_parent" app:fillViewport="true" app:layout_weight="1.0" app:overScrollMode="ifContentScrolls">
+        <LinearLayout app:orientation="vertical" app:padding="0dp" app:layout_width="match_parent" app:layout_height="match_parent" app:layout_centerInParent="true"
+            <LinearLayout app:orientation="vertical" app:layout_width="match_parent" app:layout_height="wrap_content"
+                <LinearLayout app:orientation="horizontal" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginLeft="5dp" app:layout_marginTop="5dp">
+                    <RelativeLayout app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/userMsgEditorUserImageContainer" app:layout_width="UNKNOWN_DATA_0x3101" app:layout_height="UNKNOWN_DATA_0x2a01">
+                        <ImageView app:id="@+id/userMsgEditorUserMoodImage" app:background="0x0" app:layout_width="match_parent" app:layout_height="match_parent" app:src="@drawable/icon_wazer" app:layout_centerInParent="true" />
+                        <ImageView app:id="@+id/userMsgEditorUserAddOnImage" app:background="0x0" app:layout_width="match_parent" app:layout_height="match_parent" app:src="@drawable/icon_wazer" app:layout_centerInParent="true" />
+                        <ImageView app:id="@+id/userMsgEditorUserFbImage" app:background="0x0" app:layout_width="match_parent" app:layout_height="match_parent" app:layout_margin="4dp" app:src="@drawable/default_avatar" app:layout_centerInParent="true" />
+                        <ImageView app:id="@+id/userMsgEditorUserProfileFrame" app:background="0x0" app:layout_width="UNKNOWN_DATA_0x2c01" app:layout_height="UNKNOWN_DATA_0x2c01" app:src="@drawable/profile_pic_frame" app:layout_centerInParent="true" />
+                        <ImageView app:id="@+id/userMsgEditorUserGroupImage" app:background="0x0" app:layout_width="match_parent" app:layout_height="match_parent" app:layout_centerInParent="true" />
+                    </RelativeLayout>
+                    <LinearLayout app:orientation="vertical" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginLeft="5dp">
+                        <com.waze.view.text.WazeTextView app:textSize="16sp" app:textColor="@color/solid_black" app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/userMsgEditorUserNicknameText" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginTop="2dp" app:layout_marginRight="2dp" app:layout_marginBottom="2dp" app:text="AGA wazer" />
+                        <LinearLayout app:orientation="horizontal" app:id="@+id/userMsgEditorFriendsContainer" app:layout_width="match_parent" app:layout_height="wrap_content">
+                            <ImageView app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:layout_width="wrap_content" app:layout_height="wrap_content" app:src="@drawable/fb_icon" app:scaleType="center" />
+                            <com.waze.view.text.WazeTextView app:textSize="15dp" app:textColor="#455458" app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/userMsgEditorFriendsWithText" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginLeft="5dp" app:text="Friends with" />
+                            <RelativeLayout app:id="@+id/userMsgEditorFriendPic1Container" app:layout_width="UNKNOWN_DATA_0x2101" app:layout_height="UNKNOWN_DATA_0x2101" app:layout_marginLeft="15dp">
+                                <ImageView app:id="@+id/userMsgEditorFriendPic1" app:layout_width="match_parent" app:layout_height="match_parent" app:layout_margin="3.5dp" app:src="@drawable/default_avatar" />
+                                <ImageView app:layout_width="match_parent" app:layout_height="match_parent" app:src="@drawable/profile_pic_frame" app:layout_centerInParent="true" />
+                            </RelativeLayout>
+                            <RelativeLayout app:id="@+id/userMsgEditorFriendPic2Container" app:layout_width="UNKNOWN_DATA_0x2101" app:layout_height="UNKNOWN_DATA_0x2101" app:layout_marginLeft="8dp">
+                                <ImageView app:id="@+id/userMsgEditorFriendPic2" app:layout_width="match_parent" app:layout_height="match_parent" app:layout_margin="3.5dp" app:src="@drawable/default_avatar" />
+                                <ImageView app:layout_width="match_parent" app:layout_height="match_parent" app:src="@drawable/profile_pic_frame" app:layout_centerInParent="true" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout app:id="@+id/userMsgEditorPhoneContainer" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginLeft="10dp">
+                    <ImageView app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:layout_width="UNKNOWN_DATA_0xc01" app:layout_height="UNKNOWN_DATA_0xc01" app:src="@drawable/phone_icon" />
+                    <com.waze.view.text.WazeTextView app:textSize="13dp" app:textStyle="bold" app:textColor="@color/user_msg_editor_phone" app:autoLink="phone|all" app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/userMsgEditorPhone" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginLeft="5dp" app:text="0161-868-8000" />
+                </LinearLayout>
+            </LinearLayout>
+            <View app:background="#e5e5e5" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x40000031" app:layout_marginLeft="10dp" app:layout_marginTop="10dp" app:layout_marginRight="10dp" />
+            <com.waze.view.text.WazeEditText app:textSize="16sp" app:ellipsize="end" app:gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:id="@+id/userMsgEditorText" app:background="@drawable/text_box" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x8201" app:hint="Write here" />
+            <LinearLayout app:orientation="horizontal" app:padding="0dp" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginLeft="10dp" app:layout_marginTop="10dp" app:layout_marginRight="10dp">
+                <ImageView app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/userMsgNoteImage" app:layout_width="wrap_content" app:layout_height="wrap_content" app:src="@drawable/red_warning" app:scaleType="center" />
+                <com.waze.view.text.WazeTextView app:textSize="14sp" app:textColor="#455458" app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/userMsgEditorDisclaimerText" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginLeft="10dp" app:text="Map chats are public..." />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

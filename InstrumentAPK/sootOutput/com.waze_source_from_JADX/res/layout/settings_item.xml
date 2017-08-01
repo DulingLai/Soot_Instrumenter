@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:orientation="horizontal" android:id="@+id/itemContainer" android:background="@drawable/item_selector_single" android:padding="0dp" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x3001">
+        <ImageView android:id="@+id/itemIcon" android:layout_width="UNKNOWN_DATA_0x1e01" android:layout_height="UNKNOWN_DATA_0x2401" android:layout_marginLeft="10dp" />
+        <CheckedTextView android:id="@+id/itemText" android:checkMark="@drawable/list_check" style="@style/settingsText" />
+    </LinearLayout>
+</RelativeLayout>

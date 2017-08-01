@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/blue_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.waze.view.title.TitleBar android:id="@+id/theTitleBar" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <com.waze.settings.SettingsTitleText android:id="@+id/subtitle" android:layout_marginTop="15dp" android:layout_below="@+id/theTitleBar" android:layout_alignWithParentIfMissing="true" style="@style/settingsTitle" />
+    <LinearLayout android:orientation="vertical" android:id="@+id/choicesContainer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/subtitle" />
+    <FrameLayout android:id="@+id/editFrame" android:background="#fff" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_toLeftOf="@+id/speechRecognition" android:layout_below="@+id/choicesContainer">
+        <com.waze.view.text.WazeEditText android:id="@+id/editText" android:paddingLeft="10dp" android:paddingTop="5dp" android:paddingRight="10dp" android:paddingBottom="7dp" android:focusable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="6dp" android:minHeight="47dp" style="@style/settingsEditTextStyle" />
+    </FrameLayout>
+    <ImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/topbar_shadow" android:scaleType="fitXY" android:layout_below="@+id/theTitleBar" />
+</RelativeLayout>

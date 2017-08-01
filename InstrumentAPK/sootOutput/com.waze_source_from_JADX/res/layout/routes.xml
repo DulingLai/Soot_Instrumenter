@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:orientation="vertical" app:layout_width="match_parent" app:layout_height="match_parent">
+    <com.waze.view.title.TitleBar app:id="@+id/titleBar" app:layout_width="match_parent" app:layout_height="wrap_content" />
+    <View app:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:background="@color/BlueDeepLight" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x55c29031" />
+    <LinearLayout app:orientation="horizontal" app:background="@color/title_bar" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x3001">
+        <FrameLayout app:id="@+id/routesListButton" app:layout_width="UNKNOWN_DATA_0x1" app:layout_height="match_parent" app:layout_weight="1.0">
+            <com.waze.view.text.WazeTextView app:textSize="14sp" app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/routesListButtonText" app:layout_width="match_parent" app:layout_height="match_parent" app:text="LIST VIEW" app:font_type="5" />
+            <View app:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:id="@+id/routesListButtonMarker" app:background="@color/BlueDeep" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x301" />
+        </FrameLayout>
+        <FrameLayout app:id="@+id/routesMapButton" app:layout_width="UNKNOWN_DATA_0x1" app:layout_height="match_parent" app:layout_weight="1.0">
+            <com.waze.view.text.WazeTextView app:textSize="14sp" app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/routesMapButtonText" app:layout_width="match_parent" app:layout_height="match_parent" app:text="MAP VIEW" app:font_type="5" />
+            <View app:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:id="@+id/routesMapButtonMarker" app:background="@color/BlueDeep" app:visibility="visible" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x301" />
+        </FrameLayout>
+    </LinearLayout>
+    <android.support.v4.view.ViewPager app:id="@+id/routesPager" app:background="@color/blue_bg" app:layout_width="match_parent" app:layout_height="match_parent" app:foreground="@drawable/topbar_shadow" />
+</LinearLayout>

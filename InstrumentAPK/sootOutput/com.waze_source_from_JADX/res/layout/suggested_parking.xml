@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:layout_width="match_parent" app:layout_height="wrap_content">
+    <LinearLayout app:gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:orientation="horizontal" app:background="@drawable/preview_parking_lot_background" app:padding="12dp" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginLeft="16dp" app:layout_marginTop="10dp" app:layout_marginRight="16dp">
+        <ImageView app:layout_width="wrap_content" app:layout_height="wrap_content" app:src="@drawable/parking_icon_small" />
+        <LinearLayout app:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:orientation="vertical" app:layout_width="UNKNOWN_DATA_0x1" app:layout_height="wrap_content" app:layout_marginLeft="12dp" app:layout_marginRight="12dp" app:layout_weight="1.0">
+            <com.waze.view.text.WazeTextView app:textSize="16dp" app:textColor="@color/BlueDeepLight" app:id="@+id/suggesedParkingViewMore" app:visibility="gone" app:layout_width="match_parent" app:layout_height="wrap_content" app:text="*View more" app:maxLines="1" app:font_type="5" />
+            <com.waze.view.text.WazeTextView app:textSize="16dp" app:textColor="@color/BlueDeep" app:ellipsize="end" app:id="@+id/suggesedParkingTitle" app:visibility="visible" app:layout_width="match_parent" app:layout_height="wrap_content" app:text="*Most popular parking lot" app:maxLines="2" app:font_type="3" />
+            <com.waze.view.text.WazeTextView app:textSize="13dp" app:textColor="@color/BlueDeepLight" app:ellipsize="end" app:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/suggesedParkingDetail" app:visibility="visible" app:layout_width="match_parent" app:layout_height="wrap_content" app:text="*City Park City Park City Park City Park City Park City Park" app:maxLines="1" app:font_type="1" />
+        </LinearLayout>
+        <ImageView app:id="@+id/suggestedParkingMore" app:layout_width="wrap_content" app:layout_height="wrap_content" app:src="@drawable/parking_blue_chevron" />
+        <com.waze.view.map.ProgressAnimation app:id="@+id/suggestedParkingLoader" app:visibility="gone" app:layout_width="UNKNOWN_DATA_0x1701" app:layout_height="UNKNOWN_DATA_0x1701" app:src="@drawable/parking_blue_chevron" />
+    </LinearLayout>
+</FrameLayout>

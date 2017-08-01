@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/com.waze" app:background="@color/blue_bg" app:layout_width="match_parent" app:layout_height="match_parent">
+    <com.waze.view.title.TitleBar app:id="@+id/theTitleBar" app:layout_width="match_parent" app:layout_height="wrap_content" />
+    <ScrollView app:background="@color/blue_bg" app:fadingEdge="UNKNOWN_DATA_0x0" app:layout_width="match_parent" app:layout_height="match_parent" app:layout_below="@+id/theTitleBar" app:overScrollMode="ifContentScrolls">
+        <LinearLayout style="@style/settingsSection">
+            <com.waze.settings.WazeSettingsView app:id="@+id/settingsShowOnMapWazers" app:position="atThumb" app:settingsType="2" style="@style/settingsSelection" />
+            <com.waze.settings.WazeSettingsView app:id="@+id/settingsShowOnMapTrafficLoads" app:position="floating" app:settingsType="2" style="@style/settingsSelection" />
+            <com.waze.settings.WazeSettingsView app:id="@+id/settingsShowOnMapCameras" app:position="floating" app:settingsType="2" style="@style/settingsSelection" />
+            <com.waze.settings.WazeSettingsView app:id="@+id/settingsShowOnMapChitChat" app:position="floating" app:settingsType="2" style="@style/settingsSelection" />
+            <com.waze.settings.WazeSettingsView app:id="@+id/settingsShowOnMapPolice" app:position="floating" app:settingsType="2" style="@style/settingsSelection" />
+            <com.waze.settings.WazeSettingsView app:id="@+id/settingsShowOnMapAccidents" app:position="floating" app:settingsType="2" style="@style/settingsSelection" />
+            <com.waze.settings.WazeSettingsView app:id="@+id/settingsShowOnMapTrafficJams" app:position="floating" app:settingsType="2" style="@style/settingsSelection" />
+            <com.waze.settings.WazeSettingsView app:id="@+id/settingsShowOnMapHazard" app:position="floating" app:settingsType="2" style="@style/settingsSelection" />
+            <com.waze.settings.WazeSettingsView app:id="@+id/settingsShowOnMapRoadConstructions" app:position="floating" app:settingsType="2" style="@style/settingsSelection" />
+            <com.waze.settings.WazeSettingsView app:id="@+id/settingsShowOnMapGoodies" app:position="aboveThumb" app:settingsType="2" style="@style/settingsSelection" />
+        </LinearLayout>
+    </ScrollView>
+    <ImageView app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x601" app:src="@drawable/topbar_shadow" app:scaleType="fitXY" app:layout_below="@+id/theTitleBar" />
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:orientation="vertical" app:id="@+id/riderEndorseLayout" app:background="#fff" app:layout_width="match_parent" app:layout_height="wrap_content">
+    <com.waze.view.text.WazeTextView app:textSize="24sp" app:textColor="@color/Dark" app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/riderEndorseTitle" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginLeft="50dp" app:layout_marginTop="12dp" app:layout_marginRight="50dp" app:text="*Endorse rider?" app:font_type="b" />
+    <com.waze.view.text.WazeTextView app:textSize="17sp" app:textColor="@color/Light" app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/riderEndorseSubTitle" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginLeft="50dp" app:layout_marginTop="2dp" app:layout_marginRight="50dp" app:text="*It will be added to their profile" app:font_type="d" />
+    <View app:background="@drawable/grey_sep" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x101" app:layout_marginTop="16dp" />
+    <LinearLayout app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:orientation="horizontal" app:id="@+id/rideRequestEndorsements" app:layout_width="match_parent" app:layout_height="wrap_content" app:divider="@drawable/grey_sep" app:showDividers="middle">
+        <include layout="@layout/endorsement_badge" />
+        <include layout="@layout/endorsement_badge" />
+        <include layout="@layout/endorsement_badge" />
+    </LinearLayout>
+    <View app:background="@drawable/grey_sep" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x101" />
+    <com.waze.view.text.WazeTextView app:textSize="18sp" app:ellipsize="end" app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/riderEndorseButton" app:background="@drawable/button_blue_bg" app:paddingLeft="10dp" app:paddingTop="4dp" app:paddingRight="10dp" app:paddingBottom="4dp" app:clickable="true" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x3c01" app:layout_marginLeft="16dp" app:layout_marginTop="16dp" app:layout_marginRight="16dp" app:layout_marginBottom="16dp" app:text="*Send" app:singleLine="true" app:animateLayoutChanges="true" app:font_type="b" style="@style/dialogButtonBlue" />
+</LinearLayout>

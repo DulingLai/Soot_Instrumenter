@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/com.waze" app:orientation="vertical" app:padding="0dp" app:layout_width="match_parent" app:layout_height="match_parent">
+    <com.waze.view.title.TitleBar app:id="@+id/shareTitle" app:layout_width="match_parent" app:layout_height="wrap_content" />
+    <ScrollView app:padding="0dp" app:fadingEdge="UNKNOWN_DATA_0x0" app:layout_width="match_parent" app:layout_height="match_parent" app:fillViewport="true" app:layout_below="@+id/shareTitle" app:overScrollMode="ifContentScrolls">
+        <LinearLayout app:orientation="vertical" app:layout_width="match_parent" app:layout_height="wrap_content">
+            <ImageView app:background="@color/blue_bg" app:layout_width="match_parent" app:layout_height="wrap_content" app:src="@drawable/illu_share" />
+            <com.waze.settings.WazeSettingsView app:id="@+id/facebookShare" app:position="atThumb" app:icon="@drawable/list_icon_facebook_settings" style="@style/settingsSelection" />
+            <com.waze.settings.WazeSettingsView app:id="@+id/mail" app:position="aboveThumb" app:icon="@drawable/list_icon_mail" style="@style/settingsSelection" />
+            <FrameLayout app:background="@color/settings_bg_titles" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x7f0a0089" app:foreground="@drawable/cell_shadow_dark" />
+            <com.waze.settings.WazeSettingsView app:id="@+id/facebookLike" app:position="atThumb" app:icon="@drawable/list_icon_facebook_like" style="@style/settingsSelection" />
+            <com.waze.settings.WazeSettingsView app:id="@+id/follow" app:position="aboveThumb" app:icon="@drawable/list_icon_twitter" style="@style/settingsSelection" />
+            <FrameLayout app:background="@color/settings_bg_titles" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x7f0a0089" app:foreground="@drawable/cell_shadow_dark" />
+            <com.waze.settings.WazeSettingsView app:id="@+id/rateUs" app:position="UNKNOWN_DATA_0x3" app:icon="@drawable/list_icon_rate_us" style="@style/settingsSelection" />
+            <FrameLayout app:background="@color/settings_bg_titles" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x7f0a0089" app:foreground="@drawable/cell_shadow_dark" />
+            <View app:background="@color/blue_bg" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x1" app:layout_weight="1.0" />
+        </LinearLayout>
+    </ScrollView>
+    <ImageView app:layout_width="match_parent" app:layout_height="wrap_content" app:src="@drawable/topbar_shadow" app:scaleType="fitXY" app:layout_below="@+id/shareTitle" />
+</RelativeLayout>

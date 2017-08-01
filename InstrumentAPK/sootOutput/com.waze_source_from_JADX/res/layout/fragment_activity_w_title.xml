@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:orientation="vertical" app:layout_width="match_parent" app:layout_height="match_parent">
+    <com.waze.view.title.TitleBar app:id="@+id/fragmentActivityTitle" app:layout_width="match_parent" app:layout_height="wrap_content" />
+    <FrameLayout app:id="@+id/fragmentActivityFragment" app:background="@color/blue_bg" app:layout_width="match_parent" app:layout_height="match_parent" app:layout_below="@+id/fragmentActivityTitle" />
+    <ImageView app:layout_width="match_parent" app:layout_height="wrap_content" app:src="@drawable/topbar_shadow" app:scaleType="fitXY" app:layout_below="@+id/fragmentActivityTitle" />
+</RelativeLayout>

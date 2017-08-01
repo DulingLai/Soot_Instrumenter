@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res-auto" app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@id/scrollView" app:background="@color/blue_bg" app:clipChildren="false" app:clipToPadding="false" app:layout_width="match_parent" app:layout_height="match_parent" app:fillViewport="true" app:fadeScrollbars="false">
+    <LinearLayout app:orientation="vertical" app:paddingLeft="15dp" app:paddingRight="15dp" app:clipChildren="false" app:clipToPadding="false" app:layout_width="match_parent" app:layout_height="wrap_content">
+        <include layout="@layout/join_carpool_header_img" />
+        <com.waze.view.text.WazeTextView app:id="@+id/joinCarpoolSubtitle" app:layout_marginTop="-30dp" app:text="*Join the Waze 
+Carpool community" style="@style/carpool_join_title" />
+        <com.waze.view.text.WazeTextView app:id="@+id/joinCarpoolText" app:layout_marginTop="3dp" app:layout_marginBottom="4dp" app:text="*It’s never been easier to help fellow commuters and get cash for gas." app:font_type="e" style="@style/join_carpool_subtitle" />
+        <RelativeLayout app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginTop="24dp" app:layout_marginBottom="12dp">
+            <include layout="@layout/join_carpool_button" />
+            <com.waze.view.button.BadgeButton app:id="@+id/joinCarpoolBadge" app:visibility="gone" app:layout_width="UNKNOWN_DATA_0x7f0a0052" app:layout_height="UNKNOWN_DATA_0x7f0a0052" app:layout_marginTop="-8dp" app:layout_marginRight="16dp" app:layout_alignTop="@+id/joinCarpoolButton" app:layout_alignRight="@+id/joinCarpoolButton" />
+        </RelativeLayout>
+        <Space app:layout_width="UNKNOWN_DATA_0x1" app:layout_height="UNKNOWN_DATA_0x1" app:layout_weight="2.0" />
+        <com.waze.view.text.WazeTextView app:id="@+id/joinRiderLink" app:layout_marginTop="6dp" app:layout_marginBottom="20dp" app:text="*<u>Need a ride?</u>" style="@style/join_carpool_link" />
+    </LinearLayout>
+</ScrollView>

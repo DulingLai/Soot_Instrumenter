@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:orientation="vertical" app:background="@drawable/white_roundedcorner_background" app:layout_width="match_parent" app:layout_height="wrap_content">
+    <com.waze.view.text.WazeTextView app:textSize="15sp" app:textColor="@color/White" app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/routeCurrentTitle" app:background="@drawable/alt_route_current_header" app:paddingLeft="8dp" app:visibility="visible" app:layout_width="match_parent" app:layout_height="wrap_content" app:text="Current route" app:font_type="5" />
+    <LinearLayout app:orientation="horizontal" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginLeft="8dp" app:layout_marginTop="8dp" app:layout_marginRight="8dp">
+        <com.waze.view.text.WazeTextView app:textSize="28sp" app:textColor="@color/Dark" app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/routeTime" app:layout_width="wrap_content" app:layout_height="match_parent" app:text="1:52min" app:font_type="2" />
+        <Space app:layout_width="UNKNOWN_DATA_0x1" app:layout_height="match_parent" app:layout_weight="1.0" />
+        <com.waze.view.text.WazeTextView app:textSize="26sp" app:textColor="@color/Light" app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/routeDistance" app:layout_width="wrap_content" app:layout_height="match_parent" app:text="120" app:font_type="5" />
+    </LinearLayout>
+    <com.waze.view.text.WazeTextView app:textSize="16sp" app:textColor="@color/Dark" app:ellipsize="end" app:id="@+id/routeViaText" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginLeft="8dp" app:layout_marginRight="8dp" app:text="Via: somewhere" app:maxLines="1" app:font_type="4" />
+    <com.waze.routes.ETATrafficBar app:id="@+id/etaTrafficBar" app:paddingLeft="10dp" app:paddingTop="10dp" app:paddingRight="10dp" app:paddingBottom="10dp" app:layout_width="match_parent" app:layout_height="wrap_content" />
+    <LinearLayout app:orientation="horizontal" app:id="@+id/routeFooter" app:background="@drawable/alt_route_card_footer" app:padding="7dp" app:visibility="visible" app:layout_width="match_parent" app:layout_height="wrap_content"
+        <LinearLayout app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:orientation="horizontal" app:id="@+id/routeFerryLayout" app:background="@drawable/route_icon_bg" app:paddingLeft="2dp" app:layout_width="wrap_content" app:layout_height="UNKNOWN_DATA_0x1e01" app:layout_marginRight="3dp">
+            <ImageView app:visibility="visible" app:layout_width="wrap_content" app:layout_height="wrap_content" app:src="@drawable/ferry_icon" />
+            <com.waze.view.text.WazeTextView app:textSize="15sp" app:textColor="@color/White" app:ellipsize="end" app:id="@+id/routeFerryLabel" app:paddingLeft="5dp" app:paddingRight="8dp" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="*ferry" app:maxLines="1" app:textAllCaps="true" app:font_type="7" />
+        </LinearLayout>
+        <LinearLayout app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:orientation="horizontal" app:id="@+id/routeTollLayout" app:background="@drawable/route_icon_bg" app:paddingLeft="2dp" app:layout_width="wrap_content" app:layout_height="UNKNOWN_DATA_0x1e01">
+            <ImageView app:visibility="visible" app:layout_width="wrap_content" app:layout_height="wrap_content" app:src="@drawable/toll_road_icon" />
+            <com.waze.view.text.WazeTextView app:textSize="15sp" app:textColor="@color/White" app:ellipsize="end" app:id="@+id/routeTollLabel" app:paddingLeft="5dp" app:paddingRight="8dp" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="*toll" app:maxLines="1" app:textAllCaps="true" app:font_type="7" />
+        </LinearLayout>
+        <ImageView app:id="@+id/routePreferredIcon" app:visibility="gone" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginTop="5dp" app:layout_marginRight="5dp" app:src="@drawable/icon_preferred" />
+    </LinearLayout>
+    <LinearLayout app:orientation="vertical" app:id="@+id/routeMajorEvent" app:background="@drawable/blue_round_corners" app:padding="0dp" app:visibility="gone" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_margin="7.5dp"
+        <LinearLayout app:orientation="horizontal" app:background="#ff8c8c" app:layout_width="match_parent" app:layout_height="wrap_content">
+            <ImageView app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/routeMajorEventIcon" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_margin="7.5dp" app:src="@drawable/closure_blackbar_icon" />
+            <LinearLayout app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:orientation="vertical" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_weight="1.0">
+                <com.waze.view.text.WazeTextView app:textSize="16dp" app:textStyle="bold" app:textColor="0x106000c" app:ellipsize="end" app:id="@+id/routeMajorEventDescription" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="Road closed on Aba Hillel St." app:maxLines="1" />
+                <com.waze.view.text.WazeTextView app:textSize="16dp" app:textColor="0x106000c" app:ellipsize="end" app:id="@+id/routeMajorEventTime" app:visibility="gone" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="Reported 22 min ago" app:maxLines="1" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout app:orientation="horizontal" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginTop="4dp">
+            <ImageView app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_margin="7.5dp" app:src="@drawable/reported_icon" />
+            <com.waze.view.text.AutoResizeTextView app:textSize="16dp" app:textStyle="bold" app:textColor="#4c5b5f" app:ellipsize="end" app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/routeMajorEventReported" app:layout_width="UNKNOWN_DATA_0x1" app:layout_height="wrap_content" app:layout_marginRight="15dp" app:text="22 Reported" app:maxLines="1" app:layout_weight="1.0" app:minSize="13dp" />
+            <ImageView app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_margin="7.5dp" app:src="@drawable/thanked_icon" />
+            <com.waze.view.text.AutoResizeTextView app:textSize="16dp" app:textStyle="bold" app:textColor="#4c5b5f" app:ellipsize="end" app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/routeMajorEventThanked" app:layout_width="UNKNOWN_DATA_0x1" app:layout_height="wrap_content" app:text="75 Thanked" app:maxLines="1" app:layout_weight="1.0" app:minSize="13dp" />
+        </LinearLayout>
+        <LinearLayout app:orientation="horizontal" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginTop="12dp" app:layout_marginBottom="12dp"
+            <LinearLayout app:orientation="vertical" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginLeft="12dp" app:layout_marginRight="12dp" app:layout_weight="1.0">
+                <com.waze.view.text.WazeTextView app:textSize="16dp" app:textColor="#4c5b5f" app:ellipsize="end" app:id="@+id/routeMajorEventDuration" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="Expected to last: Less than an hour" app:maxLines="2" />
+            </LinearLayout>
+            <ImageView app:background="#91bdcb" app:layout_width="UNKNOWN_DATA_0x100" app:layout_height="match_parent" />
+            <LinearLayout app:orientation="vertical" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginLeft="12dp" app:layout_marginRight="12dp" app:layout_weight="1.0">
+                <com.waze.view.text.WazeTextView app:textSize="16dp" app:textColor="#4c5b5f" app:ellipsize="end" app:id="@+id/routeMajorEventDue" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="Due to: Construction" app:maxLines="2" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

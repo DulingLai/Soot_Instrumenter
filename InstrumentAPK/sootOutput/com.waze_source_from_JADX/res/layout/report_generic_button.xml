@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/reportGenericButton" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="match_parent" android:layout_weight="1.0">
+    <com.waze.view.anim.SelectorBg android:id="@+id/reportGenericButtonSelector" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <ImageView android:id="@+id/reportGenericButtonImage" android:src="@drawable/icon_report_traffic_heavy" android:scaleType="centerInside" android:layout_above="@+id/reportGenericButtonText" android:layout_alignParentTop="true" style="@style/InternalReportButtonImage" />
+    <com.waze.view.text.WazeTextView android:id="@+id/reportGenericButtonText" android:text="*Click" android:layout_alignParentBottom="true" style="@style/InternalReportButtonText_v4" />
+</RelativeLayout>

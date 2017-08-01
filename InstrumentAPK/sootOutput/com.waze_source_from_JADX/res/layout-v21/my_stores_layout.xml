@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:background="@color/blue_bg" app:layout_width="match_parent" app:layout_height="match_parent">
+    <com.waze.view.title.TitleBar app:id="@+id/theTitleBar" app:background="@color/blue_bg" app:layout_width="match_parent" app:layout_height="wrap_content" app:elevation="8dp" />
+    <android.support.v7.widget.RecyclerView app:id="@+id/myStoresRecycler" app:layout_width="match_parent" app:layout_height="match_parent" app:layout_below="@+id/theTitleBar" />
+    <LinearLayout app:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:orientation="vertical" app:id="@+id/zeroStateContainer" app:background="@color/blue_bg" app:visibility="gone" app:layout_width="match_parent" app:layout_height="match_parent" app:layout_below="@+id/theTitleBar">
+        <ImageView app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginTop="64dp" app:src="@drawable/search_result_empty_state_illu" />
+        <com.waze.view.text.WazeTextView app:textSize="20dp" app:textStyle="bold" app:textColor="@color/BlueDeep" app:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/lblNoStoresFound" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginLeft="16dp" app:layout_marginRight="16dp" app:layout_marginBottom="80dp" app:text="*NO FAVORITE STORES FOUND" app:font_type="3" />
+        <com.waze.view.text.WazeTextView app:textSize="18dp" app:textColor="@color/BlueDeep" app:id="@+id/lblZeroStateDescription" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginLeft="16dp" app:layout_marginRight="16dp" app:text="*Select your favorite stores and chains to see more on the map and in search.
+
+Add qualified stores and chains from the location page - look for the heart!" app:font_type="1" />
+    </LinearLayout>
+</RelativeLayout>

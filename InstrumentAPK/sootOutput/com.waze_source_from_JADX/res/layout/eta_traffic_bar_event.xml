@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/com.waze" app:layout_width="wrap_content" app:layout_height="wrap_content">
+    <ImageView app:id="@+id/trafficBarEventStack" app:visibility="visible" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginLeft="4dp" app:src="@drawable/traffic_bar_report_stack" />
+    <ImageView app:id="@+id/trafficBarEventIcon" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginLeft="2dp" app:src="@drawable/traffic_bar_report_police" />
+    <LinearLayout app:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:orientation="vertical" app:id="@+id/trafficBarEventTimeLayout" app:background="@drawable/eta_traffic_circle_4" app:visibility="visible" app:layout_width="UNKNOWN_DATA_0x1d01" app:layout_height="UNKNOWN_DATA_0x1d01" app:layout_marginLeft="6.5dp" app:layout_marginTop="3.5dp">
+        <com.waze.view.text.WazeTextView app:textSize="14dp" app:textColor="@color/White" app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/trafficBarEventTime" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginLeft="2dp" app:layout_marginTop="-1dp" app:layout_marginRight="2dp" app:text="99+" app:font_type="3" />
+        <com.waze.view.text.WazeTextView app:textSize="10dp" app:textColor="@color/White" app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:id="@+id/trafficBarEventUnits" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x1001" app:layout_marginTop="-6dp" app:text="perc" app:textAllCaps="true" app:font_type="7" />
+    </LinearLayout>
+</FrameLayout>

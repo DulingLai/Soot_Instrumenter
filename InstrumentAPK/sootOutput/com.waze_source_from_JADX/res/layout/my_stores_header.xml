@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:orientation="vertical" app:background="@color/blue_bg" app:padding="16dp" app:layout_width="match_parent" app:layout_height="match_parent">
+    <com.waze.view.text.WazeTextView app:textSize="17dp" app:textColor="@color/BlueDeep" app:id="@+id/lblMyStoresHeader" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginBottom="24dp" app:text="*Select your favorite stores and chains to find them quicker or see them more frequently on the map, find them quicker on search, and more." app:font_type="1" />
+    <com.waze.view.text.WazeTextView app:textSize="18dp" app:textStyle="bold" app:textColor="@color/BlueDeep" app:id="@+id/lblFavoriteStoresTitle" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="*My favorite stores" app:font_type="2" />
+</LinearLayout>

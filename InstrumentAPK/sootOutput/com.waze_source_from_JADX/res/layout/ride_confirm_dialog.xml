@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:orientation="vertical" app:id="@+id/rideConfirmLayout" app:background="@drawable/dialog_background" app:layout_width="UNKNOWN_DATA_0x13601" app:layout_height="wrap_content"
+    <LinearLayout app:orientation="vertical" app:id="@+id/rideConfirmLayoutTop" app:padding="0dp" app:clipChildren="false" app:clipToPadding="false" app:layout_width="match_parent" app:layout_height="wrap_content">
+        <RelativeLayout app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginTop="10dp">
+            <ImageView app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/rideConfirmRiderProfileImage" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_margin="7dp" app:src="@drawable/rs_profilepic_placeholder" app:layout_alignLeft="@+id/rideConfirmImageFrame" app:layout_alignTop="@+id/rideConfirmImageFrame" app:layout_alignRight="@+id/rideConfirmImageFrame" app:layout_alignBottom="@+id/rideConfirmImageFrame" />
+            <ImageView app:id="@+id/rideConfirmImageFrame" app:layout_width="UNKNOWN_DATA_0x6401" app:layout_height="UNKNOWN_DATA_0x6401" app:src="@drawable/rs_profilepic_outline" app:scaleType="fitXY" app:layout_centerHorizontal="true" />
+            <ProgressBar app:id="@+id/rideConfirmImageProgress" app:visibility="gone" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_centerInParent="true" />
+        </RelativeLayout>
+        <com.waze.view.text.WazeTextView app:textSize="18sp" app:textColor="@color/Dark" app:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/rideConfirmTitle" app:paddingLeft="18dp" app:paddingRight="18dp" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginTop="10dp" app:text="*Confirm ride" app:font_type="3" />
+        <com.waze.view.text.WazeTextView app:textSize="14sp" app:textColor="@color/Dark" app:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/rideConfirmSubTitle" app:paddingLeft="18dp" app:paddingRight="18dp" app:paddingBottom="10dp" app:layout_width="match_parent" app:layout_height="wrap_content" app:text="*Rider will be there" app:font_type="1" />
+        <GridLayout app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:paddingLeft="18dp" app:paddingRight="18dp" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginTop="10dp" app:columnCount="2">
+            <com.waze.view.text.WazeTextView app:id="@+id/rideConfirmWhen1" app:text="*When" style="@style/rideConfirmDialogCol1" />
+            <com.waze.view.text.WazeTextView app:id="@+id/rideConfirmWhen2" app:text="*Next monday" style="@style/rideConfirmDialogCol2" />
+            <View style="@style/rideConfirmDialogSep" />
+            <com.waze.view.text.WazeTextView app:id="@+id/rideConfirmLeave1" app:text="*Leave by" style="@style/rideConfirmDialogCol1" />
+            <com.waze.view.text.WazeTextView app:id="@+id/rideConfirmLeave2" app:text="*8:20AM" style="@style/rideConfirmDialogCol2" />
+            <View style="@style/rideConfirmDialogSep" />
+            <com.waze.view.text.WazeTextView app:id="@+id/rideConfirmPickup1" app:text="*Pickup time" style="@style/rideConfirmDialogCol1" />
+            <com.waze.view.text.WazeTextView app:id="@+id/rideConfirmPickup2" app:text="*8:50AM" style="@style/rideConfirmDialogCol2" />
+            <View style="@style/rideConfirmDialogSep" />
+            <com.waze.view.text.WazeTextView app:id="@+id/rideConfirmGet1" app:text="*Get" style="@style/rideConfirmDialogCol1" />
+            <com.waze.view.text.WazeTextView app:textSize="16sp" app:id="@+id/rideConfirmGet2" app:text="*23.00 NIS" style="@style/rideConfirmDialogCol2" />
+        </GridLayout>
+    </LinearLayout>
+    <View app:id="@+id/confirmButtonsSeparator" app:layout_marginTop="14dp" style="@style/settingsSeparator" />
+    <include layout="@layout/confirm_dialog_buttons" />
+</LinearLayout>

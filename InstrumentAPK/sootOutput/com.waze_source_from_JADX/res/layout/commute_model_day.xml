@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/com.waze" app:background="@color/settings_bg_titles" app:layout_width="match_parent" app:layout_height="match_parent">
+    <com.waze.view.title.TitleBar app:id="@+id/theTitleBar" app:layout_width="match_parent" app:layout_height="wrap_content" />
+    <ScrollView app:background="@color/settings_bg_titles" app:fadingEdge="UNKNOWN_DATA_0x0" app:layout_width="match_parent" app:layout_height="match_parent" app:layout_below="@+id/theTitleBar" app:overScrollMode="ifContentScrolls">
+        <LinearLayout style="@style/settingsLayout">
+            <Space app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x1e01" />
+            <com.waze.settings.WazeSettingsView app:id="@+id/commuteModelDayToWorkCheck" app:position="atThumb" app:settingsType="2" style="@style/settingsSelection" />
+            <com.waze.settings.WazeSettingsView app:id="@+id/commuteModelDayToWorkTime" app:position="aboveThumb" app:settingsType="7" style="@style/settingsSelection" />
+            <ImageView app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x1e01" app:src="@drawable/cell_shadow_dark" app:scaleType="fitXY" />
+            <com.waze.settings.WazeSettingsView app:id="@+id/commuteModelDayToHomeCheck" app:position="atThumb" app:settingsType="2" style="@style/settingsSelection" />
+            <com.waze.settings.WazeSettingsView app:id="@+id/commuteModelDayToHomeTime" app:position="aboveThumb" app:settingsType="7" style="@style/settingsSelection" />
+            <ImageView app:layout_width="match_parent" app:layout_height="wrap_content" app:src="@drawable/cell_shadow_dark" app:scaleType="fitXY" />
+            <com.waze.view.text.WazeTextView app:textSize="15dp" app:textStyle="UNKNOWN_DATA_0x0" app:textColor="@color/BlueDeep" app:id="@+id/commuteModelDayComment" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginLeft="10dp" app:layout_marginTop="15dp" app:layout_marginRight="10dp" app:layout_marginBottom="10dp" app:text="*To get more ride requests, set a wider timeframe for departure" app:font_type="1" style="@style/textOnBg" />
+        </LinearLayout>
+    </ScrollView>
+    <ImageView app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x601" app:src="@drawable/topbar_shadow" app:scaleType="fitXY" app:layout_below="@+id/theTitleBar" />
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/com.waze" app:background="@color/blue_bg" app:layout_width="match_parent" app:layout_height="match_parent">
+    <com.waze.view.title.TitleBar app:id="@+id/theTitleBar" app:layout_width="match_parent" app:layout_height="wrap_content" />
+    <ScrollView app:id="@+id/theScrollView" app:fadingEdge="UNKNOWN_DATA_0x0" app:layout_width="match_parent" app:layout_height="match_parent" app:fillViewport="true" app:layout_below="@+id/theTitleBar" app:overScrollMode="ifContentScrolls">
+        <LinearLayout app:layout_width="match_parent" app:layout_height="wrap_content" style="@style/settingsLayout">
+            <FrameLayout app:id="@+id/dummy" app:focusable="true" app:focusableInTouchMode="true" app:layout_width="UNKNOWN_DATA_0x0" app:layout_height="UNKNOWN_DATA_0x0" />
+            <Space app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x1401" />
+            <com.waze.settings.WazeSettingsView app:id="@+id/setCarPayBank" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x4601" app:position="atThumb" app:settingsType="1" />
+            <com.waze.settings.WazeSettingsView app:id="@+id/setCarPayBranch" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x4601" app:position="floating" app:settingsType="6" />
+            <com.waze.settings.WazeSettingsView app:id="@+id/setCarPayAccount" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x4601" app:position="floating" app:settingsType="6" />
+            <com.waze.settings.WazeSettingsView app:id="@+id/setCarPayName" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x4001" app:position="floating" app:settingsType="6" />
+            <com.waze.settings.WazeSettingsView app:id="@+id/setCarPayNameMiddle" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x4601" app:position="floating" app:settingsType="6" />
+            <com.waze.settings.WazeSettingsView app:id="@+id/setCarPayNameLast" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x4601" app:position="aboveThumb" app:settingsType="6" />
+            <LinearLayout app:gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:id="@+id/carpoolPaymentsCheckBoxContainer" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginTop="10dp" app:layout_marginBottom="10dp">
+                <CheckBox app:id="@+id/carpoolPaymentsCheckBox" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_margin="8dp" app:checked="true" style="@style/carpoolCheckbox" />
+                <com.waze.view.text.WazeTextView app:textSize="14dp" app:textStyle="UNKNOWN_DATA_0x0" app:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:linksClickable="true" app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/setCarPayLegalAccept" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginRight="10dp" app:text="* I accept GPC terms of service and payment privacy policy" style="@style/textOnBg" />
+            </LinearLayout>
+            <Space app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x1" app:layout_weight="1.0" />
+            <com.waze.view.text.WazeTextView app:textSize="18dp" app:textColor="@color/Dark" app:ellipsize="end" app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/saveButton" app:background="@drawable/button_white_bg" app:clickable="true" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x3401" app:layout_margin="15dp" app:text="*Save" app:singleLine="true" />
+        </LinearLayout>
+    </ScrollView>
+    <ImageView app:layout_width="match_parent" app:layout_height="wrap_content" app:src="@drawable/topbar_shadow" app:scaleType="fitXY" app:layout_below="@+id/theTitleBar" />
+</RelativeLayout>

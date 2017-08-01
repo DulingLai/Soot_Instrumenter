@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="vertical" android:id="@+id/confirmInfo" android:layout_width="match_parent" android:layout_height="wrap_content" android:baselineAligned="true">
+    <FrameLayout android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/confirmImageContainer" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18dp">
+        <ImageView android:id="@+id/confirmImage" android:layout_width="UNKNOWN_DATA_0x6401" android:layout_height="UNKNOWN_DATA_0x6401" android:src="@drawable/popup_debug" />
+    </FrameLayout>
+    <com.waze.view.text.WazeTextView android:id="@+id/confirmTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="*Title" android:maxLines="2" style="@style/dialogHeaderText" />
+    <com.waze.view.text.WazeTextView android:autoLink="web|all" android:linksClickable="true" android:id="@+id/confirmText" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/lorem_shorter" style="@style/settingsDialogContentText" />
+    <FrameLayout android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/confirmCustomViewFrame" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <LinearLayout android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="horizontal" android:id="@+id/confirmCheckboxFrame" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/settingsDialogContentCheckbox">
+        <com.waze.view.text.WazeTextView android:id="@+id/confirmCheckboxTextRtl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lorem_shorter" style="@style/settingsDialogContentCheckboxText" />
+        <com.waze.ifs.ui.WazeCheckBoxView android:id="@+id/confirmCheckbox" android:focusable="false" android:clickable="false" android:layout_width="UNKNOWN_DATA_0x1e01" android:layout_height="UNKNOWN_DATA_0x1e01" android:layout_centerVertical="true" />
+        <com.waze.view.text.WazeTextView android:id="@+id/confirmCheckboxText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lorem_shorter" style="@style/settingsDialogContentCheckboxText" />
+    </LinearLayout>
+    <View android:id="@+id/confirmButtonsSeparator" android:layout_marginTop="14dp" style="@style/settingsSeparator" />
+</LinearLayout>

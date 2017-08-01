@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:gravity="top|bottom|center_vertical|fill_vertical|center|fill">
+        <shape android:shape="rectangle" android:useLevel="true">
+            <solid android:color="@color/BlueDeepLight" />
+        </shape>
+    </item>
+    <item android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:top="15dp">
+        <shape android:shape="rectangle" android:useLevel="true">
+            <solid android:color="@color/BlueLagoon" />
+        </shape>
+    </item>
+    <item android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:top="15dp">
+        <scale android:drawable="@drawable/preview_closed_bg" android:scaleWidth="100%" android:scaleHeight="50%" android:scaleGravity="top|bottom|center_vertical|fill_vertical|center|fill" />
+    </item>
+</layer-list>

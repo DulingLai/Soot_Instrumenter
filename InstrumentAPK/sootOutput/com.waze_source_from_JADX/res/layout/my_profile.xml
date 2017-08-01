@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:orientation="vertical" app:layout_width="match_parent" app:layout_height="match_parent">
+    <com.waze.view.title.TitleBar app:id="@+id/myProfileTitle" app:layout_width="match_parent" app:layout_height="wrap_content" />
+    <View app:background="@color/blue_bg" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x1401" app:layout_below="@+id/myProfileTitle" />
+    <ScrollView app:id="@+id/myProfileScroll" app:layout_width="match_parent" app:layout_height="match_parent" app:fillViewport="true" app:layout_below="@+id/myProfileTitle">
+        <LinearLayout app:orientation="vertical" app:layout_width="match_parent" app:layout_height="wrap_content">
+            <FrameLayout app:id="@+id/dummy" app:focusable="true" app:focusableInTouchMode="true" app:layout_width="UNKNOWN_DATA_0x0" app:layout_height="UNKNOWN_DATA_0x0" />
+            <RelativeLayout app:background="@color/blue_bg" app:paddingTop="40dp" app:layout_width="match_parent" app:layout_height="wrap_content">
+                <ImageView app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/myProfileUserPic" app:layout_width="UNKNOWN_DATA_0x1" app:layout_height="UNKNOWN_DATA_0x1" app:layout_margin="7dp" app:src="@drawable/rs_profilepic_placeholder" app:layout_alignLeft="@+id/myProfileImageFrame" app:layout_alignTop="@+id/myProfileImageFrame" app:layout_alignRight="@+id/myProfileImageFrame" app:layout_alignBottom="@+id/myProfileImageFrame" />
+                <ImageView app:id="@+id/myProfileImageFrame" app:layout_width="wrap_content" app:layout_height="wrap_content" app:src="@drawable/rs_profilepic_outline" app:layout_centerHorizontal="true" />
+                <ImageView app:id="@+id/myProfileMoodShadow" app:layout_width="UNKNOWN_DATA_0x2d01" app:layout_height="UNKNOWN_DATA_0x1401" app:layout_marginLeft="-40dp" app:layout_marginTop="-14dp" app:src="@drawable/mood_shadow_profile" app:layout_toRightOf="@+id/myProfileImageFrame" app:layout_below="@+id/myProfileImageFrame" app:layout_centerHorizontal="true" />
+                <ImageView app:id="@+id/myProfileUserMood" app:layout_width="UNKNOWN_DATA_0x2d01" app:layout_height="UNKNOWN_DATA_0x2d01" app:layout_marginLeft="-40dp" app:layout_marginTop="-40dp" app:src="@drawable/invisible" app:layout_toRightOf="@+id/myProfileImageFrame" app:layout_below="@+id/myProfileImageFrame" />
+                <com.waze.settings.SettingsTitleText app:id="@+id/myProfileHowTitle" app:layout_marginTop="16dp" app:layout_below="@+id/myProfileImageFrame" app:position="atThumb" style="@style/settingsTitle" />
+                <com.waze.view.text.WazeTextView app:textSize="15sp" app:textColor="@color/BlueDeep" app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/myProfileTapTo" app:background="@drawable/my_waze_pill_bg" app:paddingLeft="8dp" app:paddingTop="4dp" app:paddingRight="8dp" app:paddingBottom="4dp" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginLeft="10dp" app:layout_marginTop="10dp" app:layout_marginRight="10dp" app:text="Tap to change" app:layout_below="@+id/myProfileImageFrame" app:layout_centerHorizontal="true" app:font_type="3" />
+            </RelativeLayout>
+            <com.waze.settings.WazeSettingsView app:id="@+id/myProfileFirstName" app:position="atThumb" app:settingsType="6" style="@style/settingsTextEdit" />
+            <com.waze.settings.WazeSettingsView app:id="@+id/myProfileLastName" app:position="floating" app:settingsType="6" style="@style/settingsTextEdit" />
+            <com.waze.settings.WazeSettingsView app:id="@+id/myProfileUserName" app:position="floating" app:settingsType="6" style="@style/settingsTextEdit" />
+            <FrameLayout app:id="@+id/myProfileUserName_error_frame" app:background="@color/settings_bg_note" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x1">
+                <View app:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:background="@drawable/note_shadow" app:layout_width="match_parent" app:layout_height="wrap_content" />
+                <LinearLayout app:orientation="horizontal" app:layout_width="match_parent" app:layout_height="wrap_content">
+                    <com.waze.view.text.WazeTextView app:id="@+id/myProfileUserName_error_code" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginLeft="@dimen/settingsGutter" app:layout_marginTop="@dimen/settingsGutter" app:layout_marginBottom="@dimen/settingsGutter" app:text="err" style="@style/settings_note_nomargins" />
+                    <com.waze.view.text.WazeTextView app:id="@+id/myProfileUserName_error_code2" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginLeft="2dp" app:layout_marginTop="@dimen/settingsGutter" app:layout_marginRight="@dimen/settingsGutter" app:layout_marginBottom="@dimen/settingsGutter" app:text="err2" style="@style/settings_note_nomargins" />
+                </LinearLayout>
+            </FrameLayout>
+            <com.waze.settings.WazeSettingsView app:id="@+id/myProfilePassword" app:position="aboveThumb" app:settingsType="6" style="@style/settingsTextEdit" />
+            <FrameLayout app:background="@color/settings_bg_note" app:layout_width="match_parent" app:layout_height="wrap_content">
+                <View app:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:background="@drawable/note_shadow" app:layout_width="match_parent" app:layout_height="wrap_content" />
+                <com.waze.view.text.WazeTextView app:id="@+id/myProfileYourPhotoText" app:text="Your photo and full name will be" style="@style/settings_note" />
+            </FrameLayout>
+            <com.waze.settings.SettingsTitleText app:id="@+id/myProfileLoginTitle" style="@style/settingsTitle" />
+            <com.waze.settings.WazeSettingsView app:id="@+id/myProfilePhone" app:position="atThumb" app:settingsType="6" style="@style/settingsTextEdit" />
+            <com.waze.settings.WazeSettingsView app:id="@+id/myProfileEmail" app:position="floating" app:settingsType="6" style="@style/settingsTextEdit" />
+            <com.waze.settings.WazeSettingsView app:id="@+id/allowEmail" app:visibility="gone" app:position="UNKNOWN_DATA_0x3" app:settingsType="2" app:swipable="false" style="@style/settingsSelection" />
+            <com.waze.settings.SettingsTitleText app:id="@+id/myProfileAdvancedTitle" style="@style/settingsTitle" />
+            <com.waze.settings.WazeSettingsView app:id="@+id/myProfileLogOutButton" app:position="atThumb" app:icon="@drawable/list_icon_quit" style="@style/settingsSelection" />
+            <com.waze.settings.WazeSettingsView app:id="@+id/smartLockButton" app:position="floating" app:settingsType="0" app:icon="@drawable/list_icon_smartlock" style="@style/settingsSelection" />
+            <com.waze.settings.WazeSettingsView app:id="@+id/myProfileDeleteAccountButton" app:position="aboveThumb" app:icon="@drawable/list_icon_delete_account" style="@style/settingsSelection" />
+            <FrameLayout app:background="@color/settings_bg_note" app:layout_width="match_parent" app:layout_height="wrap_content">
+                <View app:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:background="@drawable/note_shadow" app:layout_width="match_parent" app:layout_height="wrap_content" />
+                <com.waze.view.text.WazeTextView app:id="@+id/myProfileYouCanDeleteText" app:text="You can delete your account" style="@style/settings_note" />
+            </FrameLayout>
+            <FrameLayout app:background="@color/settings_bg_titles" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x7f0a0089" app:foreground="@drawable/cell_shadow_dark" />
+        </LinearLayout>
+    </ScrollView>
+    <ImageView app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x601" app:src="@drawable/topbar_shadow" app:scaleType="fitXY" app:layout_below="@+id/myProfileTitle" />
+</RelativeLayout>

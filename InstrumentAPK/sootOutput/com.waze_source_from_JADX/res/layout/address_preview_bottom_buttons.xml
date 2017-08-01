@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:orientation="vertical" app:id="@+id/rideRequestButtonsLayout" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginTop="-7dp" app:layout_alignParentBottom="true" app:layout_alignWithParentIfMissing="true">
+    <View app:id="@+id/rideRequestButtonsLayoutShadow" app:background="@drawable/top_shadow_gradient" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x601" />
+    <View app:background="@color/PassiveGrey" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x101" />
+    <LinearLayout app:orientation="horizontal" app:background="@color/White" app:paddingLeft="5dp" app:paddingRight="5dp" app:layout_width="match_parent" app:layout_height="wrap_content">
+        <FrameLayout app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/btnPlannedDrive" app:background="@drawable/button_white_bg" app:layout_width="UNKNOWN_DATA_0x1" app:layout_height="UNKNOWN_DATA_0x3201" app:layout_margin="4dp" app:layout_weight="1.0">
+            <com.waze.view.text.WazeTextView app:textSize="17dp" app:textColor="@color/Light" app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/lblPlannedDrive" app:visibility="visible" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_margin="8dp" app:font_type="2" />
+        </FrameLayout>
+        <FrameLayout app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/addressPreviewGoButton" app:background="@drawable/button_blue_bg" app:clickable="true" app:layout_width="UNKNOWN_DATA_0x1" app:layout_height="UNKNOWN_DATA_0x3201" app:layout_marginLeft="5dp" app:layout_marginTop="10dp" app:layout_marginRight="5dp" app:layout_marginBottom="10dp" app:layout_weight="2.0">
+            <com.waze.view.text.WazeTextView app:textSize="17sp" app:textColor="@color/White" app:ellipsize="end" app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/addressPreviewGoButtonText" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="*Go" app:singleLine="true" app:drawableRight="@drawable/go_icon_dark_blue" app:font_type="3" />
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

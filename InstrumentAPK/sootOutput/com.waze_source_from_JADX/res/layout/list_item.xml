@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/blue_selector" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:id="@+id/topMargin" android:visibility="gone" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0xa01" />
+    <LinearLayout android:id="@+id/itemBg" android:background="@drawable/item_selector_single" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginRight="12dp">
+        <CheckedTextView android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="horizontal" android:id="@+id/item" android:padding="0dp" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x4001" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:checkMark="@drawable/list_check" android:layout_centerHorizontal="true" style="@style/ListItem" />
+    </LinearLayout>
+    <View android:id="@+id/bottomMargin" android:visibility="gone" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0xa01" />
+</LinearLayout>

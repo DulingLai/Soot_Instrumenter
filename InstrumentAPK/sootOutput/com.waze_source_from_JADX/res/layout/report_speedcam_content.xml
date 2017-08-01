@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:id="@id/center" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="UNKNOWN_DATA_0x1" android:layout_centerInParent="true" />
+    <include android:id="@+id/reportGenericSelectorArea" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x1" android:layout_above="@id/center" android:layout_alignParentTop="true" layout="@layout/report_generic_selector_area" />
+    <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:fillViewport="true" android:layout_below="@id/center" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="vertical" android:id="@+id/reportGenericDetailsArea" android:padding="10dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.waze.view.text.WazeTextView android:textSize="15sp" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/reportSpeedCamText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="0dp" android:text="*Text2" style="@style/reportMenuDetailsText" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

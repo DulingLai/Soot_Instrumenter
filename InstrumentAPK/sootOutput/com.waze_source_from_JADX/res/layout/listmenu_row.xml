@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/listmenu_row_root" android:background="@color/solid_white" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/listmenu_row_left_image" android:layout_width="UNKNOWN_DATA_0x3201" android:layout_height="UNKNOWN_DATA_0x3201" android:scaleType="centerInside" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <com.waze.view.text.WazeTextView android:textSize="15dp" android:id="@+id/listmenu_row_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="Text" android:layout_toRightOf="@+id/listmenu_row_left_image" android:layout_centerVertical="true" />
+    <ImageView android:id="@+id/listmenu_row_right_image" android:layout_width="UNKNOWN_DATA_0x3c01" android:layout_height="UNKNOWN_DATA_0x3c01" android:layout_marginRight="10dp" android:scaleType="center" android:layout_toLeftOf="@+id/listmenu_row_arrow_image" android:layout_centerVertical="true" />
+    <ImageView android:id="@+id/listmenu_row_arrow_image" android:layout_width="UNKNOWN_DATA_0x3c01" android:layout_height="UNKNOWN_DATA_0x3c01" android:scaleType="center" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

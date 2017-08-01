@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res-auto" app:layout_width="match_parent" app:layout_height="match_parent" app:fillViewport="true">
+    <LinearLayout app:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:orientation="vertical" app:background="@drawable/white_roundedcorner_background" app:padding="16dp" app:layout_width="match_parent" app:layout_height="wrap_content">
+        <ImageView app:layout_width="wrap_content" app:layout_height="UNKNOWN_DATA_0x7f0a0001" app:layout_marginTop="@dimen/welcomeImageTopMargin" app:layout_marginBottom="@dimen/welcomeImageBottomMargin" app:src="@drawable/sign_up_illu_love" />
+        <com.waze.view.text.WazeTextView app:textSize="@dimen/welcomeTitleFontSize" app:textColor="@color/Dark" app:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/lblWelcomeTitle" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginLeft="40dp" app:layout_marginRight="40dp" app:layout_marginBottom="@dimen/welcomeTitleBottomMargin" app:text="*Drive with Waze even if you know the way" app:font_type="3" />
+        <LinearLayout app:gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:orientation="horizontal" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginLeft="24dp" app:layout_marginRight="24dp" app:layout_marginBottom="16dp">
+            <ImageView app:layout_width="UNKNOWN_DATA_0x2001" app:layout_height="UNKNOWN_DATA_0x2001" app:layout_marginRight="16dp" app:src="@drawable/welcome_icon_1" />
+            <LinearLayout app:orientation="vertical" app:layout_width="match_parent" app:layout_height="wrap_content">
+                <com.waze.view.text.WazeTextView app:textSize="@dimen/welcomeItemFontSize" app:textColor="@color/Light" app:id="@+id/lblBenefitOne" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginBottom="16dp" app:text="*Know what's happening on the roads in real time" app:font_type="1" />
+                <View app:background="@color/BlueWhale" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x101" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout app:gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:orientation="horizontal" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginLeft="24dp" app:layout_marginRight="24dp" app:layout_marginBottom="16dp">
+            <ImageView app:layout_width="UNKNOWN_DATA_0x2001" app:layout_height="UNKNOWN_DATA_0x2001" app:layout_marginRight="16dp" app:src="@drawable/welcome_icon_2" />
+            <LinearLayout app:orientation="vertical" app:layout_width="match_parent" app:layout_height="wrap_content">
+                <com.waze.view.text.WazeTextView app:textSize="@dimen/welcomeItemFontSize" app:textColor="@color/Light" app:id="@+id/lblBenefitTwo" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginBottom="16dp" app:text="*Avoid traffic with route updates as conditions change" app:font_type="1" />
+                <View app:background="@color/BlueWhale" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x101" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout app:gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:orientation="horizontal" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginLeft="24dp" app:layout_marginRight="24dp" app:layout_marginBottom="16dp">
+            <ImageView app:layout_width="UNKNOWN_DATA_0x2001" app:layout_height="UNKNOWN_DATA_0x2001" app:layout_marginRight="16dp" app:src="@drawable/welcome_icon_3" />
+            <LinearLayout app:orientation="vertical" app:layout_width="match_parent" app:layout_height="wrap_content">
+                <com.waze.view.text.WazeTextView app:textSize="@dimen/welcomeItemFontSize" app:textColor="@color/Light" app:id="@+id/lblBenefitThree" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginBottom="16dp" app:text="*Get alerts about accidents, hazards, and police ahead" app:font_type="1" />
+            </LinearLayout>
+        </LinearLayout>
+        <View app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x1" app:layout_weight="1.0" />
+        <FrameLayout app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/btnNext" app:background="@drawable/blue_button" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x3801" app:layout_marginBottom="16dp">
+            <com.waze.view.text.WazeTextView app:textSize="16sp" app:textColor="@color/White" app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/lblNext" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="*Next" app:font_type="1" />
+        </FrameLayout>
+        <com.waze.view.text.WazeTextView app:textSize="18sp" app:textColor="@color/Light" app:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/btnHaveAccount" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="*Have an account? Log in" app:font_type="1" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,14 @@
+Change directory:
+CD C:\Users\zackl\workspace\InstrumentAPK\sootOutput
+
+Generating Keystore:
+keytool -genkey -v -keystore appkey.keystore -alias MyKey -keyalg RSA -keysize 2048 -validity 10000
+
+Sign the APK:
+jarsigner -verbose -keystore appkey.keystore com.waze.apk MyKey
+
+Zip align the APK:
+C:\Users\zackl\AppData\Local\Android\sdk\build-tools\23.0.1\zipalign -c -v 4 com.waze.signed.apk
+
+Install the APK:
+adb install com.waze.signed.apk

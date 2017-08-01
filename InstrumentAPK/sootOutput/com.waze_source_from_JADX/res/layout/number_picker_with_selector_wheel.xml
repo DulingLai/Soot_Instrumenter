@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <view android:textAppearance="?unknown_attr_ref: 1010041" android:textColor="?unknown_attr_ref: 1010036" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@id/np__numberpicker_input" android:background="0x0" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" class="net.simonvt.numberpicker.NumberPicker$CustomEditText" />
+</merge>

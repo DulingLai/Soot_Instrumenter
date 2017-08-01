@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:id="@+id/inboxItemViewContainer" app:background="@drawable/inbox_item_bg" app:layout_width="match_parent" app:layout_height="match_parent" app:elevation="2dp">
+    <com.waze.ifs.ui.WazeCheckBoxView app:id="@+id/inboxItemCheckbox" app:padding="12dp" app:layout_width="UNKNOWN_DATA_0x3801" app:layout_height="UNKNOWN_DATA_0x3801" />
+    <LinearLayout app:orientation="vertical" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginTop="12dp" app:layout_marginRight="24dp" app:layout_toRightOf="@+id/inboxItemCheckbox">
+        <com.waze.view.text.WazeTextView app:textSize="16sp" app:textColor="@color/Dark" app:id="@+id/inboxTitleLabel" app:layout_width="wrap_content" app:layout_height="wrap_content" app:font_type="3" />
+        <com.waze.view.text.WazeTextView app:textColor="@color/Light" app:id="@+id/inboxDetailsLabel" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginBottom="12dp" app:font_type="1" />
+        <com.waze.view.text.WazeTextView app:textSize="10sp" app:textColor="@color/Light" app:id="@+id/inboxTimeLabel" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginBottom="12dp" />
+    </LinearLayout>
+    <View app:id="@+id/inboxUnreadIndicator" app:background="@drawable/inbox_unread_indicator_bg" app:visibility="gone" app:layout_width="UNKNOWN_DATA_0xc01" app:layout_height="UNKNOWN_DATA_0xc01" app:layout_marginTop="8dp" app:layout_marginRight="8dp" app:layout_alignParentRight="true" />
+</RelativeLayout>

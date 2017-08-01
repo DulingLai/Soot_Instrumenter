@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:background="#90000000" app:layout_width="match_parent" app:layout_height="match_parent">
+    <ScrollView app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginLeft="32dp" app:layout_marginRight="32dp" app:layout_centerVertical="true">
+        <LinearLayout app:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:orientation="vertical" app:id="@+id/mainContainer" app:background="@drawable/enc_white_background" app:layout_width="match_parent" app:layout_height="wrap_content">
+            <ImageView app:id="@+id/imgHeader" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginTop="16dp" app:layout_marginBottom="16dp" app:src="@drawable/child_reminder_illu" />
+            <com.waze.view.text.WazeTextView app:textSize="26sp" app:textColor="@color/Dark" app:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/lblTitle" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginLeft="16dp" app:layout_marginRight="16dp" app:layout_marginBottom="8dp" app:text="*Dont leave your child in the car" app:font_type="3" />
+            <com.waze.view.text.WazeTextView app:textSize="18sp" app:textColor="@color/Light" app:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/lblDescription" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginLeft="16dp" app:layout_marginRight="16dp" app:layout_marginBottom="24dp" app:text="*Waze will notify you at the end of your drive to check your car" />
+            <View app:background="@color/PassiveGrey" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x101" />
+            <LinearLayout app:orientation="vertical" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_margin="8dp">
+                <FrameLayout app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/btnLeftWhite" app:background="@drawable/white_button" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x4801" app:layout_marginBottom="8dp">
+                    <com.waze.view.text.WazeTextView app:textSize="20sp" app:textColor="@color/Dark" app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/lblLeftWhite" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="*No thanks" app:font_type="3" />
+                </FrameLayout>
+                <FrameLayout app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/btnRightBlue" app:background="@drawable/blue_button" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x4801">
+                    <com.waze.view.text.WazeTextView app:textSize="20sp" app:textColor="@color/White" app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/lblRightBlue" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="*Try now" app:font_type="3" />
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

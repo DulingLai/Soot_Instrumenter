@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.waze.view.layout.BoundedLinearLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:orientation="vertical" app:id="@+id/confirmMainLayout" app:background="@drawable/dialog_background" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginLeft="@dimen/dialogMinMargins" app:layout_marginRight="@dimen/dialogMinMargins" app:bounded_width="@dimen/dialogMaxWidth">
+    <include layout="@layout/confirm_dialog_info_no_frame" />
+    <include layout="@layout/confirm_dialog_buttons_v" />
+</com.waze.view.layout.BoundedLinearLayout>

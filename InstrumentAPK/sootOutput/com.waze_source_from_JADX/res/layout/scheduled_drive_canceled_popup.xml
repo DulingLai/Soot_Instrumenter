@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/com.waze" app:background="#00000000" app:layout_width="match_parent" app:layout_height="match_parent"
+    <RelativeLayout app:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/schDriCclPupMain" app:background="#00000000" app:visibility="visible" app:layout_width="match_parent" app:layout_height="match_parent"
+        <RelativeLayout app:id="@+id/schDriCclPupLayout" app:background="@drawable/base_reg" app:paddingLeft="0dp" app:paddingTop="0dp" app:paddingRight="0dp" app:paddingBottom="0dp" app:visibility="visible" app:layout_width="UNKNOWN_DATA_0x15401" app:layout_height="UNKNOWN_DATA_0xb901">
+            <LinearLayout app:orientation="horizontal" app:id="@+id/schDriCclPupTitleLayout" app:paddingLeft="7dp" app:paddingRight="7dp" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x2301" app:layout_marginBottom="1dp" app:layout_alignParentTop="true">
+                <com.waze.view.text.WazeTextView app:textSize="17dp" app:textColor="#638994" app:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/schDriCclPupTime" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginLeft="10dp" app:layout_marginTop="12dp" app:text="in 12 min" />
+            </LinearLayout>
+            <FrameLayout app:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/Separ2" app:background="@drawable/seperator2_horizontal" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_below="@+id/schDriCclPupTitleLayout" app:layout_centerHorizontal="true" />
+            <LinearLayout app:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:orientation="horizontal" app:id="@+id/schDriCclPupDescLayout" app:paddingLeft="7dp" app:paddingRight="7dp" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_above="@+id/Separ3" app:layout_below="@+id/Separ2" app:layout_centerHorizontal="true">
+                <RelativeLayout app:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/schDriCclPupPictureLayout" app:layout_width="UNKNOWN_DATA_0x4e01" app:layout_height="UNKNOWN_DATA_0x4e01" app:layout_marginTop="3dp" app:layout_marginRight="10dp" app:layout_marginBottom="3dp">
+                    <FrameLayout app:id="@+id/schDriCclPupImageLayout" app:background="@drawable/frame" app:visibility="visible" app:clickable="true" app:layout_width="match_parent" app:layout_height="match_parent" app:layout_centerHorizontal="true">
+                        <ImageView app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/schDriCclPupMoodLayout" app:layout_width="UNKNOWN_DATA_0x4001" app:layout_height="UNKNOWN_DATA_0x4001" app:src="#c8e2ea" />
+                        <ImageView app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/schDriCclPupMoodImage" app:layout_width="UNKNOWN_DATA_0x3201" app:layout_height="UNKNOWN_DATA_0x3201" app:src="@drawable/wazer_8bit" />
+                        <ImageView app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/schDriCclPupImage" app:layout_width="UNKNOWN_DATA_0x4001" app:layout_height="UNKNOWN_DATA_0x4001" app:src="@drawable/loader" app:scaleType="centerCrop" />
+                        <ImageView app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/schDriCclPupTypeIndication" app:layout_width="UNKNOWN_DATA_0x1e01" app:layout_height="UNKNOWN_DATA_0x1901" app:src="@drawable/commenticon" />
+                    </FrameLayout>
+                </RelativeLayout>
+                <LinearLayout app:orientation="vertical" app:layout_width="match_parent" app:layout_height="wrap_content">
+                    <com.waze.view.text.WazeTextView app:textSize="18dp" app:textStyle="bold" app:textColor="#445a5f" app:id="@+id/schDriCclPupTitleText" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginLeft="0dp" app:layout_marginTop="10dp" app:layout_marginRight="10dp" app:text="*Ride canceled by Someone" app:maxLines="2" />
+                    <com.waze.view.text.WazeTextView app:textSize="14dp" app:textColor="#638994" app:id="@+id/schDriCclPupTimeText" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginTop="2dp" app:layout_marginRight="10dp" app:text="*22:22 pickup" app:maxLines="1" />
+                </LinearLayout>
+            </LinearLayout>
+            <FrameLayout app:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/Separ3" app:background="@drawable/seperator2_horizontal" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_above="@+id/schDriCclPupButtons" app:layout_centerHorizontal="true" />
+            <LinearLayout app:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:orientation="vertical" app:id="@+id/schDriCclPupButtons" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x2801" app:layout_above="@+id/schDriCclPupSpace" app:layout_centerHorizontal="true"
+                <LinearLayout app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:orientation="horizontal" app:id="@+id/schDriCclPupGotItButton" app:background="@drawable/popup_button" app:padding="0dp" app:clickable="true" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x1" app:layout_weight="1.0">
+                    <ImageView app:layout_width="wrap_content" app:layout_height="wrap_content" app:src="@drawable/rs_ride_takeover_details_icon" app:scaleType="fitXY" />
+                    <com.waze.view.text.WazeTextView app:textSize="15dp" app:id="@+id/schDriCclPupGotItButtonText" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginLeft="2dp" app:text="*Got it" style="@style/PopUpbuttonText" />
+                </LinearLayout>
+            </LinearLayout>
+            <Space app:id="@+id/schDriCclPupSpace" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x1201" app:layout_alignParentBottom="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

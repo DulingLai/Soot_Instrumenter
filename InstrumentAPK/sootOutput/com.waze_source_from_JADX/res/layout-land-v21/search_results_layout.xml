@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:layout_width="match_parent" app:layout_height="match_parent">
+    <LinearLayout app:orientation="vertical" app:layout_width="match_parent" app:layout_height="match_parent">
+        <com.waze.view.title.TitleBar app:id="@+id/titleBar" app:layout_width="match_parent" app:layout_height="wrap_content" app:elevation="16dp" app:outlineProvider="bounds" />
+        <FrameLayout app:layout_width="match_parent" app:layout_height="wrap_content">
+            <LinearLayout app:orientation="horizontal" app:layout_width="match_parent" app:layout_height="match_parent" app:weightSum="1.0">
+                <com.waze.map.MapViewWrapper app:id="@+id/searchMapPreview" app:layout_width="UNKNOWN_DATA_0x1" app:layout_height="match_parent" app:layout_weight="0.4" />
+                <RelativeLayout app:background="@color/blue_bg" app:layout_width="UNKNOWN_DATA_0x1" app:layout_height="match_parent" app:layout_weight="0.6" app:elevation="8dp" app:outlineProvider="bounds">
+                    <FrameLayout app:id="@+id/pagerTabStripContainer" app:background="@color/blue_bg" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x3801" app:layout_alignParentBottom="true" app:elevation="32dp">
+                        <com.waze.view.tabs.SlidingTabBar app:id="@+id/tabStrip" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x3801" />
+                    </FrameLayout>
+                    <RelativeLayout app:id="@+id/btnBackToList" app:background="@color/blue_bg" app:visibility="gone" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x3801" app:layout_alignParentBottom="true" app:elevation="32dp">
+                        <com.waze.view.text.WazeTextView app:textSize="20sp" app:textColor="@color/BlueDeep" app:id="@+id/btnBackToListText" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_centerInParent="true" app:font_type="3" />
+                    </RelativeLayout>
+                    <FrameLayout app:id="@+id/searchResultsContainer" app:layout_width="match_parent" app:layout_height="match_parent" app:layout_above="@+id/pagerTabStripContainer" app:overScrollMode="never">
+                        <LinearLayout app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:orientation="vertical" app:id="@+id/searchResultsNoResultsLayout" app:background="@color/blue_bg" app:visibility="gone" app:layout_width="match_parent" app:layout_height="match_parent">
+                            <ImageView app:layout_width="wrap_content" app:layout_height="wrap_content" app:src="@drawable/search_result_empty_state_illu" />
+                            <com.waze.view.text.WazeTextView app:textSize="18sp" app:textColor="@color/BlueDeep" app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/searchResultsNoResultsText" app:layout_width="UNKNOWN_DATA_0xb401" app:layout_height="wrap_content" app:text="*Could not connect" app:textAllCaps="true" app:font_type="3" />
+                        </LinearLayout>
+                        <android.support.v7.widget.RecyclerView app:id="@+id/searchResultsRecycler" app:layout_width="match_parent" app:layout_height="match_parent" app:overScrollMode="never" />
+                    </FrameLayout>
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:orientation="vertical" app:id="@+id/searchResultsNoResultsLayout" app:background="@color/blue_bg" app:visibility="gone" app:layout_width="match_parent" app:layout_height="match_parent">
+                <ImageView app:layout_width="wrap_content" app:layout_height="wrap_content" app:src="@drawable/search_result_empty_state_illu" />
+                <com.waze.view.text.WazeTextView app:textSize="18sp" app:textColor="@color/BlueDeep" app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/searchResultsNoResultsText" app:layout_width="UNKNOWN_DATA_0xb401" app:layout_height="wrap_content" app:text="*Could not connect" app:textAllCaps="true" app:font_type="3" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+</RelativeLayout>

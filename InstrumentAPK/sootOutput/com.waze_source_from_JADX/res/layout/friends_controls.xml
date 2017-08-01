@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:orientation="vertical" app:background="@drawable/map_control_zoom" app:paddingTop="14dp" app:paddingBottom="14dp" app:clipChildren="false" app:clipToPadding="false" app:layout_width="wrap_content" app:layout_height="wrap_content">
+    <com.waze.view.text.WazeTextView app:textSize="15dp" app:textColor="@color/White" app:id="@+id/friendsControl" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginLeft="4dp" app:layout_marginRight="4dp" app:text="*1" app:drawableLeft="@drawable/friends_map_control" app:drawablePadding="2dp" app:font_type="3" />
+</LinearLayout>

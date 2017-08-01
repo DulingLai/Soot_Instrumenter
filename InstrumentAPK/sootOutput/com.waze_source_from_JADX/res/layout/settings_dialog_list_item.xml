@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:id="@+id/settingsDialogItemFrame" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x3c01">
+    <com.waze.ifs.ui.WazeRadioView app:id="@+id/settingsDialogItemRadio" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginRight="@dimen/settingsGutter" app:layout_alignParentLeft="true" app:layout_centerVertical="true" />
+    <com.waze.view.text.WazeTextView app:textSize="16sp" app:textColor="@color/Light" app:id="@+id/settingsDialogItemText" app:layout_width="match_parent" app:layout_height="wrap_content" app:text="Value" app:layout_toRightOf="@+id/settingsDialogItemRadio" app:layout_alignParentRight="true" app:layout_centerVertical="true" app:font_type="4" />
+    <View app:id="@+id/settingsDialogItemSeparator" app:layout_alignParentBottom="true" style="@style/settingsSeparator" />
+</RelativeLayout>

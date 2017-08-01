@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:layout_width="match_parent" app:layout_height="match_parent">
+    <LinearLayout app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:orientation="vertical" app:id="@+id/navListNoReportsLayout" app:layout_width="wrap_content" app:layout_height="wrap_content">
+        <ImageView app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:layout_width="wrap_content" app:layout_height="wrap_content" app:src="@drawable/reports_ahead_empty_illu" />
+        <com.waze.view.text.WazeTextView app:textSize="24sp" app:textColor="@color/solid_black" app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/navListNoReportsText" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginLeft="80dp" app:layout_marginTop="16dp" app:layout_marginRight="80dp" app:text="No reports on your road!" app:font_type="2" />
+    </LinearLayout>
+    <ListView app:id="@+id/navListReportsList" app:layout_width="match_parent" app:layout_height="match_parent" />
+</FrameLayout>

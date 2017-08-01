@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:orientation="vertical" app:layout_width="match_parent" app:layout_height="match_parent" app:layoutDirection="ltr">
+    <com.waze.view.title.TitleBar app:id="@+id/theTitleBar" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_alignParentTop="true" app:titleBarSkin="1" />
+    <com.waze.map.MapView app:id="@+id/rideRequestMap" app:layout_width="match_parent" app:layout_height="match_parent" app:layout_below="@+id/theTitleBar" app:handleKeys="false" app:handleTouch="false" app:nativeTag="@string/nativeTagRideDetailsCanvas" />
+    <FrameLayout app:id="@+id/rideRequestMapCloseFrame" app:background="@color/White" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x5001" app:layout_alignParentBottom="true" app:alpha="0.8">
+        <com.waze.view.text.WazeTextView app:textSize="22dp" app:textStyle="bold" app:textColor="@color/Dark" app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/rideRequestMapClose" app:layout_width="match_parent" app:layout_height="match_parent" app:text="*Close map" app:font_type="5" />
+    </FrameLayout>
+    <ImageView app:background="@drawable/top_shadow_gradient" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_above="@+id/rideRequestMapCloseFrame" app:alpha="0.7" />
+    <View app:id="@+id/rideRequestBannerLiveRoller" app:background="@drawable/rs_requst_status_livedrive_tile" app:visibility="gone" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x401" app:layout_marginLeft="-40dp" app:layout_marginRight="-40dp" app:layout_marginBottom="-3dp" app:layout_alignBottom="@+id/theTitleBar" />
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:orientation="horizontal" app:id="@+id/rideRequestRiderRating" app:layout_width="wrap_content" app:layout_height="wrap_content">
+    <ImageView app:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:id="@+id/rideRequestRiderRatingStar1" app:padding="1dp" app:layout_width="wrap_content" app:layout_height="wrap_content" app:src="@drawable/small_star_full" />
+    <ImageView app:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:id="@+id/rideRequestRiderRatingStar2" app:padding="1dp" app:layout_width="wrap_content" app:layout_height="wrap_content" app:src="@drawable/small_star_full" />
+    <ImageView app:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:id="@+id/rideRequestRiderRatingStar3" app:padding="1dp" app:layout_width="wrap_content" app:layout_height="wrap_content" app:src="@drawable/small_star_full" />
+    <ImageView app:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:id="@+id/rideRequestRiderRatingStar4" app:padding="1dp" app:layout_width="wrap_content" app:layout_height="wrap_content" app:src="@drawable/small_star_half_full" />
+    <ImageView app:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:id="@+id/rideRequestRiderRatingStar5" app:padding="1dp" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginRight="6dp" app:src="@drawable/small_star_empty" />
+    <com.waze.view.text.WazeTextView app:textSize="15dp" app:textColor="@color/StarryBrown" app:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:id="@+id/rideRequestRiderRatingText" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="*(6 rides)" app:font_type="1" />
+</LinearLayout>

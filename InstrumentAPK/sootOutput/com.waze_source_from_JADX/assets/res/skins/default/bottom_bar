@@ -1,0 +1,9 @@
+N main
+I icon_menu
+A quickmenu
+
+N report
+I icon_report
+A alertsmenu
+
+Y 0

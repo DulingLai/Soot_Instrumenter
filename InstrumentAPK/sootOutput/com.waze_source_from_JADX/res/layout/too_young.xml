@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/com.waze" app:orientation="vertical" app:id="@+id/tooYoungLayout" app:background="@color/blue_bg" app:layout_width="match_parent" app:layout_height="match_parent">
+    <com.waze.view.title.TitleBar app:id="@+id/theTitleBar" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_alignParentTop="true" />
+    <ScrollView app:id="@+id/scrollView1" app:layout_width="match_parent" app:layout_height="match_parent" app:layout_below="@+id/theTitleBar">
+        <LinearLayout app:orientation="vertical" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginLeft="26dp" app:layout_marginRight="26dp">
+            <ImageView app:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/tooYoungImage" app:paddingTop="46dp" app:layout_width="match_parent" app:layout_height="wrap_content" app:src="@drawable/signup_illu_toyoung" />
+            <com.waze.view.text.WazeTextView app:textSize="22dp" app:textColor="#ffffff" app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/tooYoungSubtitle" app:layout_marginTop="10dp" app:text="Whoops, you're too young" app:textAllCaps="true" app:font_type="b" style="@style/textOnBg" />
+            <com.waze.view.text.WazeTextView app:textSize="14dp" app:textStyle="UNKNOWN_DATA_0x0" app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/tooYoungText" app:layout_marginTop="26dp" app:text="Carpool drivers are required to be at least 21 years old. Be sure to come back..." style="@style/textOnBg" />
+        </LinearLayout>
+    </ScrollView>
+    <com.waze.view.text.WazeTextView app:textSize="18dp" app:textColor="@color/text_wt_button_enabled" app:ellipsize="end" app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/tooYoungButton" app:background="@drawable/signup_bt_white" app:clickable="true" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x3401" app:layout_margin="10dp" app:text="Got it" app:singleLine="true" app:layout_alignParentBottom="true" />
+</RelativeLayout>

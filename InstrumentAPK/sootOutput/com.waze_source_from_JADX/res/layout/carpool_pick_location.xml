@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:orientation="vertical" app:layout_width="match_parent" app:layout_height="match_parent">
+    <View app:focusable="true" app:focusableInTouchMode="true" app:layout_width="UNKNOWN_DATA_0x0" app:layout_height="UNKNOWN_DATA_0x0" />
+    <com.waze.view.title.TitleBar app:id="@+id/theTitleBar" app:layout_width="match_parent" app:layout_height="wrap_content" />
+    <FrameLayout app:id="@+id/cpPickLocTopText" app:background="#fff" app:padding="8dp" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_below="@+id/theTitleBar">
+        <LinearLayout app:orientation="vertical" app:background="@drawable/shape_text_bg" app:padding="8dp" app:layout_width="match_parent" app:layout_height="wrap_content">
+            <com.waze.view.text.WazeTextView app:textSize="14sp" app:textColor="@color/WinterBlue" app:id="@+id/cpPickLocTitle" app:layout_width="match_parent" app:layout_height="wrap_content" app:text="*Share Location" app:font_type="c" />
+            <com.waze.view.text.WazeTextView app:textSize="16sp" app:textColor="@color/Dark" app:id="@+id/cpPickLocAddres" app:layout_width="match_parent" app:layout_height="wrap_content" app:text="!@# The Address 021938" app:font_type="b" />
+        </LinearLayout>
+    </FrameLayout>
+    <FrameLayout app:layout_width="match_parent" app:layout_height="match_parent" app:layout_below="@+id/cpPickLocTopText" app:layout_alignParentBottom="true">
+        <com.waze.map.MapView app:id="@+id/cpPickLocMap" app:layout_width="match_parent" app:layout_height="match_parent" app:nativeTag="@string/nativeTagLocationPickerCanvas" />
+        <View app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/cpPickLocMapCenter" app:layout_width="UNKNOWN_DATA_0x1" app:layout_height="UNKNOWN_DATA_0x1" />
+    </FrameLayout>
+    <View app:background="@drawable/topbar_shadow" app:layout_width="wrap_content" app:layout_height="UNKNOWN_DATA_0x601" app:layout_below="@+id/theTitleBar" />
+    <View app:background="@drawable/topbar_shadow" app:layout_width="wrap_content" app:layout_height="UNKNOWN_DATA_0x601" app:layout_below="@+id/cpPickLocTopText" />
+</RelativeLayout>

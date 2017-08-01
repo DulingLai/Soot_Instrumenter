@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/blue_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.waze.view.title.TitleBar android:id="@+id/theTitleBar" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/theTitleBar"
+        <LinearLayout android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/welcomebaby" />
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp">
+                <com.waze.view.text.WazeTextView android:id="@+id/welcomeUserName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="Adrian" style="@style/textOnBg" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:padding="0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp">
+            <com.waze.view.text.WazeTextView android:textStyle="UNKNOWN_DATA_0x0" android:id="@+id/welcomeContribute" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:text="Contribute to your driving community and collect points, by:" style="@style/textOnBg" />
+            <LinearLayout android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp">
+                <com.waze.view.text.WazeTextView android:textStyle="UNKNOWN_DATA_0x0" android:id="@+id/welcomeReporting" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="reporting" style="@style/textOnBg" />
+            </LinearLayout>
+            <LinearLayout android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp">
+                <com.waze.view.text.WazeTextView android:textStyle="UNKNOWN_DATA_0x0" android:id="@+id/welcomeMapEditing" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="map editing" style="@style/textOnBg" />
+            </LinearLayout>
+            <LinearLayout android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp">
+                <com.waze.view.text.WazeTextView android:textStyle="UNKNOWN_DATA_0x0" android:id="@+id/welcomeDriving" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="driving" style="@style/textOnBg" />
+            </LinearLayout>
+            <LinearLayout android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginBottom="20dp" /> /> />
+    <ImageView android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x601" android:src="@drawable/topbar_shadow" android:scaleType="fitXY" android:layout_below="@+id/theTitleBar" />
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res-auto">
+    <View app:id="@+id/settingsTitleMargin" app:background="@color/BlueWhale" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x7f0a008a" />
+    <ImageView app:id="@+id/settingsTitleMarginShadow" app:layout_width="match_parent" app:layout_height="wrap_content" app:src="@drawable/cell_shadow_dark" app:scaleType="fitXY" />
+    <com.waze.view.text.WazeTextView app:id="@+id/settingsTitleText" app:background="@color/BlueWhale" app:layout_width="match_parent" app:layout_height="wrap_content" app:text="Text" app:layout_below="@+id/settingsTitleMargin" style="@style/settingsHeaderText" />
+</merge>

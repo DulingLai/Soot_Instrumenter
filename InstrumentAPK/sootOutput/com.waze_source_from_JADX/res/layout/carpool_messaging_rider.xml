@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:orientation="vertical" app:paddingRight="85dp" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginLeft="11dp" app:layout_marginBottom="14dp">
+    <FrameLayout app:background="@drawable/chat_bubble_rider" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_margin="12dp">
+        <com.waze.view.text.WazeTextView app:textSize="15sp" app:textColor="@color/Dark" app:autoLink="web|email|phone|map|all" app:id="@+id/messagingMessage" app:padding="8dp" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="*A very very very very long message" app:maxLines="20" app:font_type="1" />
+    </FrameLayout>
+    <com.waze.view.text.WazeTextView app:textSize="12sp" app:textColor="@color/Light" app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/messagingTime" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginLeft="12dp" app:layout_marginTop="-8dp" app:layout_marginRight="12dp" app:text="*12:59 AM" app:font_type="5" />
+</LinearLayout>

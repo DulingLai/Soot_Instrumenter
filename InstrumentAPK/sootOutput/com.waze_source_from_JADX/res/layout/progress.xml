@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/progressCircle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/preloader_wheel" />
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignLeft="@+id/progressCircle" android:layout_alignTop="@+id/progressCircle" android:layout_alignRight="@+id/progressCircle" android:layout_alignBottom="@+id/progressCircle">
+        <ImageView android:id="@+id/progressWazer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp" android:src="@drawable/preloader_icon" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</RelativeLayout>

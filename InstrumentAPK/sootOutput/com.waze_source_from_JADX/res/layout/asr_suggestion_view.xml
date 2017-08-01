@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x4001">
+    <com.waze.view.text.WazeTextView app:textSize="22dp" app:textColor="@color/White" app:id="@+id/lblSuggestion" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_centerInParent="true" app:font_type="4" />
+</RelativeLayout>

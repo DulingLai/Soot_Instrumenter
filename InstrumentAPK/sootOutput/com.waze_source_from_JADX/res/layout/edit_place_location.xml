@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/com.waze" app:orientation="vertical" app:background="@color/settings_bg_titles" app:layout_width="match_parent" app:layout_height="match_parent">
+    <LinearLayout app:focusable="true" app:focusableInTouchMode="true" app:layout_width="UNKNOWN_DATA_0x0" app:layout_height="UNKNOWN_DATA_0x0" />
+    <com.waze.view.title.TitleBar app:id="@+id/theTitleBar" app:layout_width="match_parent" app:layout_height="wrap_content" />
+    <RelativeLayout app:id="@+id/editPlaceMapFrame" app:layout_width="match_parent" app:layout_height="match_parent" app:layout_below="@+id/theTitleBar">
+        <com.waze.map.MapView app:id="@+id/editPlaceLocationMap" app:layout_width="match_parent" app:layout_height="match_parent" app:nativeTag="@string/nativeTagLocationPickerCanvas" />
+        <View app:id="@+id/editPlaceLocationMapCenter" app:layout_width="UNKNOWN_DATA_0x1" app:layout_height="UNKNOWN_DATA_0x1" app:layout_centerInParent="true" />
+    </RelativeLayout>
+    <com.waze.view.text.WazeTextView app:id="@+id/editPlaceLocationText" app:background="@drawable/altroute_bg_map" app:padding="10dp" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_margin="0dp" app:text="!@# Move the map to relocate the pin in the correct spot." app:layout_below="@+id/theTitleBar" style="@style/settingsText" />
+</RelativeLayout>

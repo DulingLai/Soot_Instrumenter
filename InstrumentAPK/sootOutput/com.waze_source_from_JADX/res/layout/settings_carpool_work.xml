@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/com.waze" app:orientation="vertical" app:background="@color/blue_bg" app:layout_width="match_parent" app:layout_height="match_parent" app:animateLayoutChanges="true">
+    <com.waze.view.title.TitleBar app:id="@+id/theTitleBar" app:layout_width="match_parent" app:layout_height="wrap_content" />
+    <ScrollView app:id="@+id/theScrollView" app:layout_width="match_parent" app:layout_height="match_parent" app:fillViewport="true" app:layout_below="@+id/theTitleBar">
+        <LinearLayout app:orientation="vertical" app:id="@+id/setEmailLayout" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_below="@+id/theTitleBar" app:animateLayoutChanges="true">
+            <Space app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x1e01" />
+            <ImageView app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_margin="20dp" app:src="@drawable/rw_work_illu" />
+            <TextView app:textSize="20dp" app:textStyle="bold" app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/setEmailTitle" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginLeft="60dp" app:layout_marginRight="60dp" app:layout_marginBottom="20dp" app:text="* Your work place/school increases riders trust" style="@style/textOnBg" />
+            <LinearLayout app:focusable="true" app:focusableInTouchMode="true" app:layout_width="UNKNOWN_DATA_0x0" app:layout_height="UNKNOWN_DATA_0x0" />
+            <com.waze.view.text.WazeTextView app:textSize="16dp" app:textStyle="UNKNOWN_DATA_0x0" app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/setEmailSubtitle" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginLeft="10dp" app:layout_marginRight="10dp" app:text="* Work place / school on your profile is pending email verification" style="@style/textOnBg" />
+            <RelativeLayout app:background="@color/solid_white" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginTop="20dp">
+                <LinearLayout app:id="@+id/setCarWorkMailWrapper" app:layout_width="match_parent" app:layout_height="wrap_content">
+                    <com.waze.settings.WazeSettingsView app:id="@+id/setCarWorkMail" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x4601" app:position="floating" app:settingsType="6" />
+                </LinearLayout>
+                <com.waze.view.text.WazeTextView app:textSize="12sp" app:textStyle="UNKNOWN_DATA_0x0" app:textColor="@color/pastrami_pink" app:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/setCarWorkStatus" app:paddingLeft="10dp" app:paddingTop="4dp" app:paddingBottom="10dp" app:layout_width="match_parent" app:layout_height="wrap_content" app:text="*Pending verification" app:layout_below="@+id/setCarWorkMailWrapper" app:layout_alignLeft="@+id/setCarWorkMailWrapper" style="@style/textOnBg" />
+            </RelativeLayout>
+            <com.waze.view.text.WazeTextView app:textSize="15sp" app:textStyle="UNKNOWN_DATA_0x0" app:id="@+id/setCarWorkExplain" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginLeft="10dp" app:layout_marginTop="10dp" app:layout_marginRight="10dp" app:text="* It will be extractged from your verified email, while your address stays undisclosed" style="@style/textOnBg" />
+            <com.waze.view.text.WazeTextView app:textSize="14sp" app:textStyle="UNKNOWN_DATA_0x0" app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/setCarWorkRemove" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginLeft="10dp" app:layout_marginTop="15dp" app:layout_marginRight="10dp" app:layout_marginBottom="15dp" app:text="* Remove work/school email" app:layout_alignParentBottom="true" style="@style/textOnBg" />
+        </LinearLayout>
+    </ScrollView>
+    <ImageView app:layout_width="match_parent" app:layout_height="wrap_content" app:src="@drawable/topbar_shadow" app:scaleType="fitXY" app:layout_below="@+id/theTitleBar" />
+</RelativeLayout>

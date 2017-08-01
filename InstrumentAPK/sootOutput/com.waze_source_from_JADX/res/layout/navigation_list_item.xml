@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:orientation="horizontal" app:id="@+id/navListItemContainer" app:background="@color/DarkBlueAlt" app:layout_width="match_parent" app:layout_height="wrap_content">
+    <RelativeLayout app:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:layout_width="UNKNOWN_DATA_0x4601" app:layout_height="UNKNOWN_DATA_0x4601" app:layout_marginLeft="10dp" app:layout_marginRight="10dp">
+        <ImageView app:id="@+id/navListItemImage" app:layout_width="UNKNOWN_DATA_0x4601" app:layout_height="UNKNOWN_DATA_0x4601" app:src="@drawable/big_direction_left" app:scaleType="center" />
+        <com.waze.view.text.WazeTextView app:textSize="18dp" app:textColor="@color/White" app:id="@+id/lblExitNumber" app:visibility="gone" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_centerInParent="true" app:font_type="1" />
+    </RelativeLayout>
+    <LinearLayout app:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:orientation="vertical" app:paddingTop="10dp" app:paddingBottom="10dp" app:layout_width="match_parent" app:layout_height="wrap_content">
+        <com.waze.view.text.WazeTextView app:id="@+id/navListItemDistance" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="*66 m" style="@style/navBarDistanceStyle" />
+        <com.waze.view.text.WazeTextView app:id="@+id/navListItemName" app:layout_width="match_parent" app:layout_height="wrap_content" app:text="*Pennsylvania ave." style="@style/navBarLineStyle" />
+    </LinearLayout>
+</LinearLayout>

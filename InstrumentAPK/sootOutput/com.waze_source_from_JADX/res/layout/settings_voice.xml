@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/com.waze" app:layout_width="match_parent" app:layout_height="match_parent">
+    <com.waze.view.title.TitleBar app:id="@+id/theTitleBar" app:layout_width="match_parent" app:layout_height="wrap_content" />
+    <ScrollView app:fadingEdge="UNKNOWN_DATA_0x0" app:layout_width="match_parent" app:layout_height="match_parent" app:fillViewport="true" app:layout_below="@+id/theTitleBar" app:overScrollMode="ifContentScrolls">
+        <LinearLayout app:layout_width="wrap_content" app:layout_height="wrap_content" style="@style/settingsLayout">
+            <View app:background="@color/settings_bg_titles" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x7f0a008a" />
+            <com.waze.settings.WazeSettingsView app:id="@+id/settingsVoiceEnabled" app:layout_width="wrap_content" app:layout_height="wrap_content" app:position="atThumb" app:settingsType="5" style="@style/settingsSelection" />
+            <com.waze.settings.WazeSettingsView app:id="@+id/settingsVoiceActivation" app:layout_width="wrap_content" app:layout_height="wrap_content" app:position="aboveThumb" app:settingsType="1" style="@style/settingsSelection" />
+            <FrameLayout app:background="@color/settings_bg_note" app:layout_width="match_parent" app:layout_height="wrap_content">
+                <ImageView app:background="@drawable/note_shadow" app:layout_width="match_parent" app:layout_height="wrap_content" />
+                <LinearLayout app:orientation="vertical" app:layout_width="match_parent" app:layout_height="wrap_content">
+                    <com.waze.view.text.WazeTextView app:id="@+id/settingsVoiceTextTitle" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginLeft="@dimen/settingsGutter" app:layout_marginTop="@dimen/settingsGutter" app:layout_marginRight="@dimen/settingsGutter" app:layout_marginBottom="4dp" app:text="test1" style="@style/settings_note_nomargins" />
+                    <LinearLayout app:orientation="horizontal" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginBottom="4dp">
+                        <com.waze.view.text.WazeTextView app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginLeft="@dimen/settingsGutter" app:layout_marginTop="0dp" app:text="•" style="@style/settings_note_nomargins" />
+                        <LinearLayout app:orientation="vertical" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginLeft="@dimen/settingsGutter" app:layout_marginTop="0dp" app:layout_marginRight="@dimen/settingsGutter">
+                            <com.waze.view.text.WazeTextView app:id="@+id/settingsVoiceText1" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="test1" style="@style/settings_note_nomargins" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout app:orientation="horizontal" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginBottom="4dp">
+                        <com.waze.view.text.WazeTextView app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginLeft="@dimen/settingsGutter" app:text="•" style="@style/settings_note_nomargins" />
+                        <LinearLayout app:orientation="vertical" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginLeft="@dimen/settingsGutter" app:layout_marginRight="@dimen/settingsGutter">
+                            <com.waze.view.text.WazeTextView app:id="@+id/settingsVoiceText2" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="test1" style="@style/settings_note_nomargins" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout app:orientation="horizontal" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginBottom="4dp">
+                        <com.waze.view.text.WazeTextView app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginLeft="@dimen/settingsGutter" app:text="•" style="@style/settings_note_nomargins" />
+                        <com.waze.view.text.WazeTextView app:id="@+id/settingsVoiceText3" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginLeft="@dimen/settingsGutter" app:layout_marginRight="@dimen/settingsGutter" app:text="test1" style="@style/settings_note_nomargins" />
+                    </LinearLayout>
+                    <LinearLayout app:orientation="horizontal" app:layout_width="wrap_content" app:layout_height="wrap_content">
+                        <com.waze.view.text.WazeTextView app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginLeft="@dimen/settingsGutter" app:text="•" style="@style/settings_note_nomargins" />
+                        <com.waze.view.text.WazeTextView app:id="@+id/settingsVoiceText4" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginLeft="@dimen/settingsGutter" app:layout_marginRight="@dimen/settingsGutter" app:layout_marginBottom="@dimen/settingsGutter" app:text="test1" style="@style/settings_note_nomargins" />
+                    </LinearLayout>
+                </LinearLayout>
+            </FrameLayout>
+            <FrameLayout app:background="@color/settings_bg_titles" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x7f0a0089" app:foreground="@drawable/cell_shadow_dark" />
+            <View app:background="@color/blue_bg" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x1" app:layout_weight="1.0" />
+        </LinearLayout>
+    </ScrollView>
+    <ImageView app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x601" app:src="@drawable/topbar_shadow" app:scaleType="fitXY" app:layout_below="@+id/theTitleBar" />
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:layout_width="match_parent" app:layout_height="wrap_content">
+    <LinearLayout app:orientation="horizontal" app:id="@+id/carpoolPromo" app:background="@drawable/carpool_promo_base" app:visibility="visible" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_margin="8dp" app:layout_below="@+id/myWazeNameContainer">
+        <ImageView app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_margin="8dp" app:src="@drawable/carpool_promo_illustration" />
+        <LinearLayout app:orientation="vertical" app:layout_width="UNKNOWN_DATA_0x1" app:layout_height="wrap_content" app:layout_margin="4dp" app:layout_weight="1.0">
+            <com.waze.view.text.WazeTextView app:textSize="14dp" app:textColor="@color/White" app:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/carpoolPromoTitle" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginTop="4dp" app:text="*Carpool promo" app:font_type="b" />
+            <com.waze.view.text.WazeTextView app:textSize="14dp" app:textColor="#ff0f6a3d" app:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/carpoolPromoText" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginTop="2dp" app:layout_marginBottom="4dp" app:text="@string/lorem_shorter" app:font_type="d" />
+        </LinearLayout>
+        <ImageView app:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:id="@+id/carpoolPromoClose" app:paddingLeft="8dp" app:paddingBottom="8dp" app:layout_width="wrap_content" app:layout_height="wrap_content" app:src="@drawable/carpool_promo_x_icon" />
+    </LinearLayout>
+</FrameLayout>

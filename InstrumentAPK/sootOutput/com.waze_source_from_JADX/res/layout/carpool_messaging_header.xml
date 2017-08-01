@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/com.waze" app:orientation="vertical" app:paddingBottom="16dp" app:layout_width="match_parent" app:layout_height="wrap_content">
+    <View app:background="@color/PassiveGrey" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x101" />
+    <LinearLayout app:orientation="horizontal" app:background="@color/White" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x4e01">
+        <ImageView app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/messagingHeaderPhoto" app:layout_width="UNKNOWN_DATA_0x3c01" app:layout_height="UNKNOWN_DATA_0x3c01" app:layout_marginLeft="11dp" app:src="@drawable/rs_profilepic_placeholder" />
+        <LinearLayout app:gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:orientation="vertical" app:layout_width="match_parent" app:layout_height="match_parent" app:layout_marginLeft="16dp">
+            <com.waze.view.text.WazeTextView app:textSize="18dp" app:textColor="@color/Dark" app:id="@+id/messagingHeaderName" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="*Amy Banks" app:font_type="d" />
+            <com.waze.view.text.WazeTextView app:textSize="13dp" app:textColor="@color/BlueDeep" app:id="@+id/messagingHeaderPickupDate" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="*Pickup: Monday, Jun 20" app:font_type="1" />
+            <com.waze.view.text.WazeTextView app:textSize="13dp" app:textColor="@color/BlueDeep" app:id="@+id/messagingHeaderPickupTimes" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="*Between 8:00 and 10:00" app:font_type="1" />
+        </LinearLayout>
+    </LinearLayout>
+    <View app:background="@color/PassiveGrey" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x101" />
+</LinearLayout>

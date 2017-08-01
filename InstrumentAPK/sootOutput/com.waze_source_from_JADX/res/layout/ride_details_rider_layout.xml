@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:orientation="vertical" app:layout_width="match_parent" app:layout_height="wrap_content">
+    <Space app:layout_width="wrap_content" app:layout_height="UNKNOWN_DATA_0x1401" />
+    <LinearLayout app:orientation="horizontal" app:layout_width="match_parent" app:layout_height="wrap_content">
+        <ImageView app:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:id="@+id/rideRequestRiderIcon" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginLeft="16dp" app:layout_marginRight="16dp" app:src="@drawable/carpool_rider_profile" />
+        <LinearLayout app:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:orientation="vertical" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginLeft="8dp" app:layout_marginRight="8dp" app:layout_weight="1.0">
+            <com.waze.view.text.WazeTextView app:textSize="19sp" app:textColor="@color/Dark" app:gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/rideRequestRiderName" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="*Rider Name" app:drawablePadding="4dp" app:font_type="3" />
+            <include app:visibility="visible" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginTop="4dp" layout="@layout/star_rating_layout" />
+            <com.waze.view.text.WazeTextView app:textSize="17sp" app:textColor="@color/Light" app:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/rideRequestRiderByLine" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginTop="6dp" app:text="*Works at Waze" app:font_type="1" />
+        </LinearLayout>
+        <ImageView app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/rideRequestRiderImage" app:layout_width="UNKNOWN_DATA_0x3c01" app:layout_height="UNKNOWN_DATA_0x3c01" app:layout_marginLeft="16dp" app:src="@drawable/rs_profilepic_placeholder" />
+        <ImageView app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:layout_width="UNKNOWN_DATA_0xa01" app:layout_height="UNKNOWN_DATA_0x1401" app:layout_marginLeft="4dp" app:layout_marginRight="16dp" app:src="@drawable/chevron_winter_20dp" />
+    </LinearLayout>
+    <com.waze.view.text.WazeTextView app:textSize="17sp" app:textColor="@color/Light" app:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/rideRequestRiderNotes" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginLeft="66dp" app:layout_marginTop="20dp" app:layout_marginRight="16dp" app:text="*Notes" app:font_type="1" />
+    <include app:id="@+id/rideRequestRiderButtons" layout="@layout/ride_details_rider_buttons" />
+    <include app:id="@+id/rideRequestRiderSmallButtons" app:visibility="gone" layout="@layout/ride_details_rider_small_buttons" />
+</LinearLayout>

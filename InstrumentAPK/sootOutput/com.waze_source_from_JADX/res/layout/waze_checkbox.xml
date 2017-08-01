@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/checkbox_bg_off" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/checkbox_back" />
+    <ImageView android:id="@+id/checkbox_bg_on" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/checkbox_front" />
+    <ImageView android:id="@+id/checkbox_filler" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/checkbox_filler" />
+    <ImageView android:id="@+id/checkbox_v" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/toggle_v_icon" android:layout_centerInParent="true" />
+</merge>

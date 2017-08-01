@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:background="@color/BlueWhale" app:layout_width="match_parent" app:layout_height="match_parent">
+    <com.waze.view.title.TitleBar app:id="@+id/theTitleBar" app:layout_width="match_parent" app:layout_height="wrap_content" />
+    <ScrollView app:layout_width="match_parent" app:layout_height="match_parent" app:layout_below="@+id/theTitleBar">
+        <LinearLayout app:orientation="vertical" app:layout_width="match_parent" app:layout_height="wrap_content">
+            <ImageView app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginTop="20dp" app:layout_marginBottom="20dp" app:src="@drawable/carpool_faq" />
+            <com.waze.settings.WazeSettingsView app:id="@+id/faq_question1" app:layout_width="match_parent" app:position="atThumb" app:settingsType="0" style="@style/settingsSelection" />
+            <com.waze.settings.WazeSettingsView app:id="@+id/faq_question2" app:layout_width="match_parent" app:position="floating" app:settingsType="0" style="@style/settingsSelection" />
+            <com.waze.settings.WazeSettingsView app:id="@+id/faq_question3" app:layout_width="match_parent" app:position="floating" app:settingsType="0" style="@style/settingsSelection" />
+            <com.waze.settings.WazeSettingsView app:id="@+id/faq_question4" app:layout_width="match_parent" app:position="floating" app:settingsType="0" style="@style/settingsSelection" />
+            <com.waze.settings.WazeSettingsView app:id="@+id/faq_question5" app:layout_width="match_parent" app:position="floating" app:settingsType="0" style="@style/settingsSelection" />
+            <com.waze.settings.WazeSettingsView app:id="@+id/faq_question6" app:layout_width="match_parent" app:position="aboveThumb" app:settingsType="0" style="@style/settingsSelection" />
+            <Space app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_weight="1.0" />
+        </LinearLayout>
+    </ScrollView>
+    <ImageView app:layout_width="match_parent" app:layout_height="wrap_content" app:src="@drawable/topbar_shadow" app:scaleType="fitXY" app:layout_below="@+id/theTitleBar" />
+</RelativeLayout>

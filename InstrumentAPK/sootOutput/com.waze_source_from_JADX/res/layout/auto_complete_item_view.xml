@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:layout_width="match_parent" app:layout_height="match_parent">
+    <ImageView app:id="@+id/imgAutoCompleteIcon" app:layout_width="UNKNOWN_DATA_0x3001" app:layout_height="UNKNOWN_DATA_0x3001" app:layout_marginLeft="8dp" app:layout_marginRight="8dp" app:layout_centerVertical="true" />
+    <LinearLayout app:orientation="vertical" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginTop="8dp" app:layout_marginBottom="8dp" app:layout_toLeftOf="@+id/acDistance" app:layout_toRightOf="@+id/imgAutoCompleteIcon" app:layout_centerVertical="true">
+        <com.waze.view.text.AutoResizeTextView app:textColor="#ff53747c" app:id="@+id/lblTitle" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginBottom="4dp" app:maxLines="1" app:singleLine="true" app:minSize="14sp" style="@style/settingsText" />
+        <com.waze.view.text.AutoResizeTextView app:id="@+id/lblAddress" app:layout_width="match_parent" app:layout_height="wrap_content" app:maxLines="1" app:singleLine="true" app:minSize="14sp" style="@style/settingsSubText" />
+    </LinearLayout>
+    <LinearLayout app:orientation="vertical" app:id="@+id/acDistance" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginRight="6dp" app:layout_alignParentRight="true" app:layout_centerVertical="true">
+        <com.waze.view.text.AutoResizeTextView app:textSize="20dp" app:textColor="#ff53747c" app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/acDistanceAmount" app:layout_width="UNKNOWN_DATA_0x4001" app:layout_height="wrap_content" app:maxLines="1" app:singleLine="true" style="@style/settingsText" />
+        <com.waze.view.text.AutoResizeTextView app:textSize="12dp" app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/acDistanceUnits" app:layout_width="UNKNOWN_DATA_0x4001" app:layout_height="wrap_content" app:maxLines="1" app:singleLine="true" style="@style/settingsSubText" />
+    </LinearLayout>
+    <View app:background="#b4c2c6" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x101" app:layout_toRightOf="@+id/imgAutoCompleteIcon" app:layout_alignParentRight="true" app:layout_alignParentBottom="true" />
+</RelativeLayout>

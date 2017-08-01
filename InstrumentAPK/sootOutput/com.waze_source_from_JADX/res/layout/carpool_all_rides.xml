@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:orientation="vertical" app:background="@color/blue_bg" app:layout_width="match_parent" app:layout_height="match_parent" app:animateLayoutChanges="true">
+    <ListView app:id="@+id/allRidesList" app:fadingEdge="UNKNOWN_DATA_0x0" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x1" app:listSelector="@color/transparent_full" app:cacheColorHint="#00000000" app:divider="0x0" app:layout_weight="1.0" />
+    <LinearLayout app:orientation="vertical" app:id="@+id/allRidesListOfferRide" app:visibility="gone" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginTop="-8dp">
+        <ImageView app:background="@drawable/top_shadow_gradient" app:layout_width="match_parent" app:layout_height="wrap_content" />
+        <FrameLayout app:background="@color/BlueWhale" app:layout_width="match_parent" app:layout_height="wrap_content">
+            <com.waze.view.text.WazeTextView app:textSize="17sp" app:textStyle="bold" app:textColor="@color/Dark" app:ellipsize="end" app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/allRidesListOfferRideBut" app:background="@drawable/button_white_bg" app:paddingLeft="10dp" app:paddingTop="2dp" app:paddingRight="10dp" app:paddingBottom="4dp" app:clickable="true" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x3c01" app:layout_marginLeft="10dp" app:layout_marginTop="10dp" app:layout_marginRight="10dp" app:layout_marginBottom="8dp" app:text="*Offer a ride" app:lines="1" app:font_type="5" />
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/image_button_left_root" android:padding="0dp" android:layout_width="match_parent" android:layout_height="match_parent"
+    <RelativeLayout android:id="@+id/image_button_left_bg" android:padding="0dp" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <ImageView android:id="@+id/image_button_image" android:padding="9dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="center" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <com.waze.view.text.WazeTextView android:textSize="14dp" android:textStyle="bold" android:ellipsize="end" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/image_button_text" android:padding="0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="All text" android:singleLine="true" android:layout_toRightOf="@+id/image_button_image" android:layout_centerVertical="true" />
+</RelativeLayout>

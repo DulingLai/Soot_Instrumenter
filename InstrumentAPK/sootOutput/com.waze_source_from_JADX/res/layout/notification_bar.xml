@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:orientation="horizontal" app:id="@+id/NotificationBarLayout" app:background="@color/solid_black" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x1801">
+    <com.waze.view.text.WazeTextView app:textSize="15dp" app:textColor="@color/RedSweet" app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/Text" app:layout_width="match_parent" app:layout_height="match_parent" app:text="NO GPS....." app:maxLines="1" app:layout_weight="1.0" app:font_type="3" />
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:id="@+id/myShareDriveContent" app:background="@color/blue_bg" app:layout_width="match_parent" app:layout_height="match_parent">
+    <com.waze.view.title.TitleBar app:id="@+id/myShareDriveTitle" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_alignParentTop="true" />
+    <RelativeLayout app:layout_width="match_parent" app:layout_height="match_parent" app:layout_below="@+id/myShareDriveTitle"
+        <RelativeLayout app:layout_width="match_parent" app:layout_height="match_parent">
+            <com.waze.view.text.WazeTextView app:textSize="14sp" app:textStyle="bold" app:textColor="0x106000b" app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/myShareDriveTopText" app:background="@drawable/share_map_orange_banner" app:layout_width="match_parent" app:layout_height="wrap_content" app:text="!@# You are now live!" app:textAllCaps="true" />
+            <RelativeLayout app:id="@+id/myShareDriveMapLayoutPlaceholder" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0xc801" app:layout_marginTop="-3dp" app:layout_below="@+id/myShareDriveTopText" />
+            <ScrollView app:layout_width="match_parent" app:layout_height="match_parent" app:layout_above="@+id/myShareDriveButtonLayout" app:layout_below="@+id/myShareDriveMapLayoutPlaceholder">
+                <LinearLayout app:orientation="vertical" app:id="@+id/myShareDriveFriendsDriving" app:background="#ffffff" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginBottom="10dp" />
+            </ScrollView>
+            <LinearLayout app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:orientation="horizontal" app:id="@+id/myShareDriveButtonLayout" app:paddingLeft="10dp" app:paddingTop="10dp" app:paddingRight="10dp" app:paddingBottom="10dp" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_alignParentBottom="true">
+                <com.waze.view.text.WazeTextView app:textSize="18dp" app:textStyle="italic" app:textColor="#000" app:ellipsize="end" app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:id="@+id/myShareDriveStopButton" app:background="@drawable/signup_bt_white" app:padding="0dp" app:clickable="true" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x3401" app:text="* Stop sharing" app:singleLine="true" />
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout app:id="@+id/myShareDriveMapLayout" app:visibility="visible" app:layout_width="match_parent" app:layout_height="match_parent">
+            <com.waze.map.MapView app:id="@+id/myShareDriveMap" app:padding="0dp" app:layout_width="match_parent" app:layout_height="match_parent" app:layout_weight="1.0" app:handleKeys="false" app:handleTouch="false" app:nativeTag="@string/nativeTagSharedDriveCanvas" />
+            <ImageView app:id="@+id/myShareDriveIncreaseMapButton" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginTop="2dp" app:layout_marginRight="2dp" app:src="@drawable/map_smaller_day" app:layout_alignParentTop="true" app:layout_alignParentRight="true" app:onClick="increaseMapClicked" />
+            <Button app:id="@+id/myShareDriveIncreaseMapOverlay" app:background="@drawable/blue_mask_map" app:layout_width="match_parent" app:layout_height="match_parent" app:onClick="increaseMapClicked" />
+        </RelativeLayout>
+        <ImageView app:id="@+id/myShareDriveOptionsLeftCorner" app:visibility="gone" app:layout_width="wrap_content" app:layout_height="wrap_content" />
+        <ImageView app:id="@+id/myShareDriveOptionsRightCorner" app:visibility="gone" app:layout_width="wrap_content" app:layout_height="wrap_content" />
+    </RelativeLayout>
+</RelativeLayout>

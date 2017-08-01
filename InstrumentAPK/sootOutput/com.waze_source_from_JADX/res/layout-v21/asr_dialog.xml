@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:layout_width="match_parent" app:layout_height="match_parent">
+    <RelativeLayout app:id="@+id/asrMainContainer" app:background="@drawable/asr_dialog_bg" app:layout_width="match_parent" app:layout_height="match_parent" app:layout_marginTop="8dp" app:elevation="16dp" app:outlineProvider="background">
+        <View app:background="@drawable/asr_handle_bg" app:layout_width="UNKNOWN_DATA_0x2001" app:layout_height="UNKNOWN_DATA_0x801" app:layout_marginTop="8dp" app:layout_centerHorizontal="true" />
+        <com.waze.voice.AsrVoiceWaveView app:id="@+id/asrWaveView" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x3801" />
+        <ImageView app:id="@+id/btnAsrClose" app:layout_width="UNKNOWN_DATA_0x2001" app:layout_height="UNKNOWN_DATA_0x2001" app:layout_marginTop="2dp" app:layout_marginRight="2dp" app:src="@drawable/preview_x_button" app:layout_alignParentRight="true" />
+        <ImageView app:id="@+id/imgAsrEmoticon" app:visibility="visible" app:layout_width="UNKNOWN_DATA_0x5001" app:layout_height="UNKNOWN_DATA_0x5001" app:layout_marginTop="16dp" app:src="@drawable/asr_wazer" />
+        <com.waze.view.text.WazeTextView app:textSize="30dp" app:textColor="@color/White" app:id="@+id/lblAsrTitle" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginTop="16dp" app:text="*Listening..." app:layout_centerHorizontal="true" app:font_type="3" />
+        <com.waze.view.text.WazeTextView app:textSize="30dp" app:textColor="@color/White" app:id="@+id/lblEllipsis" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginTop="16dp" app:layout_toRightOf="@+id/lblAsrTitle" app:font_type="3" />
+        <com.waze.view.text.WazeTextView app:textSize="22dp" app:textColor="@color/BlueWhaleLight" app:id="@+id/lblAsrSubTitle" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="*Go ahead" app:layout_below="@+id/lblAsrTitle" app:layout_centerHorizontal="true" app:font_type="4" />
+        <android.support.v7.widget.RecyclerView app:id="@+id/suggestionsRecycler" app:layout_width="match_parent" app:layout_height="match_parent" app:layout_marginTop="246dp" app:layout_marginBottom="16dp" app:overScrollMode="never" />
+    </RelativeLayout>
+</FrameLayout>

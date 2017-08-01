@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:orientation="vertical" app:layout_width="match_parent" app:layout_height="match_parent">
+    <com.waze.settings.WazeSettingsView app:id="@+id/customPromptsSwitch" app:layout_marginTop="24dp" app:position="aboveThumb" app:settingsType="2" style="@style/settingsSelection" />
+    <FrameLayout app:background="@color/settings_bg_note" app:layout_width="match_parent" app:layout_height="wrap_content">
+        <ImageView app:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:background="@drawable/note_shadow" app:layout_width="match_parent" app:layout_height="wrap_content" />
+        <com.waze.view.text.WazeTextView app:id="@+id/lblPromptsSwitchDescription" app:text="*Record your own voice directions to guide you on the road. Tap any instruction to record. Those you don't record will default to a Waze voice." style="@style/settings_note" />
+    </FrameLayout>
+    <ImageView app:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:background="@drawable/note_shadow" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginBottom="24dp" />
+</LinearLayout>

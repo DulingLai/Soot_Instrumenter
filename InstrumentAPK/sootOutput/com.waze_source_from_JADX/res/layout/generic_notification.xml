@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:orientation="vertical" app:layout_width="match_parent" app:layout_height="wrap_content"
+    <LinearLayout app:orientation="horizontal" app:id="@+id/genNotificationLayout" app:background="@color/White" app:paddingTop="8dp" app:paddingBottom="8dp" app:layout_width="match_parent" app:layout_height="wrap_content" app:minHeight="70dp">
+        <FrameLayout app:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:id="@+id/genNotificationImageFrame" app:layout_width="UNKNOWN_DATA_0x2801" app:layout_height="UNKNOWN_DATA_0x2801" app:layout_marginLeft="12dp" app:foreground="@drawable/trip_picture_frame">
+            <ImageView app:id="@+id/genNotificationImage" app:layout_width="match_parent" app:layout_height="match_parent" app:src="@drawable/notification_traffic_icon" />
+        </FrameLayout>
+        <LinearLayout app:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:orientation="vertical" app:paddingBottom="8dp" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginLeft="14dp" app:layout_marginRight="12dp">
+            <com.waze.view.text.WazeTextView app:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/genNotificationTitle" app:visibility="gone" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginBottom="-3dp" app:text="*Title" app:maxLines="3" app:font_type="17" style="@style/notificationText" />
+            <com.waze.view.text.WazeTextView app:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/genNotificationText" app:layout_width="match_parent" app:layout_height="wrap_content" app:text="*Slow down detected. Is there a road closure ahead?" app:maxLines="3" style="@style/notificationText" />
+        </LinearLayout>
+    </LinearLayout>
+    <View app:background="@drawable/bottom_shadow_gradient" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x601" />
+    <LinearLayout app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:orientation="horizontal" app:id="@+id/genNotificationButtonsLinearLayout" app:paddingRight="4dp" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginTop="-44dp" app:layout_marginBottom="5dp">
+        <com.waze.view.button.PillButton app:id="@+id/genNotificationButton2" app:pbTimer="true" app:pbTrackColor="@color/BlueGrey" app:pbTimeColor="@color/BlueDeep" app:pbTimerSize="3dp" style="@style/takeoverButton">
+            <com.waze.view.text.WazeTextView app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/genNotificationButton2Text" app:background="@drawable/close_icon_grey" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="" style="@style/PopUpbuttonText" />
+        </com.waze.view.button.PillButton>
+        <com.waze.view.button.PillButton app:id="@+id/genNotificationButton1" app:pbColor="@color/BlueWhale" app:pbTrackColor="@color/BlueGrey" app:pbTimeColor="@color/BlueDeep" style="@style/takeoverButton">
+            <com.waze.view.text.WazeTextView app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/genNotificationButton1Text" app:background="@drawable/v_icon_dark_blue" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="" style="@style/PopUpbuttonText" />
+        </com.waze.view.button.PillButton>
+    </LinearLayout>
+</LinearLayout>

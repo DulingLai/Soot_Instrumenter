@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:orientation="vertical" app:layout_width="match_parent" app:layout_height="match_parent">
+    <com.waze.view.title.TitleBar app:id="@+id/framgentActivityTitle" app:layout_width="match_parent" app:layout_height="wrap_content" />
+    <ViewFlipper app:id="@+id/fragmentActivityFragmentFlipper" app:background="@color/blue_bg" app:layout_width="match_parent" app:layout_height="match_parent" app:layout_below="@+id/framgentActivityTitle">
+        <FrameLayout app:id="@+id/framgentActivityFrame1" app:layout_width="match_parent" app:layout_height="match_parent" />
+        <FrameLayout app:id="@+id/framgentActivityFrame2" app:layout_width="match_parent" app:layout_height="match_parent" />
+        <FrameLayout app:id="@+id/framgentActivityFrame3" app:layout_width="match_parent" app:layout_height="match_parent" />
+        <FrameLayout app:id="@+id/framgentActivityFrame4" app:layout_width="match_parent" app:layout_height="match_parent" />
+    </ViewFlipper>
+    <ImageView app:layout_width="match_parent" app:layout_height="wrap_content" app:src="@drawable/topbar_shadow" app:scaleType="fitXY" app:layout_below="@+id/framgentActivityTitle" />
+</RelativeLayout>

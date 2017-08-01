@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html dir='ltr'>
+  <head>
+    <meta charset='utf-8'>
+    <meta content='max-age=1800' http-equiv='cache-control'>
+    <meta content='width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0' name='viewport'>
+    <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title>The Middleman</title>
+    <style>
+      /* line 10, /Users/elentok/projects/fezzik/source/stylesheets/adios.scss */
+      body {
+        background-color: #e9f3f6;
+        margin: 0;
+        padding: 0;
+        font-family: 'Helvetica Neue', 'roboto', 'sans-serif';
+        padding-top: 8px;
+        padding-left: 11px; }
+      
+      /* line 19, /Users/elentok/projects/fezzik/source/stylesheets/adios.scss */
+      .waze-ads {
+        font-size: 11px;
+        color: #4f5f64;
+        background-color: #c3cfd3;
+        position: absolute;
+        right: 0px;
+        bottom: 3px;
+        padding: 1px 4px; }
+      
+      /* line 30, /Users/elentok/projects/fezzik/source/stylesheets/adios.scss */
+      .adios-special {
+        font-size: 12px;
+        background-color: #fdb35c;
+        position: absolute;
+        right: 0px;
+        top: 7px;
+        padding: 4px;
+        padding-right: 5px;
+        padding-left: 9px;
+        color: #945151;
+        text-transform: uppercase;
+        -webkit-border-radius: 10px 0px 0px 10px;
+        -moz-border-radius: 10px 0px 0px 10px;
+        -ms-border-radius: 10px 0px 0px 10px;
+        -o-border-radius: 10px 0px 0px 10px;
+        border-radius: 10px 0px 0px 10px; }
+      
+      /* line 44, /Users/elentok/projects/fezzik/source/stylesheets/adios.scss */
+      .adios-sidebar {
+        float: left; }
+      
+      /* line 48, /Users/elentok/projects/fezzik/source/stylesheets/adios.scss */
+      #placeholder-logo {
+        background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAkCAYAAACaJFpUAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3gEeDyYidKRbHgAAACZpVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVAgb24gYSBNYWOV5F9bAAADGUlEQVRIx+WW3UuTURzHv+fsrW0u0U3d2HTOuXKSbr5s6Np8AwWhrBDyqv+hf6Or/oC6qasI7MIMRCIChXSWOgWlhqmp+ZYOLXzZpqeLCKY75+l5XHTT7+55zu98P/A7vzfgHxuR4zQ6O8/WNzaR2NvHweEhTk9PQSmFQa9HQf5l2KwlCNd4Sc7AwZExtrD8BScnJ9IihIBSCrezDDciTUQxcDK+yN69n8RxMqk4ZDqtFs2N9aj3uIgs4OjMHJuYngFj7OLvRAgC/lqEa6uz9GnmR3Q+zqJTsZxgAMAYQ3Qqhuh8PEtInfkx9mFaKKLVqFFqt6PYbIZOp8XR0TG2d3exsraGZCrNvTM+GROH9PnwW7a6vs696Cx1oLcjIkyG/jcjbHlllXvmsNlwt6uNZIVUBPO4yiVhANDbESGV5U7u2XldCgDD45PcRzMZjbjZ0iyrvnpaQ8RkNHLPMvUpAGxsbXMdr1ZWKEoWkX+mPgWAvf3vXMdii6VTCVDkn6lPASCVTnEFqhzW10qAIv9MfQoAlFKuwOzSyq4SoMg/U58CgEGv5wp8Xd8sUAIU+Rsz9CkAWMx83U+fFxUljci/yGI+C3RYreDHPo0nA0Oy+tyTgSGWSvM7jt1achYY9HqIWqXmOu8kEnjU/5JNxZe44Kn4Env8YpDtJBKClqhBoKqSZLW2V6Nj7OOCdAjzDAYUF1mg1WqQTKawtf0NPw4OJO94PW50h4KEO54ePn3Gcp0U57Pz/r0+IhxPrjLHX91fKspKITkPb7eFiagmlZpKrUJPa0h6AF+kf4qs2uPhh/n8j+7mABE1ArlmMhrRGawjsoAAEPDX5AQM1vnEicT72XDFTew264VgzjI7fG4nUQQEgL6udqLVahTBLul06G1vkRzYkikZ9PsUAZsa6v5cm5JAr4e4OLXEs0qXU7j8ygYCwJ32MMkT7Cq/Ld9kQk9LSNbuI6vKw8HGB6KGoFKpcD3QIHsVIXIdR2JzbGI6xnk3P0LXvLJ1ZPexiK+auJ3OrJ1VCUwREAButYVIUWHhryluLpS9s/5f9hO4r+lYy3wnmQAAAABJRU5ErkJggg==');
+        background-size: 100% 100%;
+        -webkit-background-size: 100% 100%;
+        background-repeat: no-repeat;
+        width: 14px;
+        height: 18px;
+        margin-left: 4.5px;
+        margin-top: 10px; }
+      
+      /* line 59, /Users/elentok/projects/fezzik/source/stylesheets/adios.scss */
+      #ad-logo {
+        margin-top: 7px;
+        width: 30px;
+        height: 24px;
+        background-size: 100% 100%;
+        -webkit-background-size: 100% 100%;
+        background-position: center center;
+        background-repeat: no-repeat; }
+      
+      /* line 69, /Users/elentok/projects/fezzik/source/stylesheets/adios.scss */
+      .adios-contents {
+        margin-left: 33px;
+        padding-top: 3px;
+        font-weight: 100; }
+        /* line 73, /Users/elentok/projects/fezzik/source/stylesheets/adios.scss */
+        .adios-contents .primary {
+          color: #4f5f64;
+          font-size: 17px; }
+        /* line 78, /Users/elentok/projects/fezzik/source/stylesheets/adios.scss */
+        .adios-contents .secondary {
+          color: #8ea1a7;
+          font-size: 17px; }
+    </style>
+  </head>
+  <body class='adios'>
+    <script>
+      (function() {
+        this.W = {
+          Adios: {}
+        };
+      
+        W.Utils = {
+          getParams: function() {
+            var query;
+            query = window.location.href.split('?')[1] || '';
+            return this.parseQueryString(query);
+          },
+          parseQueryString: function(query) {
+            var key, param, params, value, _i, _len, _ref, _ref1;
+            params = {};
+            _ref = query.split('&');
+            for (_i = 0, _len = _ref.length; _i < _len; _i++) {
+              param = _ref[_i];
+              _ref1 = this._splitParam(param), key = _ref1[0], value = _ref1[1];
+              params[key] = decodeURIComponent(value);
+            }
+            return params;
+          },
+          _splitParam: function(param) {
+            var index, key, value;
+            key = null;
+            value = null;
+            index = param.indexOf('=');
+            if (index >= 0) {
+              key = param.substring(0, index);
+              value = param.substring(index + 1, param.length);
+            }
+            return [key, value];
+          },
+          escape: function(text) {
+            return ("" + this.cleanValue(text)).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#39;").replace(/\//g, "&#47;");
+          },
+          cleanValue: function(text) {
+            switch (text) {
+              case null:
+              case void 0:
+                return '';
+              case true:
+              case false:
+                return '\u0093' + text;
+              default:
+                return text;
+            }
+          }
+        };
+      
+        W.Adios.Model = (function() {
+          function Model(attributes) {
+            this.attributes = attributes != null ? attributes : {};
+            this._parseCustomQuery();
+          }
+      
+          Model.prototype.toJSON = function() {
+            return this.attributes;
+          };
+      
+          Model.prototype.set = function(attributes) {
+            this.attributes = attributes;
+            this._parseCustomQuery();
+            this._parseDescription();
+            return this._parseSpecialFlag();
+          };
+      
+          Model.prototype._parseCustomQuery = function() {
+            try {
+              return this.attributes.customQuery = JSON.parse(this.attributes.customQuery);
+            } catch (_error) {}
+          };
+      
+          Model.prototype._parseDescription = function() {
+            var c;
+            c = this.attributes.customQuery;
+            if ((c != null) && (c.d != null) && c.d.length > 0) {
+              return this.attributes.description = c.d;
+            }
+          };
+      
+          Model.prototype._parseSpecialFlag = function() {
+            var c;
+            this.attributes.special = false;
+            c = this.attributes.customQuery;
+            if ((c != null) && (c.s != null) && (c.s === true || c.s === 'true')) {
+              return this.attributes.special = true;
+            }
+          };
+      
+          return Model;
+      
+        })();
+      
+        W.Adios.View = (function() {
+          function View(model) {
+            this.model = model;
+            this.el = document.createElement('div');
+            this.ui = {};
+          }
+      
+          View.prototype.template = function(data) {
+            var special;
+            special = "";
+            if (data.special) {
+              special = "<div class='adios-special'>Special</div>";
+            }
+            return special + "<div class='waze-ads'>Ad</div>      <div class='adios-sidebar'>        <div id='placeholder-logo'></div>        <div id='ad-logo' style='display: none'></div>      </div>      <div class='adios-contents'>        <div class='primary'>" + W.Utils.escape(data.business) + "</div>        <div class='secondary'>" + W.Utils.escape(data.secondary) + "</div>      </div>";
+          };
+      
+          View.prototype.render = function() {
+            var data;
+            data = this.model.toJSON();
+            data.secondary = this._getSecondaryText();
+            this.el.innerHTML = this.template(data);
+            return this._loadAdLogo();
+          };
+      
+          View.prototype._getSecondaryText = function() {
+            var a;
+            a = this.model.attributes;
+            if (a.description != null) {
+              return a.description;
+            } else {
+              return a.street + ' ' + a.city;
+            }
+          };
+      
+          View.prototype._loadAdLogo = function() {
+            var _this = this;
+            return this._preloadAdLogo(function(url) {
+              _this._hidePlaceholderLogo();
+              return _this._showAdLogo(url);
+            });
+          };
+      
+          View.prototype._preloadAdLogo = function(callback) {
+            var img, url;
+            url = this._getLogoUrl();
+            if (url != null) {
+              img = new Image();
+              img.onload = function() {
+                return callback(url);
+              };
+              return img.src = url;
+            }
+          };
+      
+          View.prototype._showAdLogo = function(url) {
+            var logo;
+            logo = document.getElementById('ad-logo');
+            logo.style.backgroundImage = "url(" + url + ")";
+            return logo.style.display = 'block';
+          };
+      
+          View.prototype._getLogoUrl = function() {
+            var customQuery, imageId;
+            customQuery = this.model.attributes.customQuery;
+            if ((customQuery != null) && (customQuery.i != null)) {
+              imageId = this.model.attributes.customQuery.i;
+              return "http://d1oiazdc2hzjcz.cloudfront.net/2x/" + W.Utils.escape(imageId) + ".png";
+            }
+          };
+      
+          View.prototype._hidePlaceholderLogo = function() {
+            var placeholderLogo;
+            placeholderLogo = document.getElementById('placeholder-logo');
+            return placeholderLogo.style.display = 'none';
+          };
+      
+          View.prototype.showAdIcon = function() {
+            var adIcon, placeholderIcon;
+            placeholderIcon = document.getElementById('placeholder-icon');
+            adIcon = document.getElementById('ad-icon');
+            return adIcon.style.display = 'block';
+          };
+      
+          return View;
+      
+        })();
+      
+        W.Adios.Controller = (function() {
+          function Controller() {
+            this.model = new W.Adios.Model(W.Utils.getParams());
+            this.view = new W.Adios.View(this.model);
+          }
+      
+          Controller.prototype.start = function() {
+            document.body.appendChild(this.view.el);
+            return this.view.render();
+          };
+      
+          Controller.prototype.setQueryString = function(queryString) {
+            var params;
+            params = W.Utils.parseQueryString(queryString);
+            this.model.set(params);
+            return this.view.render();
+          };
+      
+          Controller.prototype.showAdIcon = function() {
+            return this.view.showAdIcon();
+          };
+      
+          return Controller;
+      
+        })();
+      
+        W.adios = new W.Adios.Controller();
+      
+        W.adios.start();
+      
+      }).call(this);
+    </script>
+    
+  </body>
+</html>

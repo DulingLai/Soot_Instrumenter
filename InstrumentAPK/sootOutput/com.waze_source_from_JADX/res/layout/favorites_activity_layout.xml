@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:id="@+id/favorites" app:background="@color/blue_bg" app:layout_width="match_parent" app:layout_height="match_parent">
+    <android.support.v7.widget.RecyclerView app:id="@+id/favoritesRecycler" app:layout_width="match_parent" app:layout_height="match_parent" app:layout_below="@+id/favoritesTitleBar" />
+    <com.waze.menus.AddressItemView app:id="@+id/floatingAddressItemView" app:visibility="gone" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x4801" />
+    <RelativeLayout app:id="@+id/favoritesTitleBar" app:background="@color/blue_bg" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x4801" app:layout_toRightOf="@+id/floatingAddressItemView" app:layout_alignParentTop="true">
+        <ImageView app:id="@+id/btnBack" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginLeft="8dp" app:src="@drawable/header_back_btn" app:layout_centerVertical="true" />
+        <com.waze.view.text.WazeTextView app:textSize="20sp" app:textColor="@color/BlueDeep" app:id="@+id/lblFavoritesTitle" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginLeft="16dp" app:layout_toRightOf="@+id/btnBack" app:layout_centerVertical="true" app:font_type="3" />
+        <com.waze.view.text.WazeTextView app:textSize="18sp" app:textColor="@color/White" app:id="@+id/btnEditDone" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginRight="16dp" app:text="*Edit" app:layout_alignParentRight="true" app:layout_centerVertical="true" />
+    </RelativeLayout>
+</RelativeLayout>

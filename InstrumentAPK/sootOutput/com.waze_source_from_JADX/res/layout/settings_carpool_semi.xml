@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:orientation="vertical" app:background="@color/blue_bg" app:layout_width="match_parent" app:layout_height="match_parent">
+    <com.waze.view.title.TitleBar app:id="@+id/theTitleBar" app:layout_width="match_parent" app:layout_height="wrap_content" />
+    <ScrollView app:id="@+id/settingsCarpoolScroll" app:background="@color/blue_bg" app:fadingEdge="UNKNOWN_DATA_0x0" app:layout_width="match_parent" app:layout_height="match_parent" app:layout_below="@+id/theTitleBar" app:overScrollMode="ifContentScrolls">
+        <LinearLayout style="@style/settingsLayout">
+            <Space app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x2801" />
+            <com.waze.settings.WazeSettingsView app:id="@+id/settingsCarpoolSemiContinue" app:position="UNKNOWN_DATA_0x3" app:settingsType="0" app:icon="@drawable/list_icon_profile" style="@style/settingsSelection" />
+            <FrameLayout app:background="@color/blue_bg" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x3801" app:foreground="@drawable/cell_shadow_dark" />
+            <com.waze.settings.WazeSettingsView app:id="@+id/settingsCarpoolSemiQuit" app:position="aboveThumb" app:settingsType="0" app:icon="@drawable/list_icon_quit" style="@style/settingsSelection" />
+            <FrameLayout app:background="@color/blue_bg" app:layout_width="match_parent" app:layout_height="wrap_content" app:foreground="@drawable/cell_shadow_dark" />
+        </LinearLayout>
+    </ScrollView>
+    <Space app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x1401" app:layout_below="@+id/settingsCarpoolScroll" app:layout_alignParentBottom="true" />
+    <ImageView app:layout_width="match_parent" app:layout_height="wrap_content" app:src="@drawable/topbar_shadow" app:scaleType="fitXY" app:layout_below="@+id/theTitleBar" />
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:id="@+id/contactTokenLayout" app:layout_width="wrap_content" app:layout_height="wrap_content">
+    <ImageView app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/contactTokenImage" style="@style/friendTokePicStyle" />
+    <com.waze.view.text.WazeTextView app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/contactTokenInitials" app:visibility="visible" app:font_type="3" style="@style/friendTokenInitialsStyle" />
+    <ImageView app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/contactTokenSelectionFrame" app:visibility="gone" app:src="@drawable/takeover_user_frame" style="@style/friendTokePicStyle" />
+</FrameLayout>

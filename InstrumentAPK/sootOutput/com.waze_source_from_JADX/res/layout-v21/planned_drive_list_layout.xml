@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:background="@color/BlueWhale" app:layout_width="match_parent" app:layout_height="match_parent">
+    <com.waze.view.title.TitleBar app:id="@+id/titleBar" app:layout_width="match_parent" app:layout_height="wrap_content" app:elevation="16dp" app:outlineProvider="bounds" app:textPosition="1" />
+    <android.support.v7.widget.RecyclerView app:id="@+id/recycler" app:paddingTop="24dp" app:clipChildren="false" app:clipToPadding="false" app:layout_width="match_parent" app:layout_height="match_parent" app:layout_marginTop="@dimen/titleBarHeight" />
+    <ImageButton app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/btnPlanDrive" app:background="@drawable/fab" app:layout_width="UNKNOWN_DATA_0x4001" app:layout_height="UNKNOWN_DATA_0x4001" app:layout_marginRight="@dimen/activity_horizontal_margin" app:layout_marginBottom="@dimen/activity_vertical_margin" app:src="@drawable/plan_drive_fab_icon" app:adjustViewBounds="false" app:layout_alignParentBottom="true" app:elevation="12dp" />
+</FrameLayout>

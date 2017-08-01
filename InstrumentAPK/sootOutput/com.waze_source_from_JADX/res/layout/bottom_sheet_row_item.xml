@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:orientation="horizontal" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x4601">
+    <LinearLayout app:gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:orientation="horizontal" app:id="@+id/bottomSheetItem" app:background="@drawable/ripple_drawable" app:layout_width="match_parent" app:layout_height="match_parent">
+        <ImageView app:id="@+id/bottomSheetItemImage" app:layout_width="UNKNOWN_DATA_0x3201" app:layout_height="UNKNOWN_DATA_0x3201" app:layout_marginLeft="14dp" app:layout_marginRight="14dp" app:src="@drawable/alertsonly_prs" />
+        <LinearLayout app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:orientation="vertical" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginRight="18dp">
+            <com.waze.view.text.WazeTextView app:id="@+id/bottomSheetItemLabel" app:text="*Special action" style="@style/bottomSheetItemLabel" />
+            <com.waze.view.text.WazeTextView app:id="@+id/bottomSheetItemSubtitle" app:text="*Subtitle to the action" style="@style/bottomSheetItemSubtitle" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/com.waze" app:orientation="horizontal" app:id="@+id/SearchBarLayout" app:visibility="gone" app:layout_width="match_parent" app:layout_height="wrap_content">
+    <RelativeLayout app:id="@+id/SearchBarImage" app:background="@drawable/search_bar_bg" app:padding="0dp" app:visibility="visible" app:layout_width="match_parent" app:layout_height="wrap_content" app:scaleType="fitXY" app:layout_weight="1.0" app:onClick="SearchBarClicked">
+        <com.waze.view.text.WazeTextView app:textSize="14dp" app:textColor="#939393" app:id="@+id/SearchBarText" app:paddingLeft="35dp" app:paddingTop="5dp" app:paddingRight="10dp" app:paddingBottom="7dp" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginLeft="1dp" app:layout_marginTop="8dp" app:layout_marginRight="7dp" app:text="Eliran" app:singleLine="true" />
+    </RelativeLayout>
+    <ImageButton app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/speechRecognition" app:background="@drawable/recording_bt_crop_idle" app:visibility="visible" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginTop="2dp" app:layout_marginRight="7dp" app:layout_weight="0.0" app:onClick="speechRecognitionClicked" />
+</LinearLayout>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:orientation="vertical" app:layout_width="match_parent" app:layout_height="match_parent">
+    <com.waze.view.text.WazeTextView app:textSize="16sp" app:textColor="@color/BlueDeep" app:id="@+id/lblDate" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginLeft="19dp" app:layout_marginTop="2dp" app:layout_marginStart="19dp" app:font_type="d" />
+</FrameLayout>

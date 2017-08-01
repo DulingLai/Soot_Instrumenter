@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:orientation="horizontal" app:id="@+id/contactTokenTipLayout" app:layout_width="wrap_content" app:layout_height="wrap_content">
+    <com.waze.view.text.WazeTextView app:textSize="18sp" app:textColor="@color/Dark" app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/contactTokenTipName" app:padding="3dp" app:visibility="visible" app:layout_width="wrap_content" app:layout_height="wrap_content" app:maxWidth="200dp" app:lines="1" app:font_type="1" />
+    <ImageView app:id="@+id/contactTokenTipClose" app:layout_width="UNKNOWN_DATA_0x1e01" app:layout_height="UNKNOWN_DATA_0x1e01" app:layout_marginRight="-3dp" app:src="@drawable/friends_online_close_btn" />
+</LinearLayout>

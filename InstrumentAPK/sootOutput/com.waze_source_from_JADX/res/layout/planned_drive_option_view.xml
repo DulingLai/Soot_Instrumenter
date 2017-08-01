@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:layout_width="match_parent" app:layout_height="match_parent">
+    <com.waze.planned_drive.PlannedDriveGraphView app:id="@+id/graphView" app:layout_width="UNKNOWN_DATA_0x7f0a000e" app:layout_height="UNKNOWN_DATA_0x7f0a0083" app:layout_alignParentRight="true" />
+    <RelativeLayout app:id="@+id/timeContainer" app:background="#ffc1c1c1" app:layout_width="UNKNOWN_DATA_0x6001" app:layout_height="UNKNOWN_DATA_0x7f0a0083">
+        <com.waze.view.text.WazeTextView app:textSize="18sp" app:textColor="@color/Dark" app:id="@+id/lblTime" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginLeft="16dp" app:layout_marginTop="16dp" app:layout_marginBottom="16dp" app:maxLines="1" app:singleLine="true" app:layout_centerInParent="true" app:font_type="3" />
+    </RelativeLayout>
+    <FrameLayout app:clipChildren="true" app:clipToPadding="true" app:layout_width="UNKNOWN_DATA_0x1801" app:layout_height="UNKNOWN_DATA_0x1801" app:layout_toRightOf="@+id/timeContainer" app:layout_centerVertical="true">
+        <ImageView app:id="@+id/imgArrow" app:visibility="invisible" app:layout_width="UNKNOWN_DATA_0x1801" app:layout_height="UNKNOWN_DATA_0x1801" app:src="@drawable/plan_drive_arrow_icon" />
+    </FrameLayout>
+    <LinearLayout app:orientation="vertical" app:id="@+id/etaContainer" app:visibility="invisible" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginLeft="24dp" app:layout_toRightOf="@+id/timeContainer" app:layout_centerVertical="true">
+        <com.waze.view.text.WazeTextView app:textSize="20sp" app:textColor="@color/Dark" app:id="@+id/lblDriveDuration" app:layout_width="wrap_content" app:layout_height="wrap_content" app:font_type="3" />
+        <com.waze.view.text.WazeTextView app:textSize="16sp" app:textColor="@color/Light" app:id="@+id/lblLeaveBy" app:layout_width="wrap_content" app:layout_height="wrap_content" app:font_type="1" />
+    </LinearLayout>
+</RelativeLayout>

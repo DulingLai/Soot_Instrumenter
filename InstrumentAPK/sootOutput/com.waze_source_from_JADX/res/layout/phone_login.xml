@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/com.waze" app:id="@+id/rootLayout" app:background="@color/blue_bg" app:layout_width="match_parent" app:layout_height="match_parent">
+    <ScrollView app:id="@id/scrollView" app:layout_width="match_parent" app:layout_height="match_parent" app:fillViewport="true">
+        <LinearLayout app:orientation="vertical" app:background="@color/blue_bg" app:layout_width="match_parent" app:layout_height="match_parent">
+            <com.waze.view.text.WazeTextView app:textSize="22dp" app:textColor="0x106000b" app:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/loginHeaderText" app:layout_marginTop="20dp" app:layout_marginBottom="5dp" app:text="LOGIN" app:textAllCaps="true" app:font_type="b" style="@style/textOnBg" />
+            <View app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x1" app:layout_weight="0.0" />
+            <com.waze.view.text.WazeTextView app:textStyle="italic" app:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/loginBodyText" app:layout_marginLeft="20dp" app:layout_marginTop="10dp" app:layout_marginRight="20dp" app:layout_marginBottom="10dp" app:text="sync your existing" app:lineSpacingMultiplier="1.2" style="@style/textSignUp" />
+            <View app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x1" app:layout_weight="0.0" />
+            <LinearLayout app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:orientation="horizontal" app:id="@+id/loginWithFacebookButton" app:background="@drawable/phone_login_facebook_btn_selector" app:padding="0dp" app:clickable="true" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x3001" app:layout_marginLeft="15dp" app:layout_marginRight="15dp">
+                <ImageView app:layout_width="wrap_content" app:layout_height="match_parent" app:layout_marginRight="20dp" app:src="@drawable/signup_facebookwhite" />
+                <com.waze.view.text.WazeTextView app:textSize="16dp" app:textStyle="italic" app:textColor="#ffffff" app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/loginWithFacebookText" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="Login with Facebook" />
+            </LinearLayout>
+            <include layout="@layout/phone_login_or_divider" />
+            <LinearLayout app:orientation="vertical" app:background="#f9ffff" app:layout_width="match_parent" app:layout_height="wrap_content">
+                <com.waze.phone.PhoneLoginFillInField app:id="@+id/userNameField" app:layout_width="match_parent" app:layout_height="wrap_content" />
+                <com.waze.phone.PhoneLoginFillInField app:id="@+id/passwordField" app:layout_width="match_parent" app:layout_height="wrap_content" />
+            </LinearLayout>
+            <com.waze.view.text.WazeTextView app:textStyle="italic" app:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/forgotText" app:paddingLeft="15dp" app:clickable="true" app:layout_marginTop="5dp" app:text="forgot your" style="@style/textSignUp" />
+            <com.waze.phone.PhoneLoginFillInField app:id="@+id/phoneNumberField" app:visibility="gone" app:layout_width="match_parent" app:layout_height="wrap_content" />
+            <View app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x1" app:layout_weight="0.7" />
+            <LinearLayout app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:orientation="horizontal" app:id="@+id/loginButton" app:background="@drawable/signup_bt_white" app:padding="0dp" app:clickable="true" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x3001" app:layout_marginLeft="15dp" app:layout_marginTop="5dp" app:layout_marginRight="15dp" app:layout_marginBottom="10dp">
+                <com.waze.view.text.WazeTextView app:textSize="18dp" app:textColor="@color/text_wt_button_enabled" app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/loginText" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="Login" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

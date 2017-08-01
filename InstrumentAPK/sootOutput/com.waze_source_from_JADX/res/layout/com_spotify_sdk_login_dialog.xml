@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@id/com_spotify_sdk_login_webview_container" android:background="0x1080011" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent">
+    <WebView android:id="@id/com_spotify_sdk_login_webview" android:focusable="true" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent" />
+</LinearLayout>

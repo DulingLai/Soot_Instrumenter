@@ -1,0 +1,21 @@
+N Compass
+I map_control_compass
+I map_control_north
+I
+I map_control_compass
+I
+P -15 -255
+B -1 -2 66 63
+S orientation_mode
+R
+M
+
+N me_on_map
+I map_control_locate
+I map_control_locate
+P 15 -115
+B -5 -5 79 84
+A show_me
+S focus_on_gps
+M
+

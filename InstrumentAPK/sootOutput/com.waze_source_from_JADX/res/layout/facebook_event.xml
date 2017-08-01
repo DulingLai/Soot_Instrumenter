@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/com.waze" app:orientation="vertical" app:layout_width="match_parent" app:layout_height="match_parent">
+    <com.waze.view.title.TitleBar app:id="@+id/shareTitle" app:layout_width="match_parent" app:layout_height="wrap_content" />
+    <ScrollView app:background="@color/blue_bg" app:layout_width="match_parent" app:layout_height="match_parent" app:layout_below="@+id/shareTitle">
+        <LinearLayout app:orientation="vertical" app:paddingLeft="15dp" app:paddingRight="15dp" app:layout_width="match_parent" app:layout_height="wrap_content">
+            <ImageView app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginTop="15dp" app:layout_marginBottom="10dp" app:src="@drawable/illustration_fb" app:layout_centerHorizontal="true" />
+            <com.waze.view.text.WazeTextView app:textStyle="bold" app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/EventTitleText" app:text="Pick someone up:" style="@style/textOnBg" />
+            <com.waze.view.text.WazeTextView app:textSize="15sp" app:textStyle="UNKNOWN_DATA_0x0" app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/EventDate" app:text="Pick someone up:" style="@style/textOnBg" />
+            <com.waze.view.text.WazeTextView app:textStyle="UNKNOWN_DATA_0x0" app:id="@+id/EventBody" app:layout_marginTop="25dp" app:layout_marginBottom="10dp" app:text="Pick someone up:" style="@style/textOnBg" />
+            <com.waze.view.text.WazeEditText app:textSize="15dp" app:textColor="#373737" app:textColorHint="#373737" app:id="@+id/searchBoxEvent" app:background="@drawable/text_area_search" app:paddingLeft="35dp" app:paddingTop="5dp" app:paddingRight="10dp" app:paddingBottom="7dp" app:layout_width="match_parent" app:layout_height="wrap_content" app:singleLine="true" app:layout_weight="1.0" app:imeOptions="actionNone|actionGo|actionSearch|actionNext|actionDone|actionPrevious" />
+            <Button app:textSize="16dp" app:textStyle="bold" app:textColor="#3a494f" app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/UseAddressButton" app:background="@drawable/btn_selector" app:padding="0dp" app:layout_width="UNKNOWN_DATA_0xdc01" app:layout_height="UNKNOWN_DATA_0x3201" app:layout_marginTop="5dp" />
+            <LinearLayout app:gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:orientation="horizontal" app:id="@+id/NoAddressLayout" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginTop="20dp">
+                <com.waze.view.text.WazeTextView app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/NoAddressText" app:layout_width="match_parent" app:layout_height="wrap_content" app:text="sadasda asdasd asdas" style="@style/textOnBg" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <ImageView app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x601" app:src="@drawable/topbar_shadow" app:scaleType="fitXY" app:layout_below="@+id/shareTitle" />
+</RelativeLayout>

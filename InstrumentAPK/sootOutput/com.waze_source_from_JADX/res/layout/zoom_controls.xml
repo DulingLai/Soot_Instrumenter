@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="vertical" android:background="@drawable/map_control_zoom" android:paddingTop="14dp" android:paddingBottom="14dp" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/zoomControlIn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/map_control_zoom_in" />
+    <Space android:id="@+id/zoomControlSpace" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="UNKNOWN_DATA_0x1" android:layout_weight="1.0" />
+    <ImageView android:id="@+id/zoomControlOut" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/map_control_zoom_out" />
+</LinearLayout>

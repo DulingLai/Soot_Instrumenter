@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/forMarginesOnly" android:layout_width="wrap_content" android:layout_height="wrap_content"
+    <RelativeLayout android:id="@+id/placePhotoFrme" android:background="0x106000b" android:padding="4dp" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:background="#92c2d1" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.waze.view.map.ProgressAnimation android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/placePhotoProgress" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </FrameLayout>
+        <ImageView android:id="@+id/placePhoto" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+        <LinearLayout android:background="@drawable/places_pic_info_strip" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <ImageView android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/placePhotoByMood" android:background="0x0" android:layout_width="UNKNOWN_DATA_0x1401" android:layout_height="UNKNOWN_DATA_0x1401" android:layout_marginLeft="10dp" android:src="@drawable/happy" android:scaleType="fitCenter" />
+            <com.waze.view.text.WazeTextView android:textSize="18sp" android:textColor="0x106000b" android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/placePhotoBy" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="!@# Photo By Someone" android:singleLine="true" android:shadowColor="0x106000c" android:shadowRadius="2.0" android:layout_weight="1.0" />
+            <ImageButton android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/placePhotoFlag" android:background="0x0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp" android:src="@drawable/places_flag_pic" />
+            <View android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/placePhotoSep" android:background="#77ffffff" android:layout_width="UNKNOWN_DATA_0x101" android:layout_height="match_parent" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" />
+            <ImageButton android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/placePhotoLike" android:background="0x0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp" android:src="@drawable/places_like_pic" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

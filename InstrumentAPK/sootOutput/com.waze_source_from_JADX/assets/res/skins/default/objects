@@ -1,0 +1,35 @@
+N Compass
+I map_control_compass
+I map_control_north
+P -11 -400
+A toggleorientation
+B -5 -5 65 65
+S orientation_mode
+R
+M
+
+N me_on_map
+I map_control_locate
+I map_control_locate
+P 9 -135
+B -5 -5 79 84
+A show_me
+S focus_on_gps
+M
+
+#N overview
+#I map_control_overview
+#P 9 -265
+#B -5 -5 79 84
+#A route_overview
+#S navigate_overview_state
+#M
+
+N debugtools
+I map_control_north
+P 90 -140
+A debugtools
+B -1 -2 66 63
+C debug_tools_state 1
+
+

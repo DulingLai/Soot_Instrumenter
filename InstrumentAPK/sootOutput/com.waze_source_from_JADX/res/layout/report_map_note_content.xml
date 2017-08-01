@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:background="@color/report_lines" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x101" android:layout_alignParentTop="true" />
+    <View android:id="@+id/reportGenericDetailsAreaSeperator" android:background="@color/report_lines" android:layout_width="UNKNOWN_DATA_0xc801" android:layout_height="UNKNOWN_DATA_0x101" android:layout_centerInParent="true" />
+    <LinearLayout android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/reportGenericAddPhoto" android:padding="22dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@+id/reportGenericDetailsAreaSeperator" android:layout_alignParentTop="true">
+        <ImageView android:id="@+id/reportPictureImage" android:background="0x0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_reports_addphoto" />
+        <com.waze.view.text.WazeTextView android:id="@+id/reportGenericAddPhotoText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="*Add photo" style="@style/reportMenuDetailsText" />
+    </LinearLayout>
+    <include android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/reportGenericAddDetails" android:padding="22dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/reportGenericDetailsAreaSeperator" android:layout_alignParentBottom="true" layout="@layout/report_generic_add_details" />
+</RelativeLayout>

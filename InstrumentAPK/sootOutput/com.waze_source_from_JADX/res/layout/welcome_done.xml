@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/blue_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.waze.view.title.TitleBar android:id="@+id/theTitleBar" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <RelativeLayout android:background="@color/blue_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/theTitleBar">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="12dp">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="40dp" android:src="@drawable/welcomedone" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <com.waze.view.text.WazeTextView android:textSize="16dp" android:id="@id/text1" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Your account has been created!" style="@style/textOnBg" />
+            <com.waze.view.text.WazeTextView android:textSize="16dp" android:id="@id/text2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="Drive safe!" style="@style/textOnBg" />
+        </LinearLayout>
+    </RelativeLayout>
+    <ImageView android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x601" android:src="@drawable/topbar_shadow" android:scaleType="fitXY" android:layout_below="@+id/theTitleBar" />
+</RelativeLayout>

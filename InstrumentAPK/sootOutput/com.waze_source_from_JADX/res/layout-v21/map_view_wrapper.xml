@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.waze.map.MapView android:id="@+id/mapViewWrapperMapView" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.waze.view.popups.YouAreHerePopUp android:id="@+id/youAreHerePopUp" android:visibility="gone" android:layout_width="UNKNOWN_DATA_0x14001" android:layout_height="wrap_content" android:elevation="4dp" />
+</merge>

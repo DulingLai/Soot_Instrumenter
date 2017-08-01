@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/blue_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <view android:id="@+id/theTitleBar" android:layout_width="match_parent" android:layout_height="wrap_content" class="com.waze.rtalerts.RTAlertsCommentsEditor$CommentsEditorTitleBar" />
+    <ImageView android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x601" android:src="@drawable/topbar_shadow" android:scaleType="fitXY" android:layout_below="@+id/theTitleBar" />
+    <LinearLayout android:orientation="horizontal" android:id="@+id/searchBar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/theTitleBar">
+        <com.waze.view.text.WazeEditText android:textSize="14dp" android:textColor="#000000" android:id="@+id/searchBox" android:background="@drawable/text_area_bg" android:paddingLeft="10dp" android:paddingTop="5dp" android:paddingRight="10dp" android:paddingBottom="7dp" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x2f01" android:layout_marginLeft="7dp" android:layout_marginTop="8dp" android:layout_marginRight="1dp" android:layout_marginBottom="6dp" android:layout_weight="1.0" />
+        <ImageButton android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/speechRecognition" android:background="@drawable/recording_bt_crop_idle" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="7dp" android:layout_weight="0.0" />
+    </LinearLayout>
+    <ImageView android:id="@+id/shadowImg" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/shadow" android:scaleType="fitXY" android:layout_below="@+id/searchBar" />
+</RelativeLayout>

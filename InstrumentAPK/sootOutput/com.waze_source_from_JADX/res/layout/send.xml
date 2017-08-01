@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/com.waze" app:background="@color/blue_bg" app:layout_width="match_parent" app:layout_height="match_parent">
+    <com.waze.view.title.TitleBar app:id="@+id/SendTitle" app:layout_width="match_parent" app:layout_height="wrap_content" />
+    <ScrollView app:fadingEdge="UNKNOWN_DATA_0x0" app:layout_width="match_parent" app:layout_height="match_parent" app:layout_below="@+id/SendTitle" app:overScrollMode="always">
+        <LinearLayout app:orientation="vertical" app:layout_width="match_parent" app:layout_height="wrap_content">
+            <FrameLayout app:background="#60a2b4" app:paddingTop="5dp" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x7801">
+                <LinearLayout app:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:orientation="horizontal" app:id="@+id/shareDriveAndEta" app:background="@drawable/icons_bg" app:padding="5dp" app:clickable="true" app:layout_width="match_parent" app:layout_marginLeft="10dp" app:layout_marginTop="5dp" app:layout_marginRight="10dp" app:layout_marginBottom="5dp" style="@style/MenuNewButtonButton">
+                    <ImageView app:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:id="@+id/shareDriveAndEtaIcon" app:layout_width="wrap_content" app:layout_height="wrap_content" app:src="@drawable/icon_menu_share" />
+                    <LinearLayout app:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:orientation="vertical" app:layout_width="UNKNOWN_DATA_0x1" app:layout_height="wrap_content" app:layout_weight="1.0">
+                        <com.waze.view.text.AutoResizeTextView app:textSize="18dp" app:textStyle="italic" app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/shareDriveAndEtaText" app:layout_marginTop="0dp" app:text="*Drive & ETA updates" style="@style/MainMenuButton" />
+                        <com.waze.view.text.AutoResizeTextView app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/shareDriveAndEtaSubText" app:layout_marginTop="0dp" app:text="*Let others know when you'll arrive" style="@style/MainMenuButton" />
+                    </LinearLayout>
+                </LinearLayout>
+            </FrameLayout>
+            <RelativeLayout app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0xdc01" app:layout_marginTop="5dp">
+                <View app:id="@id/center" app:layout_width="UNKNOWN_DATA_0x1" app:layout_height="UNKNOWN_DATA_0x1" app:layout_centerInParent="true" />
+                <LinearLayout app:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:orientation="vertical" app:id="@+id/shareMyCurrentLocation" app:background="@drawable/icons_bg" app:padding="5dp" app:clickable="true" app:layout_marginLeft="5dp" app:layout_marginTop="2.5dp" app:layout_marginRight="2.5dp" app:layout_marginBottom="5dp" app:layout_toLeftOf="@id/center" app:layout_below="@id/center" app:layout_alignParentLeft="true" app:layout_alignParentBottom="true" style="@style/MenuNewButtonButton">
+                    <ImageView app:id="@+id/shareMyCurrentLocationIcon" app:layout_width="wrap_content" app:layout_height="wrap_content" app:src="@drawable/send_icon_current" />
+                    <com.waze.view.text.AutoResizeTextView app:id="@+id/shareMyCurrentLocationText" app:text="*My Location" style="@style/MainMenuButton" />
+                </LinearLayout>
+                <LinearLayout app:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:orientation="vertical" app:id="@+id/shareMyDestination" app:background="@drawable/icons_bg" app:padding="5dp" app:clickable="true" app:layout_marginLeft="2.5dp" app:layout_marginTop="2.5dp" app:layout_marginRight="5dp" app:layout_marginBottom="5dp" app:layout_toRightOf="@id/center" app:layout_above="@id/center" app:layout_below="@id/center" app:layout_alignParentRight="true" app:layout_alignParentBottom="true" style="@style/MenuNewButtonButton">
+                    <ImageView app:id="@+id/shareMyDestinationIcon" app:layout_width="wrap_content" app:layout_height="wrap_content" app:src="@drawable/send_icon_destination" />
+                    <com.waze.view.text.AutoResizeTextView app:id="@+id/shareMyDestinationText" app:text="*My Destination" style="@style/MainMenuButton" />
+                </LinearLayout>
+                <LinearLayout app:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:orientation="vertical" app:id="@+id/shareMyHome" app:background="@drawable/icons_bg" app:padding="5dp" app:clickable="true" app:layout_marginLeft="5dp" app:layout_marginTop="5dp" app:layout_marginRight="2.5dp" app:layout_marginBottom="2.5dp" app:layout_toLeftOf="@id/center" app:layout_above="@id/center" app:layout_alignParentLeft="true" app:layout_alignParentTop="true" style="@style/MenuNewButtonButton">
+                    <ImageView app:id="@+id/shareMyHomeIcon" app:layout_width="wrap_content" app:layout_height="wrap_content" app:src="@drawable/send_icon_home" />
+                    <com.waze.view.text.AutoResizeTextView app:id="@+id/shareMyHomeText" app:text="*My Home" style="@style/MainMenuButton" />
+                </LinearLayout>
+                <LinearLayout app:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:orientation="vertical" app:id="@+id/shareMyWork" app:background="@drawable/icons_bg" app:padding="5dp" app:clickable="true" app:layout_marginLeft="2.5dp" app:layout_marginTop="5dp" app:layout_marginRight="5dp" app:layout_marginBottom="2.5dp" app:layout_toRightOf="@id/center" app:layout_alignParentTop="true" app:layout_alignParentRight="true" style="@style/MenuNewButtonButton">
+                    <ImageView app:id="@+id/shareMyWorkIcon" app:layout_width="wrap_content" app:layout_height="wrap_content" app:src="@drawable/send_icon_work" />
+                    <com.waze.view.text.AutoResizeTextView app:id="@+id/shareMyWorkText" app:text="*My Work" style="@style/MainMenuButton" />
+                </LinearLayout>
+            </RelativeLayout>
+            <com.waze.settings.SettingsTitleText app:id="@+id/shareOtherOptionsTitle" app:layout_marginTop="7dp" app:text="Quick Settings" app:position="atThumb" style="@style/settingsTitle" />
+            <com.waze.settings.WazeSettingsView app:id="@+id/FromHistory" app:position="atThumb" app:settingsType="0" app:icon="@drawable/list_icon_history" style="@style/settingsSelection" />
+            <com.waze.settings.WazeSettingsView app:id="@+id/FromFavorites" app:position="aboveThumb" app:settingsType="0" app:icon="@drawable/list_icon_favorite" style="@style/settingsSelection" />
+            <View app:focusable="true" app:focusableInTouchMode="true" app:layout_width="UNKNOWN_DATA_0x0" app:layout_height="UNKNOWN_DATA_0x0" />
+            <FrameLayout app:background="@color/settings_bg_titles" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x7f0a0089" app:foreground="@drawable/cell_shadow_dark" />
+            <LinearLayout app:orientation="horizontal" app:id="@+id/searchBar" app:background="@color/blue_bg" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_alignParentBottom="true">
+                <com.waze.view.text.WazeEditText app:textSize="14dp" app:textColor="#000000" app:id="@+id/searchBox" app:background="@drawable/search_bar_bg" app:paddingLeft="35dp" app:paddingTop="5dp" app:paddingRight="10dp" app:paddingBottom="7dp" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginLeft="8dp" app:layout_marginTop="5dp" app:layout_marginRight="1dp" app:layout_marginBottom="6dp" app:singleLine="true" app:completionThreshold="1" app:popupBackground="#cbd6da" app:layout_weight="1.0" app:dropDownWidth="match_parent" app:dropDownAnchor="@+id/searchBar" app:imeOptions="actionNone|actionGo|actionSearch|actionNext|actionDone|actionPrevious" app:dropDownHeight="UNKNOWN_DATA_0x15901" app:dropDownVerticalOffset="2dp" app:textCursorDrawable="@drawable/black_cursor" />
+                <ImageButton app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@+id/speechRecognition" app:background="@drawable/recording_bt_crop_idle" app:visibility="visible" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginTop="2dp" app:layout_marginRight="7dp" app:layout_weight="0.0" app:onClick="speechRecognitionClicked" />
+            </LinearLayout>
+            <FrameLayout app:background="@color/settings_bg_titles" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x7f0a0089" />
+        </LinearLayout>
+    </ScrollView>
+    <ImageView app:layout_width="match_parent" app:layout_height="wrap_content" app:src="@drawable/topbar_shadow" app:scaleType="fitXY" app:layout_below="@+id/theTitleBar" />
+</RelativeLayout>

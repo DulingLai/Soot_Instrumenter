@@ -1,0 +1,262 @@
+############################
+#                          #
+#       DAY SCHEME         #
+#       Oct 10 2012        #
+#                          #
+############################
+
+# GENERAL ###########
+
+Map.Background: #faf8f5
+Map.Missing: #7f7f7f
+Labels.Color: #6e6e6e
+Labels.BgColor: #faf8f5dd
+
+Console.Foreground: #000000
+Console.Background: #edeae0
+
+OneWay.Color: #55555555
+Points.Color: #b2bfdc
+
+
+
+# ROADS ###########
+
+Freeways.Class: Road
+Freeways.Color: #CCD1C1
+Freeways.Declutter: 2147483647
+Freeways.Thickness: 15.5
+Freewyas.Thinnest: 5
+Freewyas.Delta1: 0
+
+Primary.Class: Road
+Primary.Color: #B5C3B7
+Primary.Declutter: 4000
+Primary.Thickness: 15.5
+Primary.Thinnest: 5
+Primary:Delta1: 0
+
+Secondary.Class: Road
+Secondary.Color: #C4D4CA
+Secondary.Declutter: 1500
+Secondary.Thickness: 10.5
+Secondary.Thinnest: 4
+Secondary.Delta1: 0
+
+Highways.Class: Road
+Highways.Color: #e0e6d2
+Highways.Declutter: 350
+Highways.Thickness: 7
+Highways.Thinnest: 3
+Highways.Delta1: 0
+
+Streets.Class: Road
+Streets.Color: #E2E7D8
+Streets.Declutter: 120
+Streets.Thickness: 4.5
+Streets.Thinnest: 2
+Streets.Delta1: 0
+
+
+#ramps & exits
+
+Ramps.Class: Road
+Ramps.Color: #D2D3C1
+Ramps.Declutter: 160
+Ramps.Thickness: 5.5
+Ramps.Thinnest: 2.5
+Ramps.Delta1: 0
+
+Exit.Class: Road
+Exit.Color: #D2D3C1
+Exit.Declutter: 350
+Exit.Thickness: 5.5
+Exit.Thinnest: 2.5
+Exit.Delta1: 0
+
+
+#unpaved
+
+4X4 Trails.Class: Road
+4X4 Trails.Color: #d5d6be00
+4X4 Trails.Declutter: 160
+4X4 Trails.Thickness: 2.5
+4X4 Trails.Thinest: 1
+4X4 Trails.Delta1: 0
+
+
+# Railroads
+# Add train rack texture
+
+#Railroads.Class: Road
+#Railroads.Color: #888888
+#Railroads.Color1: #faf7ef
+#Railroads.Color2: #faf7ef
+#Railroads.Declutter: 1500
+#Railroads.Delta1: -3
+#Railroads.Delta2: -3
+#Railroads.Thickness: 3
+
+
+# Runways
+# add yellow dashed lines
+
+# Runways.Class: Road
+# Runways.Color: #555577 # #cac8c1
+# Runways.Color1: #ffff00
+# Runways.Color2: #555577
+# Runways.Declutter: 1500
+# Runways.Delta1: -3
+# Runways.Delta2: -3
+# Runways.Thickness: 2
+
+
+# Ferry
+
+# Ferry.Class: Road
+# Ferry.Color: #08b2b9
+# Ferry.Declutter: 1500
+# Ferry.Delta1: 0
+# Ferry.Thickness: 2
+
+
+# Private
+
+Private.Class: Road
+Private.Color: #D3DBCF
+Private.Declutter: 120
+Private.Thickness: 1.5
+Private.Thinnest: 1
+Private.Delta1: 0
+
+# Parking
+
+Parking.Class: Road
+Parking.Color: #D3DBCF
+Parking.Declutter: 120
+Parking.Thickness: 1.5
+Parking.Thinnest: 1
+Parking.Delta1: 0
+
+#no-auto
+
+Pedestrian.Class: Road
+Pedestrian.Color: #d5d6be
+Pedestrian.Declutter: 160
+Pedestrian.Thickness: 2.5
+Pedestrian.Thinnest: 1
+Pedestrian.Delta1: 0
+
+Trails.Class: Road
+Trails.Color: #d5d6be
+Trails.Declutter: 160
+Trails.Thickness: 2.5
+Trails.Thinnest: 1
+Trails.Delta1: 0
+
+Walkway.Class: Road
+Walkway.Color: #d5d6be
+Walkway.Declutter: 160
+Walkway.Thickness: 2.5
+Walkway.Thinnest: 1
+Walkway.Delta1: 0
+
+
+# AREAS ##############
+
+Stations.Class: Area
+Stations.Color: #EAE9E5
+Stations.Declutter: 200
+Stations.Delta1: 0
+Stations.Thickness: 1
+Stations.LabelColor: #9a9b87
+
+Cities.Class: Area
+Cities.Color: #ff000000
+Cities.Color1: #ff000000
+Cities.Declutter: 2147483647
+Cities.Delta1: 1
+Cities.Thickness: 1
+Cities.LabelColor: #444444
+
+Airports.Class: Area
+Airports.Color: #faf8f5
+Airports.Declutter: 2147483647
+Airports.Delta1: 0
+Airports.Thickness: 1
+
+Hospitals.Class: Area
+Hospitals.Color: #e5e4da
+Hospitals.Declutter: 200
+Hospitals.Delta1: 0
+Hospitals.Thickness: 1
+
+Malls.Class: Area
+Malls.Color: #ff000000
+Malls.Color1: #ff000000
+Malls.Declutter: 2147483647
+Malls.Delta1: 0
+Malls.Thickness: 1
+
+Parks.Class: Area
+Parks.Color: #d5ebb4
+Parks.Declutter: 1300
+Parks.Delta1: 0
+Parks.Thickness: 1
+Parks.LabelColor: #7d9b4d
+
+Rivers.Class: Feature
+Rivers.Color: #dfecf0
+Rivers.Declutter: 300
+Rivers.Delta1: 0
+Rivers.Thickness: 3
+
+Lakes.Class: Area
+Lakes.Color: #dfecf0
+Lakes.Declutter: 1300
+Lakes.Delta1: 0
+Lakes.Thickness: 1
+
+Sea.Class: Area
+Sea.Color: #C6DEE6
+Sea.Declutter: 2147483647
+Sea.Delta1: 0
+Sea.Thickness: 1
+Sea.LabelDeclutter: 100
+Sea.LabelColor: #3689ac
+
+Shore.Class: Feature
+Shore.Color: #67afc500
+Shore.Declutter: 2147483647
+Shore.Delta1: 0
+Shore.Thickness: 2
+
+
+
+# OTHER ###########
+
+Navigation.Class: Road
+Navigation.Color: #0096CA
+Navigation.Color1: #00D0EC
+Navigation:Delta1: -1
+Navigation:Delta2: 0
+Navigation.Declutter: 2147483647
+Navigation.Thickness: 5.5
+Navigation.Thinnest: 4
+
+Navigation.Alt1Color: #c01cac
+Navigation.Alt1Thickness: 4
+Navigation.Alt2Color: #71c113
+Navigation.Alt2Thickness: 5
+Navigation.Alt3Color: #3dbce0
+Navigation.Alt3Thickness: 6
+
+TrafficInfo.RouteColorGood: #FFCD62
+TrafficInfo.RouteColorMild: #FF9752
+TrafficInfo.RouteColorBad: #FF716F
+TrafficInfo.RouteColorStandStill: #E12D2D
+
+TrafficInfo.ArrowColorGood: #ff8e42
+TrafficInfo.ArrowColorMild: #ff5e01
+TrafficInfo.ArrowColorBad: #ed3030
+TrafficInfo.ArrowColorStandStill: #bb0b0b
