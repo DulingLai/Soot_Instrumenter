@@ -1,0 +1,8 @@
+#!/bin/bash
+export PATH=/Users/dulinglai/Library/Android/sdk/platform-tools:$PATH
+
+apkDir='/Users/dulinglai/Documents/Study/ResearchProjects/LocationFreq/Soot_Instrumenter/sootOutput/'
+keyDir='/Users/dulinglai/Documents/Study/ResearchProjects/LocationFreq/Soot_Instrumenter/InstrumentAPK/libs/'
+
+jarsigner  -verbose -sigalg SHA1withDSA -digestalg SHA1  -keystore /Users/dulinglai/Documents/Study/ResearchProjects/LocationFreq/Soot_Instrumenter/InstrumentAPK/libs/myKey.keystore -storepass 123456 ${apkDir}$1 myTestKey
+/Users/dulinglai/Library/Android/sdk/build-tools/27.0.3/zipalign -c -v 4 ${apkDir}$1

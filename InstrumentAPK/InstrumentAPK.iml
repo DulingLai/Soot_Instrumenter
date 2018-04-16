@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="EclipseModuleManager">
+    <libelement value="jar://$MODULE_DIR$/libs/axml-2.0.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/libs/commons-io-2.4.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/libs/slf4j-api-1.7.5.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/libs/slf4j-simple-1.7.5.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/libs/soot-infoflow-android-javadoc.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/libs/soot-infoflow-android.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/libs/soot-infoflow-javadoc.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/libs/soot-infoflow-tests.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/libs/soot-infoflow.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/libs/soot-trunk.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/libs/sootjavadoc-trunk.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/libs/sootsources-trunk.jar!/" />
+    <src_description expected_position="0">
+      <src_folder value="file://$MODULE_DIR$/src" expected_position="0" />
+    </src_description>
+  </component>
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/bin" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/sootOutput" />
+    </content>
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/libs/soot-infoflow-classes.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/libs/sootclasses-trunk-jar-with-dependencies.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$MODULE_DIR$/libs/sootclasses-trunk-jar-with-dependencies.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/libs/soot-infoflow-android-classes.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+  </component>
+</module>

@@ -1,0 +1,8 @@
+#!/bin/tcsh -fx
+
+set apkDir = '/Users/dulinglai/Documents/Study/ResearchProjects/LocationFreq/Soot_Instrumenter/sootOutput/'
+set adb = '/Users/dulinglai/Library/Android/sdk/platform-tools/adb'
+
+$adb install -r $apkDir/$1
+
+#$adb -s $device push ~/empty.log /ca.ubc.laiduling.data/ca.ubc.laiduling.data/$1/$2.log
